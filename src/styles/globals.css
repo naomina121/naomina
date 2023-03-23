@@ -2,4 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-weight: 400;
+  src: url(./NotoSansJP-Regular.otf);
+}
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-weight: 500;
+  src: url(./NotoSansJP-Medium.otf);
+}
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-weight: 700;
+  src: url(./NotoSansJP-Bold.otf);
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  src: url(./Montserrat-Black.ttf);
+}
 
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  src: url(./Montserrat-Bold.ttf);
+}
+
+body{
+  @apply text-xl;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1 {
+  @apply font-black leading-tight tracking-wide text-5xl mt-3 mb-3;
+  font-family: 'Montserrat', sans-serif;
+}
+h2 {
+  @apply font-semibold leading-tight text-3xl mt-0 mb-2;
+}
+h3 {
+  @apply font-semibold leading-tight text-2xl mt-0 mb-2;
+}
+p {
+  @apply font-light leading-relaxed text-base text-gray-800 mt-0 mb-4;
+}
+
+.current{
+  @apply border-solid border-2 border-amber-400 p-2;
+}
+
+/* main {
+  @apply min-h-screen flex flex-col justify-center items-center;
+} */
