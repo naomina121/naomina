@@ -12,22 +12,22 @@ const Home: NextPage = () => {
             </h1>
             <nav className="flex items-center max-w-xl w-full">
               <ul className="flex list-none w-full items-center font-['Montserrat',sans-serif] font-medium justify-around">
-                <li className="current">
+                <li className="p-2 current header-menu-hover">
                   <Link className="text-white" href="#HOME">
                     HOME
                   </Link>
                 </li>
-                <li>
+                <li className="p-2 header-menu-hover">
                   <Link className="text-white" href="#about">
                     ABOUT
                   </Link>
                 </li>
-                <li>
+                <li className="p-2 header-menu-hover">
                   <Link className="text-white" href="#contact">
                     CONTACT
                   </Link>
                 </li>
-                <li>
+                <li className="p-2 header-menu-hover">
                   <Link className="text-white" href="/blog">
                     BLOG
                   </Link>
