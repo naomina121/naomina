@@ -1,4 +1,5 @@
 import { NextPage } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 const Home: NextPage = () => {
@@ -7,7 +8,7 @@ const Home: NextPage = () => {
     setOpenMenu(!openMenu);
   };
   return (
-    <div>
+    <div id="home">
       <header>
         <div className="fixed top-0 left-0 w-full z-30 bg-gray-900 h-[78px] leading-[1.5]">
           <div className="max-w-screen-xl flex h-full justify-between items-center flex-end m-auto">
@@ -17,13 +18,18 @@ const Home: NextPage = () => {
             <nav className="flex items-center max-w-xl w-full">
               <ul className="flex list-none w-full items-center text-lg font-['Montserrat',sans-serif] font-medium justify-around">
                 <li className="p-2 current header-menu-hover">
-                  <Link className="text-white" href="#HOME">
+                  <Link className="text-white" href="#home">
                     HOME
                   </Link>
                 </li>
                 <li className="p-2 header-menu-hover">
                   <Link className="text-white" href="#about">
                     ABOUT
+                  </Link>
+                </li>
+                <li className="p-2 header-menu-hover">
+                  <Link className="text-white" href="#about">
+                    SKILS
                   </Link>
                 </li>
                 <li className="p-2 header-menu-hover">
@@ -42,7 +48,8 @@ const Home: NextPage = () => {
         </div>
       </header>
       <main className="top-[78px] relative">
-        <section className="relative h-full max-h-smart">
+        {/* firstview */}
+        <div className="relative h-full max-h-smart">
           <div className="relative w-full max-h-smart m-t-[-100px] overflow-hidden overlay">
             <video
               src={require('./movie/header_movie.mp4')}
@@ -53,6 +60,7 @@ const Home: NextPage = () => {
               playsInline
             />
           </div>
+          {/* firstview_text */}
           <div
             className="absolute min-w-full min-h-full translate-y-[-50%] z-20 top-1/2
           left-1/2 translate-x-[-50%] w-full"
@@ -66,6 +74,7 @@ const Home: NextPage = () => {
                 <span className="text-amber-400 pr-2">RECORD</span> OF THE STUDY
               </p>
             </div>
+            {/* firstview_bottom */}
             <div
               className={
                 openMenu
@@ -159,7 +168,55 @@ const Home: NextPage = () => {
               ></button>
             </div>
           </div>
-        </section>
+        </div>
+        {/* about */}
+        <div
+          id="about"
+          className="bg-about p-40 pt-20 text-white relative h-full max-h-smart"
+        >
+          <p className="text-white w-full text-5xl text-center mb-20 font-['Montserrat',sans-serif] relative">
+            <span className="about-text relatie">ABOUT</span>
+          </p>
+          <div className="flex max-w-7xl my-0 mx-auto justify-around">
+            <div className="w-full mr-10 max-w-lg">
+              <p className="text-white">
+                <span className="text-amber-400 inline-block mr-5 text-xl">
+                  ★
+                </span>
+                ITの知識をしっかり身につけ、楽しみながら学んでいく
+              </p>
+              <p className="text-white my-10 text-3xl font-semibold">
+                学習した事を即座に
+                <span className="text-amber-400">アウトプット</span>
+              </p>
+              <p className="text-white">
+                初めまして、未経験でエンジニアを目指しているナオと申します。
+              </p>
+              <p className="text-white">
+                学習の際に、Notionでまとめたものをそのままブログに発信できたらという思いで、このサイトを作成しました！
+              </p>
+              <p className="text-white">
+                人目に触れることにより、サボってはいけない！そういう思いで頑張っていきたいと思います！（多分
+              </p>
+              <Link
+                href="#"
+                className="block mt-10 font-bold mx-0 p-2 py-4 max-w-xs text-center bg-amber-500 text-base"
+              >
+                ブログを見てみる
+              </Link>
+            </div>
+            <div className="bg-stripe">
+              <Image
+                alt="pcで操作している人"
+                src="/img/about.jpg"
+                width="1280"
+                height="853"
+                className="
+                max-w-2xl w-full -translate-x-3 -translate-y-3"
+              />
+            </div>
+          </div>
+        </div>
       </main>
       <footer></footer>
     </div>
