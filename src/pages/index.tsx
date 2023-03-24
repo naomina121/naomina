@@ -200,19 +200,19 @@ const Home: NextPage = () => {
               </p>
               <Link
                 href="#"
-                className="block mt-10 font-bold mx-0 p-2 py-4 max-w-xs text-center bg-amber-500 text-base"
+                className="block mt-10 font-bold mx-0 p-2 py-4 max-w-xs text-center bg-amber-500 text-bas"
               >
                 ブログを見てみる
               </Link>
             </div>
-            <div className="bg-stripe">
+            <div className="border-solid border-4 border-sky-500">
               <Image
                 alt="pcで操作している人"
                 src="/img/about.jpg"
                 width="1280"
                 height="853"
                 className="
-                max-w-2xl w-full -translate-x-3 -translate-y-3"
+                max-w-2xl w-full h-full object-cover"
               />
             </div>
           </div>
