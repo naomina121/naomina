@@ -30,12 +30,17 @@
 }
 
 body{
-  @apply text-xl;
+  @apply text-xl h-full;
   font-family: 'Noto Sans JP', sans-serif;
+  box-sizing: border-box;
+}
+
+main{
+  @apply h-full;
 }
 
 h1 {
-  @apply font-black leading-tight tracking-wide text-5xl mt-3 mb-3;
+  @apply font-black leading-tight tracking-wide text-4xl;
   font-family: 'Montserrat', sans-serif;
 }
 h2 {
@@ -58,6 +63,63 @@ p {
 
 .header-menu-hover:hover{
   @apply border-solid border-2 border-amber-400;
+}
+
+.overlay::after {
+  @apply bg-gray-800/80;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  max-height: calc(100vh - 78px);
+  height:100%;
+  min-height:calc(100vh - 78px);
+  content: "";
+}
+.max-h-smart{
+  max-height: calc(100vh - 78px);
+  height:100%;
+  min-height:calc(100vh - 78px);
+}
+
+.arrow{
+	position: relative;
+	display: inline-block;
+	padding: 0 0 0 16px;
+	color: #000;
+	vertical-align: middle;
+	text-decoration: none;
+	font-size: 15px;
+}
+.arrow::before,
+.arrow::after{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	content: "";
+	vertical-align: middle;
+}
+.arrow::after{
+  top:-9px;
+    transition-duration: 0.8s;
+    left: -18px;
+    width: 18px;
+    height: 18px;
+    border-top: 5px solid #fff;
+    border-right: 5px solid #fff;
+    transform: rotate(135deg);
+}
+.arrow.open::after{
+    transform: rotate(-45deg);
+    top: auto;
+    bottom: auto;
+}
+
+.transition-animation{
+  transition:all 0.7s cubic-bezier(0.29, 0.54, 1, 2.54);
 }
 
 /* main {
