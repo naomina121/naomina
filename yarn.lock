@@ -2298,6 +2298,11 @@ typed-array-length@^1.0.4:
     for-each "^0.3.3"
     is-typed-array "^1.1.9"
 
+typed-query-selector@^2.9.2:
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/typed-query-selector/-/typed-query-selector-2.9.2.tgz#0ff103e02fba964f72764d7c14ea627cb4b01ebb"
+  integrity sha512-mOnelGQ0JBbYvboX6v/3vijUkIW9L557DHVRUFQTKG352EWvW/uDN6ORlPvTPRivefqb3QbbyZgLtPmxQaxmug==
+
 typescript@5.0.2:
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.0.2.tgz#891e1a90c5189d8506af64b9ef929fca99ba1ee5"
