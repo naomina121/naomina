@@ -79,6 +79,7 @@ const Skils: FC<TopProps> = ({ item }) => {
     const options = {
       root: root,
       rootMargin: '0px 0px -40% 0px',
+      threshold: 0.0,
     };
 
     const obsever = new IntersectionObserver(observeAction, options);
@@ -106,9 +107,9 @@ const Skils: FC<TopProps> = ({ item }) => {
       <div className="absolute min-w-full min-h-full z-20 top-0 left-1/2 translate-x-[-50%] w-full">
         <div className="max-h-smart flex flex-col items-center text-white z-20 justify-start relative my-20">
           <p className="text-white w-full text-5xl text-center mb-20 font-['Montserrat',sans-serif] relative">
-            <div className="anime-title skil">
+            <span className="anime-title skil">
               <b>SKILS</b>
-            </div>
+            </span>
           </p>
           <p className="text-white text-xl">
             現在のスキルは、HTMLとCSS、JavaScriptの基礎構文ぐらいは書けるレベルです。

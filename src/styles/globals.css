@@ -32,6 +32,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top:78px;
+    box-sizing: border-box;
 }
 
 body{
@@ -42,6 +43,20 @@ body{
 
 main{
   @apply h-full;
+}
+
+.category{
+  position:relative;
+}
+
+.category::before{
+  @apply bg-slate-900 py-2 px-4 opacity-60;
+  content:attr(data-category)"";
+  position: absolute;
+  top:16px;
+  left:17px;
+  font-size:16px;
+  color:#fff;
 }
 
 .footer-menu li a{

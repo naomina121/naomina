@@ -9,9 +9,9 @@ const About: FC<TopProps> = ({ item }) => {
     <div id="about" ref={item}>
       <div className="bg-about p-40 pt-20 text-white relative h-full max-h-smart">
         <p className="text-white w-full text-5xl text-center mb-20 font-['Montserrat',sans-serif] relative">
-          <div className="anime-title">
+          <span className="anime-title">
             <b>ABOUT</b>
-          </div>
+          </span>
         </p>
         <div className="flex max-w-7xl my-0 mx-auto justify-around">
           <div className="w-full mr-10 max-w-lg">

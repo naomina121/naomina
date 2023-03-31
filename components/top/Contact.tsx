@@ -9,9 +9,9 @@ const Contact: FC<TopProps> = ({ item }) => {
       className="bg-contact p-40 pt-20 text-white relative h-full max-h-smart"
     >
       <p className="text-white w-full text-5xl text-center mb-20 font-['Montserrat',sans-serif] relative">
-        <div className="anime-title contact">
+        <span className="anime-title contact">
           <b>CONTACT</b>
-        </div>
+        </span>
       </p>
       <div className="bg-gray-600/50 p-12 h-full">
         <label htmlFor="textContent" className="text-white/70 text-base">
