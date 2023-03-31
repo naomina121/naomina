@@ -116,15 +116,15 @@ const Skils: FC<TopProps> = ({ item }) => {
           </p>
           <p className="text-white text-xl">
             <span className="text-amber-400 font-black pr-2">
-              ネットワークやインフラ、アーキテクチャ、AI、セキュリティの学習、基本技術試験対策
+              今後、インフラ、アーキテクチャ、セキュリティの学習、基本技術試験対策
             </span>
-            なども兼ねながら学習中です。
+            なども兼ねながらアウトプットできればと思っております。
           </p>
           {/* progressbar */}
           <div className="progress-container">
             <div
               className="progress-item"
-              data-percent="59"
+              data-percent="60"
               data-duration="2200"
               data-stroke-width="8"
               data-stroke-color="#00ccff"
@@ -150,13 +150,13 @@ const Skils: FC<TopProps> = ({ item }) => {
                   <span className="progress-unit">%</span>
                 </div>
               </div>
-              <div className="progress-title">HTML/CSS</div>
+              <div className="progress-title">React</div>
             </div>
             <div
               className="progress-item"
-              data-percent="88"
+              data-percent="30"
               data-duration="3200"
-              data-stroke-width="10"
+              data-stroke-width="8"
               data-stroke-color="#adff00"
               data-start-position="right"
             >
@@ -180,13 +180,13 @@ const Skils: FC<TopProps> = ({ item }) => {
                   <span className="progress-unit">%</span>
                 </div>
               </div>
-              <div className="progress-title">JavaScript</div>
+              <div className="progress-title">TypeScript</div>
             </div>
             <div
               className="progress-item"
-              data-percent="72.6"
+              data-percent="70"
               data-duration="4200"
-              data-stroke-width="5"
+              data-stroke-width="10"
               data-stroke-color="#dd5bcc"
               data-start-position="bottom"
             >
@@ -214,10 +214,10 @@ const Skils: FC<TopProps> = ({ item }) => {
             </div>
             <div
               className="progress-item"
-              data-percent="66.84"
+              data-percent="40"
               data-duration="5800"
               data-stroke-width="8"
-              data-stroke-color="#dda05b"
+              data-stroke-color="#dda060"
               data-start-position="left"
             >
               <div className="progress-item__inner">
@@ -240,7 +240,7 @@ const Skils: FC<TopProps> = ({ item }) => {
                   <span className="progress-unit">%</span>
                 </div>
               </div>
-              <div className="progress-title">Python</div>
+              <div className="progress-title">SQL</div>
             </div>
           </div>
         </div>

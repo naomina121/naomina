@@ -1,3 +1,4 @@
+import { siteConfig } from '@/site.config';
 import { TopProps } from '@/types/types';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -12,30 +13,41 @@ const About: FC<TopProps> = ({ item }) => {
         </p>
         <div className="flex max-w-7xl my-0 mx-auto justify-around">
           <div className="w-full mr-10 max-w-lg">
-            <p className="text-white">
-              {/* <span className="text-amber-400 inline-block mr-5 text-xl">
-                    ★
-                  </span>
-                  ITの知識をしっかり身につけ、楽しみながら学んでいく */}
+            <p className="font-['Montserrat',sans-serif] text-white mb-10 text-4xl font-semibold">
+              <span className="tracking-wide font-black text-amber-400 mr-3">
+                NAO
+              </span>
+              BLOG<span className="ml-4 text-2xl">について</span>
             </p>
-            <p className="text-white mb-10 text-3xl font-semibold">
-              学習した事を即座に
-              <span className="text-amber-400">アウトプット</span>
+            <p className="text-white leading-8">
+              当サイトは、プログラミングやIT関係の知識など、個人で勉強したことをまとめているサイトです。
             </p>
-            <p className="text-white">
-              初めまして、未経験でエンジニアを目指しているナオと申します。
+            <p className="text-white leading-8 my-5">
+              ちなみにこのサイトは、Next.js、TypeScript、NotionAPIを利用して、
+              <span className="font-black text-amber-400">
+                Notionで書いた記事が即座にサイトに反映される
+              </span>
+              ようにしています。
             </p>
-            <p className="text-white">
-              学習の際に、Notionでまとめたものをそのままブログに発信できたらという思いで、このサイトを作成しました！
+
+            <p className="text-white leading-8">
+              全くReactやNext.js触ったことがないので、改善の点もあるかと思いますが
+              <Link
+                href={siteConfig.githubUrl + '/naomina'}
+                className="font-black text-xl text-sky-300 border-dotted border-b-2 my-5 mx-3 border-sky-300 hover:border-none"
+                target="_blank"
+              >
+                GitHub
+              </Link>
+              にてソースコードを公開していますので、ご興味のある方は、ご覧くださいませ。
             </p>
-            <p className="text-white">
-              人目に触れることにより、サボりがちな自分の癖を無くしていこうと思います！
-            </p>
+
             <Link
               href="#"
-              className="block mt-10 font-bold mx-0 p-2 py-4 max-w-xs text-center bg-amber-500 text-bas"
+              className="block mt-10 font-bold mx-0 p-2 py-4 max-w-xs text-center text-bas bg-gradient-to-r from-amber-500
+              transition duration-0 ease-in-out to-yellow-500 hover:from-green-400 hover:to-blue-500 hover:duration-700"
             >
-              アウトプットはこちら
+              学習記録はこちら
             </Link>
           </div>
           <div className="border-solid border-4 border-sky-500">
