@@ -21,11 +21,11 @@ const Footer = () => {
             </li>
             <li>
               <Link className="text-gray-300 mr-5 text-base" href="/#skils">
-                スキルについて
+                現在のスキル
               </Link>
             </li>
             <li>
-              <Link className="text-gray-300 mr-5 text-base" href="/#study">
+              <Link className="text-gray-300 mr-5 text-base" href="/study">
                 学習記録
               </Link>
             </li>

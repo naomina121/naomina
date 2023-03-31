@@ -1,8 +1,12 @@
+import { useRouter } from 'next/router';
 import React from 'react';
 import Link from 'next/link';
 
 const Navgation = () => {
-  const current = 'current';
+  let router = useRouter();
+  let currentPath = router.pathname == '/study';
+  let current = router.pathname == '/';
+
   return (
     <nav className="flex items-center max-w-xl w-full">
       <ul className="flex list-none w-full items-center text-lg font-['Montserrat',sans-serif] font-medium justify-around">
@@ -22,7 +26,7 @@ const Navgation = () => {
             current ? 'p-2 header-menu-hover' : 'p-2 header-menu-hover'
           }
         >
-          <Link className="text-white" href="#about">
+          <Link className="text-white" href="/#about">
             ABOUT
           </Link>
         </li>
@@ -32,7 +36,7 @@ const Navgation = () => {
             current ? 'p-2 header-menu-hover' : 'p-2 header-menu-hover'
           }
         >
-          <Link className="text-white" href="#skils">
+          <Link className="text-white" href="/#skils">
             SKILS
           </Link>
         </li>
@@ -42,12 +46,18 @@ const Navgation = () => {
             current ? 'p-2 header-menu-hover current' : 'p-2 header-menu-hover'
           }
         >
-          <Link className="text-white" href="#contact">
+          <Link className="text-white" href="/#contact">
             CONTACT
           </Link>
         </li>
-        <li className="p-2 header-menu-hover">
-          <Link className="text-white" href="/study">
+        <li
+          className={
+            currentPath
+              ? 'p-2 header-menu-hover current'
+              : 'p-2 header-menu-hover'
+          }
+        >
+          <Link href="/study" className="text-white">
             STUDY
           </Link>
         </li>
