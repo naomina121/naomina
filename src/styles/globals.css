@@ -44,6 +44,24 @@ main{
   @apply h-full;
 }
 
+.footer-menu li a{
+  position:relative;
+}
+
+.footer-menu li a::before{
+  @apply bg-gray-300;
+  position:absolute;
+  content: '';
+  transition:all 0.3s;
+  left:0;
+  bottom:0;
+  width:0px;
+  height:1px;
+}
+.footer-menu li a:hover::before{
+  width:100%;
+  transition: all 0.3s;
+}
 h1 {
   @apply font-black leading-tight tracking-wide text-4xl;
   font-family: 'Montserrat', sans-serif;

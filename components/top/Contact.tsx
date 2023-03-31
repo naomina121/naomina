@@ -46,7 +46,7 @@ const Contact: FC<TopProps> = ({ item }) => {
         <input
           type="submit"
           value="メッセージを送信する"
-          className="bg-amber-500 mt-5 font-bold p-3 text-base"
+          className="text-center bg-amber-500 mt-5 mx-auto block max-w-xs font-bold p-3 text-base w-full"
         />
       </div>
     </div>
