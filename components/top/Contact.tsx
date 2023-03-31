@@ -14,7 +14,7 @@ const Contact: FC<TopProps> = ({ item }) => {
         </div>
       </p>
       <div className="bg-gray-600/50 p-12 h-full">
-        <label htmlFor="textContent" className="text-white/70 text-lg">
+        <label htmlFor="textContent" className="text-white/70 text-base">
           お名前
         </label>
         <input
@@ -22,9 +22,9 @@ const Contact: FC<TopProps> = ({ item }) => {
           type="text"
           name="name"
           placeholder="Your Name"
-          className="w-full p-2 bg-gray-600/80"
+          className="w-full p-2 text-base bg-gray-600/80"
         />
-        <label htmlFor="email" className="mt-5 block text-white/70 text-lg">
+        <label htmlFor="email" className="text-base mt-5 block text-white/70">
           Eメール
         </label>
         <input
@@ -32,16 +32,16 @@ const Contact: FC<TopProps> = ({ item }) => {
           type="email"
           name="email"
           placeholder="Your Email"
-          className="w-full p-2 bg-gray-600/80"
+          className="w-full p-2 text-base bg-gray-600/80"
         />
         <label
           htmlFor="contentText"
-          className="mt-5 block text-white/70 text-lg"
+          className="mt-5 block text-white/70 text-base"
         >
           お問い合わせ内容
         </label>
         <textarea
-          className="w-full p-2 bg-gray-600/80"
+          className="w-full p-2 h-40 text-base bg-gray-600/80"
           name="content"
           id="contentText"
         ></textarea>
