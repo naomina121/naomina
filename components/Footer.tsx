@@ -43,7 +43,7 @@ const Footer = () => {
         </nav>
       </div>
       <div className="max-w-5xl w-full my-5 py-5 mx-auto">
-        <div className="text-3xl font-['Montserrat',sans-serif] text-white flex-end">
+        <div className="text-3xl font-['Montserrat',sans-serif] font-black text-white flex-end">
           <span className="font-['Montserrat',sans-serif] text-amber-400 pr-2">
             NAO
           </span>
