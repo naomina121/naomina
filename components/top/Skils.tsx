@@ -107,9 +107,7 @@ const Skils: FC<TopProps> = ({ item }) => {
         <div className="max-h-smart flex flex-col items-center text-white z-20 justify-start relative my-20">
           <p className="text-white w-full text-5xl text-center mb-20 font-['Montserrat',sans-serif] relative">
             <div className="anime-title skil">
-              <b>
-                S<span>KI</span>LS
-              </b>
+              <b>SKILS</b>
             </div>
           </p>
           <p className="text-white text-xl">

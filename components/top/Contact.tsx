@@ -10,9 +10,7 @@ const Contact: FC<TopProps> = ({ item }) => {
     >
       <p className="text-white w-full text-5xl text-center mb-20 font-['Montserrat',sans-serif] relative">
         <div className="anime-title contact">
-          <b>
-            CO<span>NT</span>AC<span>T</span>
-          </b>
+          <b>CONTACT</b>
         </div>
       </p>
       <div className="bg-gray-600/50 p-12 h-full">

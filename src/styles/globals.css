@@ -77,13 +77,6 @@ main{
     text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #555847, 0 0 0.5em #555847, 0 0 0.1em #555847, 0 10px 3px #000000;
 }
 
-/* .anime-title b span{
-  animation: blink linear infinite 2s;
-}
-.anime-title b span:nth-of-type(2){
-  animation: blink linear infinite 3s;
-} */
-
 .anime-title-b{
   position:relative;
   z-index:1;
