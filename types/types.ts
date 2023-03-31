@@ -18,6 +18,7 @@ export type CardProps = {
     category: string;
     tags: string[];
     content: string;
+    update: string;
   };
   index: number;
 };

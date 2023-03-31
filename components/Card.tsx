@@ -28,11 +28,8 @@ const Card: FC<CardProps> = ({ page, index }) => {
           height={first ? '360' : '180'}
           className="bg-gray-600"
         />
-        <time
-          className="text-base text-gray-400 mt-2"
-          dateTime={page.published}
-        >
-          {page.published}
+        <time className="text-base text-gray-400 mt-2" dateTime={page.update}>
+          {page.update}
         </time>
         <p className="pt-4 font-bold text-gray-600">{page.name}</p>
       </div>
