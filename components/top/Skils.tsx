@@ -8,8 +8,8 @@ const Skils: FC<TopProps> = ({ item }) => {
 
     const root = document.querySelector('#top');
 
-    const observeAction = (entries) => {
-      entries.forEach((entry) => {
+    const observeAction = (entries: any) => {
+      entries.forEach((entry: any) => {
         if (
           !entry.isIntersecting ||
           entry.target.classList.contains('is-visible')
@@ -33,13 +33,16 @@ const Skils: FC<TopProps> = ({ item }) => {
         );
 
         // Progress start position
-        const startPosition =
-          {
-            right: '0deg',
-            bottom: '90deg',
-            left: '180deg',
-            default: '-90deg',
-          }[entry.target.dataset.startPosition] || '-90deg';
+        let startPosition: { [key: string]: string };
+
+        startPosition = {
+          right: '0deg',
+          bottom: '90deg',
+          left: '180deg',
+          default: '-90deg',
+        };
+
+        startPosition[entry.target.dataset.startPosition] || '-90deg';
 
         // Countup percentage
         const deciamlPointLength = (String(percent).split('.')[1] || '').length;

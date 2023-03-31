@@ -24,6 +24,7 @@
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.7",
-    "typed-query-selector": "^2.9.2"
+    "typed-query-selector": "^2.9.2",
+    "webpack": "^5.77.0"
   }
 }

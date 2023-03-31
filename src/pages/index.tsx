@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 import { useRef } from 'react';
 import { useIntersectionObserver } from '@/hooks/use-intersection-observer';
-import { options, showElements } from '@/hooks/top/Sclool';
+import { options, showElements } from '@/hooks/top/top-scroll';
 import Layout from '@/components/Layout';
 import About from '@/components/top/About';
 import Contact from '@/components/top/Contact';
