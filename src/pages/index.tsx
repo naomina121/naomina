@@ -143,7 +143,7 @@ const Home: NextPage = () => {
                     current ? 'p-2 header-menu-hover' : 'p-2 header-menu-hover'
                   }
                 >
-                  <Link className="text-white" href="#home">
+                  <Link className="text-white" href="/">
                     HOME
                   </Link>
                 </li>
@@ -180,8 +180,8 @@ const Home: NextPage = () => {
                   </Link>
                 </li>
                 <li className="p-2 header-menu-hover">
-                  <Link className="text-white" href="/blog">
-                    BLOG
+                  <Link className="text-white" href="/study">
+                    STUDY
                   </Link>
                 </li>
               </ul>
@@ -215,6 +215,12 @@ const Home: NextPage = () => {
               <p className="text-white text-8xl font-['Montserrat',sans-serif] font-black">
                 <span className="text-amber-400 pr-2">RECORD</span> OF THE STUDY
               </p>
+              {/* <Link
+                href="#"
+                className="block mt-10 font-bold mx-0 p-2 py-4 max-w-xs text-center bg-amber-500 text-bas"
+              >
+                学習記録はこちら
+              </Link> */}
             </div>
             {/* firstview_bottom */}
             <div
@@ -321,12 +327,12 @@ const Home: NextPage = () => {
             <div className="flex max-w-7xl my-0 mx-auto justify-around">
               <div className="w-full mr-10 max-w-lg">
                 <p className="text-white">
-                  <span className="text-amber-400 inline-block mr-5 text-xl">
+                  {/* <span className="text-amber-400 inline-block mr-5 text-xl">
                     ★
                   </span>
-                  ITの知識をしっかり身につけ、楽しみながら学んでいく
+                  ITの知識をしっかり身につけ、楽しみながら学んでいく */}
                 </p>
-                <p className="text-white my-10 text-3xl font-semibold">
+                <p className="text-white mb-10 text-3xl font-semibold">
                   学習した事を即座に
                   <span className="text-amber-400">アウトプット</span>
                 </p>
