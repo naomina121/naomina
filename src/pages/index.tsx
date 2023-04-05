@@ -1,5 +1,4 @@
-import { NextPage } from 'next';
-import { useRef } from 'react';
+import { FC, useRef } from 'react';
 import { useIntersectionObserver } from '@/hooks/use-intersection-observer';
 import { options, showElements } from '@/hooks/top/top-scroll';
 import Layout from '@/components/Layout';
@@ -8,7 +7,7 @@ import Contact from '@/components/top/Contact';
 import FirstView from '@/components/top/FirstView';
 import Skils from '@/components/top/Skils';
 
-const Home: NextPage = () => {
+const Home: FC = () => {
   const home = useRef<HTMLDivElement>(null);
   const about = useRef<HTMLDivElement>(null);
   const skils = useRef<HTMLDivElement>(null);

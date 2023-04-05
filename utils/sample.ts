@@ -27,6 +27,7 @@ export const sampleCards = [
     author: 'bird',
     cover: '/',
     published: '202x-xx-03',
+    update: '202x-xx-01',
     tags: ['react'],
     content: 'Blue page content',
     category: 'test3',
