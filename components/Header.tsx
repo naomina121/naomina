@@ -2,8 +2,11 @@ import React from 'react';
 import Navgation from './Navgation';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import SpNavgation from './SpNavgation';
+import { useMediaQuery } from 'react-responsive';
 
 const Header = () => {
+  const isBreakPoint = useMediaQuery({ query: `(max-width:1320px)` });
   let router = useRouter();
   let current = router.pathname == '/';
   let siteTitle = () => {
@@ -28,9 +31,9 @@ const Header = () => {
   return (
     <header>
       <div className="fixed top-0 left-0 w-full z-30 bg-gray-900 h-[78px] leading-[1.5]">
-        <div className="max-w-screen-xl flex h-full justify-between items-center flex-end m-auto">
+        <div className="max-w-screen-xl flex h-full justify-between items-center max-w-6xl flex-end m-auto xl:px-10">
           {siteTitle()}
-          <Navgation />
+          {isBreakPoint ? <SpNavgation /> : <Navgation />}
         </div>
       </div>
     </header>

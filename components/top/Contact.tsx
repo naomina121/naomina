@@ -6,14 +6,14 @@ const Contact: FC<TopProps> = ({ item }) => {
     <div
       id="contact"
       ref={item}
-      className="bg-contact p-40 pt-20 text-white relative h-full max-h-smart"
+      className="bg-contact p-40 pt-24 text-white relative h-full max-h-smart w-full"
     >
       <p className="text-white w-full text-5xl text-center mb-20 font-['Montserrat',sans-serif] relative">
         <span className="anime-title contact">
           <b>CONTACT</b>
         </span>
       </p>
-      <div className="bg-gray-600/50 p-12 h-full">
+      <div className="bg-gray-600/50 max-w-6xl w-full mx-auto p-12 h-full">
         <label htmlFor="textContent" className="text-white/70 text-base">
           お名前
         </label>

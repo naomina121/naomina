@@ -5,10 +5,10 @@ import 'remixicon/fonts/remixicon.css';
 
 const Footer = () => {
   return (
-    <footer className="py-4 bg-gray-900">
-      <div className="max-w-5xl w-full my-5 py-5 mx-auto border-solid border-b-[1px] border-gray-700">
+    <footer className="py-4 xl:px-10 bg-gray-900">
+      <div className="max-w-6xl w-full my-5 py-5 mx-auto border-solid border-b-[1px] lg:border-none border-gray-700">
         <nav>
-          <ul className="footer-menu flex items-center">
+          <ul className="footer-menu flex lg:flex-col lg:items-start items-center footer-menu">
             <li>
               <Link className="text-gray-300 mr-5 text-base" href="/">
                 トップページ
@@ -35,14 +35,14 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link className="text-gray-400 text-sm" href="/privasy-policy">
+              <Link className="text-gray-400 text-sm" href="/privasy">
                 プライバシーポリシー
               </Link>
             </li>
           </ul>
         </nav>
       </div>
-      <div className="max-w-5xl w-full my-5 py-5 mx-auto">
+      <div className="max-w-6xl w-full my-5 py-5 mx-auto">
         <div className="text-3xl font-['Montserrat',sans-serif] font-black text-white flex-end">
           <span className="font-['Montserrat',sans-serif] text-amber-400 pr-2">
             NAO

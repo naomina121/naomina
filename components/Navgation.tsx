@@ -8,7 +8,7 @@ const Navgation = () => {
   let current = router.pathname == '/';
 
   return (
-    <nav className="flex items-center max-w-xl w-full">
+    <nav className="flex xl:hidden items-center max-w-xl w-full">
       <ul className="flex list-none w-full items-center text-lg font-['Montserrat',sans-serif] font-medium justify-around">
         <li
           data-ref="home"
