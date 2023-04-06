@@ -6,7 +6,6 @@ import Breadcrumb from '@/components/Breadcrumb';
 import Layout from '@/components/Layout';
 import { fetchPages } from '@/utils/notion';
 import CategoryMenu from '@/components/CategoryMenu';
-// import { samplePages } from '@/utils/example';
 import List from '@/components/List';
 import { getSelect } from '@/utils/property';
 import Seo from '@/components/Seo';

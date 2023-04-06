@@ -6,7 +6,7 @@ export const notion = new Client({
 
 const DATABASE_ID = process.env.NOTIION_DATABASE_ID as string;
 
-const is_not_public = process.env.NOTION_PUBLIC;
+const is_public = process.env.NOTION_PUBLIC as string;
 
 export const fetchPages = async ({
   slug,
@@ -26,7 +26,7 @@ export const fetchPages = async ({
     },
   ];
 
-  if (!is_not_public) {
+  if (is_public === 'public') {
     and.push({
       property: 'isPublic',
       checkbox: {
