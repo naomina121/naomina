@@ -1,19 +1,20 @@
 import Breadcrumb from '@/components/Breadcrumb';
 import CategoryMenu from '@/components/CategoryMenu';
 import Layout from '@/components/Layout';
+import Seo from '@/components/Seo';
+import { siteConfig } from '@/site.config';
 import { IndexProps } from '@/types/types';
 import { fetchPages } from '@/utils/notion';
 import { getMultiSelect } from '@/utils/property';
-import { GetStaticProps, NextPage } from 'next';
+import { GetServerSideProps, NextPage } from 'next';
 import Link from 'next/link';
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const { results } = await fetchPages({});
   return {
     props: {
       pages: results ? results : [],
     },
-    revalidate: 10,
   };
 };
 
@@ -34,6 +35,13 @@ const Tag: NextPage<IndexProps> = ({ pages }) => {
 
   return (
     <Layout>
+      <Seo
+        pageTitle={'tag'}
+        pageImg={`${siteConfig.siteUrl}ogp.jpg`}
+        pageImgWidth={1200}
+        pageImgHeight={800}
+        pagePath={`${siteConfig.siteUrl}tag`}
+      />
       <CategoryMenu />
       <div>
         <div className="w-full bg-gray-200 min-h-[500px]">

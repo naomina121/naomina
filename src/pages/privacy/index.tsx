@@ -1,10 +1,19 @@
 import Layout from '@/components/Layout';
+import Seo from '@/components/Seo';
 import Toc from '@/components/post/Toc';
+import { siteConfig } from '@/site.config';
 import React from 'react';
 
 const privacyPolicy = () => {
   return (
     <Layout>
+      <Seo
+        pageTitle={'プライバシーポリシー'}
+        pageImg={`${siteConfig.siteUrl}ogp.jpg`}
+        pageImgWidth={1200}
+        pageImgHeight={800}
+        pagePath={`${siteConfig.siteUrl}privacy`}
+      />
       <div className="w-full bg-gray-200">
         <div className="w-full max-w-6xl mx-auto flex justify-between relative p-6 pb-[98px] top-[98px] py-11">
           <div className=" bg-white w-full max-w-3xl shadow-md post mb-28 pb-6">
@@ -96,7 +105,7 @@ const privacyPolicy = () => {
               <p>
                 修正された最新のプライバシーポリシーは常に本ページにて開示されます。
               </p>
-              <p>制定日:2022年10月13日</p>
+              <p>制定日:2023年4月6日</p>
               <p>【NAOBLOG】 【ナオ】</p>
             </div>
           </div>

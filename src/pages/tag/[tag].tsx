@@ -7,6 +7,8 @@ import { fetchPages } from '@/utils/notion';
 import CategoryMenu from '@/components/CategoryMenu';
 import List from '@/components/List';
 import { TagProps } from '@/types/types';
+import Seo from '@/components/Seo';
+import { siteConfig } from '@/site.config';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { tag } = ctx.params as Params;
@@ -23,6 +25,13 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 const Tag: FC<TagProps> = ({ pages, tag }) => {
   return (
     <Layout>
+      <Seo
+        pageTitle={tag}
+        pageImg={`${siteConfig.siteUrl}ogp.jpg`}
+        pageImgWidth={1200}
+        pageImgHeight={800}
+        pagePath={`${siteConfig.siteUrl}tag/${tag}`}
+      />
       <CategoryMenu />
       <div>
         <div className="w-full bg-gray-200">

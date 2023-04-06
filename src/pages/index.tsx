@@ -26,6 +26,7 @@ const Home: FC = () => {
         pageImg={`${siteConfig.siteUrl}ogp.jpg`}
         pageImgWidth={1200}
         pageImgHeight={800}
+        pagePath={`${siteConfig.siteUrl}`}
       />
       <FirstView item={home} />
       <About item={about} />

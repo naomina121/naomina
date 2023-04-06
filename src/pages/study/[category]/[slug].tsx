@@ -17,16 +17,16 @@ import {
   getForumla,
 } from '@/utils/property';
 
-import { GetServerSideProps, GetStaticPaths, GetStaticProps } from 'next';
+import { GetServerSideProps } from 'next';
 import Image from 'next/image';
-import React, { FC, ReactElement, useEffect } from 'react';
-//import { sampleBlocks, samplePage } from '@/utils/example';
+import React, { FC, useEffect } from 'react';
 import CategoryMenu from '@/components/CategoryMenu';
 import dateToTime from '@/hooks/dateToTime';
 import Link from 'next/link';
 import Sns from '@/components/post/Sns';
 import Toc from '@/components/post/Toc';
 import Seo from '@/components/Seo';
+import { siteConfig } from '@/site.config';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { slug } = ctx.params as Params;
@@ -107,6 +107,9 @@ const Article: FC<ArticleProps> = ({ page, blocks }) => {
         pageImg={getCover(page.cover)}
         pageImgWidth={1152}
         pageImgHeight={622}
+        pagePath={`${siteConfig.siteUrl}study/${getSelect(
+          page.properties.category.select
+        )}/${getText(page.properties.slug.rich_text)}`}
       />
       <CategoryMenu />
       <div className="xl:pt-[78px] w-full bg-gray-200">

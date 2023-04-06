@@ -1,4 +1,4 @@
-import { GetStaticProps, NextPage } from 'next';
+import { GetServerSideProps, NextPage } from 'next';
 import Layout from '@/components/Layout';
 import Card from '@/components/Card';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -9,14 +9,12 @@ import { samplePages } from '@/utils/example';
 import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const { results } = await fetchPages({});
   return {
     props: {
       pages: results ? results : [],
-      // pages: samplePages,
     },
-    revalidate: 10,
   };
 };
 
@@ -28,6 +26,7 @@ const Study: NextPage<IndexProps> = ({ pages }) => {
         pageImg={`${siteConfig.siteUrl}ogp.jpg`}
         pageImgWidth={1200}
         pageImgHeight={800}
+        pagePath={`${siteConfig.siteUrl}study`}
       />
       <main>
         <CategoryMenu />

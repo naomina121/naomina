@@ -1,71 +1,22 @@
 import React, { FC } from 'react';
-import { GetServerSideProps, GetStaticPaths, GetStaticProps } from 'next';
+import { GetServerSideProps } from 'next';
 import { CategoryProps, Params } from '@/types/types';
-import Card from '@/components/Card';
 import Breadcrumb from '@/components/Breadcrumb';
 import Layout from '@/components/Layout';
 import { fetchPages } from '@/utils/notion';
 import CategoryMenu from '@/components/CategoryMenu';
 import List from '@/components/List';
-import { getSelect } from '@/utils/property';
 import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
 
-// export const getServerSideProps: GetServerSideProps = async (ctx) => {
-//   const { category } = ctx.params as Params;
-//   const { results } = await fetchPages({ category: category });
-//   if (!results) {
-//     return {
-//       notFound: true,
-//     };
-//   }
-//   return {
-//     props: {
-//       // pages: samplePages,
-//       pages: results ? results : [],
-//       category: category,
-//     },
-//   };
-// };
-
-export const getStaticPaths: GetStaticPaths = async () => {
-  const { results }: { results: Record<string, any>[] } = await fetchPages({});
-
-  const pathSet: Set<string> = new Set();
-  for (const page of results) {
-    for (const category of getSelect(page.properties.category.name)) {
-      pathSet.add(category);
-    }
-  }
-
-  const paths = Array.from(pathSet).map((category) => {
-    return {
-      params: {
-        category: category,
-      },
-    };
-  });
-
-  return {
-    paths: paths,
-    fallback: 'blocking',
-  };
-};
-
-export const getStaticProps: GetStaticProps = async (ctx) => {
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { category } = ctx.params as Params;
   const { results } = await fetchPages({ category: category });
-  if (!results) {
-    return {
-      notFound: true,
-    };
-  }
   return {
     props: {
       pages: results ? results : [],
       category: category,
     },
-    revalidate: 10,
   };
 };
 
@@ -77,6 +28,7 @@ const Category: FC<CategoryProps> = ({ pages, category }) => {
         pageImg={`${siteConfig.siteUrl}ogp.jpg`}
         pageImgWidth={1200}
         pageImgHeight={800}
+        pagePath={`${siteConfig.siteUrl}study/${category}`}
       />
       <CategoryMenu />
       <div>
