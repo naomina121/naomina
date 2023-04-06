@@ -67,7 +67,7 @@ const FirstView: FC<TopProps> = ({ item }) => {
                         : 'flex items-center max-w-[70%] w-full pt-1'
                     }
                   >
-                    <span className="text-base ml-8 mr-8">2023年5月1日</span>
+                    <span className="text-base ml-8 mr-8">2023年4月6日</span>
                     <span className="bg-gray-600 mr-8 px-4 py-1 inline-block text-sm rounded">
                       お知らせ
                     </span>

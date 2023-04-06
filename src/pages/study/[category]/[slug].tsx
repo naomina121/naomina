@@ -1,4 +1,3 @@
-import dynamic from 'next/dynamic';
 import 'clipboard';
 import prism from 'prismjs';
 import 'prism-themes/themes/prism-dracula.css';
@@ -18,32 +17,70 @@ import {
   getForumla,
 } from '@/utils/property';
 
-import { GetServerSideProps } from 'next';
+import { GetServerSideProps, GetStaticPaths, GetStaticProps } from 'next';
 import Image from 'next/image';
 import React, { FC, ReactElement, useEffect } from 'react';
-// import { marked } from 'marked';
-import { sampleBlocks, samplePage } from '@/utils/example';
+//import { sampleBlocks, samplePage } from '@/utils/example';
 import CategoryMenu from '@/components/CategoryMenu';
 import dateToTime from '@/hooks/dateToTime';
 import Link from 'next/link';
 import Sns from '@/components/post/Sns';
 import Toc from '@/components/post/Toc';
+import Seo from '@/components/Seo';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { slug } = ctx.params as Params;
-  // const { results } = await fetchPages({ slug: slug });
-  // const page = results[0];
-  // const pageId = page.id;
-  // const { results: blocks } = await fetchBlocksByPageId(pageId);
+  const { results } = await fetchPages({ slug: slug });
+  const page = results[0];
+  const pageId = page.id;
+  const { results: blocks } = await fetchBlocksByPageId(pageId);
   return {
     props: {
-      // page: page,
-      // blocks: blocks,
-      page: samplePage,
-      blocks: sampleBlocks,
+      page: page,
+      blocks: blocks,
+      // page: samplePage,
+      // blocks: sampleBlocks,
     },
   };
 };
+
+// export const getStaticPaths: GetStaticPaths = async () => {
+//   const { results } = await fetchPages({});
+//   const paths = results.map((page: any) => {
+//     return {
+//       params: {
+//         slug: getText(page.properties.slug.rich_text),
+//       },
+//     };
+//   });
+//   return {
+//     paths: paths,
+//     fallback: 'blocking',
+//   };
+// };
+
+// export const getStaticProps: GetStaticProps = async (ctx) => {
+//   const { slug } = ctx.params as Params;
+
+//   const { results } = await fetchPages({ slug: slug });
+//   if (!results) {
+//     return {
+//       notFound: true,
+//     };
+//   }
+//   const page = results[0];
+//   const pageId = page.id;
+//   const { results: blocks } = await fetchBlocksByPageId(pageId);
+
+//   return {
+//     props: {
+//       page: page,
+//       blocks: blocks,
+//     },
+//     revalidate: 10,
+//   };
+// };
+
 const Article: FC<ArticleProps> = ({ page, blocks }) => {
   const dataUpdate = dateToTime(
     getUpdate(page.properties.update.last_edited_time),
@@ -104,6 +141,12 @@ const Article: FC<ArticleProps> = ({ page, blocks }) => {
 
   return (
     <Layout>
+      <Seo
+        pageTitle={getText(page.properties.name.title)}
+        pageImg={getCover(page.cover)}
+        pageImgWidth={1152}
+        pageImgHeight={622}
+      />
       <CategoryMenu />
       <div className="xl:pt-[78px] w-full bg-gray-200">
         <div className="w-full max-w-6xl mx-auto xl:p-5 flex justify-between py-11">

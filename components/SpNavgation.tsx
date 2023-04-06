@@ -36,16 +36,27 @@ const SpNavgation = () => {
         <nav>
           <ul>
             <li>
-              <Link href="/study/ai">AI</Link>
+              <Link href="/study/it">IT知識</Link>
             </li>
             <li>
-              <Link href="/study/network">ネットワーク</Link>
+              <Link href="/study/server">サーバー</Link>
+            </li>
+            <li>
+              <Link
+                className="text-gray-400 duration-500 hover:text-gray-200  md:text-sm text-base"
+                href="/study/security"
+              >
+                セキュリティ
+              </Link>
             </li>
             <li>
               <Link href="/study/programming">プログラミング</Link>
             </li>
             <li>
               <Link href="/study/linux">Linux</Link>
+            </li>
+            <li>
+              <Link href="/study/design">デザイン</Link>
             </li>
             <li>
               <Link href="/study/health">健康</Link>

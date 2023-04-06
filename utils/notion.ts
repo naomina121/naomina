@@ -6,6 +6,8 @@ export const notion = new Client({
 
 const DATABASE_ID = process.env.NOTIION_DATABASE_ID as string;
 
+const is_not_public = process.env.NOTION_PUBLIC;
+
 export const fetchPages = async ({
   slug,
   tag,
@@ -17,18 +19,21 @@ export const fetchPages = async ({
 }) => {
   const and: any = [
     {
-      property: 'isPublic',
-      checkbox: {
-        equals: true,
-      },
-    },
-    {
       property: 'slug',
       rich_text: {
         is_not_empty: true,
       },
     },
   ];
+
+  if (!is_not_public) {
+    and.push({
+      property: 'isPublic',
+      checkbox: {
+        equals: true,
+      },
+    });
+  }
 
   if (slug) {
     and.push({
@@ -67,7 +72,7 @@ export const fetchPages = async ({
     },
     sorts: [
       {
-        property: 'published',
+        property: 'update',
         direction: 'descending',
       },
     ],

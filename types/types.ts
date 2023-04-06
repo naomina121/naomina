@@ -5,6 +5,7 @@ import type { Blocks } from '@notion-stuff/v4-types';
 export type Params = ParsedUrlQuery & {
   slug: string;
   category: string;
+  tag: string;
 };
 
 export type LayoutProps = {

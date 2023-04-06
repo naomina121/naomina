@@ -8,17 +8,25 @@ const CategoryMenu = () => {
         <li className="mr-4">
           <Link
             className="text-gray-400 duration-500 hover:text-gray-200 md:text-sm text-base"
-            href="/study/ai"
+            href="/study/it"
           >
-            AI
+            IT知識
+          </Link>
+        </li>
+        <li className="mr-4">
+          <Link
+            className="text-gray-400 duration-500 hover:text-gray-200 md:text-sm text-base"
+            href="/study/server"
+          >
+            サーバー
           </Link>
         </li>
         <li className="mr-4">
           <Link
             className="text-gray-400 duration-500 hover:text-gray-200  md:text-sm text-base"
-            href="/study/network"
+            href="/study/security"
           >
-            ネットワーク
+            セキュリティ
           </Link>
         </li>
         <li className="mr-4">
@@ -35,6 +43,14 @@ const CategoryMenu = () => {
             href="/study/linux"
           >
             Linux
+          </Link>
+        </li>
+        <li className="mr-4">
+          <Link
+            className="text-gray-400 duration-500 hover:text-gray-200 text-base md:text-sm"
+            href="/study/design"
+          >
+            デザイン
           </Link>
         </li>
         <li className="mr-4">

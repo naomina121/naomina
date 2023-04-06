@@ -6,6 +6,8 @@ import About from '@/components/top/About';
 import Contact from '@/components/top/Contact';
 import FirstView from '@/components/top/FirstView';
 import Skils from '@/components/top/Skils';
+import Seo from '@/components/Seo';
+import { siteConfig } from '@/site.config';
 
 const Home: FC = () => {
   const home = useRef<HTMLDivElement>(null);
@@ -17,6 +19,14 @@ const Home: FC = () => {
 
   return (
     <Layout>
+      <Seo
+        pageDescription={
+          '未経験からエンジニアを目指すための個人の学習記録サイトです'
+        }
+        pageImg={`${siteConfig.siteUrl}ogp.jpg`}
+        pageImgWidth={1200}
+        pageImgHeight={800}
+      />
       <FirstView item={home} />
       <About item={about} />
       <Skils item={skils} />

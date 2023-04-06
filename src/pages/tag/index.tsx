@@ -3,21 +3,34 @@ import CategoryMenu from '@/components/CategoryMenu';
 import Layout from '@/components/Layout';
 import { IndexProps } from '@/types/types';
 import { samplePages } from '@/utils/example';
+import { fetchPages } from '@/utils/notion';
 import { getMultiSelect } from '@/utils/property';
 import { GetStaticProps, NextPage } from 'next';
 import Link from 'next/link';
 import React, { FC } from 'react';
 
 export const getStaticProps: GetStaticProps = async () => {
-  // const { results } = await fetchPages({});
+  const { results } = await fetchPages({});
+  if (!results) {
+    return {
+      notFound: true,
+    };
+  }
   return {
     props: {
-      // pages: results ? results : [],
-      pages: samplePages,
+      pages: results ? results : [],
+      //pages: samplePages,
     },
     revalidate: 10,
   };
 };
+
+export async function getStaticPaths() {
+  return {
+    paths: [],
+    fallback: 'blocking',
+  };
+}
 
 const Tag: NextPage<IndexProps> = ({ pages }) => {
   const tag = pages.map((item) =>
