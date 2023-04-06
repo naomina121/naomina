@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { NextPage } from 'next';
 import { siteConfig } from '@/site.config';
+import { FC } from 'react';
 
 interface MetaData {
   pageTitle?: string;
@@ -12,7 +13,7 @@ interface MetaData {
   pageImgHeight?: number;
 }
 
-const Seo: NextPage<MetaData> = ({
+const Seo: FC<MetaData> = ({
   pageTitle,
   pageDescription,
   pagePath,
@@ -44,10 +45,6 @@ const Seo: NextPage<MetaData> = ({
       <meta property="og:image:width" content={String(imgWidth)} />
       <meta property="og:image:height" content={String(imgHeight)} />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <Link
-        href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;display=swap"
-        rel="stylesheet"
-      />
       <link rel="canonical" href={url} />
     </Head>
   );
