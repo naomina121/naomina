@@ -33,6 +33,11 @@ import MainToc from '@/components/post/MainToc';
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { slug } = ctx.params as Params;
   const { results } = await fetchPages({ slug: slug });
+  if (!results.length) {
+    return {
+      notFound: true,
+    };
+  }
   const page = results[0];
   const pageId = page.id;
   const { results: blocks } = await fetchBlocksByPageId(pageId);

@@ -14,7 +14,11 @@ import { getMultiSelect } from '@/utils/property';
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { tag } = ctx.params as Params;
   const { results } = await fetchPages({ tag: tag });
-
+  if (!results.length) {
+    return {
+      notFound: true,
+    };
+  }
   return {
     props: {
       pages: results ? results : [],

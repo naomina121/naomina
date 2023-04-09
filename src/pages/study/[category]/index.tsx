@@ -13,6 +13,12 @@ import { getForumla } from '@/utils/property';
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { category } = ctx.params as Params;
   const { results } = await fetchPages({ category: category });
+
+  if(!results.length){
+    return {
+      notFound: true,
+    };
+  }
   return {
     props: {
       pages: results ? results : [],
@@ -36,7 +42,6 @@ const Category: FC<CategoryProps> = ({ pages, category }) => {
         pagePath={`${siteConfig.siteUrl}study/${category}`}
       />
       <CategoryMenu />
-      {is_pages ? (
         <div>
           <div className="w-full xl:pt-[78px] bg-gray-200">
             <div className="w-full max-w-6xl mx-auto">
@@ -57,24 +62,6 @@ const Category: FC<CategoryProps> = ({ pages, category }) => {
             )}`}
           />
         </div>
-      ) : (
-        <div>
-          <div className="w-full xl:pt-[78px] bg-gray-200">
-            <div className="w-full max-w-6xl mx-auto">
-              <h1 className="rerative xl:px-10 text-gray-800 py-10">
-                {category.toUpperCase()}
-              </h1>
-              <div className="min-h-[300px]">
-                <p>残念ながら、まだ、このカテゴリーの記事はありません。</p>
-              </div>
-            </div>
-          </div>
-          <Breadcrumb
-            breadList={`study/${category}`}
-            breadListJs={`学習記録/${category}`}
-          />
-        </div>
-      )}
     </Layout>
   );
 };
