@@ -1,4 +1,5 @@
 import { Client } from '@notionhq/client';
+import type { NextApiRequest, NextApiResponse } from 'next';
 // Initializing a client (https://www.npmjs.com/package/@notionhq/client)
 export const contact_notion = new Client({
   auth: process.env.NOTION_CONTACT_KEY as string,
@@ -6,12 +7,11 @@ export const contact_notion = new Client({
 
 const CONTACT_DATABASE_ID = process.env.NOTION_CONTACT_DATABASE_ID as string;
 
-export default async function handler(req,res){
-
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== 'POST') {
-    return res
-      .status(405)
-      .json({ message: `${req.method} requests are not allowed（許可されていないリクエストです）` });
+    return res.status(405).json({
+      message: `${req.method} requests are not allowed（許可されていないリクエストです）`,
+    });
   }
 
   try {

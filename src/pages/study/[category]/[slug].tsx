@@ -28,7 +28,7 @@ import Sns from '@/components/post/Sns';
 import Toc from '@/components/post/Toc';
 import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
-import MainToc from '@/components/post/mainToc';
+import MainToc from '@/components/post/MainToc';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { slug } = ctx.params as Params;
