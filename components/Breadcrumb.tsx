@@ -12,19 +12,19 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ breadList, breadListJs}) => {
 
   return (
     <div className="w-full bg-white">
-      <ul className="w-full max-w-6xl xl:px-10 mx-auto py-2 flex justify-start items-center">
-        <li>
+      <ul className="w-full max-w-6xl xl:px-7 mx-auto py-2 flex justify-start items-center">
+        <li className='flex'>
           <Link
             className="text-sm text-sky-600 duration-500 hover:text-sky-700 font-medium"
             href="/"
           >
-            トップページ
+            ホーム
           </Link>
         </li>
         {paths.map((x, i) => {
           if (paths.length - 1 !== i) {
             return (
-              <li key={i}>
+              <li className='flex' key={i}>
                 <span className="text-sm pl-4">&gt;</span>
                 <Link
                   className="text-sm ml-4 text-sky-600 duration-500 hover:text-sky-700 font-medium"
@@ -37,9 +37,9 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ breadList, breadListJs}) => {
             );
           } else {
             return (
-              <li key={i}>
+              <li className="flex" key={i}>
                 <span className="text-sm pl-4">&gt;</span>
-                <span className="text-sm font-black text-gray-600 pl-4">
+                <span className="w-full max-w-full md:max-w-[50px] whitespace-nowrap overflow-hidden text-ellipsis text-sm font-black text-gray-600 pl-4">
                   {paths2[i]}
                 </span>
               </li>

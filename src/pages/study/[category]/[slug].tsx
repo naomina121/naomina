@@ -141,23 +141,23 @@ const Article: FC<ArticleProps> = ({ page, blocks }) => {
                 </div>
                 {/* category */}
                 <div className="flex justify-start">
-                  <p className="m-0 p-0">
+                  <p className="m-0 p-0 flex">
                     <span
                       className={
                         getSelect(page.properties.category.select) +
-                        ' text-xs p-1 px-2 xl:text-[6px] text-gray-300 rounded-sm'
+                        ' text-xs p-1 border-[1px] px-2 xl:text-[6px] text-gray-300 rounded-sm'
                       }
                     >
                       {getForumla(page.properties.isJaCategory.formula)}
                     </span>
                   </p>
                   {/* tag */}
-                  <p className="m-0 ml-2">
+                  <p className="m-0 p-0 ml-2 flex">
                     {getMultiSelect(page.properties.tags.multi_select).map(
                       (tag: string, index: number) => (
                         <Link
                           key={index}
-                          className="text-xs p-1 px-2 m-0 rounded-sm text-gray-400 font-medium mr-2 xl:text-[6px] hover:text-gray-600  border
+                          className="text-xs p-1 px-2 m-0 rounded-sm text-gray-400 font-medium mr-2 xl:text-[6px] hover:text-gray-600  border-[1px]
                           border-gray-400 align-middle"
                           href={
                             '/tag/' +

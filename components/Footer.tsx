@@ -11,7 +11,7 @@ const Footer = () => {
           <ul className="footer-menu flex lg:flex-col lg:items-start items-center footer-menu">
             <li>
               <Link className="text-gray-300 mr-5 text-base" href="/">
-                トップページ
+                ホーム
               </Link>
             </li>
             <li>

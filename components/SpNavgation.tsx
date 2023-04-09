@@ -15,7 +15,7 @@ const SpNavgation = () => {
         <nav>
           <ul>
             <li>
-              <Link href="/">トップページ</Link>
+              <Link href="/">ホーム</Link>
             </li>
             <li>
               <Link href="/#about">当サイトについて</Link>
