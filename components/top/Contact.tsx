@@ -1,3 +1,4 @@
+import { siteConfig } from '@/site.config';
 import { ContactProps } from '@/types/types';
 import React, { FC, useState } from 'react';
 import { toast } from 'react-toastify';
@@ -21,7 +22,7 @@ const Contact: FC<ContactProps> = ({ item }) => {
   const submitForm = async (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
     e.preventDefault();
     const res = await fetchAsync({
-      url: 'http://localhost:3000/api/submit-form',
+      url: `${siteConfig.siteUrl}api/submit-form`,
       options: {
         method: 'POST',
         body: JSON.stringify({ name, email, message }),
