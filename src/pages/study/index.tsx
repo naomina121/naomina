@@ -27,7 +27,7 @@ const Study: NextPage<IndexProps> = ({ pages }) => {
         pageImgHeight={800}
         pagePath={`${siteConfig.siteUrl}study`}
       />
-      <main>
+      <div>
         <CategoryMenu />
         <div className="xl:pt-[78px] relative w-full bg-gray-200">
           <div className="w-full max-w-6xl mx-auto">
@@ -43,7 +43,7 @@ const Study: NextPage<IndexProps> = ({ pages }) => {
           breadList={`study`}
           breadListJs={`学習記録`}
         />
-      </main>
+      </div>
     </Layout>
   );
 };
