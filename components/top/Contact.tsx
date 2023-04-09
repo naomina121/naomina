@@ -9,17 +9,16 @@ interface FetchRequest {
   options: object;
 }
 
-async function fetchAsync(request: FetchRequest){
-  return await fetch(request.url, request.options)
+async function fetchAsync(request: FetchRequest) {
+  return await fetch(request.url, request.options);
 }
 
 const Contact: FC<ContactProps> = ({ item }) => {
-
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const submitForm = async (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
+  const submitForm = async (e: any) => {
     e.preventDefault();
     const res = await fetchAsync({
       url: `${siteConfig.siteUrl}api/submit-form`,
