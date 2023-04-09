@@ -20,9 +20,7 @@ const Home: FC = () => {
   return (
     <Layout>
       <Seo
-        pageDescription={
-          '未経験からエンジニアを目指すための個人の学習記録サイトです'
-        }
+        pageDescription={`${siteConfig.description}`}
         pageImg={`${siteConfig.siteUrl}ogp.jpg`}
         pageImgWidth={1200}
         pageImgHeight={800}

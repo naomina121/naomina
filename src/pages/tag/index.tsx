@@ -56,7 +56,7 @@ const Tag: NextPage<IndexProps> = ({ pages }) => {
             </div>
           </div>
         </div>
-        <Breadcrumb />
+        <Breadcrumb breadList={`tag`} breadListJs={`タグ`} />
       </div>
     </Layout>
   );

@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router';
 import React from 'react';
 import Link from 'next/link';
 
@@ -23,6 +22,9 @@ const SpNavgation = () => {
             </li>
             <li>
               <Link href="/#skils">現在のスキル</Link>
+            </li>
+            <li>
+              <Link href="/#contact">お問い合わせ</Link>
             </li>
             <li>
               <Link href="/study">学習記録</Link>

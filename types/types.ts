@@ -8,11 +8,20 @@ export type Params = ParsedUrlQuery & {
   tag: string;
 };
 
+export type BreadcrumbProps = {
+  breadList: string;
+  breadListJs:string;
+};
+
 export type LayoutProps = {
   children: ReactNode;
 };
 
 export type TopProps = {
+  item: RefObject<HTMLDivElement>;
+};
+
+export type ContactProps = {
   item: RefObject<HTMLDivElement>;
 };
 

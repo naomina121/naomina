@@ -58,7 +58,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <small className="text-white/80 block w-full mx-auto max-w-5xl">
+      <small className="text-white/80 block w-full mx-auto max-w-6xl">
         © 2023 {siteConfig.title}
       </small>
     </footer>

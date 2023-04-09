@@ -78,7 +78,7 @@ const Skils: FC<TopProps> = ({ item }) => {
 
     const options = {
       root: root,
-      rootMargin: '0px 0px -40% 0px',
+      rootMargin: '78px 0px -40% 0px',
       threshold: 0.0,
     };
 

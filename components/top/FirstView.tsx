@@ -1,8 +1,10 @@
 import { TopProps } from '@/types/types';
-import Link from 'next/link';
+import Image from 'next/image';
+import { useMediaQuery } from 'react-responsive';
 import React, { FC, useState } from 'react';
 
 const FirstView: FC<TopProps> = ({ item }) => {
+  const isBreakPoint = useMediaQuery({ query: `(max-width:1320px)` });
   //ニュースの部分
   const [openMenu, setOpenMenu] = useState(false);
   const menuFunction = () => {
@@ -11,23 +13,33 @@ const FirstView: FC<TopProps> = ({ item }) => {
   return (
     <div id="home" ref={item} className="relative h-full max-h-smart">
       <div className="relative w-full max-h-smart overflow-hidden overlay">
-        <video
-          src={require('@/public/movie/header_movie.mp4')}
-          className="absolute top-0 left-0 min-w-full	max-h-smart object-cover"
-          muted
-          autoPlay
-          loop
-          playsInline
-        />
+        {isBreakPoint ? (
+          <Image
+            alt="タイピング入力をしている人"
+            width="1152"
+            height="622"
+            src="/img/top.jpg"
+            className="hidden xl:block absolute top-0 left-0 min-w-full	max-h-smart object-cover"
+          />
+        ) : (
+          <video
+            src={require('@/public/movie/header_movie.mp4')}
+            className="absolute top-0 left-0 min-w-full	max-h-smart object-cover xl:hidden"
+            muted
+            autoPlay
+            loop
+            playsInline
+          />
+        )}
       </div>
       {/* firstview_text */}
       <div
         className="absolute min-w-full min-h-full translate-y-[-50%] z-20 top-1/2
           left-1/2 translate-x-[-50%] w-full"
       >
-        <div className="max-h-smart flex flex-col items-center text-white z-20 justify-center relative">
+        <div className="max-h-smart max-w-6xl mx-auto flex flex-col items-center text-white z-20 justify-center relative">
           <p className="xl:relative xl:top-10 text-white sub-title">
-            <span>未経験からエンジニアを目指すための個人学習記録サイト</span>
+            <span>未経験からエンジニアに挑戦する個人的学習記録</span>
           </p>
           <p className="text-white xl:top-10 xl:relative title font-['Montserrat',sans-serif] font-black">
             <span className="w-full flex">
@@ -53,7 +65,7 @@ const FirstView: FC<TopProps> = ({ item }) => {
           >
             <div className="w-full h-full">
               <ul className="flex items-center justify-center flex-col max-h-[45px] w-full">
-                <li className="w-full relative flex justify-start  max-w-6xl px-10">
+                <li className="w-full relative flex justify-start max-w-6xl px-0">
                   <span
                     className="inline-block text-sm
                       py-[16px] px-4 w-[87.56px] h-full bg-gray-900 text-center"

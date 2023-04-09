@@ -1,3 +1,4 @@
+import Breadcrumb from '@/components/Breadcrumb';
 import Layout from '@/components/Layout';
 import Seo from '@/components/Seo';
 import Toc from '@/components/post/Toc';
@@ -14,13 +15,16 @@ const privacyPolicy = () => {
         pageImgHeight={800}
         pagePath={`${siteConfig.siteUrl}privacy`}
       />
-      <div className="w-full bg-gray-200">
-        <div className="w-full max-w-6xl mx-auto flex justify-between relative p-6 pb-[98px] top-[98px] py-11">
-          <div className=" bg-white w-full max-w-3xl shadow-md post mb-28 pb-6">
-            <div className="p-10 py-0 context">
-              <h1 className="mt-[50px] border-b-[1px] border-gray-400 text-gray-600 mb-[20px]">
+      <div className="pt-[78px] w-full bg-gray-200">
+        <div className="w-full max-w-6xl mx-auto xl:p-5 flex justify-between py-10">
+          <div className=" bg-white pb-5 xl:max-w-4xl xl:mx-auto w-full max-w-3xl shadow-md post">
+            <div className="p-10 pb-3 xl:pb-0 xl:px-5">
+              <h1 className="w-full text-3xl xl:text-2xl xl:p-0">
                 プライバシーポリシー
               </h1>
+            </div>
+            <div className="p-10 xl:p-5 py-0 context">
+              {' '}
               <p>
                 【NAOBLOG】(以下「当ブログ」)のプライバシーポリシー・免責事項を次の通り記載します。
               </p>
@@ -109,11 +113,13 @@ const privacyPolicy = () => {
               <p>【NAOBLOG】 【ナオ】</p>
             </div>
           </div>
-          <div className="aside w-full max-w-xs">
+          <div className="xl:hidden aside w-full max-w-xs">
+            {/* 目次 */}
             <Toc />
           </div>
         </div>
       </div>
+      <Breadcrumb breadList={`privacy`} breadListJs={`プライバシーポリシー`} />
     </Layout>
   );
 };

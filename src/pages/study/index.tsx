@@ -5,7 +5,6 @@ import Breadcrumb from '@/components/Breadcrumb';
 import { fetchPages } from '@/utils/notion';
 import { IndexProps } from '@/types/types';
 import CategoryMenu from '@/components/CategoryMenu';
-import { samplePages } from '@/utils/example';
 import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
 
@@ -30,7 +29,7 @@ const Study: NextPage<IndexProps> = ({ pages }) => {
       />
       <main>
         <CategoryMenu />
-        <div className="xl:pt-[px] relative w-full bg-gray-200">
+        <div className="xl:pt-[78px] relative w-full bg-gray-200">
           <div className="w-full max-w-6xl mx-auto">
             <h1 className="xl:px-10 text-gray-800 py-10">STUDY</h1>
             <div className="flex xl:px-10 flex-wrap justify-between xl:items-stretch">
@@ -40,7 +39,10 @@ const Study: NextPage<IndexProps> = ({ pages }) => {
             </div>
           </div>
         </div>
-        <Breadcrumb />
+        <Breadcrumb
+          breadList={`study`}
+          breadListJs={`学習記録`}
+        />
       </main>
     </Layout>
   );

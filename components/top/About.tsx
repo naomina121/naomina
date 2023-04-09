@@ -7,20 +7,20 @@ import { FC } from 'react';
 const About: FC<TopProps> = ({ item }) => {
   return (
     <div id="about" ref={item}>
-      <div className="bg-about p-40 pt-24 text-white relative h-full max-h-smart">
+      <div className="bg-about py-40 pt-24 text-white relative h-full max-h-smart">
         <p className="text-white w-full text-5xl text-center mb-20 font-['Montserrat',sans-serif] relative">
           <span className="anime-title">
             <b>ABOUT</b>
           </span>
         </p>
-        <div className="flex about-box max-w-7xl my-0 mx-auto justify-around">
-          <div className="w-full mr-10 max-w-lg">
-            <p className="anime-title-b font-['Montserrat',sans-serif] text-white mb-10 text-4xl font-semibold">
+        <div className="flex about-box max-w-6xl my-0 mx-auto justify-between">
+          <div className="w-full max-w-lg">
+            <p className="about-sub-title font-['Montserrat',sans-serif] text-white mb-10 font-semibold">
               <span className="tracking-wide font-black text-amber-400 mr-3">
                 NAO
               </span>
               <span>BLOG</span>
-              <span className="ml-4 text-2xl">について</span>
+              <span className="ml-4">について</span>
             </p>
             <p className="text-white skil-text leading-8">
               当サイトは、プログラミングやIT関係の知識など、個人で勉強したことをまとめているサイトです。
@@ -60,7 +60,7 @@ const About: FC<TopProps> = ({ item }) => {
               width="1280"
               height="853"
               className="
-                max-w-2xl w-full h-full object-cover"
+                max-w-lg w-full h-full object-cover"
             />
           </div>
         </div>

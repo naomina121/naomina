@@ -9,6 +9,7 @@ import List from '@/components/List';
 import { TagProps } from '@/types/types';
 import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
+import { getMultiSelect } from '@/utils/property';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { tag } = ctx.params as Params;
@@ -46,7 +47,7 @@ const Tag: FC<TagProps> = ({ pages, tag }) => {
             </div>
           </div>
         </div>
-        <Breadcrumb />
+        <Breadcrumb breadList={`tag/${tag}`} breadListJs={`タグ/${tag}`} />
       </div>
     </Layout>
   );
