@@ -9,7 +9,7 @@ const Navgation = () => {
 
   return (
     <nav className="flex xl:hidden items-center max-w-xl w-full">
-      <ul className="flex list-none w-full items-center text-lg font-['Montserrat',sans-serif] font-medium justify-around">
+      <ul className="flex list-none w-full items-center text-lg font-['Montserrat',sans-serif] font-medium justify-between">
         <li
           data-ref="home"
           className={

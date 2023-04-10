@@ -1,3 +1,4 @@
+import { useMediaQuery } from 'react-responsive';
 import 'clipboard';
 import prism from 'prismjs';
 import 'prism-themes/themes/prism-dracula.css';
@@ -27,22 +28,34 @@ import Sns from '@/components/post/Sns';
 import Toc from '@/components/post/Toc';
 import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
+import MainToc from '@/components/post/MainToc';
+import { allPosts } from '@/utils/notion';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { slug } = ctx.params as Params;
-  const { results } = await fetchPages({ slug: slug });
-  const page = results[0];
+  const { results: slugContent } = await fetchPages({ slug: slug });
+  const { results: contents } = await allPosts();
+  if (!slugContent.length) {
+    return {
+      notFound: true,
+    };
+  }
+  const pages = contents;
+  const page = slugContent[0];
   const pageId = page.id;
   const { results: blocks } = await fetchBlocksByPageId(pageId);
   return {
     props: {
       page: page,
       blocks: blocks,
+      pages: pages,
     },
   };
 };
 
-const Article: FC<ArticleProps> = ({ page, blocks }) => {
+const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
+  const isBreakPoint = useMediaQuery({ query: `(max-width:1320px)` });
+
   const dataUpdate = dateToTime(
     getUpdate(page.properties.update.last_edited_time),
     'YYYY-MM-DD'
@@ -89,7 +102,6 @@ const Article: FC<ArticleProps> = ({ page, blocks }) => {
       xhtml: false,
       langPrefix: 'language-',
     },
-    // mdHighlightingOptions: 'prismjs',
     mdHighlightingOptions(code, lang, callback: any) {
       callback = SyntaxHighlighter;
       const language = lang;
@@ -111,9 +123,9 @@ const Article: FC<ArticleProps> = ({ page, blocks }) => {
           page.properties.category.select
         )}/${getText(page.properties.slug.rich_text)}`}
       />
-      <CategoryMenu />
+      <CategoryMenu pages={pages} />
       <div className="xl:pt-[78px] w-full bg-gray-200">
-        <div className="w-full max-w-6xl mx-auto xl:p-5 flex justify-between py-11">
+        <div className="w-full max-w-6xl mx-auto xl:p-5 flex justify-between py-10">
           <div className=" bg-white xl:max-w-4xl xl:mx-auto w-full max-w-3xl shadow-md post">
             <div className="p-10 xl:p-5 pt-7 pb-0">
               <div className="flex items-center justify-between meta md:flex-col md:items-start">
@@ -136,24 +148,25 @@ const Article: FC<ArticleProps> = ({ page, blocks }) => {
                     {update}
                   </time>
                 </div>
-                {/* category tag */}
+                {/* category */}
                 <div className="flex justify-start">
-                  <p
-                    className={
-                      getSelect(page.properties.category.select) +
-                      ' px-2 m-0 pb-1 rounded-sm'
-                    }
-                  >
-                    <span className="text-xs xl:text-[6px] text-gray-300">
+                  <p className="m-0 p-0 flex">
+                    <span
+                      className={
+                        getSelect(page.properties.category.select) +
+                        ' text-xs p-1 border-[1px] px-2 xl:text-[6px] text-white rounded-sm'
+                      }
+                    >
                       {getForumla(page.properties.isJaCategory.formula)}
                     </span>
                   </p>
-                  <p className="m-0 ml-2">
+                  {/* tag */}
+                  <p className="m-0 p-0 ml-2 flex">
                     {getMultiSelect(page.properties.tags.multi_select).map(
                       (tag: string, index: number) => (
                         <Link
                           key={index}
-                          className="text-xs p-1 px-2 m-0 rounded-sm text-gray-400 font-medium mr-2 xl:text-[6px] hover:text-gray-600  border
+                          className="text-xs p-1 px-2 m-0 rounded-sm text-gray-400 font-medium mr-2 xl:text-[6px] hover:text-gray-600  border-[1px]
                           border-gray-400 align-middle"
                           href={
                             '/tag/' +
@@ -174,12 +187,15 @@ const Article: FC<ArticleProps> = ({ page, blocks }) => {
               width="768"
               height="360"
               alt="about"
-              className="object-cover w-full"
+              className="object-cover w-full mb-10 xl:mb-0"
             />
-            <div className="p-10 xl:p-5 py-0 context">{html}</div>
-            <div className="my-10 xl:p-5 px-10">
+            <div className="p-10 xl:p-5 py-0 context">
+              {isBreakPoint ? <MainToc /> : <></>}
+              {html}
+            </div>
+            <div className="my-10 xl:px-5 px-10 xl:mb-0">
               <Sns page={page} />
-              <div className="border-[1px] p-4 border-gray-300 my-10">
+              <div className="border-[1px] p-4 border-gray-300 my-10 xl:my-5">
                 <h2 className="border-b-[1px] border-gray-300">
                   この記事を書いた人
                 </h2>
@@ -210,7 +226,14 @@ const Article: FC<ArticleProps> = ({ page, blocks }) => {
           </div>
         </div>
       </div>
-      <Breadcrumb />
+      <Breadcrumb
+        breadList={`study/${getSelect(
+          page.properties.category.select
+        )}/${getText(page.properties.slug.rich_text)}`}
+        breadListJs={`学習記録/${getForumla(
+          page.properties.isJaCategory.formula
+        )}/${getText(page.properties.name.title)}`}
+      />
     </Layout>
   );
 };

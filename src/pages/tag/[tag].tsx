@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
-import { GetServerSideProps, GetStaticPaths, GetStaticProps } from 'next';
+import { GetServerSideProps } from 'next';
 import { Params } from '@/types/types';
 import Breadcrumb from '@/components/Breadcrumb';
 import Layout from '@/components/Layout';
-import { fetchPages } from '@/utils/notion';
+import { allPosts, fetchPages } from '@/utils/notion';
 import CategoryMenu from '@/components/CategoryMenu';
 import List from '@/components/List';
 import { TagProps } from '@/types/types';
@@ -13,16 +13,22 @@ import { siteConfig } from '@/site.config';
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { tag } = ctx.params as Params;
   const { results } = await fetchPages({ tag: tag });
-
+  const { results: contents } = await allPosts();
+  if (!results.length) {
+    return {
+      notFound: true,
+    };
+  }
   return {
     props: {
       pages: results ? results : [],
       tag: tag,
+      contents:contents,
     },
   };
 };
 
-const Tag: FC<TagProps> = ({ pages, tag }) => {
+const Tag: FC<TagProps> = ({ pages, tag, contents }) => {
   return (
     <Layout>
       <Seo
@@ -32,7 +38,7 @@ const Tag: FC<TagProps> = ({ pages, tag }) => {
         pageImgHeight={800}
         pagePath={`${siteConfig.siteUrl}tag/${tag}`}
       />
-      <CategoryMenu />
+      <CategoryMenu pages={contents} />
       <div>
         <div className="w-full bg-gray-200">
           <div className="w-full max-w-6xl mx-auto">
@@ -46,7 +52,7 @@ const Tag: FC<TagProps> = ({ pages, tag }) => {
             </div>
           </div>
         </div>
-        <Breadcrumb />
+        <Breadcrumb breadList={`tag/${tag}`} breadListJs={`タグ/${tag}`} />
       </div>
     </Layout>
   );

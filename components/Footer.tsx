@@ -11,7 +11,7 @@ const Footer = () => {
           <ul className="footer-menu flex lg:flex-col lg:items-start items-center footer-menu">
             <li>
               <Link className="text-gray-300 mr-5 text-base" href="/">
-                トップページ
+                ホーム
               </Link>
             </li>
             <li>
@@ -58,7 +58,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <small className="text-white/80 block w-full mx-auto max-w-5xl">
+      <small className="text-white/80 block w-full mx-auto max-w-6xl">
         © 2023 {siteConfig.title}
       </small>
     </footer>
