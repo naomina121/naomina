@@ -3,7 +3,7 @@ import { GetServerSideProps } from 'next';
 import { CategoryProps, Params } from '@/types/types';
 import Breadcrumb from '@/components/Breadcrumb';
 import Layout from '@/components/Layout';
-import { fetchPages } from '@/utils/notion';
+import { allPosts, fetchPages } from '@/utils/notion';
 import CategoryMenu from '@/components/CategoryMenu';
 import List from '@/components/List';
 import Seo from '@/components/Seo';
@@ -13,6 +13,7 @@ import { getForumla } from '@/utils/property';
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { category } = ctx.params as Params;
   const { results } = await fetchPages({ category: category });
+  const { results: contents } = await allPosts();
 
   if(!results.length){
     return {
@@ -23,11 +24,12 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
     props: {
       pages: results ? results : [],
       category: category,
+      contents: contents,
     },
   };
 };
 
-const Category: FC<CategoryProps> = ({ pages, category }) => {
+const Category: FC<CategoryProps> = ({ pages, category, contents }) => {
   let is_pages = false;
   if(pages.length){
     is_pages = true;
@@ -41,7 +43,7 @@ const Category: FC<CategoryProps> = ({ pages, category }) => {
         pageImgHeight={800}
         pagePath={`${siteConfig.siteUrl}study/${category}`}
       />
-      <CategoryMenu />
+      <CategoryMenu pages={contents} />
         <div>
           <div className="w-full xl:pt-[78px] bg-gray-200">
             <div className="w-full max-w-6xl mx-auto">

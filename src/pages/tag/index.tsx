@@ -3,22 +3,24 @@ import CategoryMenu from '@/components/CategoryMenu';
 import Layout from '@/components/Layout';
 import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
-import { IndexProps } from '@/types/types';
-import { fetchPages } from '@/utils/notion';
+import { IndexProps, PageType } from '@/types/types';
+import { allPosts, fetchPages } from '@/utils/notion';
 import { getMultiSelect } from '@/utils/property';
 import { GetServerSideProps, NextPage } from 'next';
 import Link from 'next/link';
 
 export const getServerSideProps: GetServerSideProps = async () => {
   const { results } = await fetchPages({});
+  const { results: contents } = await allPosts();
   return {
     props: {
       pages: results ? results : [],
+      contents:contents,
     },
   };
 };
 
-const Tag: NextPage<IndexProps> = ({ pages }) => {
+const Tag: NextPage<IndexProps & {contents:PageType[]}> = ({ pages,contents }) => {
   const tag = pages.map((item) =>
     getMultiSelect(item.properties.tags.multi_select)
   );
@@ -42,17 +44,21 @@ const Tag: NextPage<IndexProps> = ({ pages }) => {
         pageImgHeight={800}
         pagePath={`${siteConfig.siteUrl}tag`}
       />
-      <CategoryMenu />
+      <CategoryMenu pages={contents} />
       <div>
         <div className="w-full bg-gray-200 min-h-[500px]">
           <div className="w-full max-w-6xl mx-auto">
             <h1 className="xl:px-10 text-gray-800 py-10">タグ一覧</h1>
             <div className="flex flex-wrap pb-10">
-              {unique_tags_array.map((tag, index) => (
-                <Link className="tag" href={'/tag/' + tag} key={index}>
-                  {tag}
-                </Link>
-              ))}
+              {unique_tags_array.map((tag, index) => {
+                if (unique_tags_array.length-1 !== index) {
+                  return (
+                    <Link className="tag" href={'/tag/' + tag} key={index}>
+                      {tag}
+                    </Link>
+                  );
+                }
+              })}
             </div>
           </div>
         </div>

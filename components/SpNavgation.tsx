@@ -44,12 +44,7 @@ const SpNavgation = () => {
               <Link href="/study/server">サーバー</Link>
             </li>
             <li>
-              <Link
-                className="text-gray-400 duration-500 hover:text-gray-200  md:text-sm text-base"
-                href="/study/security"
-              >
-                セキュリティ
-              </Link>
+              <Link href="/study/security">セキュリティ</Link>
             </li>
             <li>
               <Link href="/study/programming">プログラミング</Link>

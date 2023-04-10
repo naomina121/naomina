@@ -1,4 +1,5 @@
 import { Client } from '@notionhq/client';
+
 // Initializing a client (https://www.npmjs.com/package/@notionhq/client)
 export const notion = new Client({
   auth: process.env.NOTION_KEY as string,
@@ -7,6 +8,40 @@ export const notion = new Client({
 const DATABASE_ID = process.env.NOTIION_DATABASE_ID as string;
 
 const is_public = process.env.NOTION_PUBLIC as string;
+
+
+export const allPosts = async () => {
+  const and: any = [
+    {
+      property: 'slug',
+      rich_text: {
+        is_not_empty: true,
+      },
+    },
+  ];
+  if (is_public === 'public') {
+      and.push({
+        property: 'isPublic',
+        checkbox: {
+          equals: true,
+        },
+      });
+    }
+  const responce = await notion.databases.query({
+    database_id: DATABASE_ID,
+    filter: {
+      and: and,
+    },
+    sorts: [
+      {
+        property: 'update',
+        direction: 'descending',
+      },
+    ],
+  });
+
+  return responce;
+}
 
 export const fetchPages = async ({
   slug,

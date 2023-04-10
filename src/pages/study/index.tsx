@@ -28,7 +28,7 @@ const Study: NextPage<IndexProps> = ({ pages }) => {
         pagePath={`${siteConfig.siteUrl}study`}
       />
       <div>
-        <CategoryMenu />
+        <CategoryMenu pages={pages} />
         <div className="xl:pt-[78px] relative w-full bg-gray-200">
           <div className="w-full max-w-6xl mx-auto">
             <h1 className="xl:px-10 text-gray-800 py-10">STUDY</h1>

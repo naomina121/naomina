@@ -28,9 +28,9 @@ export type ContactProps = {
 export type IndexProps = {
   pages: PageType[];
 };
-export type TagProps = IndexProps & { tag: string };
+export type TagProps = IndexProps & { tag: string ,contents:PageType[]};
 
-export type CategoryProps = IndexProps & { category: string };
+export type CategoryProps = IndexProps & { category: string, contents:PageType[] };
 
 export type PageProps = {
   slug: string;
@@ -52,7 +52,7 @@ export type CardProps = {
 export type ArticleProps = {
   page: PageType;
   blocks: Blocks;
-  sample: Blocks;
+  pages: PageType[];
 };
 
 export type ContentBottomProps = {

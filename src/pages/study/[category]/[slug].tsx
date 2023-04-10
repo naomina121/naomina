@@ -29,27 +29,31 @@ import Toc from '@/components/post/Toc';
 import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
 import MainToc from '@/components/post/MainToc';
+import { allPosts } from '@/utils/notion';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { slug } = ctx.params as Params;
-  const { results } = await fetchPages({ slug: slug });
-  if (!results.length) {
+  const { results: slugContent } = await fetchPages({ slug: slug });
+  const { results: contents } = await allPosts();
+  if (!slugContent.length) {
     return {
       notFound: true,
     };
   }
-  const page = results[0];
+  const pages = contents;
+  const page = slugContent[0];
   const pageId = page.id;
   const { results: blocks } = await fetchBlocksByPageId(pageId);
   return {
     props: {
       page: page,
       blocks: blocks,
+      pages: pages,
     },
   };
 };
 
-const Article: FC<ArticleProps> = ({ page, blocks }) => {
+const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
   const isBreakPoint = useMediaQuery({ query: `(max-width:1320px)` });
 
   const dataUpdate = dateToTime(
@@ -119,7 +123,7 @@ const Article: FC<ArticleProps> = ({ page, blocks }) => {
           page.properties.category.select
         )}/${getText(page.properties.slug.rich_text)}`}
       />
-      <CategoryMenu />
+      <CategoryMenu pages={pages} />
       <div className="xl:pt-[78px] w-full bg-gray-200">
         <div className="w-full max-w-6xl mx-auto xl:p-5 flex justify-between py-10">
           <div className=" bg-white xl:max-w-4xl xl:mx-auto w-full max-w-3xl shadow-md post">
@@ -150,7 +154,7 @@ const Article: FC<ArticleProps> = ({ page, blocks }) => {
                     <span
                       className={
                         getSelect(page.properties.category.select) +
-                        ' text-xs p-1 border-[1px] px-2 xl:text-[6px] text-gray-300 rounded-sm'
+                        ' text-xs p-1 border-[1px] px-2 xl:text-[6px] text-white rounded-sm'
                       }
                     >
                       {getForumla(page.properties.isJaCategory.formula)}
