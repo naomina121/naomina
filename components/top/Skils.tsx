@@ -28,8 +28,8 @@ const Skils: FC<TopProps> = ({ item }) => {
       {/* skilsのテキスト */}
 
       <div className="relative min-w-full min-h-full z-20 top-0 left-1/2 translate-x-[-50%] w-full">
-        <div className="flex flex-col items-center text-white z-20 justify-start relative my-20 xl:my-6">
-          <p className="text-white w-full text-5xl text-center xl:pb-10 xl:mb-6 mb-20 px-16 font-['Montserrat',sans-serif] relative">
+        <div className="flex flex-col items-center text-white z-20 justify-start relative md:mt-0 my-20 xl:my-6">
+          <p className="text-white w-full text-5xl text-center xl:pb-10 xl:mb-6 md:mb-0 mb-20 px-16 font-['Montserrat',sans-serif] relative">
             <span className="anime-title skil">
               <b>SKILS</b>
             </span>
@@ -84,7 +84,7 @@ const Skils: FC<TopProps> = ({ item }) => {
             ref={s2}
             className="progress-item"
             data-percent="30"
-            data-duration="3200"
+            data-duration="2200"
             data-stroke-width="8"
             data-stroke-color="#adff00"
             data-start-position="right"
@@ -114,11 +114,11 @@ const Skils: FC<TopProps> = ({ item }) => {
           <div
             ref={s3}
             className="progress-item"
-            data-percent="70"
-            data-duration="4200"
+            data-percent="50"
+            data-duration="2200"
             data-stroke-width="8"
             data-stroke-color="#dd5bcc"
-            data-start-position="bottom"
+            data-start-position="left"
           >
             <div className="progress-item__inner">
               <svg className="progress-svg" viewBox="0 0 100 100">
@@ -146,7 +146,7 @@ const Skils: FC<TopProps> = ({ item }) => {
             ref={s4}
             className="progress-item"
             data-percent="40"
-            data-duration="5800"
+            data-duration="2200"
             data-stroke-width="8"
             data-stroke-color="#dda060"
             data-start-position="left"

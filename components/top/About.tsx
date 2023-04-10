@@ -8,7 +8,7 @@ const About: FC<TopProps> = ({ item }) => {
   return (
     <div id="about" ref={item}>
       <div className="bg-about py-40 pt-24 text-white relative h-full max-h-smart">
-        <p className="text-white w-full text-5xl text-center mb-20 font-['Montserrat',sans-serif] relative">
+        <p className="text-white w-full text-5xl text-center md:mb-10 mb-20 font-['Montserrat',sans-serif] relative">
           <span className="anime-title">
             <b>ABOUT</b>
           </span>
@@ -48,7 +48,7 @@ const About: FC<TopProps> = ({ item }) => {
             <Link
               href="/study"
               className="block mt-10 font-bold mx-0 p-2 py-4 max-w-xs text-center text-bas bg-gradient-to-r from-amber-500
-              transition duration-0 ease-in-out to-yellow-500 hover:from-green-400 hover:to-blue-500 hover:duration-700 xl:text-base"
+              transition duration-0 ease-in-out to-yellow-500 hover:from-green-400 hover:to-blue-500 hover:duration-700 xl:text-base xl:mx-auto"
             >
               学習記録はこちら
             </Link>

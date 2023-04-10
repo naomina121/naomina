@@ -39,7 +39,7 @@ const Contact: FC<ContactProps> = ({ item }) => {
       ref={item}
       className="bg-contact py-40 pt-24 text-white relative h-full max-h-smart w-full"
     >
-      <p className="text-white w-full text-5xl text-center mb-20 font-['Montserrat',sans-serif] relative">
+      <p className="text-white w-full text-5xl text-center md:mb-10  mb-20 font-['Montserrat',sans-serif] relative">
         <span className="anime-title contact">
           <b>CONTACT</b>
         </span>
