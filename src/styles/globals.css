@@ -105,7 +105,7 @@ html {
 
 body {
 	@apply text-xl h-full leading-normal bg-gray-900;
-	font-family: 'Noto Sans JP', sans-serif;
+	font-family: "M PLUS Rounded 1c";
 	box-sizing: border-box;
 	max-width:1980px;
 	margin: 0 auto;
@@ -154,6 +154,11 @@ p {
 }
 
 /* post */
+
+.post{
+	font-family: 'Noto Sans JP';
+}
+
 .post .context p {
 	margin: 10px 0;
 }
@@ -418,6 +423,7 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 	margin:20px 0 30px;
 	font-size:15px;
 	color:#1b222e;
+	border-radius:4px;
 }
 
 .post .main-toc-container div > ol{
@@ -472,7 +478,7 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 }
 
 .toc,.main-toc {
-	@apply font-normal pt-4 text-base text-gray-500;
+	@apply font-bold pt-4 text-base text-gray-500;
 }
 
 .toc{
@@ -488,7 +494,7 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 }
 
 .toc .is-active-link {
-	@apply text-sky-800 font-semibold;
+	@apply text-sky-600 font-black;
 }
 
 .toc {
@@ -514,15 +520,22 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 .toc li ol li,
 .main-toc ol ol,
 .main-toc li ol li {
-	margin-top: .5em;
+	margin-top:13px;
 }
 
 .toc li:before,.main-toc li:before {
 	margin-right: .5em;
-	padding: .1em .5em;
+	padding: .1em .7em;
 	text-align: center;
 	border-radius: 4px;
-	font-family: 'Merienda', cursive;
+	font-size:14px;
+	/* font-family: 'Merienda', cursive; */
+}
+
+.post .context .main-toc li:before{
+	font-size:12px;
+	padding-left:5px;
+	padding-top: 0px;
 }
 
 .toc li,.main-toc li {
@@ -555,8 +568,9 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 }
 
 .toc li:before,.post .main-toc li:before  {
-	color: #fff;
-	background-color: #444;
+	color:#fff;
+	font-weight:900;
+	background-color:#666;
 }
 
 /* toppage */
@@ -1068,6 +1082,7 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
     appearance: none;
 		width:100%;
     height: 3em;
+		border-radius: 4px;
     padding: .4em calc(.8em + 30px) .4em .8em;
     /* border: 1px solid #cccccc; */
   	/* box-shadow:0px 4px 6px 0px #c4c4c4; */
@@ -1094,7 +1109,7 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
   width: 80%;
   background: #fff;
   padding: 0 10px;
-  border-radius: 2px 0 0 2px;
+  border-radius: 4px 0 0 4px;
   font-size: 16px;
 }
 .search-submit {
@@ -1108,7 +1123,7 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
   cursor: pointer;
   line-height: 40px;
   border: none;
-  border-radius: 0 2px 2px 0;
+  border-radius: 0 4px 4px 0;
   padding: 0;
 }
 .search-box input::placeholder {

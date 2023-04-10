@@ -46,6 +46,8 @@ const Seo: FC<MetaData> = ({
       <meta property="og:image:height" content={String(imgHeight)} />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link rel="canonical" href={url} />
+      <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet" />
+
     </Head>
   );
 };
