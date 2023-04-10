@@ -88,7 +88,7 @@ export const fetchPages = async ({
     });
   }
 
-  if (category) {
+  if (category && category !== 'all') {
     and.push({
       property: 'category',
       select: {

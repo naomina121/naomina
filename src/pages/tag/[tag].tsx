@@ -9,6 +9,7 @@ import List from '@/components/List';
 import { TagProps } from '@/types/types';
 import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
+import SearchButton from '@/components/SearchButtopn';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { tag } = ctx.params as Params;
@@ -50,6 +51,11 @@ const Tag: FC<TagProps> = ({ pages, tag, contents }) => {
                 <List key={index} index={index} page={page} />
               ))}
             </div>
+          </div>
+        </div>
+        <div className="bg-gray-300">
+          <div className="xl:hidden w-full max-w-lg mx-auto  py-14 mb-[-40px] xl:px-10">
+            <SearchButton pages={pages} />
           </div>
         </div>
         <Breadcrumb breadList={`tag/${tag}`} breadListJs={`タグ/${tag}`} />

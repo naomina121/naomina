@@ -6,6 +6,7 @@ export type Params = ParsedUrlQuery & {
   slug: string;
   category: string;
   tag: string;
+  keyword: string;
 };
 
 export type BreadcrumbProps = {
@@ -28,6 +29,11 @@ export type ContactProps = {
 export type IndexProps = {
   pages: PageType[];
 };
+
+export type SearchProps = IndexProps & {
+  keyword: string;
+};
+
 export type TagProps = IndexProps & { tag: string ,contents:PageType[]};
 
 export type CategoryProps = IndexProps & { category: string, contents:PageType[] };

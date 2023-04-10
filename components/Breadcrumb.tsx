@@ -13,9 +13,9 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ breadList, breadListJs}) => {
   return (
     <div className="w-full bg-white">
       <ul className="w-full max-w-6xl xl:px-7 mx-auto py-2 flex justify-start items-center">
-        <li className='flex'>
+        <li className="flex overflow-hidden">
           <Link
-            className="text-sm text-sky-600 duration-500 hover:text-sky-700 font-medium"
+            className="text-sm text-sky-600 duration-500 hover:text-sky-700 font-medium whitespace-nowrap overflow-hidden text-ellipsis"
             href="/"
           >
             ホーム
@@ -24,10 +24,10 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ breadList, breadListJs}) => {
         {paths.map((x, i) => {
           if (paths.length - 1 !== i) {
             return (
-              <li className='flex' key={i}>
+              <li className="flex overflow-hidden" key={i}>
                 <span className="text-sm pl-4">&gt;</span>
                 <Link
-                  className="text-sm ml-4 text-sky-600 duration-500 hover:text-sky-700 font-medium"
+                  className="text-sm ml-4 text-sky-600 duration-500 hover:text-sky-700 font-medium whitespace-nowrap overflow-hidden text-ellipsis"
                   href={roots[i + 1]}
                   key={i}
                 >
@@ -37,9 +37,9 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ breadList, breadListJs}) => {
             );
           } else {
             return (
-              <li className="flex" key={i}>
+              <li className="flex overflow-hidden" key={i}>
                 <span className="text-sm pl-4">&gt;</span>
-                <span className="w-full max-w-full md:max-w-[50px] whitespace-nowrap overflow-hidden text-ellipsis text-sm font-black text-gray-600 pl-4">
+                <span className="w-full max-w-full md:max-w-full whitespace-nowrap overflow-hidden text-ellipsis text-sm font-black text-gray-600 pl-4">
                   {paths2[i]}
                 </span>
               </li>

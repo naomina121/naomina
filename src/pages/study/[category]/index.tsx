@@ -9,6 +9,7 @@ import List from '@/components/List';
 import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
 import { getForumla } from '@/utils/property';
+import SearchButton from '@/components/SearchButtopn';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { category } = ctx.params as Params;
@@ -44,26 +45,31 @@ const Category: FC<CategoryProps> = ({ pages, category, contents }) => {
         pagePath={`${siteConfig.siteUrl}study/${category}`}
       />
       <CategoryMenu pages={contents} />
-        <div>
-          <div className="w-full xl:pt-[78px] bg-gray-200">
-            <div className="w-full max-w-6xl mx-auto">
-              <h1 className="rerative xl:px-10 text-gray-800 py-10">
-                {category.toUpperCase()}
-              </h1>
-              <div className="flex flex-wrap w-full justify-between">
-                {pages.map((page, index) => (
-                  <List key={index} index={index} page={page} />
-                ))}
-              </div>
+      <div>
+        <div className="w-full xl:pt-[78px] bg-gray-200">
+          <div className="w-full max-w-6xl mx-auto">
+            <h1 className="rerative xl:px-10 text-gray-800 py-10">
+              {category.toUpperCase()}
+            </h1>
+            <div className="flex flex-wrap w-full justify-between">
+              {pages.map((page, index) => (
+                <List key={index} index={index} page={page} />
+              ))}
             </div>
           </div>
-          <Breadcrumb
-            breadList={`study/${category}`}
-            breadListJs={`学習記録/${getForumla(
-              pages[0].properties.isJaCategory.formula
-            )}`}
-          />
         </div>
+        <div className="bg-gray-300">
+          <div className="xl:hidden w-full max-w-lg mx-auto  py-14 mb-[-40px] xl:px-10">
+            <SearchButton pages={pages} />
+          </div>
+        </div>
+        <Breadcrumb
+          breadList={`study/${category}`}
+          breadListJs={`学習記録/${getForumla(
+            pages[0].properties.isJaCategory.formula
+          )}`}
+        />
+      </div>
     </Layout>
   );
 };

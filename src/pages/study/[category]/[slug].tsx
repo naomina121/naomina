@@ -30,6 +30,7 @@ import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
 import MainToc from '@/components/post/MainToc';
 import { allPosts } from '@/utils/notion';
+import SearchButton from '@/components/SearchButtopn';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { slug } = ctx.params as Params;
@@ -221,6 +222,7 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
             </div>
           </div>
           <div className="xl:hidden aside w-full max-w-xs">
+            <SearchButton pages={pages} />
             {/* 目次 */}
             <Toc />
           </div>
