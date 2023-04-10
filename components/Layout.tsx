@@ -8,7 +8,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
     <div className="container">
       <Header />
       <div className="box">
-        <main id="main">{children}</main>
+        <main>{children}</main>
         <Footer />
       </div>
     </div>
