@@ -2478,6 +2478,11 @@ normalize-range@^0.1.2:
   resolved "https://registry.yarnpkg.com/normalize-range/-/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"
   integrity sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==
 
+notion-api-types@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/notion-api-types/-/notion-api-types-1.0.0.tgz#4a1956691ffd50be489525ce6ad81da15089c32c"
+  integrity sha512-vUE43eJwma9f5v1rAqW7/LlkbiukiZC5QPoYAYt0Bpr9U/C7oOGBmfP2PbGArp8Hs9IAOWNwBpdQFL8RoSf1gw==
+
 object-assign@^4.0.1, object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
