@@ -416,6 +416,7 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 	background-color: #ebebeb;
 	padding:20px;
 	margin:20px 0 30px;
+	font-size:15px;
 	color:#1b222e;
 }
 
@@ -435,7 +436,7 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 	top:0;
 	padding:3px 10px;
 	margin-left:15px;
-	font-size:14px;
+	font-size:12px;
 	width: 100%;
 	color:#1b222e;
 	border-radius:2px;
