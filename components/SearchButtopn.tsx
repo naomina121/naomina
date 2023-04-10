@@ -29,8 +29,7 @@ const SearchButton:FC<IndexProps> = ({pages}) => {
 
   return (
     <div>
-      {/* <input value={category} onChange={(e) => setCategory('all')} /> */}
-      <p className="text-center text-gray-200 py-3 text-md mb-8 font-normal bg-gray-700">
+      <p className="text-center text-gray-200 py-3 text-md mb-8 font-normal bg-gray-700 rounded">
         サイト内検索
       </p>
       <label className="select-box">

@@ -13,10 +13,10 @@ const Toc = () => {
 
   return (
     <div className="p-0 m-0 top-[98px] shadow sticky">
-      <h3 className="text-center text-gray-200 p-3 text-lg mb-0 font-normal bg-gray-700">
-        目次
+      <h3 className="text-center text-white p-3 rounded-t-md text-lg mb-0 font-normal bg-[#90360d]">
+        この記事の目次
       </h3>
-      <div className="toc mt-1 mb-1"></div>
+      <div className="toc mt-1 mb-1 rounded-b-md"></div>
     </div>
   );
 };

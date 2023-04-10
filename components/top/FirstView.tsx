@@ -76,7 +76,7 @@ const FirstView: FC<TopProps> = ({ item }) => {
                     className={
                       openMenu
                         ? 'flex items-center border-b-2 pb-2 border-gray-700 max-w-[70%] w-full'
-                        : 'flex items-center max-w-[70%] w-full pt-1'
+                        : 'flex items-center max-w-[70%] w-full'
                     }
                   >
                     <span className="text-base ml-8 mr-8">2023年4月6日</span>
