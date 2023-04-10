@@ -736,7 +736,7 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 	width:100%;
 	max-width:calc(100% / 5);
 	position: relative;
-	padding: clamp(10px, 3.2vw, 10px);
+	padding: clamp(10px, 3.2vw, 26px);
 	background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.04) 100%);
 	border-width: 1px 0 0 1px;
 	border-style: solid;
