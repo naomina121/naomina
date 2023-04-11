@@ -15,7 +15,7 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ breadList, breadListJs}) => {
       <ul className="w-full max-w-6xl xl:px-7 mx-auto py-2 flex justify-start items-center overflow-auto scrolling-touch">
         <li className="flex">
           <Link
-            className="text-sm text-sky-600 duration-500 hover:text-sky-700 font-medium whitespace-nowrap overflow-x-scroll"
+            className="text-sm text-sky-600 duration-500 hover:text-sky-700 font-medium whitespace-nowrap"
             href="/"
           >
             ホーム
