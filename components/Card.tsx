@@ -5,6 +5,7 @@ import {
   getCover,
   getDate,
   getForumla,
+  getMultiSelect,
   getSelect,
   getText,
   getUpdate,
@@ -85,8 +86,23 @@ const Card: FC<CardProps> = ({ page, index }) => {
             </time>
           </div>
 
-          <p className="pt-2 font-black text-gray-600">
+          <h2 className="pt-2 text-lg font-black text-gray-600">
             {getText(page.properties.name.title)}
+          </h2>
+
+          <p className="m-0">
+            {getMultiSelect(page.properties.tags.multi_select).map(
+              (tag: string, index: number) => (
+                <Link
+                  key={index}
+                  className="text-xs p-1 px-2 m-0 rounded-sm text-gray-400 font-medium mr-2 hover:text-gray-600  border
+                  border-gray-400 align-middle"
+                  href={
+                    '/tag/' + getMultiSelect(page.properties.tags.multi_select)
+                  }
+                >{`#${tag}`}</Link>
+              )
+            )}
           </p>
         </div>
       </div>
