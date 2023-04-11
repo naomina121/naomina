@@ -15,7 +15,7 @@ const Skils: FC<TopProps> = ({ item }) => {
     <div
       id="skils"
       ref={item}
-      className="overlay xl:p-10 p-20 pt-5 text-white relative h-full"
+      className="overlay xl:py-10 xl:px-5 p-20 pt-5 text-white relative h-full"
     >
       <Image
         alt="パソコンとスマホの画面を確認しながら仕事をしている人"
