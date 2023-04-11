@@ -41,7 +41,7 @@ const Skils: FC<TopProps> = ({ item }) => {
             プログラミングとしては、ReactやTypeScriptなども学びながらコードを書いています。
           </p>
           <p className="skil-text text-white text-xl">
-            <span className="text-amber-400 font-black pr-2">
+            <span className="text-amber-400 font-bold pr-2">
               今後、インフラ、アーキテクチャ、セキュリティの学習、基本技術試験対策
             </span>
             なども兼ねながらアウトプットできればと思っております。

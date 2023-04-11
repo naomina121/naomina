@@ -3,6 +3,48 @@
 @tailwind utilities;
 
 @font-face {
+	font-family: 'M PLUS Rounded 1c';
+	font-weight: 100;
+	src: url(./MPLUSRounded1c-Thin.ttf);
+}
+
+@font-face {
+	font-family: 'M PLUS Rounded 1c';
+	font-weight: 300;
+	src: url(./MPLUSRounded1c-Light.ttf);
+}
+
+@font-face {
+	font-family: 'M PLUS Rounded 1c';
+	font-weight: 400;
+	src: url(./MPLUSRounded1c-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'M PLUS Rounded 1c';
+	font-weight: 500;
+	src: url(./MPLUSRounded1c-Medium.ttf);
+}
+
+@font-face {
+	font-family: 'M PLUS Rounded 1c';
+	font-weight: 700;
+	src: url(./MPLUSRounded1c-Bold.ttf);
+}
+
+@font-face {
+	font-family: 'M PLUS Rounded 1c';
+	font-weight: 800;
+	src: url(./MPLUSRounded1c-ExtraBold.ttf);
+}
+
+@font-face {
+	font-family: 'M PLUS Rounded 1c';
+	font-weight: 900;
+	src: url(./MPLUSRounded1c-Black.ttf);
+}
+
+@font-face {
 	font-family: 'Noto Sans JP';
 	font-weight: 400;
 	src: url(./NotoSansJP-Regular.otf);
@@ -33,11 +75,11 @@
 }
 
 /* categoryの基本色 */
-.ai {
+.it {
 	@apply bg-red-700 border-red-700;
 }
 
-.category[data-cat="ai"]::before {
+.category[data-cat="it"]::before {
 	@apply bg-red-700;
 }
 
@@ -73,13 +115,22 @@
 	@apply bg-gray-900;
 }
 
-.network {
+.design {
 	@apply bg-purple-800 border-purple-800;
 }
 
-.category[data-cat="network"]::before {
+.category[data-cat="design"]::before {
 	@apply bg-purple-800;
 }
+
+.server {
+	@apply bg-cyan-600 border-cyan-600;
+}
+
+.category[data-cat="server"]::before {
+	@apply bg-cyan-600;
+}
+
 
 .category {
 	position: relative;
@@ -109,6 +160,7 @@ body {
 	box-sizing: border-box;
 	max-width:1980px;
 	margin: 0 auto;
+	font-weight:400;
 }
 
 main {
@@ -156,11 +208,12 @@ p {
 /* post */
 
 .post{
-	font-family: 'Noto Sans JP';
+	/* font-family: 'Noto Sans JP'; */
 }
 
 .post .context p {
 	margin: 10px 0;
+	font-weight:400;
 }
 
 .post h2 {
@@ -474,11 +527,11 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 .post .context .main-toc li a{
 	border-bottom:none;
 	color:#1b222e;
-	font-weight:400;
+	font-weight:300;
 }
 
 .toc,.main-toc {
-	@apply font-bold pt-4 text-base text-gray-500;
+	@apply font-normal pt-4 text-base text-gray-500;
 }
 
 .toc{
@@ -494,7 +547,7 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 }
 
 .toc .is-active-link {
-	@apply text-sky-600 font-black;
+	@apply text-sky-600 font-semibold;
 }
 
 .toc {
@@ -528,7 +581,7 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 	padding: .1em .7em;
 	text-align: center;
 	border-radius: 4px;
-	font-size:14px;
+	font-size:13px;
 	/* font-family: 'Merienda', cursive; */
 }
 
@@ -569,7 +622,7 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 
 .toc li:before,.post .main-toc li:before  {
 	color:#fff;
-	font-weight:900;
+	font-weight:400;
 	background-color:#666;
 }
 

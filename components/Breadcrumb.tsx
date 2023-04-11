@@ -39,7 +39,7 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ breadList, breadListJs}) => {
             return (
               <li className="flex overflow-hidden" key={i}>
                 <span className="text-sm pl-4">&gt;</span>
-                <span className="w-full max-w-full md:max-w-full whitespace-nowrap overflow-hidden text-ellipsis text-sm font-black text-gray-600 pl-4">
+                <span className="w-full max-w-full md:max-w-full whitespace-nowrap overflow-hidden text-ellipsis text-sm font-semibold text-gray-600 pl-4">
                   {paths2[i]}
                 </span>
               </li>

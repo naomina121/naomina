@@ -117,6 +117,7 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
     <Layout>
       <Seo
         pageTitle={getText(page.properties.name.title)}
+        pageDescription={getText(page.properties.description.rich_text)}
         pageImg={getCover(page.cover)}
         pageImgWidth={1152}
         pageImgHeight={622}

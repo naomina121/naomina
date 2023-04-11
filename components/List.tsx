@@ -77,7 +77,7 @@ const List: FC<CardProps> = ({ page, index }) => {
               {update}
             </time>
           </div>
-          <h2 className="pt-2 text-xl font-bold text-gray-600">
+          <h2 className="pt-2 text-xl font-extrabold text-gray-600">
             <Link
               href={
                 '/study/' +
