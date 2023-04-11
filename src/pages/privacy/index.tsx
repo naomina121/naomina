@@ -17,7 +17,7 @@ const privacyPolicy = () => {
       />
       <div className="pt-[78px] w-full bg-gray-200">
         <div className="w-full max-w-6xl mx-auto xl:p-5 flex justify-between py-10">
-          <div className=" bg-white pb-5 xl:max-w-4xl xl:mx-auto w-full max-w-3xl shadow-md post">
+          <div className=" bg-white pb-5 xl:max-w-4xl xl:mx-auto w-full max-w-3xl shadow-md post rounded-md">
             <div className="p-10 pb-3 xl:pb-0 xl:px-5">
               <h1 className="w-full text-3xl xl:text-2xl xl:p-0">
                 プライバシーポリシー
