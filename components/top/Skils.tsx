@@ -56,7 +56,7 @@ const Skils: FC<TopProps> = ({ item }) => {
             data-duration="2200"
             data-stroke-width="8"
             data-stroke-color="#00ccff"
-            data-start-position="top"
+            data-start-position="default"
           >
             <div className="progress-item__inner">
               <svg className="progress-svg" viewBox="0 0 100 100">
@@ -87,7 +87,7 @@ const Skils: FC<TopProps> = ({ item }) => {
             data-duration="2200"
             data-stroke-width="8"
             data-stroke-color="#adff00"
-            data-start-position="right"
+            data-start-position="default"
           >
             <div className="progress-item__inner">
               <svg className="progress-svg" viewBox="0 0 100 100">
@@ -118,7 +118,7 @@ const Skils: FC<TopProps> = ({ item }) => {
             data-duration="2200"
             data-stroke-width="8"
             data-stroke-color="#dd5bcc"
-            data-start-position="left"
+            data-start-position="default"
           >
             <div className="progress-item__inner">
               <svg className="progress-svg" viewBox="0 0 100 100">
@@ -149,7 +149,7 @@ const Skils: FC<TopProps> = ({ item }) => {
             data-duration="2200"
             data-stroke-width="8"
             data-stroke-color="#dda060"
-            data-start-position="left"
+            data-start-position="default"
           >
             <div className="progress-item__inner">
               <svg className="progress-svg" viewBox="0 0 100 100">

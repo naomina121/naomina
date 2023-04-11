@@ -778,7 +778,7 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 }
 
 .progress-svg circle {
-	stroke-dasharray: 283;
+	stroke-dasharray:283;
 	stroke-width: var(--stroke-width, 8);
 }
 
@@ -822,30 +822,6 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 		flex-basis: 0%;
 	}
 } */
-
-@-webkit-keyframes scrolldown {
-	0% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-
-	100% {
-		opacity: 0;
-		transform: translateY(22px);
-	}
-}
-
-@keyframes scrolldown {
-	0% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-
-	100% {
-		opacity: 0;
-		transform: translateY(22px);
-	}
-}
 
 .js-toc-content .code-block-filename-container .code-block-filename {
 	display: table;
