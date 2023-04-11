@@ -27,7 +27,7 @@ const About: FC<TopProps> = ({ item }) => {
             </p>
             <p className="text-white skil-text leading-8 my-5">
               ちなみにこのサイトは、Next.js、TypeScript、NotionAPIを利用して、
-              <span className="font-black text-amber-400">
+              <span className="font-bold text-amber-400">
                 Notionで書いた記事がサイトに反映される
               </span>
               ようにしています。

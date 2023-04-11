@@ -60,7 +60,7 @@ const Category: FC<CategoryProps> = ({ pages, category, contents }) => {
         </div>
         <div className="bg-gray-300">
           <div className="xl:hidden w-full max-w-lg mx-auto  py-14 mb-[-40px] xl:px-10">
-            <SearchButton pages={pages} />
+            <SearchButton pages={contents} />
           </div>
         </div>
         <Breadcrumb

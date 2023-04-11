@@ -15,7 +15,7 @@ const Skils: FC<TopProps> = ({ item }) => {
     <div
       id="skils"
       ref={item}
-      className="overlay xl:p-10 p-20 pt-5 text-white relative h-full"
+      className="overlay xl:py-10 xl:px-5 p-20 pt-5 text-white relative h-full"
     >
       <Image
         alt="パソコンとスマホの画面を確認しながら仕事をしている人"
@@ -41,7 +41,7 @@ const Skils: FC<TopProps> = ({ item }) => {
             プログラミングとしては、ReactやTypeScriptなども学びながらコードを書いています。
           </p>
           <p className="skil-text text-white text-xl">
-            <span className="text-amber-400 font-black pr-2">
+            <span className="text-amber-400 font-bold pr-2">
               今後、インフラ、アーキテクチャ、セキュリティの学習、基本技術試験対策
             </span>
             なども兼ねながらアウトプットできればと思っております。
@@ -56,7 +56,7 @@ const Skils: FC<TopProps> = ({ item }) => {
             data-duration="2200"
             data-stroke-width="8"
             data-stroke-color="#00ccff"
-            data-start-position="top"
+            data-start-position="default"
           >
             <div className="progress-item__inner">
               <svg className="progress-svg" viewBox="0 0 100 100">
@@ -87,7 +87,7 @@ const Skils: FC<TopProps> = ({ item }) => {
             data-duration="2200"
             data-stroke-width="8"
             data-stroke-color="#adff00"
-            data-start-position="right"
+            data-start-position="default"
           >
             <div className="progress-item__inner">
               <svg className="progress-svg" viewBox="0 0 100 100">
@@ -118,7 +118,7 @@ const Skils: FC<TopProps> = ({ item }) => {
             data-duration="2200"
             data-stroke-width="8"
             data-stroke-color="#dd5bcc"
-            data-start-position="left"
+            data-start-position="default"
           >
             <div className="progress-item__inner">
               <svg className="progress-svg" viewBox="0 0 100 100">
@@ -149,7 +149,7 @@ const Skils: FC<TopProps> = ({ item }) => {
             data-duration="2200"
             data-stroke-width="8"
             data-stroke-color="#dda060"
-            data-start-position="left"
+            data-start-position="default"
           >
             <div className="progress-item__inner">
               <svg className="progress-svg" viewBox="0 0 100 100">

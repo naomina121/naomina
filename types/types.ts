@@ -95,6 +95,7 @@ export type PropertyType = {
   update: { last_edited_time: string };
   tags: { multi_select: [{ name: string }] };
   isJaCategory: { formula: { string: string } };
+  description: { rich_text: RichTextType[] };
 };
 
 export type PageType = {

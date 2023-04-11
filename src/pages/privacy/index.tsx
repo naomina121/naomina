@@ -17,7 +17,7 @@ const privacyPolicy = () => {
       />
       <div className="pt-[78px] w-full bg-gray-200">
         <div className="w-full max-w-6xl mx-auto xl:p-5 flex justify-between py-10">
-          <div className=" bg-white pb-5 xl:max-w-4xl xl:mx-auto w-full max-w-3xl shadow-md post">
+          <div className=" bg-white pb-5 xl:max-w-4xl xl:mx-auto w-full max-w-3xl shadow-md post rounded-md">
             <div className="p-10 pb-3 xl:pb-0 xl:px-5">
               <h1 className="w-full text-3xl xl:text-2xl xl:p-0">
                 プライバシーポリシー
@@ -32,7 +32,7 @@ const privacyPolicy = () => {
                 個人情報の利用目的について
               </h2>
               <p>
-                当ブログでは、お問い合わせやコメント投稿の際に氏名・メールアドレス等の個人情報を入力いただく場合があります。
+                当ブログでは、お問い合わせの際に氏名・メールアドレス等の個人情報を入力いただく場合があります。
               </p>
               <p>
                 取得した個人情報は、必要な連絡のみに利用させていただくもので、これらの目的以外では利用いたしません。
@@ -48,28 +48,12 @@ const privacyPolicy = () => {
                 <li>法令により開示が求められた場合</li>
               </ul>
               <h2 id="Cookieの使用について">Cookieの使用について</h2>
-              <p>
-                当ブログでは、広告配信やアクセス解析のためにCookieを使用しています
-              </p>
+              <p>当ブログでは、アクセス解析のためにCookieを使用しています</p>
               <p>
                 Cookieによりブラウザを識別していますが、特定の個人の識別はできない状態で匿名性が保たれています。
               </p>
               <p>
                 Cookieの使用を望まない場合、ブラウザからCookieを無効に設定できます。
-              </p>
-              <p>&lt;!-- ## 広告配信サービスについて</p>
-              <p>
-                当ブログでは、第三者配信の広告サービスを利用して広告を掲載しています。
-              </p>
-              <p>
-                第三者配信事業者は、ユーザーの興味に応じたパーソナライズ広告を表示するためにCookieを使用しています。
-              </p>
-              <p>
-                パーソナライズ広告は、広告設定で無効にできます。また、www.aboutads.infoで第三者配信事業者のCookieを無効にすることができます。
-              </p>
-              <p>
-                Amazonのアソシエイトとして、【NAOBLOG】は適格販売により収入を得ています。
-                --&gt;
               </p>
               <h2 id="アクセス解析ツールについて">
                 アクセス解析ツールについて

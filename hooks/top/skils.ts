@@ -36,10 +36,10 @@ export const showSlils = (entries: IntersectionObserverEntry[]) => {
       right: '0deg',
       bottom: '90deg',
       left: '180deg',
-      default: '-90deg',
+      default: '0deg',
     };
 
-    startPosition[entry.target.dataset.startPosition] || '-90deg';
+    startPosition[entry.target.dataset.startPosition] || '0deg';
 
     // Countup percentage
     const deciamlPointLength = (String(percent).split('.')[1] || '').length;
@@ -59,9 +59,9 @@ export const showSlils = (entries: IntersectionObserverEntry[]) => {
     };
 
     // Styles for progress bar animation
+    // --start-rotate: ${startPosition};
     entry.target.style.cssText = `
           --duration: ${duration}ms;
-          --start-rotate: ${startPosition};
           --stroke-dashoffset: ${strokeDashOffset};
           --stroke-color: ${entry.target.dataset.strokeColor};
           --stroke-width: ${entry.target.dataset.strokeWidth};
