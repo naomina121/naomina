@@ -180,7 +180,7 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
                   </p>
                 </div>
               </div>
-              <h1 className="mt-3 mb-5 w-full text-3xl xl:text-xl md:text-[18px]">
+              <h1 className="mt-3 mb-5 w-full text-3xl xl:mb-3 xl:text-xl md:text-[18px]">
                 {getText(page.properties.name.title)}
               </h1>
             </div>
