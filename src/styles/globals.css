@@ -1039,7 +1039,7 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 }
 
 .hm-title {
-	@apply bg-gray-950 p-4 text-gray-400;
+	@apply bg-gray-950 p-4 text-gray-400 mb-0;
 }
 
 #hmCheck:checked~.hm-content {
@@ -1287,5 +1287,9 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 
 	#home .max-h-smart {
 		@apply min-h-[50vh];
+	}
+
+	.category::before{
+		font-size:12px;
 	}
 }

@@ -37,7 +37,7 @@ const List: FC<CardProps> = ({ page, index }) => {
 
   return (
     <div
-      className="category list md:max-w-full w-full xl:px-10 anime"
+      className="category list md:max-w-full w-full xl:px-10 hover:opacity-80"
       data-category={getForumla(page.properties.isJaCategory.formula)}
       data-cat={getSelect(page.properties.category.select)}
     >
@@ -77,7 +77,7 @@ const List: FC<CardProps> = ({ page, index }) => {
               {update}
             </time>
           </div>
-          <h2 className="pt-2 text-xl font-extrabold text-gray-600">
+          <h2 className="pt-2 text-lg font-extrabold md:text-base text-gray-600">
             <Link
               href={
                 '/study/' +

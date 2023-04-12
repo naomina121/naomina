@@ -10,14 +10,16 @@ export const Spinner: FC = () => {
       </div>
       <style jsx global>{`
         .loading {
-          min-height: 100vh;
+          width:100%;
+          height: 100vh;
           background-color: #1d2630;
           display: flex;
           justify-content: center;
           flex-wrap: wrap;
           align-items: center;
-          z-index:50;
-          position:relative;
+          z-index: 50;
+          position: relative;
+          overflow:hidden;
         }
         .spinner-box {
           width: 300px;
