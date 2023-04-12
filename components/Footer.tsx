@@ -5,7 +5,7 @@ import 'remixicon/fonts/remixicon.css';
 
 const Footer = () => {
   return (
-    <footer className="py-4 xl:px-10 bg-gray-900">
+    <footer className="py-4 xl:px-5 bg-gray-900">
       <div className="max-w-6xl w-full my-5 py-5 mx-auto border-solid border-b-[1px] lg:border-none border-gray-700">
         <nav>
           <ul className="footer-menu flex lg:flex-col lg:items-start items-center footer-menu">
