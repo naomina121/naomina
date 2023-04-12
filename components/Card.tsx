@@ -86,7 +86,7 @@ const Card: FC<CardProps> = ({ page, index }) => {
             </time>
           </div>
 
-          <h2 className="pt-2 text-lg font-extrabold text-gray-600">
+          <h2 className="pt-2 text-lg font-extrabold md:text-base text-gray-600">
             {getText(page.properties.name.title)}
           </h2>
 

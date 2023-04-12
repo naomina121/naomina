@@ -34,6 +34,7 @@ const SpNavgation = () => {
             </li>
           </ul>
         </nav>
+
         <p className="hm-title">学習記録のカテゴリー</p>
         <nav>
           <ul>

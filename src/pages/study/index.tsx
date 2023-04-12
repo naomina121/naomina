@@ -31,8 +31,8 @@ const Study: NextPage<IndexProps> = ({ pages }) => {
         <CategoryMenu pages={pages} />
         <div className="xl:pt-[78px] relative w-full bg-gray-200">
           <div className="w-full max-w-6xl mx-auto">
-            <h1 className="xl:px-10 text-gray-800 py-10">STUDY</h1>
-            <div className="flex xl:px-10 flex-wrap justify-between xl:items-stretch">
+            <h1 className="xl:px-5 text-gray-800 py-10">STUDY</h1>
+            <div className="flex xl:px-5 flex-wrap justify-between xl:items-stretch">
               {pages.map((page, index) => (
                 <Card key={index} index={index} page={page} />
               ))}

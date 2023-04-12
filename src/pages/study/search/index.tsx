@@ -9,6 +9,8 @@ import { siteConfig } from '@/site.config';
 import { getSearchBlocks } from '@/hooks/json';
 import List from '@/components/List';
 import SearchButton from '@/components/SearchButtopn';
+import { useMediaQuery } from 'react-responsive';
+import Card from '@/components/Card';
 
 export const getServerSideProps:GetServerSideProps = async (
   ctx,
@@ -36,6 +38,7 @@ export const getServerSideProps:GetServerSideProps = async (
 };
 
 const Search: NextPage<SearchProps> = ({ pages,keyword}) => {
+  const isBreakPoint = useMediaQuery({ query: `(max-width:768px)` });
   return (
     <Layout>
       <Seo
@@ -50,18 +53,22 @@ const Search: NextPage<SearchProps> = ({ pages,keyword}) => {
         <div className="xl:pt-[78px] relative w-full bg-gray-200">
           <div className="flex justify-between flex-col mx-auto max-w-6xl">
             <div className="w-full max-w-6xl mx-0">
-              <h1 className="xl:px-10 text-gray-800 py-10">
+              <h1 className="xl:px-5 text-gray-800 py-10">
                 「{keyword}」の検索結果
               </h1>
-              <div className="flex flex-wrap justify-start xl:items-stretch">
-                {pages.map((page, index) => (
-                  <List key={index} index={index} page={page} />
-                ))}
+              <div className="flex flex-wrap w-full justify-between xl:items-stretch xl:px-5">
+                {pages.map((page, index) => {
+                  if (isBreakPoint) {
+                    return <Card key={index} index={index} page={page} />;
+                  } else {
+                    return <List key={index} index={index} page={page} />;
+                  }
+                })}
               </div>
             </div>
           </div>
         </div>
-        <div className='bg-gray-300'>
+        <div className="bg-gray-300">
           <div className="xl:hidden w-full max-w-lg mx-auto  py-14 mb-[-40px] xl:px-10">
             <SearchButton pages={pages} />
           </div>

@@ -10,6 +10,8 @@ import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
 import { getForumla } from '@/utils/property';
 import SearchButton from '@/components/SearchButtopn';
+import { useMediaQuery } from 'react-responsive';
+import Card from '@/components/Card';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { category } = ctx.params as Params;
@@ -31,6 +33,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 };
 
 const Category: FC<CategoryProps> = ({ pages, category, contents }) => {
+  const isBreakPoint = useMediaQuery({ query: `(max-width:768px)` });
   let is_pages = false;
   if(pages.length){
     is_pages = true;
@@ -48,13 +51,17 @@ const Category: FC<CategoryProps> = ({ pages, category, contents }) => {
       <div>
         <div className="w-full xl:pt-[78px] bg-gray-200">
           <div className="w-full max-w-6xl mx-auto">
-            <h1 className="rerative xl:px-10 text-gray-800 py-10">
+            <h1 className="rerative xl:px-5 text-gray-800 py-10">
               {category.toUpperCase()}
             </h1>
-            <div className="flex flex-wrap w-full justify-between">
-              {pages.map((page, index) => (
-                <List key={index} index={index} page={page} />
-              ))}
+            <div className="flex flex-wrap w-full justify-between xl:items-stretch xl:px-5">
+              {pages.map((page, index) => {
+                if (isBreakPoint) {
+                  return <Card key={index} index={index} page={page} />;
+                } else {
+                  return <List key={index} index={index} page={page} />;
+                }
+              })}
             </div>
           </div>
         </div>

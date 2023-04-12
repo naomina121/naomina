@@ -129,7 +129,7 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
       <div className="xl:pt-[78px] w-full bg-gray-200">
         <div className="w-full max-w-6xl mx-auto xl:p-5 flex justify-between py-10">
           <div className=" bg-white xl:max-w-4xl xl:mx-auto w-full max-w-3xl shadow-md post rounded-md">
-            <div className="p-10 xl:p-5 pt-7 pb-0">
+            <div className="p-10 xl:p-5 xl:pb-0 pt-7 pb-0">
               <div className="flex items-center justify-between meta md:flex-col md:items-start">
                 {/* time */}
                 <div className="flex items-center justify-start xl:mb-2">
@@ -180,7 +180,7 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
                   </p>
                 </div>
               </div>
-              <h1 className="mt-3 mb-5 w-full text-3xl xl:text-xl">
+              <h1 className="mt-3 mb-5 w-full text-3xl xl:mb-3 xl:text-xl md:text-[18px]">
                 {getText(page.properties.name.title)}
               </h1>
             </div>
