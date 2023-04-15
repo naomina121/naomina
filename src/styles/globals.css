@@ -206,11 +206,6 @@ p {
 }
 
 /* post */
-
-.post{
-	/* font-family: 'Noto Sans JP'; */
-}
-
 .post .context p {
 	margin: 10px 0;
 	font-weight:400;
@@ -557,7 +552,9 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 
 .toc {
 	margin: 0 auto;
-	padding: 3em;
+	padding:2em 3em;
+	overflow-y: scroll;
+	height: 100%;
 	background-color: #fff;
 }
 
@@ -587,7 +584,6 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 	text-align: center;
 	border-radius: 4px;
 	font-size:13px;
-	/* font-family: 'Merienda', cursive; */
 }
 
 .post .context .main-toc li:before{
@@ -632,7 +628,6 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 }
 
 /* toppage */
-
 .anime-title b {
 	color: #f0ecec;
 	text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #6e733b, 0 0 0.5em #1e1607, 0 0 0.1em #bd7e12, 0 10px 3px #000;
@@ -715,7 +710,6 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 	left: 0;
 	display: block;
 	width: 100%;
-	/* max-height: calc(100vh); */
 	height: 100%;
 	min-height: calc(100vh);
 	content: "";
@@ -800,13 +794,9 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 	max-width: 1180px;
 	width:100%;
 	margin: 20px auto 10vh;
-	/* resize: horizontal; */
-	/* container: progress / inline-size; */
 }
 
 .progress-item {
-	/* flex: 1; */
-	/* flex-basis: calc(50% - 100px); */
 	width:100%;
 	max-width:calc(100% / 5);
 	position: relative;
@@ -875,12 +865,6 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 	margin-top: 20px;
 	text-align: center;
 }
-
-/* @container (min-width: 920px) {
-	.progress-item {
-		flex-basis: 0%;
-	}
-} */
 
 .js-toc-content .code-block-filename-container .code-block-filename {
 	display: table;
@@ -968,7 +952,6 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 #about .about-sub-title{
 	font-size: clamp(30px, 3vw, 2.3rem);
 }
-
 
 /* tag */
 .tag {
@@ -1119,8 +1102,6 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
     height: 3em;
 		border-radius: 4px;
     padding: .4em calc(.8em + 30px) .4em .8em;
-    /* border: 1px solid #cccccc; */
-  	/* box-shadow:0px 4px 6px 0px #c4c4c4; */
     border-radius: 3px;
     background-color: #fff;
     color: #333333;
@@ -1129,7 +1110,6 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 		display:block;
 }
 
-
 /* search */
  .search-box {
   width: 100%;
@@ -1137,7 +1117,6 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
   position: relative;
   display: flex;
   border-radius: 50px;
-  /* box-shadow:0px 4px 6px 0px #c4c4c4; */
 }
 
 .search-edit {
