@@ -31,6 +31,7 @@ import { siteConfig } from '@/site.config';
 import MainToc from '@/components/post/MainToc';
 import { allPosts } from '@/utils/notion';
 import SearchButton from '@/components/SearchButtopn';
+import Author from '@/components/post/Author';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { slug } = ctx.params as Params;
@@ -197,29 +198,7 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
             </div>
             <div className="my-10 xl:px-5 px-10 xl:mb-0">
               <Sns page={page} />
-              <div className="border-[1px] p-4 border-gray-300 my-10 xl:my-5">
-                <h2 className="border-b-[1px] border-gray-300">
-                  この記事を書いた人
-                </h2>
-                <div className="mt-4 flex items-center justify-between xl:flex-col">
-                  <Image
-                    src="/img/author.jpg"
-                    alt="ナオ"
-                    width="125"
-                    height="125"
-                    className="rounded-full sm:max-w-sm"
-                  />
-                  <div className="w-full p-4">
-                    <h3>ナオ</h3>
-                    <p>
-                      プログラミングが好きで、寝食を忘れてしまう普通の人です。
-                    </p>
-                    <p>
-                      希少価値のあるエンジニアを目指せたらという思いで、幅広くIT知識を学習しています。
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <Author />
             </div>
           </div>
           <div className="xl:hidden aside w-full max-w-xs">
