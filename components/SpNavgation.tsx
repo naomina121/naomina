@@ -30,6 +30,9 @@ const SpNavgation = () => {
               <Link href="/study">学習記録</Link>
             </li>
             <li>
+              <Link href="/news">お知らせ</Link>
+            </li>
+            <li>
               <Link href="/privacy">プライバシーポリシー</Link>
             </li>
           </ul>

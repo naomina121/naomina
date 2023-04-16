@@ -48,26 +48,26 @@ const FirstView: FC<FirstViewProps> = ({ item, pages }) => {
           </p>
           <p className="text-white xl:top-10 xl:relative title font-['Montserrat',sans-serif] font-black">
             <span className="w-full flex">
-              <span className="text-amber-400 pr-2">RECORD</span>
+              <span className="text-amber-400 md:pr-0 pr-2 ">RECORD</span>
               <span className="flex w-full ml-2">OF THE STUDY</span>
             </span>
           </p>
         </div>
         {/* firstview_bottom */}
-        <div className="w-full h-full overflow-y-hidden absolute top-0 left-0 z-30">
+        <div className="w-full h-full overflow-y-hidden md:overflow-x-auto absolute top-0 left-0 z-30">
           <div
             className={
               openMenu
                 ? 'absolute w-full bg-gray-800/80 text-gray-300 bottom-0'
-                : 'absolute w-full bg-gray-800/80 text-gray-300 bottom-[-100px]'
+                : 'absolute min-w-max w-full bg-gray-800/80 text-gray-300 bottom-[-100px]'
             }
           >
-            <div className="max-w-6xl mx-auto w-full justify-between flex">
-              <div className="max-w-5xl w-full flex">
+            <div className="max-w-6xl md:max-w-full mx-auto w-full justify-between flex">
+              <div className="max-w-5xl md:max-w-full w-full flex">
                 <ul className="w-full flex flex-col justify-between">
                   {pages.map((page, index) => (
                     <li key={index} className="flex w-full justify-between">
-                      <span className="mr-10 flex justify-center text-base items-center bg-gray-900 w-[100px]">
+                      <span className="mr-10 md:mr-5 md:text-[12px] flex justify-center text-base items-center bg-gray-900 w-[100px] md:max-w-[50px] md:w-full md:px-4">
                         {index === 0 ? (
                           <span className="py-3">News</span>
                         ) : (
@@ -81,7 +81,7 @@ const FirstView: FC<FirstViewProps> = ({ item, pages }) => {
                             getDate(page.properties.published.date),
                             'YYYY-MM-DD'
                           )}
-                          className="text-base mr-10"
+                          className="text-base mr-10 md:mr-5 md:text-[12px] text-ellipsis whitespace-nowrap"
                         >
                           {dateToTime(
                             getDate(page.properties.published.date),
@@ -95,7 +95,7 @@ const FirstView: FC<FirstViewProps> = ({ item, pages }) => {
                           }
                           className={
                             getSelect(page.properties.category.select) +
-                            ' text-base text-center rounded w-[150px] py-[2px] mr-10'
+                            ' text-base text-center rounded w-[150px] py-[2px] mr-10 text-ellipsis whitespace-nowrap md:text-[10px] md:mr-5 md:w-[90px]'
                           }
                         >
                           {getForumla(page.properties.isJaCategory.formula)}
@@ -107,7 +107,7 @@ const FirstView: FC<FirstViewProps> = ({ item, pages }) => {
                             '/' +
                             getForumla(page.properties.newsSlug.formula)
                           }
-                          className="text-base hover:opacity-80"
+                          className="md:text-[12px] text-base hover:opacity-80 underline hover:no-underline text-ellipsis whitespace-nowrap"
                         >
                           {getText(page.properties.name.title)}
                         </Link>
@@ -117,7 +117,7 @@ const FirstView: FC<FirstViewProps> = ({ item, pages }) => {
                 </ul>
               </div>
               <button
-                className={openMenu ? 'open arrow' : 'arrow'}
+                className={openMenu ? 'open arrow' : 'arrow md:hidden'}
                 onClick={() => menuFunction()}
               ></button>
             </div>

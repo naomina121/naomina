@@ -35,6 +35,11 @@ const Footer = () => {
               </Link>
             </li>
             <li>
+              <Link className="text-gray-300 text-base" href="/news">
+                お知らせ
+              </Link>
+            </li>
+            <li>
               <Link className="text-gray-400 text-sm" href="/privacy">
                 プライバシーポリシー
               </Link>
