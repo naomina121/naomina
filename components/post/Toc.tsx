@@ -12,7 +12,7 @@ const Toc = () => {
   }, []);
 
   return (
-    <div className="p-0 m-0 top-[98px] shadow sticky h-[82vh]">
+    <div className="p-0 m-0 mb-14 top-[98px] shadow sticky h-[82vh]">
       <h3 className="text-center text-white p-3 rounded-t-md text-lg mb-0 font-normal bg-[#90360d]">
         この記事の目次
       </h3>
