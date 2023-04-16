@@ -105,8 +105,8 @@ const Article: FC<ArticleProps> = ({ page, blocks }) => {
           page.properties.category.select
         )}/${getForumla(page.properties.newsSlug.formula)}`}
       />
-      <div className="pt-[78px] w-full bg-gray-200">
-        <div className="w-full max-w-6xl mx-auto xl:p-5 flex justify-between py-10">
+      <div className="pt-[98px] xl:px-5 w-full bg-gray-200">
+        <div className="w-full max-w-6xl xl:max-w-4xl mx-auto lg:py-5 lg:pt-0 flex justify-between py-10">
           <div className=" bg-white xl:max-w-4xl xl:mx-auto w-full max-w-3xl shadow-md post rounded-md">
             <div className="p-10 xl:p-5 xl:pb-0 pt-7 pb-0">
               <div className="flex items-center justify-between meta md:flex-col md:items-start">

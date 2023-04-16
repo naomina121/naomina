@@ -1236,6 +1236,11 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 	.post .context li {
 		font-size: 14px;
 	}
+
+	.study-card{
+		max-width:calc(100% / 3 - 20px);
+	}
+
 }
 
 @container (max-width:1024px) {
@@ -1250,6 +1255,10 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 	.progress-item{
 		max-width:calc(100% / 2.5);
 	}
+
+	.study-card{
+		max-width:calc(100% / 2 - 20px);
+	}
 }
 
 @container (max-width:768px){
@@ -1259,6 +1268,10 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 	}
 	#contact{
 		@apply py-10;
+	}
+
+	.study-card{
+		@apply max-w-full;
 	}
 }
 

@@ -42,7 +42,7 @@ const Card: FC<CardProps> = ({ page, index }) => {
 
   return (
     <Link
-      className="category flex"
+      className="category flex study-card"
       data-category={getForumla(page.properties.isJaCategory.formula)}
       data-cat={getSelect(page.properties.category.select)}
       href={
@@ -53,11 +53,7 @@ const Card: FC<CardProps> = ({ page, index }) => {
       }
     >
       <div
-        className={
-          first
-            ? 'hover:shadow-xl hover:-translate-y-2 bg-white rounded-xl w-full xl:max-w-fit max-w-[560px] overflow-hidden p-4 box-border shadow-md transition duration-500 ease-in-out mb-10'
-            : 'hover:shadow-xl hover:-translate-y-2 rounded-xl shadow-md flex flex-col w-full max-w-[360px] xl:max-w-fit bg-white overflow-hidden p-4 box-border transition duration-500 ease-in-out mb-10'
-        }
+        className="hover:shadow-xl hover:-translate-y-2 rounded-xl shadow-md flex flex-col w-full max-w-[560px] bg-white overflow-hidden p-4 box-border transition duration-500 ease-in-out mb-10 md:max-w-fit"
       >
         <Image
           src={getCover(page.cover)}
