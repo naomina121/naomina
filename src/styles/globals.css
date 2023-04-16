@@ -131,6 +131,13 @@
 	@apply bg-cyan-600;
 }
 
+.info{
+	@apply bg-sky-600;
+}
+
+.important-info{
+	@apply bg-gray-700;
+}
 
 .category {
 	position: relative;
@@ -468,7 +475,6 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 }
 
 /* toc */
-
 .main-toc-container{
 	width: 100%;
 	background-color: #ebebeb;
@@ -538,6 +544,16 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 	@apply p-4;
 }
 
+.toc::-webkit-scrollbar{
+   width: 10px;
+}
+.toc::-webkit-scrollbar-track{
+   @apply bg-white;
+}
+.toc::-webkit-scrollbar-thumb{
+   @apply bg-gray-300;
+}
+
 .toc-list ol {
 	@apply ml-4 text-sm;
 }
@@ -551,6 +567,7 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 }
 
 .toc {
+	@apply scroll-smooth;
 	margin: 0 auto;
 	padding:2em 3em;
 	overflow-y: scroll;
