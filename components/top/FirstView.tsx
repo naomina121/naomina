@@ -1,9 +1,14 @@
-import { TopProps } from '@/types/types';
+import { FirstViewProps } from '@/types/types';
 import Image from 'next/image';
 import { useMediaQuery } from 'react-responsive';
 import React, { FC, useState } from 'react';
+import { GetServerSideProps } from 'next';
+import { fetchNewsPages } from '@/utils/notion';
+import { getDate, getForumla, getSelect, getText } from '@/utils/property';
+import Link from 'next/link';
+import dateToTime from '@/hooks/dateToTime';
 
-const FirstView: FC<TopProps> = ({ item }) => {
+const FirstView: FC<FirstViewProps> = ({ item, pages }) => {
   const isBreakPoint = useMediaQuery({ query: `(max-width:1320px)` });
   //ニュースの部分
   const [openMenu, setOpenMenu] = useState(false);
@@ -43,58 +48,80 @@ const FirstView: FC<TopProps> = ({ item }) => {
           </p>
           <p className="text-white xl:top-10 xl:relative title font-['Montserrat',sans-serif] font-black">
             <span className="w-full flex">
-              <span className="text-amber-400 pr-2">RECORD</span>
+              <span className="text-amber-400 md:pr-0 pr-2 ">RECORD</span>
               <span className="flex w-full ml-2">OF THE STUDY</span>
             </span>
           </p>
         </div>
         {/* firstview_bottom */}
-        <div
-          className={
-            openMenu
-              ? 'max-h-[9rem] h-full absolute overflow-y-hidden bottom-0 left-0 z-30 bg-gray-800/80 w-full text-white flex justify-around items-center transition-animation'
-              : 'absolute overflow-y-hidden bottom-0 left-0 h-[50px] z-30 bg-gray-800/80 w-full text-white flex justify-around items-center lg:hidden'
-          }
-        >
+        <div className="w-full h-full overflow-y-hidden md:overflow-x-auto absolute top-0 left-0 z-30">
           <div
             className={
               openMenu
-                ? 'max-w-screen-xl m-auto bottom-0 relative flex justify-between items-center w-full'
-                : 'max-w-screen-xl m-auto relative flex justify-between items-center w-full'
+                ? 'absolute w-full bg-gray-800/80 text-gray-300 bottom-0'
+                : 'absolute min-w-max w-full bg-gray-800/80 text-gray-300 bottom-[-100px]'
             }
           >
-            <div className="w-full h-full">
-              <ul className="flex items-center justify-center flex-col max-h-[45px] w-full">
-                <li className="w-full relative flex justify-start max-w-6xl px-0">
-                  <span
-                    className="inline-block text-sm
-                      py-[16px] px-4 w-[87.56px] h-full bg-gray-900 text-center"
-                  >
-                    NEWS
-                  </span>
-                  <div
-                    className={
-                      openMenu
-                        ? 'flex items-center border-b-2 pb-2 border-gray-700 max-w-[70%] w-full'
-                        : 'flex items-center max-w-[70%] w-full'
-                    }
-                  >
-                    <span className="text-base ml-8 mr-8">2023年4月6日</span>
-                    <span className="bg-gray-600 mr-8 px-4 py-1 inline-block text-sm rounded">
-                      お知らせ
-                    </span>
-                    <span className="decoration-solid inline-block z-20 relative text-base">
-                      サイト公開しました！
-                    </span>
-                  </div>
-                </li>
-              </ul>
+            <div className="max-w-6xl md:max-w-full mx-auto w-full justify-between flex">
+              <div className="max-w-5xl md:max-w-full w-full flex">
+                <ul className="w-full flex flex-col justify-between">
+                  {pages.map((page, index) => (
+                    <li key={index} className="flex w-full justify-between">
+                      <span className="mr-10 md:mr-5 md:text-[12px] flex justify-center text-base items-center bg-gray-900 w-[100px] md:max-w-[50px] md:w-full md:px-4">
+                        {index === 0 ? (
+                          <span className="py-3">News</span>
+                        ) : (
+                          <span className="py-3">&nbsp;</span>
+                        )}
+                      </span>
+                      <div className="w-full flex items-center justify-start">
+                        <time
+                          itemProp="datepublished"
+                          dateTime={dateToTime(
+                            getDate(page.properties.published.date),
+                            'YYYY-MM-DD'
+                          )}
+                          className="text-base mr-10 md:mr-5 md:text-[12px] text-ellipsis whitespace-nowrap"
+                        >
+                          {dateToTime(
+                            getDate(page.properties.published.date),
+                            'YYYY年MM月DD日'
+                          )}
+                        </time>
+                        <Link
+                          href={
+                            '/news/' +
+                            getSelect(page.properties.category.select)
+                          }
+                          className={
+                            getSelect(page.properties.category.select) +
+                            ' text-base text-center rounded w-[150px] py-[2px] mr-10 text-ellipsis whitespace-nowrap md:text-[10px] md:mr-5 md:w-[90px]'
+                          }
+                        >
+                          {getForumla(page.properties.isJaCategory.formula)}
+                        </Link>
+                        <Link
+                          href={
+                            '/news/' +
+                            getSelect(page.properties.category.select) +
+                            '/' +
+                            getForumla(page.properties.newsSlug.formula)
+                          }
+                          className="md:text-[12px] text-base hover:opacity-80 underline hover:no-underline text-ellipsis whitespace-nowrap"
+                        >
+                          {getText(page.properties.name.title)}
+                        </Link>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <button
+                className={openMenu ? 'open arrow' : 'arrow md:hidden'}
+                onClick={() => menuFunction()}
+              ></button>
             </div>
           </div>
-          {/* <button
-            className={openMenu ? 'open arrow' : 'arrow'}
-            onClick={() => menuFunction()}
-          ></button> */}
         </div>
       </div>
     </div>

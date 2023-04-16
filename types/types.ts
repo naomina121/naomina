@@ -22,6 +22,14 @@ export type TopProps = {
   item: RefObject<HTMLDivElement>;
 };
 
+export type FirstViewProps = TopProps & {
+  pages: PageType[];
+};
+
+export type FirstProps = {
+  pages: PageType[];
+}
+
 export type ContactProps = {
   item: RefObject<HTMLDivElement>;
 };
@@ -89,6 +97,7 @@ export type PropertyType = {
   name: { title: RichTextType[] };
   author: { rich_text: RichTextType[] };
   slug: { rich_text: RichTextType[] };
+  newsSlug: { formula: { string: string } };
   published: { date: { start: string } };
   isPublic: { checkbox: boolean };
   category: { select: { name: string } };
