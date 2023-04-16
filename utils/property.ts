@@ -34,7 +34,7 @@ export const getUpdate = (last_edited_time: string) => {
   return '-';
 };
 
-export const getForumla = (formula: { string: string }) => {
+export const getForumla = (formula: { string: string}) => {
   try {
     return formula.string;
   } catch (err) {

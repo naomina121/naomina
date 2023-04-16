@@ -89,6 +89,7 @@ export type PropertyType = {
   name: { title: RichTextType[] };
   author: { rich_text: RichTextType[] };
   slug: { rich_text: RichTextType[] };
+  newsSlug: { formula: { string: string } };
   published: { date: { start: string } };
   isPublic: { checkbox: boolean };
   category: { select: { name: string } };
