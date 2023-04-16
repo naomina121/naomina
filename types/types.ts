@@ -22,6 +22,14 @@ export type TopProps = {
   item: RefObject<HTMLDivElement>;
 };
 
+export type FirstViewProps = TopProps & {
+  pages: PageType[];
+};
+
+export type FirstProps = {
+  pages: PageType[];
+}
+
 export type ContactProps = {
   item: RefObject<HTMLDivElement>;
 };

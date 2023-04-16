@@ -764,7 +764,7 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 }
 
 .arrow::after {
-	top: -9px;
+	top: -105px;
 	transition-duration: 0.8s;
 	left: -18px;
 	width: 18px;

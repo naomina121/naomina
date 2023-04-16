@@ -15,7 +15,6 @@ const NEWS_DATABASE_ID = process.env.NOTION_NEWS_DATABASE_ID as string;
 
 const is_public = process.env.NOTION_PUBLIC as string;
 
-
 export const allPosts = async () => {
   const and: any = [
     {
@@ -26,13 +25,13 @@ export const allPosts = async () => {
     },
   ];
   if (is_public === 'public') {
-      and.push({
-        property: 'isPublic',
-        checkbox: {
-          equals: true,
-        },
-      });
-    }
+    and.push({
+      property: 'isPublic',
+      checkbox: {
+        equals: true,
+      },
+    });
+  }
   const responce = await notion.databases.query({
     database_id: DATABASE_ID,
     filter: {
@@ -47,7 +46,7 @@ export const allPosts = async () => {
   });
 
   return responce;
-}
+};
 
 export const fetchPages = async ({
   slug,
@@ -138,9 +137,11 @@ export const fetchBlocksByPageId = async (pageId: string) => {
 export const fetchNewsPages = async ({
   slug,
   category,
+  pageSize,
 }: {
   slug?: string;
   category?: string;
+  pageSize?: number;
 }) => {
   const and: any = [];
 
@@ -174,6 +175,12 @@ export const fetchNewsPages = async ({
     });
   }
 
+  let page_size = 100;
+
+  if (pageSize) {
+    page_size = pageSize;
+  }
+
   return await news_notion.databases.query({
     database_id: NEWS_DATABASE_ID,
     filter: {
@@ -185,6 +192,7 @@ export const fetchNewsPages = async ({
         direction: 'descending',
       },
     ],
+    page_size: page_size,
   });
 };
 
@@ -192,10 +200,11 @@ export const fetchNewsBlocksByPageId = async (pageId: string) => {
   const data = [];
   let cursor = undefined;
   while (true) {
-    const { results, next_cursor }: any = await news_notion.blocks.children.list({
-      block_id: pageId,
-      start_cursor: cursor,
-    });
+    const { results, next_cursor }: any =
+      await news_notion.blocks.children.list({
+        block_id: pageId,
+        start_cursor: cursor,
+      });
     data.push(...results);
     if (!next_cursor) break;
     cursor = next_cursor;

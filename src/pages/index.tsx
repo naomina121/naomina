@@ -8,8 +8,22 @@ import FirstView from '@/components/top/FirstView';
 import Skils from '@/components/top/Skils';
 import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
+import { GetServerSideProps } from 'next';
+import { fetchNewsPages } from '@/utils/notion';
+import { FirstProps } from '@/types/types';
 
-const Home: FC = () => {
+export const getServerSideProps: GetServerSideProps = async () => {
+  const newsPages = 3;
+  const { results } = await fetchNewsPages({ pageSize: newsPages });
+  return {
+    props: {
+      pages: results ? results : [],
+    },
+  };
+};
+
+const Home: FC<FirstProps> = ({pages}) => {
+
   const home = useRef<HTMLDivElement>(null);
   const about = useRef<HTMLDivElement>(null);
   const skils = useRef<HTMLDivElement>(null);
@@ -26,7 +40,7 @@ const Home: FC = () => {
         pageImgHeight={800}
         pagePath={`${siteConfig.siteUrl}`}
       />
-      <FirstView item={home} />
+      <FirstView item={home} pages={pages} />
       <About item={about} />
       <Skils item={skils} />
       <Contact item={contact} />
