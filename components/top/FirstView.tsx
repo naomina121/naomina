@@ -54,7 +54,7 @@ const FirstView: FC<FirstViewProps> = ({ item, pages }) => {
           </p>
           <Link
             href="/study"
-            className="study-link relative top-12 w-80 text-center py-4 xl:py-3 rounded-full font-base bg-gray-800 hover:bg-gradient-to-t hover:from-amber-600
+            className="study-link relative top-12 md:top-5 w-80 text-center py-4 xl:py-3 rounded-full font-base bg-gray-800 hover:bg-gradient-to-t hover:from-amber-600
               transition duration-1 ease-in-out hover:to-yellow-500 text-white/90"
           >
             学習記録を見る

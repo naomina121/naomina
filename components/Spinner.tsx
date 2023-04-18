@@ -20,6 +20,7 @@ export const Spinner: FC = () => {
           z-index: 50;
           position: relative;
           overflow:hidden;
+          position:fixed;
         }
         .spinner-box {
           width: 300px;

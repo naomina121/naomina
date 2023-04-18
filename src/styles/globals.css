@@ -329,7 +329,7 @@ p {
 }
 
 .post .context a.card-link p.card-description{
-	@apply text-gray-500 mb-2 my-1 w-full text-ellipsis overflow-hidden font-normal text-[12px];
+	@apply text-gray-500 mb-2 my-1 w-full text-ellipsis whitespace-nowrap overflow-hidden font-normal text-[12px];
 }
 .post .context a.card-link p.card-title{
 	@apply whitespace-nowrap text-base font-bold text-gray-800 w-full text-ellipsis overflow-hidden;
@@ -1313,7 +1313,7 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 	}
 
 	#home .max-h-smart {
-		@apply min-h-[70vh];
+		/* @apply min-h-[70vh]; */
 	}
 
 	.category::before{
