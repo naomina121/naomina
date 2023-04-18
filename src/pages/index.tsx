@@ -8,22 +8,22 @@ import FirstView from '@/components/top/FirstView';
 import Skils from '@/components/top/Skils';
 import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
-import { GetServerSideProps } from 'next';
+import { GetStaticProps } from 'next';
 import { fetchNewsPages } from '@/utils/notion';
 import { FirstProps } from '@/types/types';
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const newsPages = 3;
   const { results } = await fetchNewsPages({ pageSize: newsPages });
   return {
     props: {
       pages: results ? results : [],
     },
+    revalidate: 10,
   };
 };
 
-const Home: FC<FirstProps> = ({pages}) => {
-
+const Home: FC<FirstProps> = ({ pages }) => {
   const home = useRef<HTMLDivElement>(null);
   const about = useRef<HTMLDivElement>(null);
   const skils = useRef<HTMLDivElement>(null);
