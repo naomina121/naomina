@@ -1,4 +1,4 @@
-import { GetServerSideProps, NextPage } from 'next';
+import {  GetStaticProps, NextPage } from 'next';
 import Layout from '@/components/Layout';
 import Card from '@/components/Card';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -8,12 +8,13 @@ import CategoryMenu from '@/components/CategoryMenu';
 import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const { results } = await fetchPages({});
   return {
     props: {
       pages: results ? results : [],
     },
+    revalidate: 10,
   };
 };
 

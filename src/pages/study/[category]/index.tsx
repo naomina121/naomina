@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { GetServerSideProps } from 'next';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import { CategoryProps, Params } from '@/types/types';
 import Breadcrumb from '@/components/Breadcrumb';
 import Layout from '@/components/Layout';
@@ -13,12 +13,12 @@ import SearchButton from '@/components/SearchButtopn';
 import { useMediaQuery } from 'react-responsive';
 import Card from '@/components/Card';
 
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
+export const getStaticProps: GetStaticProps = async (ctx) => {
   const { category } = ctx.params as Params;
   const { results } = await fetchPages({ category: category });
   const { results: contents } = await allPosts();
 
-  if(!results.length){
+  if (!results.length) {
     return {
       notFound: true,
     };
@@ -29,8 +29,16 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
       category: category,
       contents: contents,
     },
+    revalidate: 3600,
   };
 };
+
+ export const getStaticPaths: GetStaticPaths = async () => {
+   return {
+     paths: [],
+     fallback: 'blocking',
+   };
+ };
 
 const Category: FC<CategoryProps> = ({ pages, category, contents }) => {
   const isBreakPoint = useMediaQuery({ query: `(max-width:768px)` });

@@ -21,7 +21,7 @@ import {
   getForumla,
 } from '@/utils/property';
 
-import { GetServerSideProps } from 'next';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import Image from 'next/image';
 import React, { FC, useEffect } from 'react';
 import CategoryMenu from '@/components/CategoryMenu';
@@ -36,7 +36,7 @@ import { allPosts } from '@/utils/notion';
 import SearchButton from '@/components/SearchButtopn';
 import Author from '@/components/post/Author';
 
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
+export const getStaticProps: GetStaticProps = async (ctx) => {
   const { slug } = ctx.params as Params;
   const { results: slugContent } = await fetchPages({ slug: slug });
   const { results: contents } = await allPosts();
@@ -121,6 +121,14 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
       pages: pages,
       cardDatas: cardDatas,
     },
+    revalidate: 3600,
+  };
+};
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+    paths: [], // アプリのビルド時にはパスに何が入るかが分からないので空でOK
+    fallback: 'blocking', // 👈 ポイント
   };
 };
 
