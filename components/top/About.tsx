@@ -47,7 +47,7 @@ const About: FC<TopProps> = ({ item }) => {
 
             <Link
               href="/study"
-              className="block mt-10 font-bold mx-0 p-2 py-4 max-w-xs text-center text-bas bg-gradient-to-r from-amber-500
+              className="block mt-10 font-bold mx-0 py-4 max-w-xs text-center text-bas bg-gradient-to-r from-amber-500
               transition duration-0 ease-in-out to-yellow-500 hover:from-green-400 hover:to-blue-500 hover:duration-700 xl:text-base xl:mx-auto"
             >
               学習記録はこちら

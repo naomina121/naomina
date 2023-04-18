@@ -1,8 +1,11 @@
+const jsdom = require('jsdom');
+const { JSDOM } = jsdom;
 import { useMediaQuery } from 'react-responsive';
 import 'clipboard';
 import prism from 'prismjs';
+import reactStringReplace from 'react-string-replace';
 import 'prism-themes/themes/prism-dracula.css';
-import parse from 'html-react-parser';
+import parse, { domToReact } from 'html-react-parser';
 import { NotionBlocksHtmlParser } from '@notion-stuff/blocks-html-parser';
 import Breadcrumb from '@/components/Breadcrumb';
 import Layout from '@/components/Layout';
@@ -46,16 +49,91 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const page = slugContent[0];
   const pageId = page.id;
   const { results: blocks } = await fetchBlocksByPageId(pageId);
+
+  let json = JSON.stringify(blocks, null, 0);
+
+  json = json.replace('//', '').replace('[', '').replace(']', '');
+
+  const lines = json.split(',');
+
+  const links:any[] = [];
+
+  lines.map((line) => {
+    if (line.includes('https://')) {
+      let link:any = reactStringReplace(
+        line,
+        /(https?:\/\/\S+)/g,
+        (match, i) => match
+      );
+      link = String(link[1]).slice(0, -2).replace('"', '');
+      links.push(link);
+    }
+    if (line.includes('http://')) {
+      let link:any = reactStringReplace(
+        line,
+        /(http?:\/\/\S+)/g,
+        (match, i) => match
+      );
+      link = String(link[1]).slice(0, -2).replace('"', '');
+      links.push(link);
+    }
+  });
+  let cardDatas = [];
+  const temps = await Promise.all(
+    links.map(async (link) => {
+      const metas = await fetch(link)
+        .then((res) => res.text())
+        .then((text) => {
+          const metaData = {
+            url: link,
+            title: '',
+            description: '',
+            image: '',
+            favicon: '',
+          };
+          const doms = new JSDOM(text);
+          const metas = doms.window.document.getElementsByTagName('meta');
+          const favicon = doms.window.document.getElementsByTagName('link');
+          for (let i = 0; i < metas.length; i++) {
+            let pro = metas[i].getAttribute('property');
+            if (typeof pro == 'string') {
+              if (pro.match('og:title'))
+                metaData.title = metas[i].getAttribute('content');
+              if (pro.match('og:description'))
+                metaData.description = metas[i].getAttribute('content');
+              if (pro.match('og:image') && metaData.image === '')
+                metaData.image = metas[i].getAttribute('content');
+            }
+          }
+
+          for (var i = 0; i < favicon.length; i++) {
+            let faviconPro = favicon[i].getAttribute('rel');
+            if (typeof faviconPro == 'string') {
+              if (faviconPro.match('icon') && metaData.favicon === '')
+                metaData.favicon = favicon[i].getAttribute('href');
+            }
+          }
+          return metaData;
+        })
+        .catch((e) => {
+          console.log(e);
+        });
+      return metas;
+    })
+  );
+  cardDatas = temps.filter((temp) => temp !== undefined);
+
   return {
     props: {
       page: page,
       blocks: blocks,
       pages: pages,
+      cardDatas: cardDatas,
     },
   };
 };
 
-const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
+const Article: FC<ArticleProps> = ({ page, blocks, pages, cardDatas }) => {
   const isBreakPoint = useMediaQuery({ query: `(max-width:1320px)` });
 
   const dataUpdate = dateToTime(
@@ -112,7 +190,83 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
   });
 
   const notionToHtml = CustomNotion.parse(blocks);
-  const html = parse(notionToHtml);
+
+  const replace = (node: any) => {
+    if (node.name === 'a') {
+      if (node.parent.children.length === 1 && node.parent.name !== 'li') {
+        const indexOfUrl = cardDatas.findIndex((card) => {
+          return card.url.indexOf(node.attribs?.href) != -1;
+        });
+        const cardData = cardDatas[indexOfUrl];
+
+        //内部リンクか外部リンク化判定
+        const blank = cardData.url.indexOf(siteConfig.siteUrl) === -1;
+        const blankProp = blank
+          ? {
+              target: '_blank',
+              rel: 'noopener nofollow',
+            }
+          : {};
+        if (cardData.title && cardData.image) {
+          return (
+            <a
+              href={cardData.url}
+              className="flex bg-white rounded-md card-link px-2 py-4 max-h-[170px]"
+              {...blankProp}
+            >
+              <div className="flex mx-auto justify-between items-center overflow-hidden">
+                <div className="flex flex-col justify-start w-full mr-4 max-w-md">
+                  <p className="card-title">
+                    {cardData.title}
+                  </p>
+                  <p className="card-description">
+                    {cardData.description}
+                  </p>
+
+                  {cardData.favicon ? (
+                    <div className="flex items-center justify-start">
+                      <img
+                        src={cardData.favicon}
+                        width="20"
+                        height="20"
+                        alt={cardData.title}
+                      />
+                      <span className="w-full text-ellipsis overflow-hidden ml-2 mt-1 text-xs">
+                        {cardData.url}
+                      </span>
+                    </div>
+                  ) : (
+                    <span className="w-full text-ellipsis overflow-hidden text-xs">
+                      {cardData.url}
+                    </span>
+                  )}
+                </div>
+                <img
+                  src={cardData.image ? cardData.image : '/img/noimg.jpg'}
+                  alt={cardData.title}
+                  width="100"
+                  height="100"
+                  className="object-contain w-[200px] h-auto max-w-xs"
+                />
+              </div>
+            </a>
+          );
+        }
+        return (
+          <a href={cardData.url} {...blankProp} data-nemui="nemui">
+            {domToReact(node.children)}
+          </a>
+        );
+      }
+      return (
+        <a {...node.attribs} target="_blank" data-nemukunai="nemukunaiyou">
+          {domToReact(node.children)}
+        </a>
+      );
+    }
+  };
+
+  const html = parse(notionToHtml, { replace });
 
   return (
     <Layout>

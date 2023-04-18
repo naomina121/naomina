@@ -42,16 +42,23 @@ const FirstView: FC<FirstViewProps> = ({ item, pages }) => {
         className="absolute min-w-full min-h-full translate-y-[-50%] z-20 top-1/2
           left-1/2 translate-x-[-50%] w-full"
       >
-        <div className="max-h-smart max-w-6xl mx-auto flex flex-col items-center text-white z-20 justify-center relative">
-          <p className="xl:relative xl:top-10 text-white sub-title">
+        <div className="max-h-smart max-w-6xl mx-auto flex flex-col items-center text-white justify-center relative z-40">
+          <p className="xl:relative text-white sub-title">
             <span>未経験からエンジニアに挑戦する個人的学習記録</span>
           </p>
-          <p className="text-white xl:top-10 xl:relative title font-['Montserrat',sans-serif] font-black">
+          <p className="text-white  title font-['Montserrat',sans-serif] font-black">
             <span className="w-full flex">
               <span className="text-amber-400 md:pr-0 pr-2 ">RECORD</span>
               <span className="flex w-full ml-2">OF THE STUDY</span>
             </span>
           </p>
+          <Link
+            href="/study"
+            className="study-link relative top-12 md:top-5 w-80 text-center py-4 xl:py-3 rounded-full font-base bg-gray-800 hover:bg-gradient-to-t hover:from-amber-600
+              transition duration-1 ease-in-out hover:to-yellow-500 text-white/90"
+          >
+            学習記録を見る
+          </Link>
         </div>
         {/* firstview_bottom */}
         <div className="w-full h-full overflow-y-hidden md:overflow-x-auto absolute top-0 left-0 z-30">

@@ -63,10 +63,19 @@ export type CardProps = {
   index: number;
 };
 
+export type cardData ={
+  title:string;
+  description:string;
+  url:any;
+  image:string;
+  favicon:string;
+}
+
 export type ArticleProps = {
   page: PageType;
   blocks: Blocks;
   pages: PageType[];
+  cardDatas: cardData[];
 };
 
 export type ContentBottomProps = {
