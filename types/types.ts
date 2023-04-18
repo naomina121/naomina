@@ -68,7 +68,6 @@ export type cardData ={
   description:string;
   url:any;
   image:string;
-  favicon:string;
 }
 
 export type ArticleProps = {

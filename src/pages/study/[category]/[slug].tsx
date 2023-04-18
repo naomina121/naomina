@@ -56,11 +56,11 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 
   const lines = json.split(',');
 
-  const links:any[] = [];
+  const links: any[] = [];
 
   lines.map((line) => {
     if (line.includes('https://')) {
-      let link:any = reactStringReplace(
+      let link: any = reactStringReplace(
         line,
         /(https?:\/\/\S+)/g,
         (match, i) => match
@@ -69,7 +69,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
       links.push(link);
     }
     if (line.includes('http://')) {
-      let link:any = reactStringReplace(
+      let link: any = reactStringReplace(
         line,
         /(http?:\/\/\S+)/g,
         (match, i) => match
@@ -93,7 +93,6 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
           };
           const doms = new JSDOM(text);
           const metas = doms.window.document.getElementsByTagName('meta');
-          const favicon = doms.window.document.getElementsByTagName('link');
           for (let i = 0; i < metas.length; i++) {
             let pro = metas[i].getAttribute('property');
             if (typeof pro == 'string') {
@@ -103,14 +102,6 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
                 metaData.description = metas[i].getAttribute('content');
               if (pro.match('og:image') && metaData.image === '')
                 metaData.image = metas[i].getAttribute('content');
-            }
-          }
-
-          for (var i = 0; i < favicon.length; i++) {
-            let faviconPro = favicon[i].getAttribute('rel');
-            if (typeof faviconPro == 'string') {
-              if (faviconPro.match('icon') && metaData.favicon === '')
-                metaData.favicon = favicon[i].getAttribute('href');
             }
           }
           return metaData;
@@ -216,30 +207,11 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages, cardDatas }) => {
             >
               <div className="flex mx-auto justify-between items-center overflow-hidden">
                 <div className="flex flex-col justify-start w-full mr-4 max-w-md">
-                  <p className="card-title">
-                    {cardData.title}
-                  </p>
-                  <p className="card-description">
-                    {cardData.description}
-                  </p>
-
-                  {cardData.favicon ? (
-                    <div className="flex items-center justify-start">
-                      <img
-                        src={cardData.favicon}
-                        width="20"
-                        height="20"
-                        alt={cardData.title}
-                      />
-                      <span className="w-full text-ellipsis overflow-hidden ml-2 mt-1 text-xs">
-                        {cardData.url}
-                      </span>
-                    </div>
-                  ) : (
-                    <span className="w-full text-ellipsis overflow-hidden text-xs">
-                      {cardData.url}
-                    </span>
-                  )}
+                  <p className="card-title">{cardData.title}</p>
+                  <p className="card-description">{cardData.description}</p>
+                  <span className="w-full text-ellipsis overflow-hidden text-xs">
+                    {cardData.url}
+                  </span>
                 </div>
                 <img
                   src={cardData.image ? cardData.image : '/img/noimg.jpg'}
