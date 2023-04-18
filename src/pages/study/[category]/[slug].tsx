@@ -121,7 +121,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
       pages: pages,
       cardDatas: cardDatas,
     },
-    revalidate: 3600,
+    revalidate:300,
   };
 };
 
