@@ -61,7 +61,7 @@ const FirstView: FC<FirstViewProps> = ({ item, pages }) => {
           </Link>
         </div>
         {/* firstview_bottom */}
-        <div className="w-full h-full overflow-y-hidden md:overflow-x-auto absolute top-0 left-0 z-30">
+        <div className="w-full h-full overflow-y-hidden md:overflow-x-auto absolute top-0 left-0 z-40">
           <div
             className={
               openMenu
