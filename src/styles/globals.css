@@ -328,6 +328,19 @@ p {
 	font-weight: 600;
 }
 
+.post .context a.card-link p.card-description{
+	@apply text-gray-500 mb-2 my-1 w-full text-ellipsis overflow-hidden font-normal text-[12px];
+}
+.post .context a.card-link p.card-title{
+	@apply whitespace-nowrap text-base font-bold text-gray-800 w-full text-ellipsis overflow-hidden;
+}
+
+.post .context a.card-link{
+	border:none;
+	font-weight:normal;
+	border:1px solid #e6e6e6;
+}
+
 .post a:hover {
 	text-decoration: none;
 	opacity: 0.7;
