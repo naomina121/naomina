@@ -127,8 +127,8 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
-    paths: [], // アプリのビルド時にはパスに何が入るかが分からないので空でOK
-    fallback: 'blocking', // 👈 ポイント
+    paths: [],
+    fallback: 'blocking',
   };
 };
 
@@ -305,10 +305,7 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages, cardDatas }) => {
                           key={index}
                           className="text-xs p-1 px-2 m-0 rounded-sm text-gray-400 font-medium mr-2 xl:text-[12px] hover:text-gray-600  border-[1px]
                           border-gray-400 align-middle"
-                          href={
-                            '/tag/' +
-                            getMultiSelect(page.properties.tags.multi_select)
-                          }
+                          href={`/tag/${tag}`}
                         >{`#${tag} `}</Link>
                       )
                     )}
