@@ -96,9 +96,7 @@ const List: FC<CardProps> = ({ page, index }) => {
                   key={index}
                   className="text-xs p-1 px-2 m-0 rounded-sm text-gray-400 font-medium mr-2 hover:text-gray-600  border
                   border-gray-400 align-middle"
-                  href={
-                    '/tag/' + getMultiSelect(page.properties.tags.multi_select)
-                  }
+                  href={`/tag/${tag}`}
                 >{`#${tag}`}</Link>
               )
             )}
