@@ -1,21 +1,19 @@
-import { GetServerSideProps, NextPage } from 'next';
+import { GetStaticProps, NextPage } from 'next';
 import Layout from '@/components/Layout';
-import Card from '@/components/Card';
 import Breadcrumb from '@/components/Breadcrumb';
 import { fetchNewsPages, fetchPages } from '@/utils/notion';
 import { IndexProps } from '@/types/types';
-import CategoryMenu from '@/components/CategoryMenu';
 import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
-import List from '@/components/List';
 import NewsList from '@/components/NewsList';
 
-export const getServerSideProps: GetServerSideProps = async () => {
-  const { results } = await fetchNewsPages({});
+export const getStaticProps: GetStaticProps = async () => {
+  const { results } = await fetchPages({});
   return {
     props: {
       pages: results ? results : [],
     },
+    revalidate: 10,
   };
 };
 

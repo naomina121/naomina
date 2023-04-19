@@ -1,20 +1,16 @@
 import React, { FC } from 'react';
-import { GetServerSideProps } from 'next';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import { CategoryProps, Params } from '@/types/types';
 import Breadcrumb from '@/components/Breadcrumb';
 import Layout from '@/components/Layout';
 import { allPosts, fetchNewsPages, fetchPages } from '@/utils/notion';
-import CategoryMenu from '@/components/CategoryMenu';
-import List from '@/components/List';
 import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
 import { getForumla } from '@/utils/property';
-import SearchButton from '@/components/SearchButtopn';
 import { useMediaQuery } from 'react-responsive';
-import Card from '@/components/Card';
 import NewsList from '@/components/NewsList';
 
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
+export const getStaticProps: GetStaticProps = async (ctx) => {
   const { category } = ctx.params as Params;
   const { results } = await fetchNewsPages({ category: category });
   const { results: contents } = await allPosts();
@@ -30,6 +26,14 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
       category: category,
       contents: contents,
     },
+    revalidate: 300,
+  };
+};
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+    paths: [],
+    fallback: 'blocking',
   };
 };
 

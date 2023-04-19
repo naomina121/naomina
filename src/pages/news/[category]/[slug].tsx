@@ -7,33 +7,19 @@ import { NotionBlocksHtmlParser } from '@notion-stuff/blocks-html-parser';
 import Breadcrumb from '@/components/Breadcrumb';
 import Layout from '@/components/Layout';
 import { ArticleProps, Params } from '@/types/types';
-import { fetchBlocksByPageId, fetchNewsBlocksByPageId, fetchNewsPages, fetchPages } from '@/utils/notion';
-import {
-  getSelect,
-  getCover,
-  getDate,
-  getMultiSelect,
-  getText,
-  getUpdate,
-  getForumla,
-} from '@/utils/property';
+import { fetchNewsBlocksByPageId, fetchNewsPages } from '@/utils/notion';
+import { getSelect, getDate, getText, getForumla } from '@/utils/property';
 
-import { GetServerSideProps } from 'next';
-import Image from 'next/image';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import React, { FC, useEffect } from 'react';
-import CategoryMenu from '@/components/CategoryMenu';
 import dateToTime from '@/hooks/dateToTime';
-import Link from 'next/link';
-import Sns from '@/components/post/Sns';
 import Toc from '@/components/post/Toc';
 import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
 import MainToc from '@/components/post/MainToc';
-import { allPosts } from '@/utils/notion';
-import SearchButton from '@/components/SearchButtopn';
 import Author from '@/components/post/Author';
 
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
+export const getStaticProps: GetStaticProps = async (ctx) => {
   const { slug } = ctx.params as Params;
   const { results: slugContent } = await fetchNewsPages({ slug: slug });
   const page = slugContent[0];
@@ -44,6 +30,14 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
       page: page,
       blocks: blocks,
     },
+    revalidate: 300,
+  };
+};
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+    paths: [],
+    fallback: 'blocking',
   };
 };
 

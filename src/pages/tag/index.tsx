@@ -7,21 +7,32 @@ import { siteConfig } from '@/site.config';
 import { IndexProps, PageType } from '@/types/types';
 import { allPosts, fetchPages } from '@/utils/notion';
 import { getMultiSelect } from '@/utils/property';
-import { GetServerSideProps, NextPage } from 'next';
+import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import Link from 'next/link';
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const { results } = await fetchPages({});
   const { results: contents } = await allPosts();
   return {
     props: {
       pages: results ? results : [],
-      contents:contents,
+      contents: contents,
     },
+    revalidate: 300,
   };
 };
 
-const Tag: NextPage<IndexProps & {contents:PageType[]}> = ({ pages,contents }) => {
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+    paths: [],
+    fallback: 'blocking',
+  };
+};
+
+const Tag: NextPage<IndexProps & { contents: PageType[] }> = ({
+  pages,
+  contents,
+}) => {
   const tag = pages.map((item) =>
     getMultiSelect(item.properties.tags.multi_select)
   );
