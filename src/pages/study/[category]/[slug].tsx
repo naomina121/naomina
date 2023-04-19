@@ -320,7 +320,7 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages, cardDatas }) => {
               src={getCover(page.cover)}
               width="768"
               height="360"
-              alt="about"
+              alt={getText(page.properties.name.title)}
               className="object-cover w-full mb-10 xl:mb-0"
             />
             <div className="p-10 xl:p-5 py-0 context">
