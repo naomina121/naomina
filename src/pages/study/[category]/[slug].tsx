@@ -121,7 +121,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
       pages: pages,
       cardDatas: cardDatas,
     },
-    revalidate:300,
+    revalidate: 300,
   };
 };
 
@@ -221,7 +221,7 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages, cardDatas }) => {
                     {cardData.url}
                   </span>
                 </div>
-                <img
+                <Image
                   src={cardData.image ? cardData.image : '/img/noimg.jpg'}
                   alt={cardData.title}
                   width="100"
