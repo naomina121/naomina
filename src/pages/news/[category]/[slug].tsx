@@ -6,7 +6,7 @@ import { fetchNewsBlocksByPageId, fetchNewsPages } from '@/utils/notion';
 import { getSelect, getDate, getText, getForumla } from '@/utils/property';
 
 import { GetStaticPaths, GetStaticProps } from 'next';
-import React, { FC, useEffect } from 'react';
+import React, { FC } from 'react';
 import dateToTime from '@/hooks/dateToTime';
 import Toc from '@/components/post/Toc';
 import Seo from '@/components/Seo';
@@ -26,7 +26,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
       page: page,
       blocks: blocks,
     },
-    revalidate: 300,
+    revalidate: 10,
   };
 };
 

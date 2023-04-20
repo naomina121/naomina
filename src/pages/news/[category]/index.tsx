@@ -3,7 +3,7 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import { CategoryProps, Params } from '@/types/types';
 import Breadcrumb from '@/components/Breadcrumb';
 import Layout from '@/components/Layout';
-import { allPosts, fetchNewsPages, fetchPages } from '@/utils/notion';
+import { fetchNewsPages, fetchPages } from '@/utils/notion';
 import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
 import { getForumla } from '@/utils/property';
@@ -13,7 +13,7 @@ import NewsList from '@/components/NewsList';
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const { category } = ctx.params as Params;
   const { results } = await fetchNewsPages({ category: category });
-  const { results: contents } = await allPosts();
+  const { results: contents } = await fetchNewsPages({});
 
   if (!results.length) {
     return {

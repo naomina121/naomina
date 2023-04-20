@@ -3,7 +3,7 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import { CategoryProps, Params } from '@/types/types';
 import Breadcrumb from '@/components/Breadcrumb';
 import Layout from '@/components/Layout';
-import { allPosts, fetchPages } from '@/utils/notion';
+import { fetchPages } from '@/utils/notion';
 import CategoryMenu from '@/components/CategoryMenu';
 import List from '@/components/List';
 import Seo from '@/components/Seo';
@@ -16,7 +16,7 @@ import Card from '@/components/Card';
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const { category } = ctx.params as Params;
   const { results } = await fetchPages({ category: category });
-  const { results: contents } = await allPosts();
+  const { results: contents } = await fetchPages({ category: category });
 
   if (!results.length) {
     return {
@@ -29,21 +29,21 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
       category: category,
       contents: contents,
     },
-    revalidate: 300,
+    revalidate: 10,
   };
 };
 
- export const getStaticPaths: GetStaticPaths = async () => {
-   return {
-     paths: [],
-     fallback: 'blocking',
-   };
- };
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+    paths: [],
+    fallback: 'blocking',
+  };
+};
 
 const Category: FC<CategoryProps> = ({ pages, category, contents }) => {
   const isBreakPoint = useMediaQuery({ query: `(max-width:768px)` });
   let is_pages = false;
-  if(pages.length){
+  if (pages.length) {
     is_pages = true;
   }
   return (

@@ -3,7 +3,7 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import { Params } from '@/types/types';
 import Breadcrumb from '@/components/Breadcrumb';
 import Layout from '@/components/Layout';
-import { allPosts, fetchPages } from '@/utils/notion';
+import { fetchPages } from '@/utils/notion';
 import CategoryMenu from '@/components/CategoryMenu';
 import List from '@/components/List';
 import { TagProps } from '@/types/types';
@@ -16,7 +16,7 @@ import Card from '@/components/Card';
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const { tag } = ctx.params as Params;
   const { results } = await fetchPages({ tag: tag });
-  const { results: contents } = await allPosts();
+  const { results: contents } = await fetchPages({ tag: tag });
   if (!results.length) {
     return {
       notFound: true,

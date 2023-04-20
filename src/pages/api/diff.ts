@@ -1,6 +1,7 @@
-import { getCover, getText } from '@/utils/property';
+import { getUpdate } from '@/utils/property';
 import { NextApiRequest, NextApiResponse } from 'next';
 import { fetchPages } from '@/utils/notion';
+import { PageType } from '@/types/types';
 
 export default async function handler(
   req: NextApiRequest,
@@ -13,19 +14,19 @@ export default async function handler(
   }
 
   try {
-    const { page } = JSON.parse(req.body);
+    const { slug, lastUpDate } = JSON.parse(req.body);
 
     const { results } = await fetchPages({
-      slug: getText(page.properties.slug.rich_text),
+      slug: slug,
     });
-
-    const imgPages: any[] = results ? results : [];
-
-    const p = imgPages[0];
-
-    const src = getCover(p.cover) ? getCover(page.cover) : '/img/noimg.jpg';
-
-    res.status(200).json({ imageData: src });
+    const datas: PageType[] | any = results;
+    const data = datas[0];
+    const diffLastUpDate = getUpdate(data.properties.update.last_edited_time);
+    if (lastUpDate === diffLastUpDate) {
+      res.status(201);
+      res.end();
+    }
+    res.status(200);
     res.end();
   } catch (e) {
     console.log(e);
