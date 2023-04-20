@@ -22,7 +22,7 @@ type Props = {
 };
 
 const Html: FC<Props> = ({ blocks }) => {
-  const [html, setHtml] = useState(parse('<div>ローディング中です</div>'));
+  const [html, setHtml] = useState(parse('<GuruGuru />'));
 
   const NotionToHtml = async (blocks: Blocks) => {
     const SyntaxHighlighter = (code: any, language: string) => {
