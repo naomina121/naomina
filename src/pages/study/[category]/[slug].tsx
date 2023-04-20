@@ -26,6 +26,7 @@ import MainToc from '@/components/post/MainToc';
 import SearchButton from '@/components/SearchButtopn';
 import Author from '@/components/post/Author';
 import Html from '@/components/post/Html';
+import { Blocks } from '@notion-stuff/v4-types';
 
 interface FetchRequest {
   url: string;
@@ -78,7 +79,25 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
   const slug = getText(page.properties.slug.rich_text);
   const lastUpDate = getUpdate(page.properties.update.last_edited_time);
 
-  //ページの情報が更新されていたら
+  //ページの情報が更新されていたかもしくは、記事内の画像が有効期限が切れていたらページを再生成する
+
+  const isExpired = (blocks: Array<any>): boolean => {
+    const now = Date.now();
+
+    const imageArray = blocks.filter((block) => block.Type === 'image');
+
+    const newFindArry = imageArray.find((block) => {
+      const image = block.Image;
+      image.File &&
+        image.File.ExpiryTime &&
+        Date.parse(image.File.ExpiryTime) < now;
+    });
+    if (newFindArry === undefined) {
+      return false;
+    }
+    return true;
+  };
+
   useEffect(() => {
     (async function () {
       try {
@@ -93,7 +112,7 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
           },
         });
 
-        if (diffRes.status !== 200) {
+        if (diffRes.status !== 200 && !isExpired(blocks)) {
           // console.error('diffres:status:' + diffRes.status);
           return;
         }
@@ -107,7 +126,7 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
           },
         });
         if (res.status !== 200) {
-          // console.error('res:status:' + res.status);
+          //console.error('res:status:' + res.status);
           return;
         }
       } catch (err) {
