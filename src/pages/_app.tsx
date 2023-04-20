@@ -5,20 +5,20 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Script from 'next/script';
 import * as gtag from '../lib/gtag';
- import { useRouter } from 'next/router';
- import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }: AppProps) {
-     const router = useRouter();
-     useEffect(() => {
-       const handleRouterChange = (url: any) => {
-         gtag.pageview(url);
-       };
-       router.events.on('routeChangeComplete', handleRouterChange);
-       return () => {
-         router.events.off('routeChangeComplete', handleRouterChange);
-       };
-     }, [router.events]);
+  const router = useRouter();
+  useEffect(() => {
+    const handleRouterChange = (url: any) => {
+      gtag.pageview(url);
+    };
+    router.events.on('routeChangeComplete', handleRouterChange);
+    return () => {
+      router.events.off('routeChangeComplete', handleRouterChange);
+    };
+  }, [router.events]);
   return (
     <div>
       <Script

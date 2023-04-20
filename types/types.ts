@@ -11,7 +11,7 @@ export type Params = ParsedUrlQuery & {
 
 export type BreadcrumbProps = {
   breadList: string;
-  breadListJs:string;
+  breadListJs: string;
 };
 
 export type LayoutProps = {
@@ -28,7 +28,7 @@ export type FirstViewProps = TopProps & {
 
 export type FirstProps = {
   pages: PageType[];
-}
+};
 
 export type ContactProps = {
   item: RefObject<HTMLDivElement>;
@@ -42,9 +42,12 @@ export type SearchProps = IndexProps & {
   keyword: string;
 };
 
-export type TagProps = IndexProps & { tag: string ,contents:PageType[]};
+export type TagProps = IndexProps & { tag: string; contents: PageType[] };
 
-export type CategoryProps = IndexProps & { category: string, contents:PageType[] };
+export type CategoryProps = IndexProps & {
+  category: string;
+  contents: PageType[];
+};
 
 export type PageProps = {
   slug: string;
@@ -63,18 +66,22 @@ export type CardProps = {
   index: number;
 };
 
-export type cardData ={
-  title:string;
-  description:string;
-  url:any;
-  image:string;
-}
+export type BlogCardData = {
+  cardData: cardData;
+  blankProp: any;
+};
+
+export type cardData = {
+  title: string;
+  description: string;
+  url: any;
+  image: string;
+};
 
 export type ArticleProps = {
   page: PageType;
   blocks: Blocks;
   pages: PageType[];
-  cardDatas: cardData[];
 };
 
 export type ContentBottomProps = {

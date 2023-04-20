@@ -21,7 +21,7 @@ const Contact: FC<ContactProps> = ({ item }) => {
   const submitForm = async (e: any) => {
     e.preventDefault();
     const res = await fetchAsync({
-      url: `${siteConfig.siteUrl}api/submit-form`,
+      url: `./api/submit-form`,
       options: {
         method: 'POST',
         body: JSON.stringify({ name, email, message }),

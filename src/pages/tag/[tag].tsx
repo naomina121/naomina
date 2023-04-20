@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { GetServerSideProps } from 'next';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import { Params } from '@/types/types';
 import Breadcrumb from '@/components/Breadcrumb';
 import Layout from '@/components/Layout';
@@ -13,7 +13,7 @@ import SearchButton from '@/components/SearchButtopn';
 import { useMediaQuery } from 'react-responsive';
 import Card from '@/components/Card';
 
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
+export const getStaticProps: GetStaticProps = async (ctx) => {
   const { tag } = ctx.params as Params;
   const { results } = await fetchPages({ tag: tag });
   const { results: contents } = await allPosts();
@@ -26,8 +26,16 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
     props: {
       pages: results ? results : [],
       tag: tag,
-      contents:contents,
+      contents: contents,
     },
+    revalidate: 300,
+  };
+};
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+    paths: [],
+    fallback: 'blocking',
   };
 };
 

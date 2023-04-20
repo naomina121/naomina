@@ -16,12 +16,15 @@ export const getServerSideProps: GetServerSideProps = async () => {
   return {
     props: {
       pages: results ? results : [],
-      contents:contents,
+      contents: contents,
     },
   };
 };
 
-const Tag: NextPage<IndexProps & {contents:PageType[]}> = ({ pages,contents }) => {
+const Tag: NextPage<IndexProps & { contents: PageType[] }> = ({
+  pages,
+  contents,
+}) => {
   const tag = pages.map((item) =>
     getMultiSelect(item.properties.tags.multi_select)
   );

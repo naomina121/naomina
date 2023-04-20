@@ -2,13 +2,10 @@ import dateToTime from '@/hooks/dateToTime';
 import { CardProps } from '@/types/types';
 import 'remixicon/fonts/remixicon.css';
 import {
-  getCover,
   getDate,
   getForumla,
-  getMultiSelect,
   getSelect,
   getText,
-  getUpdate,
 } from '@/utils/property';
 import Image from 'next/image';
 import Link from 'next/link';

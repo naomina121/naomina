@@ -1073,7 +1073,7 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 }
 
 .hm-content nav ul li {
-	@apply p-4 border-b-[1px] border-dotted border-gray-500;
+	@apply p-0 border-b-[1px] border-dotted border-gray-500;
 }
 
 .hm-content nav ul li:last-child {
@@ -1081,7 +1081,7 @@ div div.code-toolbar>.toolbar>.toolbar-item>span {
 }
 
 .hm-content nav ul li a {
-	@apply text-gray-400 text-base;
+	@apply text-gray-400 text-base block p-4;
 }
 
 #hmCheck:checked~.open-btn {
