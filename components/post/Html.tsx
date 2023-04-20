@@ -62,6 +62,10 @@ const Html: FC<Props> = ({ blocks }) => {
 
     const notionToHtml = CustomNotion.parse(blocks);
 
+    const before = parse(notionToHtml);
+
+    setHtml(before);
+
     const res = await fetchAsync({
       url: '../../api/notion-to-html',
       options: {
@@ -129,7 +133,7 @@ const Html: FC<Props> = ({ blocks }) => {
 
   useEffect(() => {
     NotionToHtml(blocks);
-  }, [html]);
+  }, []);
 
   return <>{html}</>;
 };
