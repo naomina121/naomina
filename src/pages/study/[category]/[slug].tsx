@@ -1,11 +1,10 @@
 import { useMediaQuery } from 'react-responsive';
 import Breadcrumb from '@/components/Breadcrumb';
 import Layout from '@/components/Layout';
-import { ArticleProps, PageType, Params } from '@/types/types';
+import { ArticleProps, Params } from '@/types/types';
 import { fetchBlocksByPageId, fetchPages } from '@/utils/notion';
 import {
   getSelect,
-  getCover,
   getDate,
   getMultiSelect,
   getText,
@@ -15,7 +14,7 @@ import {
 
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Image from 'next/image';
-import React, { FC, useEffect, useState } from 'react';
+import React, { FC, useEffect } from 'react';
 import CategoryMenu from '@/components/CategoryMenu';
 import dateToTime from '@/hooks/dateToTime';
 import Link from 'next/link';
@@ -24,11 +23,9 @@ import Toc from '@/components/post/Toc';
 import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
 import MainToc from '@/components/post/MainToc';
-import { allPosts } from '@/utils/notion';
 import SearchButton from '@/components/SearchButtopn';
 import Author from '@/components/post/Author';
 import Html from '@/components/post/Html';
-import { GuruGuru } from '@/components/GuruGuru';
 
 interface FetchRequest {
   url: string;
@@ -42,7 +39,7 @@ async function fetchAsync(request: FetchRequest) {
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const { slug } = ctx.params as Params;
   const { results: slugContent } = await fetchPages({ slug: slug });
-  const { results: contents } = await allPosts();
+  const { results: contents } = await fetchPages({});
   if (!slugContent.length) {
     return {
       notFound: true,
@@ -59,7 +56,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
       blocks: blocks,
       pages: pages,
     },
-    revalidate: 300,
+    revalidate: 10,
   };
 };
 
@@ -71,30 +68,54 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
-  const slug = getCover(page.cover);
-  const [url, setUrl] = useState(slug);
-  const [loading, setLoading] = useState(false);
-  const [article, setArticle] = useState(blocks);
   const isBreakPoint = useMediaQuery({ query: `(max-width:1320px)` });
+  const url = `../../../api/image/${getSelect(
+    page.properties.category.select
+  )}/${getText(page.properties.slug.rich_text)}/?slug=${getText(
+    page.properties.slug.rich_text
+  )}&cat=${getSelect(page.properties.category.select)}`;
 
-  const handleGetImage = async (page: PageType) => {
-    setLoading(true);
+  const slug = getText(page.properties.slug.rich_text);
+  const lastUpDate = getUpdate(page.properties.update.last_edited_time);
 
-    const res = await fetchAsync({
-      url: `../../../api/fetch-image-url`,
-      options: {
-        method: 'POST',
-        body: JSON.stringify({ page }),
-      },
-    });
+  //ページの情報が更新されていたら
+  useEffect(() => {
+    (async function () {
+      try {
+        const diffRes = await fetchAsync({
+          url: `../../../api/diff`,
+          options: {
+            method: 'POST',
+            body: JSON.stringify({
+              slug: slug,
+              lastUpDate: lastUpDate,
+            }),
+          },
+        });
 
-    if (res.status === 200) {
-      const r = await res.json();
-      setUrl(r.imageData);
-      setArticle(r.articleData);
-    }
-    setLoading(false);
-  };
+        if (diffRes.status !== 200) {
+          // console.error('diffres:status:' + diffRes.status);
+          return;
+        }
+
+        const res = await fetchAsync({
+          url: `../../../api/isr/req?path=${`/study/${getSelect(
+            page.properties.category.select
+          )}/${getText(page.properties.slug.rich_text)}`}`,
+          options: {
+            method: 'GET',
+          },
+        });
+        if (res.status !== 200) {
+          // console.error('res:status:' + res.status);
+          return;
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    })();
+  }),
+    [];
 
   const dataUpdate = dateToTime(
     getUpdate(page.properties.update.last_edited_time),
@@ -118,7 +139,6 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
 
   return (
     <Layout>
-      {loading && <GuruGuru />}
       <Seo
         pageTitle={getText(page.properties.name.title)}
         pageDescription={getText(page.properties.description.rich_text)}
@@ -190,12 +210,11 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
               width="768"
               height="360"
               alt={getText(page.properties.name.title)}
-              onError={() => handleGetImage(page)}
               className="object-cover w-full mb-10 xl:mb-0"
             />
             <div className="p-10 xl:p-5 py-0 context">
               {isBreakPoint ? <MainToc /> : <></>}
-              <Html blocks={article} />
+              <Html blocks={blocks} />
             </div>
             <div className="my-10 xl:px-5 px-10 xl:mb-0">
               <Sns page={page} />

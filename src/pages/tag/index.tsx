@@ -5,26 +5,21 @@ import SearchButton from '@/components/SearchButtopn';
 import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
 import { IndexProps, PageType } from '@/types/types';
-import { allPosts, fetchPages } from '@/utils/notion';
+import { fetchPages } from '@/utils/notion';
 import { getMultiSelect } from '@/utils/property';
 import { GetServerSideProps, NextPage } from 'next';
 import Link from 'next/link';
 
 export const getServerSideProps: GetServerSideProps = async () => {
   const { results } = await fetchPages({});
-  const { results: contents } = await allPosts();
   return {
     props: {
       pages: results ? results : [],
-      contents: contents,
     },
   };
 };
 
-const Tag: NextPage<IndexProps & { contents: PageType[] }> = ({
-  pages,
-  contents,
-}) => {
+const Tag: NextPage<IndexProps> = ({ pages }) => {
   const tag = pages.map((item) =>
     getMultiSelect(item.properties.tags.multi_select)
   );
@@ -48,7 +43,7 @@ const Tag: NextPage<IndexProps & { contents: PageType[] }> = ({
         pageImgHeight={800}
         pagePath={`${siteConfig.siteUrl}tag`}
       />
-      <CategoryMenu pages={contents} />
+      <CategoryMenu pages={pages} />
       <div>
         <div className="w-full bg-gray-200 min-h-[500px]">
           <div className="w-full max-w-6xl mx-auto">
