@@ -121,19 +121,21 @@ const Html: FC<Props> = ({ blocks }) => {
       const change = parse(notionToHtml, { replace });
 
       setHtml(change);
-
-      tocbot.init({
-        tocSelector: '.toc, .main-toc',
-        contentSelector: '.context',
-        headingSelector: 'h2, h3',
-      });
-      return () => tocbot.destroy();
+      return;
     }
   };
 
   useEffect(() => {
     NotionToHtml(blocks);
   }, []);
+  useEffect(() => {
+    tocbot.init({
+      tocSelector: '.toc, .main-toc',
+      contentSelector: '.context',
+      headingSelector: 'h2, h3',
+    });
+    return () => tocbot.destroy();
+  }, [html]);
 
   return <>{html}</>;
 };
