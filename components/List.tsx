@@ -1,5 +1,5 @@
 import dateToTime from '@/hooks/dateToTime';
-import { CardProps } from '@/types/types';
+import { CardProps, PageType } from '@/types/types';
 import 'remixicon/fonts/remixicon.css';
 import {
   getCover,
@@ -12,7 +12,17 @@ import {
 } from '@/utils/property';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
+import { GuruGuru } from './GuruGuru';
+
+interface FetchRequest {
+  url: string;
+  options: object;
+}
+
+async function fetchAsync(request: FetchRequest) {
+  return await fetch(request.url, request.options);
+}
 
 const List: FC<CardProps> = ({ page, index }) => {
   const dataUpdate = dateToTime(
@@ -35,6 +45,28 @@ const List: FC<CardProps> = ({ page, index }) => {
     'YYYY年MM月DD日'
   );
 
+  const slug = getCover(page.cover);
+  const [url, setUrl] = useState(slug);
+  const [loading, setLoading] = useState(false);
+
+  const handleGetImage = async (page: PageType) => {
+    setLoading(true);
+
+    const res = await fetchAsync({
+      url: `../../api/fetch-image-url`,
+      options: {
+        method: 'POST',
+        body: JSON.stringify({ page }),
+      },
+    });
+
+    if (res.status === 200) {
+      const r = await res.json();
+      setUrl(r.imageData);
+    }
+    setLoading(false);
+  };
+
   return (
     <div
       className="category list md:max-w-full w-full xl:px-10 hover:opacity-80"
@@ -50,11 +82,13 @@ const List: FC<CardProps> = ({ page, index }) => {
             getText(page.properties.slug.rich_text)
           }
         >
+          {loading && <GuruGuru />}
           <Image
-            src={getCover(page.cover)}
+            src={url}
             alt={getText(page.properties.name.title)}
             width="1152"
             height="622"
+            onError={() => handleGetImage(page)}
             className="bg-gray-600 lg:max-w-[300px] md:max-w-full max-w-xs object-cover mr-4 md:mr-0"
           />
         </Link>

@@ -1,4 +1,4 @@
-import {  GetStaticProps, NextPage } from 'next';
+import { GetStaticProps, NextPage } from 'next';
 import Layout from '@/components/Layout';
 import Card from '@/components/Card';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -9,10 +9,11 @@ import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { results } = await fetchPages({});
+  const { results: pages } = await fetchPages({});
+
   return {
     props: {
-      pages: results ? results : [],
+      pages: pages ? pages : [],
     },
     revalidate: 10,
   };
@@ -40,10 +41,7 @@ const Study: NextPage<IndexProps> = ({ pages }) => {
             </div>
           </div>
         </div>
-        <Breadcrumb
-          breadList={`study`}
-          breadListJs={`学習記録`}
-        />
+        <Breadcrumb breadList={`study`} breadListJs={`学習記録`} />
       </div>
     </Layout>
   );

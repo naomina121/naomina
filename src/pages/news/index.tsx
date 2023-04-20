@@ -1,14 +1,14 @@
 import { GetStaticProps, NextPage } from 'next';
 import Layout from '@/components/Layout';
 import Breadcrumb from '@/components/Breadcrumb';
-import { fetchNewsPages, fetchPages } from '@/utils/notion';
+import { fetchNewsPages } from '@/utils/notion';
 import { IndexProps } from '@/types/types';
 import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
 import NewsList from '@/components/NewsList';
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { results } = await fetchPages({});
+  const { results } = await fetchNewsPages({});
   return {
     props: {
       pages: results ? results : [],

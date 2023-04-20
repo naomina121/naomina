@@ -1,15 +1,7 @@
-const jsdom = require('jsdom');
-const { JSDOM } = jsdom;
 import { useMediaQuery } from 'react-responsive';
-import 'clipboard';
-import prism from 'prismjs';
-import reactStringReplace from 'react-string-replace';
-import 'prism-themes/themes/prism-dracula.css';
-import parse, { domToReact } from 'html-react-parser';
-import { NotionBlocksHtmlParser } from '@notion-stuff/blocks-html-parser';
 import Breadcrumb from '@/components/Breadcrumb';
 import Layout from '@/components/Layout';
-import { ArticleProps, Params } from '@/types/types';
+import { ArticleProps, PageType, Params } from '@/types/types';
 import { fetchBlocksByPageId, fetchPages } from '@/utils/notion';
 import {
   getSelect,
@@ -23,7 +15,7 @@ import {
 
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Image from 'next/image';
-import React, { FC, useEffect } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import CategoryMenu from '@/components/CategoryMenu';
 import dateToTime from '@/hooks/dateToTime';
 import Link from 'next/link';
@@ -35,6 +27,17 @@ import MainToc from '@/components/post/MainToc';
 import { allPosts } from '@/utils/notion';
 import SearchButton from '@/components/SearchButtopn';
 import Author from '@/components/post/Author';
+import Html from '@/components/post/Html';
+import { GuruGuru } from '@/components/GuruGuru';
+
+interface FetchRequest {
+  url: string;
+  options: object;
+}
+
+async function fetchAsync(request: FetchRequest) {
+  return await fetch(request.url, request.options);
+}
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const { slug } = ctx.params as Params;
@@ -50,76 +53,11 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   const pageId = page.id;
   const { results: blocks } = await fetchBlocksByPageId(pageId);
 
-  let json = JSON.stringify(blocks, null, 0);
-
-  json = json.replace('//', '').replace('[', '').replace(']', '');
-
-  const lines = json.split(',');
-
-  const links: any[] = [];
-
-  lines.map((line) => {
-    if (line.includes('https://')) {
-      let link: any = reactStringReplace(
-        line,
-        /(https?:\/\/\S+)/g,
-        (match, i) => match
-      );
-      link = String(link[1]).slice(0, -2).replace('"', '');
-      links.push(link);
-    }
-    if (line.includes('http://')) {
-      let link: any = reactStringReplace(
-        line,
-        /(http?:\/\/\S+)/g,
-        (match, i) => match
-      );
-      link = String(link[1]).slice(0, -2).replace('"', '');
-      links.push(link);
-    }
-  });
-  let cardDatas = [];
-  const temps = await Promise.all(
-    links.map(async (link) => {
-      const metas = await fetch(link)
-        .then((res) => res.text())
-        .then((text) => {
-          const metaData = {
-            url: link,
-            title: '',
-            description: '',
-            image: '',
-            favicon: '',
-          };
-          const doms = new JSDOM(text);
-          const metas = doms.window.document.getElementsByTagName('meta');
-          for (let i = 0; i < metas.length; i++) {
-            let pro = metas[i].getAttribute('property');
-            if (typeof pro == 'string') {
-              if (pro.match('og:title'))
-                metaData.title = metas[i].getAttribute('content');
-              if (pro.match('og:description'))
-                metaData.description = metas[i].getAttribute('content');
-              if (pro.match('og:image') && metaData.image === '')
-                metaData.image = metas[i].getAttribute('content');
-            }
-          }
-          return metaData;
-        })
-        .catch((e) => {
-          console.log(e);
-        });
-      return metas;
-    })
-  );
-  cardDatas = temps.filter((temp) => temp !== undefined);
-
   return {
     props: {
       page: page,
       blocks: blocks,
       pages: pages,
-      cardDatas: cardDatas,
     },
     revalidate: 300,
   };
@@ -132,8 +70,31 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-const Article: FC<ArticleProps> = ({ page, blocks, pages, cardDatas }) => {
+const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
+  const slug = getCover(page.cover);
+  const [url, setUrl] = useState(slug);
+  const [loading, setLoading] = useState(false);
+  const [article, setArticle] = useState(blocks);
   const isBreakPoint = useMediaQuery({ query: `(max-width:1320px)` });
+
+  const handleGetImage = async (page: PageType) => {
+    setLoading(true);
+
+    const res = await fetchAsync({
+      url: `../../../api/fetch-image-url`,
+      options: {
+        method: 'POST',
+        body: JSON.stringify({ page }),
+      },
+    });
+
+    if (res.status === 200) {
+      const r = await res.json();
+      setUrl(r.imageData);
+      setArticle(r.articleData);
+    }
+    setLoading(false);
+  };
 
   const dataUpdate = dateToTime(
     getUpdate(page.properties.update.last_edited_time),
@@ -155,105 +116,13 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages, cardDatas }) => {
     'YYYY年MM月DD日'
   );
 
-  const SyntaxHighlighter = (code: any, language: string) => {
-    require('prismjs/plugins/toolbar/prism-toolbar.min.css');
-    require('prismjs/plugins/toolbar/prism-toolbar.min');
-    require('prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min');
-    require('prismjs/plugins/show-language/prism-show-language');
-    useEffect(() => {
-      prism.highlightAll();
-    }, []);
-    return code;
-  };
-
-  const CustomNotion = NotionBlocksHtmlParser.getInstance({
-    mdParserOptions: {
-      imageAsFigure: true,
-      emptyParagraphToNonBreakingSpace: true,
-    },
-    mdToHtmlOptions: {
-      pedantic: false,
-      gfm: true,
-      breaks: false,
-      sanitize: false,
-      smartLists: true,
-      smartypants: false,
-      xhtml: false,
-      langPrefix: 'language-',
-    },
-    mdHighlightingOptions(code, lang, callback: any) {
-      callback = SyntaxHighlighter;
-      const language = lang;
-      return callback(code, language);
-    },
-  });
-
-  const notionToHtml = CustomNotion.parse(blocks);
-
-  const replace = (node: any) => {
-    if (node.name === 'a') {
-      if (node.parent.children.length === 1 && node.parent.name !== 'li') {
-        const indexOfUrl = cardDatas.findIndex((card) => {
-          return card.url.indexOf(node.attribs?.href) != -1;
-        });
-        const cardData = cardDatas[indexOfUrl];
-
-        //内部リンクか外部リンク化判定
-        const blank = cardData.url.indexOf(siteConfig.siteUrl) === -1;
-        const blankProp = blank
-          ? {
-              target: '_blank',
-              rel: 'noopener nofollow',
-            }
-          : {};
-        if (cardData.title && cardData.image) {
-          return (
-            <a
-              href={cardData.url}
-              className="flex bg-white rounded-md card-link px-2 py-4 max-h-[170px]"
-              {...blankProp}
-            >
-              <div className="flex mx-auto justify-between items-center overflow-hidden">
-                <div className="flex flex-col justify-start w-full mr-4 max-w-md">
-                  <p className="card-title">{cardData.title}</p>
-                  <p className="card-description">{cardData.description}</p>
-                  <span className="w-full text-ellipsis overflow-hidden text-xs">
-                    {cardData.url}
-                  </span>
-                </div>
-                <Image
-                  src={cardData.image ? cardData.image : '/img/noimg.jpg'}
-                  alt={cardData.title}
-                  width="100"
-                  height="100"
-                  className="object-contain w-[200px] h-auto max-w-xs"
-                />
-              </div>
-            </a>
-          );
-        }
-        return (
-          <a href={cardData.url} {...blankProp} data-nemui="nemui">
-            {domToReact(node.children)}
-          </a>
-        );
-      }
-      return (
-        <a {...node.attribs} target="_blank" data-nemukunai="nemukunaiyou">
-          {domToReact(node.children)}
-        </a>
-      );
-    }
-  };
-
-  const html = parse(notionToHtml, { replace });
-
   return (
     <Layout>
+      {loading && <GuruGuru />}
       <Seo
         pageTitle={getText(page.properties.name.title)}
         pageDescription={getText(page.properties.description.rich_text)}
-        pageImg={getCover(page.cover)}
+        pageImg={url}
         pageImgWidth={1152}
         pageImgHeight={622}
         pagePath={`${siteConfig.siteUrl}study/${getSelect(
@@ -317,15 +186,16 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages, cardDatas }) => {
               </h1>
             </div>
             <Image
-              src={getCover(page.cover)}
+              src={url}
               width="768"
               height="360"
               alt={getText(page.properties.name.title)}
+              onError={() => handleGetImage(page)}
               className="object-cover w-full mb-10 xl:mb-0"
             />
             <div className="p-10 xl:p-5 py-0 context">
               {isBreakPoint ? <MainToc /> : <></>}
-              {html}
+              <Html blocks={article} />
             </div>
             <div className="my-10 xl:px-5 px-10 xl:mb-0">
               <Sns page={page} />

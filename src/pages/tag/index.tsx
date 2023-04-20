@@ -7,10 +7,10 @@ import { siteConfig } from '@/site.config';
 import { IndexProps, PageType } from '@/types/types';
 import { allPosts, fetchPages } from '@/utils/notion';
 import { getMultiSelect } from '@/utils/property';
-import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
+import { GetServerSideProps, NextPage } from 'next';
 import Link from 'next/link';
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const { results } = await fetchPages({});
   const { results: contents } = await allPosts();
   return {
@@ -18,14 +18,6 @@ export const getStaticProps: GetStaticProps = async () => {
       pages: results ? results : [],
       contents: contents,
     },
-    revalidate: 300,
-  };
-};
-
-export const getStaticPaths: GetStaticPaths = async () => {
-  return {
-    paths: [],
-    fallback: 'blocking',
   };
 };
 

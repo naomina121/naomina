@@ -1,9 +1,4 @@
 import { useMediaQuery } from 'react-responsive';
-import 'clipboard';
-import prism from 'prismjs';
-import 'prism-themes/themes/prism-dracula.css';
-import parse from 'html-react-parser';
-import { NotionBlocksHtmlParser } from '@notion-stuff/blocks-html-parser';
 import Breadcrumb from '@/components/Breadcrumb';
 import Layout from '@/components/Layout';
 import { ArticleProps, Params } from '@/types/types';
@@ -18,6 +13,7 @@ import Seo from '@/components/Seo';
 import { siteConfig } from '@/site.config';
 import MainToc from '@/components/post/MainToc';
 import Author from '@/components/post/Author';
+import Html from '@/components/post/Html';
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const { slug } = ctx.params as Params;
@@ -53,42 +49,6 @@ const Article: FC<ArticleProps> = ({ page, blocks }) => {
     getDate(page.properties.published.date),
     'YYYY年MM月DD日'
   );
-
-  const SyntaxHighlighter = (code: any, language: string) => {
-    require('prismjs/plugins/toolbar/prism-toolbar.min.css');
-    require('prismjs/plugins/toolbar/prism-toolbar.min');
-    require('prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min');
-    require('prismjs/plugins/show-language/prism-show-language');
-    useEffect(() => {
-      prism.highlightAll();
-    }, []);
-    return code;
-  };
-
-  const CustomNotion = NotionBlocksHtmlParser.getInstance({
-    mdParserOptions: {
-      imageAsFigure: true,
-      emptyParagraphToNonBreakingSpace: true,
-    },
-    mdToHtmlOptions: {
-      pedantic: false,
-      gfm: true,
-      breaks: false,
-      sanitize: false,
-      smartLists: true,
-      smartypants: false,
-      xhtml: false,
-      langPrefix: 'language-',
-    },
-    mdHighlightingOptions(code, lang, callback: any) {
-      callback = SyntaxHighlighter;
-      const language = lang;
-      return callback(code, language);
-    },
-  });
-
-  const notionToHtml = CustomNotion.parse(blocks);
-  const html = parse(notionToHtml);
 
   return (
     <Layout>
@@ -135,7 +95,7 @@ const Article: FC<ArticleProps> = ({ page, blocks }) => {
             </div>
             <div className="p-10 xl:p-5 py-0 context">
               {isBreakPoint ? <MainToc /> : <></>}
-              {html}
+              <Html blocks={blocks} />
             </div>
             <div className="my-10 xl:px-5 px-10 xl:mb-0">
               <Author />
