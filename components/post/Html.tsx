@@ -28,18 +28,16 @@ const Html: FC<Props> = ({ blocks }) => {
     )
   );
 
+  const SyntaxHighlighter = (code: any, language: string) => {
+    require('prismjs/plugins/toolbar/prism-toolbar.min.css');
+    require('prismjs/plugins/toolbar/prism-toolbar.min');
+    require('prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min');
+    require('prismjs/plugins/show-language/prism-show-language');
+
+    return code;
+  };
+
   const NotionToHtml = async (blocks: Blocks) => {
-    const SyntaxHighlighter = (code: any, language: string) => {
-      require('prismjs/plugins/toolbar/prism-toolbar.min.css');
-      require('prismjs/plugins/toolbar/prism-toolbar.min');
-      require('prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min');
-      require('prismjs/plugins/show-language/prism-show-language');
-
-      prism.highlightAll();
-
-      return code;
-    };
-
     const CustomNotion = NotionBlocksHtmlParser.getInstance({
       mdParserOptions: {
         imageAsFigure: true,
@@ -131,6 +129,7 @@ const Html: FC<Props> = ({ blocks }) => {
     NotionToHtml(blocks);
   }, []);
   useEffect(() => {
+    prism.highlightAll();
     tocbot.init({
       tocSelector: '.toc, .main-toc',
       contentSelector: '.context',
