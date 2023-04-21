@@ -16,7 +16,7 @@ import Card from '@/components/Card';
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const { category } = ctx.params as Params;
   const { results } = await fetchPages({ category: category });
-  const { results: contents } = await fetchPages({ category: category });
+  const { results: contents } = await fetchPages({});
 
   if (!results.length) {
     return {
