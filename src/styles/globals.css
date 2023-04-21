@@ -387,6 +387,10 @@ code {
 	font-size: 16px;
 }
 
+.context p > code{
+	@apply text-red-500 bg-gray-200 p-1;
+}
+
 div div.code-toolbar>.toolbar {
 	opacity: 1;
 	width: 100%;
