@@ -34,7 +34,9 @@ const Html: FC<Props> = ({ blocks }) => {
       require('prismjs/plugins/toolbar/prism-toolbar.min');
       require('prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min');
       require('prismjs/plugins/show-language/prism-show-language');
+
       prism.highlightAll();
+
       return code;
     };
 
