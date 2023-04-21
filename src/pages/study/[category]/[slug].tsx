@@ -76,6 +76,12 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
     page.properties.slug.rich_text
   )}&cat=${getSelect(page.properties.category.select)}`;
 
+  const ogpUrl = `${siteConfig.siteUrl}api/image/${getSelect(
+    page.properties.category.select
+  )}/${getText(page.properties.slug.rich_text)}/?slug=${getText(
+    page.properties.slug.rich_text
+  )}&cat=${getSelect(page.properties.category.select)}`;
+
   const slug = getText(page.properties.slug.rich_text);
   const lastUpDate = getUpdate(page.properties.update.last_edited_time);
 
@@ -161,7 +167,7 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
       <Seo
         pageTitle={getText(page.properties.name.title)}
         pageDescription={getText(page.properties.description.rich_text)}
-        pageImg={url}
+        pageImg={ogpUrl}
         pageImgWidth={1152}
         pageImgHeight={622}
         pagePath={`${siteConfig.siteUrl}study/${getSelect(
