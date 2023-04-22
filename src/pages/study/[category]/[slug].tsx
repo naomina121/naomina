@@ -27,6 +27,7 @@ import SearchButton from '@/components/SearchButtopn';
 import Author from '@/components/post/Author';
 import Html from '@/components/post/Html';
 import { Blocks } from '@notion-stuff/v4-types';
+import { useRouter } from 'next/router';
 
 interface FetchRequest {
   url: string;
@@ -69,6 +70,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
+  const router = useRouter();
   const isBreakPoint = useMediaQuery({ query: `(max-width:1320px)` });
   const url = `../../../api/image/${getSelect(
     page.properties.category.select
@@ -135,6 +137,9 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
           //console.error('res:status:' + res.status);
           return;
         }
+
+        router.reload();
+
       } catch (err) {
         console.error(err);
       }
