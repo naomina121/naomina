@@ -137,9 +137,7 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
           //console.error('res:status:' + res.status);
           return;
         }
-
         router.reload();
-
       } catch (err) {
         console.error(err);
       }
