@@ -1,11 +1,25 @@
 import Breadcrumb from '@/components/Breadcrumb';
 import Layout from '@/components/Layout';
 import Seo from '@/components/Seo';
+import MainToc from '@/components/post/MainToc';
 import Toc from '@/components/post/Toc';
 import { siteConfig } from '@/site.config';
-import React from 'react';
+import Link from 'next/link';
+import React, { useEffect } from 'react';
+import { useMediaQuery } from 'react-responsive';
+import tocbot from 'tocbot';
 
-const privacyPolicy = () => {
+const Privacy = () => {
+  const isBreakPoint = useMediaQuery({ query: `(max-width:1320px)` });
+  useEffect(() => {
+    tocbot.init({
+      tocSelector: '.toc, .main-toc',
+      contentSelector: '.context',
+      headingSelector: 'h2, h3',
+    });
+    return () => tocbot.destroy();
+  }, []);
+
   return (
     <Layout>
       <Seo
@@ -24,7 +38,7 @@ const privacyPolicy = () => {
               </h1>
             </div>
             <div className="p-10 xl:p-5 py-0 context">
-              {' '}
+              {isBreakPoint ? <MainToc /> : <></>}
               <p>
                 【NAOBLOG】(以下「当ブログ」)のプライバシーポリシー・免責事項を次の通り記載します。
               </p>
@@ -65,7 +79,14 @@ const privacyPolicy = () => {
                 アクセス情報の解析にはCookieを使用しています。また、アクセス情報の収集はCookieを無効にすることで拒否できます。
               </p>
               <p>
-                Google社のデータ収集・処理の仕組みについては、こちらをご覧ください。
+                Google社のデータ収集・処理の仕組みについては、
+                <Link
+                  href="https://policies.google.com/technologies/partner-sites?hl=ja"
+                  target="_blank"
+                >
+                  こちら
+                </Link>
+                をご覧ください。
               </p>
               <h2 id="免責事項">免責事項</h2>
               <p>
@@ -108,4 +129,4 @@ const privacyPolicy = () => {
   );
 };
 
-export default privacyPolicy;
+export default Privacy;

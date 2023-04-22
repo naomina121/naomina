@@ -7,6 +7,7 @@ import Script from 'next/script';
 import * as gtag from '../lib/gtag';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
+import { ConfirmProvider } from '../context/confirm-provider';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -20,7 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     };
   }, [router.events]);
   return (
-    <div>
+    <>
       <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_MEASUREMENT_ID}`}
@@ -40,8 +41,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       />
       <Loader />
       <ToastContainer />
-      <Component {...pageProps} />
-    </div>
+      <ConfirmProvider>
+        <Component {...pageProps} />
+      </ConfirmProvider>
+    </>
   );
 }
 
