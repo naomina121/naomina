@@ -1,5 +1,5 @@
 import { ParsedUrlQuery } from 'querystring';
-import { ReactNode, RefObject } from 'react';
+import { MouseEventHandler, ReactNode, RefObject } from 'react';
 import type { Blocks } from '@notion-stuff/v4-types';
 
 export type Params = ParsedUrlQuery & {
@@ -7,6 +7,17 @@ export type Params = ParsedUrlQuery & {
   category: string;
   tag: string;
   keyword: string;
+};
+
+export type DialogOptions = {
+  html?: boolean;
+  alert?: boolean;
+  title?: string;
+  description?: string;
+  confirmationText?: string;
+  cancellationText?: string;
+  onSubmit?: MouseEventHandler<HTMLButtonElement> | undefined;
+  onCancel?: MouseEventHandler<HTMLButtonElement> | undefined;
 };
 
 export type BreadcrumbProps = {

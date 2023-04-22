@@ -28,6 +28,7 @@ import Author from '@/components/post/Author';
 import Html from '@/components/post/Html';
 import { Blocks } from '@notion-stuff/v4-types';
 import { useRouter } from 'next/router';
+import useConfirm from '@/hooks/use-confirm';
 
 interface FetchRequest {
   url: string;
@@ -106,6 +107,8 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
     return true;
   };
 
+  const confirm = useConfirm();
+
   useEffect(() => {
     (async function () {
       try {
@@ -121,8 +124,7 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
         });
 
         if (diffRes.status !== 200 && !isExpired(blocks)) {
-          // console.error('diffres:status:' + diffRes.status);
-          return;
+          throw new Error('diffRes:status:' + diffRes.status);
         }
 
         const res = await fetchAsync({
@@ -134,10 +136,23 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
           },
         });
         if (res.status !== 200) {
-          //console.error('res:status:' + res.status);
+          throw new Error('res:status:' + res.status);
+        }
+        const options = {
+          html: true,
+          alert: true,
+        };
+
+        const update = await confirm({ ...options })
+          .then(() => {
+            router.reload();
+          })
+          .then(() => {
+            return true;
+          });
+        if (update) {
           return;
         }
-        router.reload();
       } catch (err) {
         console.error(err);
       }
