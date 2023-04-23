@@ -26,7 +26,6 @@ import MainToc from '@/components/post/MainToc';
 import SearchButton from '@/components/SearchButtopn';
 import Author from '@/components/post/Author';
 import Html from '@/components/post/Html';
-import { Blocks } from '@notion-stuff/v4-types';
 import { useRouter } from 'next/router';
 import useConfirm from '@/hooks/use-confirm';
 
@@ -59,7 +58,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
       blocks: blocks,
       pages: pages,
     },
-    revalidate: 10,
+    revalidate: 60 * 60 * 24,
   };
 };
 
@@ -88,43 +87,45 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
   const slug = getText(page.properties.slug.rich_text);
   const lastUpDate = getUpdate(page.properties.update.last_edited_time);
 
-  //ページの情報が更新されていたかもしくは、記事内の画像が有効期限が切れていたらページを再生成する
-
   const isExpired = (blocks: Array<any>): boolean => {
     const now = Date.now();
 
-    const imageArray = blocks.filter((block) => block.Type === 'image');
+    const imageArray = blocks.filter(
+      (block) => block.type === 'image' && block.image.file.expiry_time
+    );
 
     const newFindArry = imageArray.find((block) => {
-      const image = block.Image;
-      image.File &&
-        image.File.ExpiryTime &&
-        Date.parse(image.File.ExpiryTime) < now;
+      const image = block.image.file.expiry_time;
+      return Date.parse(image) < now;
     });
+
     if (newFindArry === undefined) {
       return false;
     }
     return true;
   };
 
-  const confirm = useConfirm();
+  const { fc } = useConfirm();
+  const { cmp } = useConfirm();
+  const { confirm } = fc;
 
   useEffect(() => {
     (async function () {
       try {
-        const diffRes = await fetchAsync({
-          url: `../../../api/diff`,
-          options: {
-            method: 'POST',
-            body: JSON.stringify({
-              slug: slug,
-              lastUpDate: lastUpDate,
-            }),
-          },
-        });
-
-        if (diffRes.status !== 200 && !isExpired(blocks)) {
-          throw new Error('diffRes:status:' + diffRes.status);
+        if (!isExpired(blocks)) {
+          const diffRes = await fetchAsync({
+            url: `../../../api/diff`,
+            options: {
+              method: 'POST',
+              body: JSON.stringify({
+                slug: slug,
+                lastUpDate: lastUpDate,
+              }),
+            },
+          });
+          if (diffRes.status !== 200) {
+            throw new Error('diffRes:status:' + diffRes.status);
+          }
         }
 
         const res = await fetchAsync({
@@ -143,22 +144,21 @@ const Article: FC<ArticleProps> = ({ page, blocks, pages }) => {
           alert: true,
         };
 
-        const update = await confirm({ ...options })
+        await confirm({ ...options })
           .then(() => {
+            cmp.resolve = () => {};
             router.reload();
+            return true;
           })
-          .then(() => {
+          .catch(() => {
+            cmp.reject = () => {};
             return true;
           });
-        if (update) {
-          return;
-        }
       } catch (err) {
         console.error(err);
       }
     })();
-  }),
-    [];
+  }, []);
 
   const dataUpdate = dateToTime(
     getUpdate(page.properties.update.last_edited_time),

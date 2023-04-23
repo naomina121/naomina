@@ -3,6 +3,10 @@ import { createContext } from 'react';
 
 export default createContext(
   {} as {
-    confirm: (options: DialogOptions) => Promise<void>;
+    fc: { confirm: (options: DialogOptions) => Promise<any> };
+    cmp: {
+      reject: (reason?: any) => void;
+      resolve: (value: boolean | PromiseLike<boolean>) => void;
+    };
   }
 );

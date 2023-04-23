@@ -1,10 +1,8 @@
 import confirmContext from '@/src/context/confirm-context';
-import { DialogOptions } from '@/types/types';
 import { useContext } from 'react';
 
-const useConfirm = (): ((options: DialogOptions) => Promise<void>) => {
-  const { confirm } = useContext(confirmContext);
-  return confirm;
+const useConfirm = () => {
+  const { fc, cmp } = useContext(confirmContext);
+  return { fc: fc, cmp: cmp };
 };
-
 export default useConfirm;

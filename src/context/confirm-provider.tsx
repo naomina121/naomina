@@ -21,55 +21,73 @@ const buildOptions = (options: DialogOptions): DialogOptions => {
   };
 };
 
-type T = any;
-
 export const ConfirmProvider = ({
   children,
 }: {
   children: React.ReactNode;
 }): JSX.Element => {
-  const [options, setOptions] = useState<DialogOptions>({ ...DEFAULT_OPTIONS });
-  const [resolveReject, setResolveReject] = useState<T>();
+  type State = {
+    options: DialogOptions;
+  };
 
-  const [modalWindow, setModalWindw] = useState(0);
+  type PromiseObj = {
+    reject: (reason?: any) => void;
+    resolve: (value: boolean | PromiseLike<boolean>) => void;
+  };
 
-  const confirm = useCallback(
-    (options: DialogOptions): Promise<void> => {
-      return new Promise((resolve, reject) => {
-        if (modalWindow === 0) {
-          setOptions(buildOptions(options));
-        }
-        if (modalWindow === 1) {
-          reject();
-          setResolveReject(reject);
-        }
-        if (modalWindow === 2) {
-          resolve();
-          setResolveReject(resolve);
-        }
-      });
-    },
-    [modalWindow, resolveReject]
-  );
+  const initialState: State = {
+    options: { ...DEFAULT_OPTIONS },
+  };
 
-  const handleClose = useCallback(() => {
-    setOptions({ ...DEFAULT_OPTIONS });
+  const initalPromiseObj: PromiseObj = {
+    reject: () => {},
+    resolve: () => {},
+  };
+
+  const [state, setState] = useState<State>(initialState);
+
+  const [promiseObj, setPromiseObj] = useState<PromiseObj>(initalPromiseObj);
+
+  const confirm = useCallback((options: DialogOptions): Promise<boolean> => {
+    const promise: Promise<boolean> = new Promise((resolve, reject) => {
+      const newState: State = {
+        options: buildOptions(options),
+      };
+      const newPromise: PromiseObj = {
+        reject: reject,
+        resolve: resolve,
+      };
+      setState(newState);
+      setPromiseObj(newPromise);
+      promiseObj.resolve(true);
+    });
+    return promise;
   }, []);
 
   const handleCancel = useCallback(() => {
-    setModalWindw(1);
-    handleClose();
-  }, [modalWindow, handleClose]);
+    setState(initialState);
+    promiseObj.reject();
+  }, [promiseObj]);
 
   const handleConfirm = useCallback(() => {
-    setModalWindw(2);
-    handleClose();
-  }, [modalWindow, handleClose]);
+    setState(initialState);
+    promiseObj.resolve(true);
+  }, [promiseObj]);
+
+  const fc = { confirm: confirm };
+  const cmp = {
+    reject: promiseObj.reject,
+    resolve: promiseObj.resolve,
+  };
 
   return (
     <>
-      <Confirm {...options} onSubmit={handleConfirm} onCancel={handleCancel} />
-      <ConfirmContext.Provider value={{ confirm }}>
+      <Confirm
+        {...state.options}
+        onSubmit={handleConfirm}
+        onCancel={handleCancel}
+      />
+      <ConfirmContext.Provider value={{ fc, cmp }}>
         {children}
       </ConfirmContext.Provider>
     </>
