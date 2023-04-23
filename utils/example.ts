@@ -1,9 +1,11 @@
+const now = '2023-06-19T03:28:00.000Z';
+
 export const samplePages = [
   {
     object: 'page',
-    id: 'd62059ca-ea3d-4ca4-a847-fa658c89883f',
-    created_time: '2023-04-03T06:41:00.000Z',
-    last_edited_time: '2023-04-04T01:35:00.000Z',
+    id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    created_time: '2023-04-19T03:23:00.000Z',
+    last_edited_time: '2023-04-22T03:27:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -15,8 +17,8 @@ export const samplePages = [
     cover: {
       type: 'file',
       file: {
-        url: '/img/noimg.jpg',
-        expiry_time: '2023-04-04T02:37:46.659Z',
+        url: 'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d41190bb-9e34-4907-8b4b-2cba940e0898/notion-blog2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230423%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230423T015359Z&X-Amz-Expires=3600&X-Amz-Signature=c29833fb0c01e9ef21122431fcd9c3065a11f72589e1389d8e0aa3397e220204&X-Amz-SignedHeaders=host&x-id=GetObject',
+        expiry_time: '2023-04-23T02:53:59.855Z',
       },
     },
     icon: null,
@@ -26,6 +28,31 @@ export const samplePages = [
     },
     archived: false,
     properties: {
+      description: {
+        id: '%3FZXp',
+        type: 'rich_text',
+        rich_text: [
+          {
+            type: 'text',
+            text: {
+              content:
+                'Notionブログを作るための環境構築についての流れをご説明します。',
+              link: null,
+            },
+            annotations: {
+              bold: false,
+              italic: false,
+              strikethrough: false,
+              underline: false,
+              code: false,
+              color: 'default',
+            },
+            plain_text:
+              'Notionブログを作るための環境構築についての流れをご説明します。',
+            href: null,
+          },
+        ],
+      },
       isPublic: {
         id: 'N%60ZG',
         type: 'checkbox',
@@ -38,7 +65,7 @@ export const samplePages = [
           {
             type: 'text',
             text: {
-              content: 'codetest',
+              content: 'notion-blog2',
               link: null,
             },
             annotations: {
@@ -49,7 +76,7 @@ export const samplePages = [
               code: false,
               color: 'default',
             },
-            plain_text: 'codetest',
+            plain_text: 'notion-blog2',
             href: null,
           },
         ],
@@ -59,7 +86,7 @@ export const samplePages = [
         type: 'formula',
         formula: {
           type: 'string',
-          string: 'Linux',
+          string: 'プログラミング',
         },
       },
       tags: {
@@ -67,62 +94,44 @@ export const samplePages = [
         type: 'multi_select',
         multi_select: [
           {
-            id: '54734b2f-97cb-4ed3-837d-8cd55dea9ed2',
-            name: 'test',
-            color: 'blue',
+            id: '519f37e8-5057-4950-af2a-ca267a5623f8',
+            name: 'next.js',
+            color: 'brown',
+          },
+          {
+            id: 'ce077481-ac10-4c0a-9508-4fca41afc464',
+            name: 'notionblog',
+            color: 'red',
           },
         ],
       },
       created: {
         id: '%5E%5D%3Az',
         type: 'created_time',
-        created_time: '2023-04-03T06:41:00.000Z',
+        created_time: '2023-04-19T03:23:00.000Z',
       },
       category: {
         id: 'egr%60',
         type: 'select',
         select: {
-          id: 'L>p^',
-          name: 'linux',
-          color: 'brown',
+          id: 'IL~i',
+          name: 'programming',
+          color: 'yellow',
         },
       },
       update: {
         id: 'k~wD',
         type: 'last_edited_time',
-        last_edited_time: '2023-04-04T01:35:00.000Z',
+        last_edited_time: '2023-04-22T03:27:00.000Z',
       },
       published: {
         id: 'omkv',
         type: 'date',
         date: {
-          start: '2023-04-03',
+          start: '2023-04-21',
           end: null,
           time_zone: null,
         },
-      },
-      author: {
-        id: 'ysdM',
-        type: 'rich_text',
-        rich_text: [
-          {
-            type: 'text',
-            text: {
-              content: 'nao',
-              link: null,
-            },
-            annotations: {
-              bold: false,
-              italic: false,
-              strikethrough: false,
-              underline: false,
-              code: false,
-              color: 'default',
-            },
-            plain_text: 'nao',
-            href: null,
-          },
-        ],
       },
       name: {
         id: 'title',
@@ -131,7 +140,7 @@ export const samplePages = [
           {
             type: 'text',
             text: {
-              content: 'test',
+              content: 'NotionブログをNext.js(TS)で作る方法(インストール編)',
               link: null,
             },
             annotations: {
@@ -142,19 +151,19 @@ export const samplePages = [
               code: false,
               color: 'default',
             },
-            plain_text: 'test',
+            plain_text: 'NotionブログをNext.js(TS)で作る方法(インストール編)',
             href: null,
           },
         ],
       },
     },
-    url: 'https://www.notion.so/test-d62059caea3d4ca4a847fa658c89883f',
+    url: 'https://www.notion.so/Notion-Next-js-TS-f2510f15636c4aa68a433c9eaca24007',
   },
   {
     object: 'page',
-    id: '58ccedcf-69c5-4630-85f7-0f07f3936afb',
-    created_time: '2023-04-01T11:49:00.000Z',
-    last_edited_time: '2023-04-03T13:41:00.000Z',
+    id: '2cde406c-17e1-4e53-8f6d-57c3bcabc847',
+    created_time: '2023-04-15T15:39:00.000Z',
+    last_edited_time: '2023-04-21T13:02:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -166,8 +175,8 @@ export const samplePages = [
     cover: {
       type: 'file',
       file: {
-        url: '/img/noimg.jpg',
-        expiry_time: '2023-04-04T02:37:46.669Z',
+        url: 'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/db98cb97-4f36-45a9-8d31-ec77d2962ee5/notion-blog4.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230423%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230423T015359Z&X-Amz-Expires=3600&X-Amz-Signature=82d82e62b0b3b17f77a826852eac95e181d0331ae5d8ece1c69747307186d7d5&X-Amz-SignedHeaders=host&x-id=GetObject',
+        expiry_time: '2023-04-23T02:53:59.854Z',
       },
     },
     icon: null,
@@ -177,6 +186,187 @@ export const samplePages = [
     },
     archived: false,
     properties: {
+      description: {
+        id: '%3FZXp',
+        type: 'rich_text',
+        rich_text: [
+          {
+            type: 'text',
+            text: {
+              content:
+                'NotionAPIからデータを取得してNext.js（TS)を使用してブログ運用できるまでの流れをこれから記事にまとめていきたいと思います！',
+              link: null,
+            },
+            annotations: {
+              bold: false,
+              italic: false,
+              strikethrough: false,
+              underline: false,
+              code: false,
+              color: 'default',
+            },
+            plain_text:
+              'NotionAPIからデータを取得してNext.js（TS)を使用してブログ運用できるまでの流れをこれから記事にまとめていきたいと思います！',
+            href: null,
+          },
+        ],
+      },
+      isPublic: {
+        id: 'N%60ZG',
+        type: 'checkbox',
+        checkbox: true,
+      },
+      slug: {
+        id: 'ODNM',
+        type: 'rich_text',
+        rich_text: [
+          {
+            type: 'text',
+            text: {
+              content: 'notion-blog',
+              link: null,
+            },
+            annotations: {
+              bold: false,
+              italic: false,
+              strikethrough: false,
+              underline: false,
+              code: false,
+              color: 'default',
+            },
+            plain_text: 'notion-blog',
+            href: null,
+          },
+        ],
+      },
+      isJaCategory: {
+        id: 'OlZI',
+        type: 'formula',
+        formula: {
+          type: 'string',
+          string: 'プログラミング',
+        },
+      },
+      tags: {
+        id: '%5D%7C~%5B',
+        type: 'multi_select',
+        multi_select: [
+          {
+            id: '519f37e8-5057-4950-af2a-ca267a5623f8',
+            name: 'next.js',
+            color: 'brown',
+          },
+          {
+            id: 'ce077481-ac10-4c0a-9508-4fca41afc464',
+            name: 'notionblog',
+            color: 'red',
+          },
+        ],
+      },
+      created: {
+        id: '%5E%5D%3Az',
+        type: 'created_time',
+        created_time: '2023-04-15T15:39:00.000Z',
+      },
+      category: {
+        id: 'egr%60',
+        type: 'select',
+        select: {
+          id: 'IL~i',
+          name: 'programming',
+          color: 'yellow',
+        },
+      },
+      update: {
+        id: 'k~wD',
+        type: 'last_edited_time',
+        last_edited_time: '2023-04-21T13:02:00.000Z',
+      },
+      published: {
+        id: 'omkv',
+        type: 'date',
+        date: {
+          start: '2023-04-19',
+          end: null,
+          time_zone: null,
+        },
+      },
+      name: {
+        id: 'title',
+        type: 'title',
+        title: [
+          {
+            type: 'text',
+            text: {
+              content: 'NotionブログをNext.js(TS)で作る方法(基礎知識編)',
+              link: null,
+            },
+            annotations: {
+              bold: false,
+              italic: false,
+              strikethrough: false,
+              underline: false,
+              code: false,
+              color: 'default',
+            },
+            plain_text: 'NotionブログをNext.js(TS)で作る方法(基礎知識編)',
+            href: null,
+          },
+        ],
+      },
+    },
+    url: 'https://www.notion.so/Notion-Next-js-TS-2cde406c17e14e538f6d57c3bcabc847',
+  },
+  {
+    object: 'page',
+    id: '58ccedcf-69c5-4630-85f7-0f07f3936afb',
+    created_time: '2023-04-01T11:49:00.000Z',
+    last_edited_time: '2023-04-20T20:08:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    cover: {
+      type: 'file',
+      file: {
+        url: 'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/30ce7991-81da-4174-b262-b725d267b298/noimg.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230423%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230423T015359Z&X-Amz-Expires=3600&X-Amz-Signature=9024339c098195406143ce3583bfe0f8bfd5b215d830fe133ae24966d48732d6&X-Amz-SignedHeaders=host&x-id=GetObject',
+        expiry_time: '2023-04-23T02:53:59.856Z',
+      },
+    },
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '31e03d73-226c-4021-aef5-880531f6eb6b',
+    },
+    archived: false,
+    properties: {
+      description: {
+        id: '%3FZXp',
+        type: 'rich_text',
+        rich_text: [
+          {
+            type: 'text',
+            text: {
+              content: ' CSS装飾用HTMLのサンプルリストです。',
+              link: null,
+            },
+            annotations: {
+              bold: false,
+              italic: false,
+              strikethrough: false,
+              underline: false,
+              code: false,
+              color: 'default',
+            },
+            plain_text: ' CSS装飾用HTMLのサンプルリストです。',
+            href: null,
+          },
+        ],
+      },
       isPublic: {
         id: 'N%60ZG',
         type: 'checkbox',
@@ -241,7 +431,7 @@ export const samplePages = [
       update: {
         id: 'k~wD',
         type: 'last_edited_time',
-        last_edited_time: '2023-04-03T13:41:00.000Z',
+        last_edited_time: '2023-04-20T20:08:00.000Z',
       },
       published: {
         id: 'omkv',
@@ -251,29 +441,6 @@ export const samplePages = [
           end: null,
           time_zone: null,
         },
-      },
-      author: {
-        id: 'ysdM',
-        type: 'rich_text',
-        rich_text: [
-          {
-            type: 'text',
-            text: {
-              content: 'nao',
-              link: null,
-            },
-            annotations: {
-              bold: false,
-              italic: false,
-              strikethrough: false,
-              underline: false,
-              code: false,
-              color: 'default',
-            },
-            plain_text: 'nao',
-            href: null,
-          },
-        ],
       },
       name: {
         id: 'title',
@@ -303,9 +470,9 @@ export const samplePages = [
   },
   {
     object: 'page',
-    id: 'd611d413-947e-48b5-b25e-035d088f4048',
-    created_time: '2023-04-01T11:48:00.000Z',
-    last_edited_time: '2023-04-04T01:34:00.000Z',
+    id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+    created_time: '2023-04-11T03:46:00.000Z',
+    last_edited_time: '2023-04-18T10:23:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -317,8 +484,8 @@ export const samplePages = [
     cover: {
       type: 'file',
       file: {
-        url: '/img/noimg.jpg',
-        expiry_time: '2023-04-04T02:37:46.659Z',
+        url: 'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/23f655ae-6b2c-4d5d-8797-c328b0efddc6/notion.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230423%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230423T015359Z&X-Amz-Expires=3600&X-Amz-Signature=4ec6b9ed113c41a6ada1791960a351503f7898bfee47c3627d9c8a2824f3ffe3&X-Amz-SignedHeaders=host&x-id=GetObject',
+        expiry_time: '2023-04-23T02:53:59.855Z',
       },
     },
     icon: null,
@@ -328,6 +495,31 @@ export const samplePages = [
     },
     archived: false,
     properties: {
+      description: {
+        id: '%3FZXp',
+        type: 'rich_text',
+        rich_text: [
+          {
+            type: 'text',
+            text: {
+              content:
+                'NotionをCMSにしてNext.jsとTypeScriptでテックブログを作成してみた。',
+              link: null,
+            },
+            annotations: {
+              bold: false,
+              italic: false,
+              strikethrough: false,
+              underline: false,
+              code: false,
+              color: 'default',
+            },
+            plain_text:
+              'NotionをCMSにしてNext.jsとTypeScriptでテックブログを作成してみた。',
+            href: null,
+          },
+        ],
+      },
       isPublic: {
         id: 'N%60ZG',
         type: 'checkbox',
@@ -340,7 +532,7 @@ export const samplePages = [
           {
             type: 'text',
             text: {
-              content: 'aiueo',
+              content: 'notion',
               link: null,
             },
             annotations: {
@@ -351,7 +543,7 @@ export const samplePages = [
               code: false,
               color: 'default',
             },
-            plain_text: 'aiueo',
+            plain_text: 'notion',
             href: null,
           },
         ],
@@ -369,16 +561,21 @@ export const samplePages = [
         type: 'multi_select',
         multi_select: [
           {
-            id: '5430d8f3-f6d0-4a22-9bc1-5a69b0a2ff6c',
-            name: 'sample',
-            color: 'purple',
+            id: '2df03cbb-4eb6-49bb-bd59-19e44d0eb5d2',
+            name: 'notion',
+            color: 'green',
+          },
+          {
+            id: '519f37e8-5057-4950-af2a-ca267a5623f8',
+            name: 'next.js',
+            color: 'brown',
           },
         ],
       },
       created: {
         id: '%5E%5D%3Az',
         type: 'created_time',
-        created_time: '2023-04-01T11:48:00.000Z',
+        created_time: '2023-04-11T03:46:00.000Z',
       },
       category: {
         id: 'egr%60',
@@ -392,39 +589,16 @@ export const samplePages = [
       update: {
         id: 'k~wD',
         type: 'last_edited_time',
-        last_edited_time: '2023-04-04T01:34:00.000Z',
+        last_edited_time: '2023-04-18T10:23:00.000Z',
       },
       published: {
         id: 'omkv',
         type: 'date',
         date: {
-          start: '2023-04-01',
+          start: '2023-04-11',
           end: null,
           time_zone: null,
         },
-      },
-      author: {
-        id: 'ysdM',
-        type: 'rich_text',
-        rich_text: [
-          {
-            type: 'text',
-            text: {
-              content: 'nao',
-              link: null,
-            },
-            annotations: {
-              bold: false,
-              italic: false,
-              strikethrough: false,
-              underline: false,
-              code: false,
-              color: 'default',
-            },
-            plain_text: 'nao',
-            href: null,
-          },
-        ],
       },
       name: {
         id: 'title',
@@ -433,7 +607,7 @@ export const samplePages = [
           {
             type: 'text',
             text: {
-              content: 'aiueo',
+              content: ' NotionをCMSにしてNext.jsとTSでブログを作成した。',
               link: null,
             },
             annotations: {
@@ -444,19 +618,19 @@ export const samplePages = [
               code: false,
               color: 'default',
             },
-            plain_text: 'aiueo',
+            plain_text: ' NotionをCMSにしてNext.jsとTSでブログを作成した。',
             href: null,
           },
         ],
       },
     },
-    url: 'https://www.notion.so/aiueo-d611d413947e48b5b25e035d088f4048',
+    url: 'https://www.notion.so/Notion-CMS-Next-js-TS-4adaebf6582b424b9e6e308a7069da74',
   },
   {
     object: 'page',
-    id: '31af1c32-53a0-4834-872e-2984a3741eb3',
-    created_time: '2023-03-17T06:48:00.000Z',
-    last_edited_time: '2023-04-04T01:34:00.000Z',
+    id: 'c5d32f65-9028-4ff3-8010-d08089fd0276',
+    created_time: '2023-04-11T15:58:00.000Z',
+    last_edited_time: '2023-04-16T13:55:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -468,8 +642,8 @@ export const samplePages = [
     cover: {
       type: 'file',
       file: {
-        url: '/img/noimg.jpg',
-        expiry_time: '2023-04-04T02:37:46.659Z',
+        url: 'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c76d221e-47d1-4a16-94f2-264f37e16e8f/storybook2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230423%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230423T015359Z&X-Amz-Expires=3600&X-Amz-Signature=316183e82c7ee264f3d59545201111d08047fd7d6b2b758d3b643784d539f6be&X-Amz-SignedHeaders=host&x-id=GetObject',
+        expiry_time: '2023-04-23T02:53:59.855Z',
       },
     },
     icon: null,
@@ -479,6 +653,31 @@ export const samplePages = [
     },
     archived: false,
     properties: {
+      description: {
+        id: '%3FZXp',
+        type: 'rich_text',
+        rich_text: [
+          {
+            type: 'text',
+            text: {
+              content:
+                'フロントエンド開発で注目を集めているUIライブラリ「Storybook」の人気の秘訣に迫ってみた。',
+              link: null,
+            },
+            annotations: {
+              bold: false,
+              italic: false,
+              strikethrough: false,
+              underline: false,
+              code: false,
+              color: 'default',
+            },
+            plain_text:
+              'フロントエンド開発で注目を集めているUIライブラリ「Storybook」の人気の秘訣に迫ってみた。',
+            href: null,
+          },
+        ],
+      },
       isPublic: {
         id: 'N%60ZG',
         type: 'checkbox',
@@ -491,7 +690,7 @@ export const samplePages = [
           {
             type: 'text',
             text: {
-              content: 'samurai',
+              content: 'storybook',
               link: null,
             },
             annotations: {
@@ -502,7 +701,7 @@ export const samplePages = [
               code: false,
               color: 'default',
             },
-            plain_text: 'samurai',
+            plain_text: 'storybook',
             href: null,
           },
         ],
@@ -512,7 +711,7 @@ export const samplePages = [
         type: 'formula',
         formula: {
           type: 'string',
-          string: '健康',
+          string: 'プログラミング',
         },
       },
       tags: {
@@ -520,67 +719,39 @@ export const samplePages = [
         type: 'multi_select',
         multi_select: [
           {
-            id: '5430d8f3-f6d0-4a22-9bc1-5a69b0a2ff6c',
-            name: 'sample',
-            color: 'purple',
-          },
-          {
-            id: '54734b2f-97cb-4ed3-837d-8cd55dea9ed2',
-            name: 'test',
-            color: 'blue',
+            id: '12d78c32-6b2c-42fb-a800-646e79a09365',
+            name: 'storybook',
+            color: 'gray',
           },
         ],
       },
       created: {
         id: '%5E%5D%3Az',
         type: 'created_time',
-        created_time: '2023-03-17T06:48:00.000Z',
+        created_time: '2023-04-11T15:58:00.000Z',
       },
       category: {
         id: 'egr%60',
         type: 'select',
         select: {
-          id: 'CN_g',
-          name: 'health',
-          color: 'green',
+          id: 'IL~i',
+          name: 'programming',
+          color: 'yellow',
         },
       },
       update: {
         id: 'k~wD',
         type: 'last_edited_time',
-        last_edited_time: '2023-04-04T01:34:00.000Z',
+        last_edited_time: '2023-04-16T13:55:00.000Z',
       },
       published: {
         id: 'omkv',
         type: 'date',
         date: {
-          start: '2023-03-17',
+          start: '2023-04-12',
           end: null,
           time_zone: null,
         },
-      },
-      author: {
-        id: 'ysdM',
-        type: 'rich_text',
-        rich_text: [
-          {
-            type: 'text',
-            text: {
-              content: 'nao',
-              link: null,
-            },
-            annotations: {
-              bold: false,
-              italic: false,
-              strikethrough: false,
-              underline: false,
-              code: false,
-              color: 'default',
-            },
-            plain_text: 'nao',
-            href: null,
-          },
-        ],
       },
       name: {
         id: 'title',
@@ -589,7 +760,7 @@ export const samplePages = [
           {
             type: 'text',
             text: {
-              content: 'Samurai',
+              content: '無料のライブラリ「StoryBook」が万能すぎる件について',
               link: null,
             },
             annotations: {
@@ -600,172 +771,21 @@ export const samplePages = [
               code: false,
               color: 'default',
             },
-            plain_text: 'Samurai',
+            plain_text: '無料のライブラリ「StoryBook」が万能すぎる件について',
             href: null,
           },
         ],
       },
     },
-    url: 'https://www.notion.so/Samurai-31af1c3253a04834872e2984a3741eb3',
-  },
-  {
-    object: 'page',
-    id: '5b81e6bd-ff2e-420c-b8d2-8e9b01780acb',
-    created_time: '2023-03-17T06:39:00.000Z',
-    last_edited_time: '2023-04-04T01:33:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    cover: {
-      type: 'file',
-      file: {
-        url: '/img/noimg.jpg',
-        expiry_time: '2023-04-04T02:37:46.660Z',
-      },
-    },
-    icon: null,
-    parent: {
-      type: 'database_id',
-      database_id: '31e03d73-226c-4021-aef5-880531f6eb6b',
-    },
-    archived: false,
-    properties: {
-      isPublic: {
-        id: 'N%60ZG',
-        type: 'checkbox',
-        checkbox: true,
-      },
-      slug: {
-        id: 'ODNM',
-        type: 'rich_text',
-        rich_text: [
-          {
-            type: 'text',
-            text: {
-              content: 'japan',
-              link: null,
-            },
-            annotations: {
-              bold: false,
-              italic: false,
-              strikethrough: false,
-              underline: false,
-              code: false,
-              color: 'default',
-            },
-            plain_text: 'japan',
-            href: null,
-          },
-        ],
-      },
-      isJaCategory: {
-        id: 'OlZI',
-        type: 'formula',
-        formula: {
-          type: 'string',
-          string: 'AI',
-        },
-      },
-      tags: {
-        id: '%5D%7C~%5B',
-        type: 'multi_select',
-        multi_select: [
-          {
-            id: '5430d8f3-f6d0-4a22-9bc1-5a69b0a2ff6c',
-            name: 'sample',
-            color: 'purple',
-          },
-        ],
-      },
-      created: {
-        id: '%5E%5D%3Az',
-        type: 'created_time',
-        created_time: '2023-03-17T06:39:00.000Z',
-      },
-      category: {
-        id: 'egr%60',
-        type: 'select',
-        select: {
-          id: '42fb07f9-155c-43e9-991f-6dbea471a9c2',
-          name: 'ai',
-          color: 'pink',
-        },
-      },
-      update: {
-        id: 'k~wD',
-        type: 'last_edited_time',
-        last_edited_time: '2023-04-04T01:33:00.000Z',
-      },
-      published: {
-        id: 'omkv',
-        type: 'date',
-        date: {
-          start: '2023-03-17',
-          end: null,
-          time_zone: null,
-        },
-      },
-      author: {
-        id: 'ysdM',
-        type: 'rich_text',
-        rich_text: [
-          {
-            type: 'text',
-            text: {
-              content: 'nao',
-              link: null,
-            },
-            annotations: {
-              bold: false,
-              italic: false,
-              strikethrough: false,
-              underline: false,
-              code: false,
-              color: 'default',
-            },
-            plain_text: 'nao',
-            href: null,
-          },
-        ],
-      },
-      name: {
-        id: 'title',
-        type: 'title',
-        title: [
-          {
-            type: 'text',
-            text: {
-              content: 'Japan',
-              link: null,
-            },
-            annotations: {
-              bold: false,
-              italic: false,
-              strikethrough: false,
-              underline: false,
-              code: false,
-              color: 'default',
-            },
-            plain_text: 'Japan',
-            href: null,
-          },
-        ],
-      },
-    },
-    url: 'https://www.notion.so/Japan-5b81e6bdff2e420cb8d28e9b01780acb',
+    url: 'https://www.notion.so/StoryBook-c5d32f6590284ff38010d08089fd0276',
   },
 ];
 
 export const samplePage = {
   object: 'page',
-  id: '58ccedcf-69c5-4630-85f7-0f07f3936afb',
-  created_time: '2023-04-01T11:49:00.000Z',
-  last_edited_time: '2023-04-03T13:41:00.000Z',
+  id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+  created_time: '2023-04-19T03:23:00.000Z',
+  last_edited_time: '2023-04-22T03:27:00.000Z',
   created_by: {
     object: 'user',
     id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -777,8 +797,8 @@ export const samplePage = {
   cover: {
     type: 'file',
     file: {
-      url: '/img/noimg.jpg',
-      expiry_time: '2023-04-04T02:43:31.294Z',
+      url: 'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d41190bb-9e34-4907-8b4b-2cba940e0898/notion-blog2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230423%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230423T015359Z&X-Amz-Expires=3600&X-Amz-Signature=c29833fb0c01e9ef21122431fcd9c3065a11f72589e1389d8e0aa3397e220204&X-Amz-SignedHeaders=host&x-id=GetObject',
+      expiry_time: '2023-04-23T02:53:59.313Z',
     },
   },
   icon: null,
@@ -788,6 +808,31 @@ export const samplePage = {
   },
   archived: false,
   properties: {
+    description: {
+      id: '%3FZXp',
+      type: 'rich_text',
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'Notionブログを作るための環境構築についての流れをご説明します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'Notionブログを作るための環境構築についての流れをご説明します。',
+          href: null,
+        },
+      ],
+    },
     isPublic: {
       id: 'N%60ZG',
       type: 'checkbox',
@@ -800,7 +845,7 @@ export const samplePage = {
         {
           type: 'text',
           text: {
-            content: 'htmltest',
+            content: 'notion-blog2',
             link: null,
           },
           annotations: {
@@ -811,7 +856,7 @@ export const samplePage = {
             code: false,
             color: 'default',
           },
-          plain_text: 'htmltest',
+          plain_text: 'notion-blog2',
           href: null,
         },
       ],
@@ -821,7 +866,7 @@ export const samplePage = {
       type: 'formula',
       formula: {
         type: 'string',
-        string: 'その他',
+        string: 'プログラミング',
       },
     },
     tags: {
@@ -829,62 +874,44 @@ export const samplePage = {
       type: 'multi_select',
       multi_select: [
         {
-          id: '54734b2f-97cb-4ed3-837d-8cd55dea9ed2',
-          name: 'test',
-          color: 'blue',
+          id: '519f37e8-5057-4950-af2a-ca267a5623f8',
+          name: 'next.js',
+          color: 'brown',
+        },
+        {
+          id: 'ce077481-ac10-4c0a-9508-4fca41afc464',
+          name: 'notionblog',
+          color: 'red',
         },
       ],
     },
     created: {
       id: '%5E%5D%3Az',
       type: 'created_time',
-      created_time: '2023-04-01T11:49:00.000Z',
+      created_time: '2023-04-19T03:23:00.000Z',
     },
     category: {
       id: 'egr%60',
       type: 'select',
       select: {
-        id: 'uv]]',
-        name: 'others',
-        color: 'blue',
+        id: 'IL~i',
+        name: 'programming',
+        color: 'yellow',
       },
     },
     update: {
       id: 'k~wD',
       type: 'last_edited_time',
-      last_edited_time: '2023-04-03T13:41:00.000Z',
+      last_edited_time: '2023-04-22T03:27:00.000Z',
     },
     published: {
       id: 'omkv',
       type: 'date',
       date: {
-        start: '2023-04-01',
+        start: '2023-04-21',
         end: null,
         time_zone: null,
       },
-    },
-    author: {
-      id: 'ysdM',
-      type: 'rich_text',
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'nao',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'nao',
-          href: null,
-        },
-      ],
     },
     name: {
       id: 'title',
@@ -893,7 +920,7 @@ export const samplePage = {
         {
           type: 'text',
           text: {
-            content: 'それっぽいことを書いてるただのHTMLテスト',
+            content: 'NotionブログをNext.js(TS)で作る方法(インストール編)',
             link: null,
           },
           annotations: {
@@ -904,25 +931,93 @@ export const samplePage = {
             code: false,
             color: 'default',
           },
-          plain_text: 'それっぽいことを書いてるただのHTMLテスト',
+          plain_text: 'NotionブログをNext.js(TS)で作る方法(インストール編)',
           href: null,
         },
       ],
     },
   },
-  url: 'https://www.notion.so/HTML-58ccedcf69c5463085f70f07f3936afb',
+  url: 'https://www.notion.so/Notion-Next-js-TS-f2510f15636c4aa68a433c9eaca24007',
 };
 
-export const sampleBlocks = [
+export const sampleImageExpiredBlocks = [
   {
     object: 'block',
-    id: '9ae54c3a-8a7d-4092-8468-cb95937330c0',
+    id: '86ad1414-1142-4ddc-981b-2bed1a3db133',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-11T03:49:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-19T03:24:00.000Z',
+    last_edited_time: '2023-04-19T03:25:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'さて、いよいよ環境構築からスタートです。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'さて、いよいよ環境構築からスタートです。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '353211e1-1a7d-4261-95cb-a8bbd70b82fc',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:25:00.000Z',
+    last_edited_time: '2023-04-19T03:25:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '180333ae-029b-4422-8f76-798300dcf0ef',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:25:00.000Z',
+    last_edited_time: '2023-04-19T03:26:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -940,7 +1035,7 @@ export const sampleBlocks = [
           type: 'text',
           text: {
             content:
-              ' 現代では、Notionが便利になって、Notionなしでは生きていけない人が多数いるというこのご時世。',
+              '今回は、インストールして、GitHubにてプッシュするまでの流れをご紹介します。',
             link: null,
           },
           annotations: {
@@ -952,7 +1047,7 @@ export const sampleBlocks = [
             color: 'default',
           },
           plain_text:
-            ' 現代では、Notionが便利になって、Notionなしでは生きていけない人が多数いるというこのご時世。',
+            '今回は、インストールして、GitHubにてプッシュするまでの流れをご紹介します。',
           href: null,
         },
       ],
@@ -961,13 +1056,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '904eaf7c-c068-4f27-a724-79b965b0eda3',
+    id: '77d36397-a501-4068-ad77-3a60cb331106',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-19T03:26:00.000Z',
+    last_edited_time: '2023-04-19T03:26:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -986,13 +1081,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '78abc4a5-9c51-4c3c-b55e-72448dce6f84',
+    id: '27fb3c6f-5dde-49d8-9a18-61005e621ff7',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-19T03:26:00.000Z',
+    last_edited_time: '2023-04-19T03:27:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -1009,8 +1104,7 @@ export const sampleBlocks = [
         {
           type: 'text',
           text: {
-            content:
-              ' NotionをCMSにしたいという人が急増加しているのではないのでしょうか。',
+            content: '何かご不明な単語がありましたら、',
             link: null,
           },
           annotations: {
@@ -1021,1493 +1115,15 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text:
-            ' NotionをCMSにしたいという人が急増加しているのではないのでしょうか。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'd53c70c7-cc9c-40ac-b5c5-a99550c3d5ea',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '33bfe261-5f32-4b63-b70a-559efc54b7f2',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T17:36:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'ちなみに「',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'ちなみに「',
+          plain_text: '何かご不明な単語がありましたら、',
           href: null,
         },
         {
           type: 'text',
           text: {
-            content: 'CMSってなんだよぉぉ、意味がわからんヨォぉぉぉ',
-            link: null,
-          },
-          annotations: {
-            bold: true,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'CMSってなんだよぉぉ、意味がわからんヨォぉぉぉ',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content:
-              '」という方のために、天高らかに（意味不明）ご説明すると、コンテンツ・マネジメント・システムというもので、ぶっちゃけ記事作成や記事削除などの管理システムのことを指すのだそうです。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            '」という方のために、天高らかに（意味不明）ご説明すると、コンテンツ・マネジメント・システムというもので、ぶっちゃけ記事作成や記事削除などの管理システムのことを指すのだそうです。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '3c3f0371-e707-4d11-ab26-95b6263af64e',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '964ab8d7-fbf7-4172-a795-79523e0265b7',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '例を言えばワードプレスなんですが、、、、',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '例を言えばワードプレスなんですが、、、、',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '24be7cef-d452-4769-99db-4bf8fed0e370',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'a0cc1498-e808-4519-8a97-6f1344cafaab',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '「',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '「',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content: 'あー、あのワープレね',
-            link: null,
-          },
-          annotations: {
-            bold: true,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'あー、あのワープレね',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content: '」で通じる人もいれば、「',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '」で通じる人もいれば、「',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content: '何それ食べられるの！？',
-            link: null,
-          },
-          annotations: {
-            bold: true,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '何それ食べられるの！？',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content: '」て言われそうな気もしないでもないですね。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '」て言われそうな気もしないでもないですね。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '2673b722-0e5a-4434-a6ed-dc3b7e65f78f',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '020ec702-0169-4e2a-a9c5-718f4b4f5e74',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'かといって',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'かといって',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '3bccb981-6817-431b-a18e-5bbce4bcc7fb',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '5d19a12d-ef4b-4151-a090-12b282036f0e',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '「',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '「',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content:
-              'はてなブログやアメーバブログみたいなブログシステムを作れるよ',
-            link: null,
-          },
-          annotations: {
-            bold: true,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'はてなブログやアメーバブログみたいなブログシステムを作れるよ',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content: '」って言ったところで',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '」って言ったところで',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '0e43ffcb-49f5-478c-8688-8edacd332abd',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'bc18f384-ab0b-4a57-b106-94dc368f8b9a',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '「',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '「',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content: 'ブログって何',
-            link: null,
-          },
-          annotations: {
-            bold: true,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'ブログって何',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content:
-              '」と言われたら終わらない問答に思わず泣き出しそうになるのでもうここまでにしておきます。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            '」と言われたら終わらない問答に思わず泣き出しそうになるのでもうここまでにしておきます。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'f1765d9e-1e95-40ac-a0fd-a98aff1133f6',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '844e4646-3c3b-4c2c-a222-1a8c81b94e78',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'ちなみに、この記事は５度６度と直してようやく許可をいただけたので公開に至りました。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'ちなみに、この記事は５度６度と直してようやく許可をいただけたので公開に至りました。',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content: '（誰に',
-            link: null,
-          },
-          annotations: {
-            bold: true,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '（誰に',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '020a3d33-24c8-4de1-9f15-65b7cecb6598',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '3b0a322a-64e5-476f-b2e2-8d5807653f45',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'ちなみにこの記事公開直後の記事は没案になってなんか、うまく文章を書けないで公開して後悔しましたので、今回は今までと同じ、無理しないで作っていこうと思います。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'ちなみにこの記事公開直後の記事は没案になってなんか、うまく文章を書けないで公開して後悔しましたので、今回は今までと同じ、無理しないで作っていこうと思います。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'a5fbe5e7-22e5-4e53-a89d-0cbd3d80161e',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '73796427-243b-485b-b6b4-81f526eb7350',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'heading_2',
-    heading_2: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'NotionをCMSにするメリット',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'NotionをCMSにするメリット',
-          href: null,
-        },
-      ],
-      is_toggleable: false,
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '07aa1016-e2dd-406f-a670-0b6df0374463',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '6b98d11e-c735-4aff-aedf-f1636aff189b',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'NotionをCMSにすると何がいいのかというと、ログインしなくてもアプリを立ち上げるだけでブログを書けるという夢のブログシステムを構築できるというところですっ！',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'NotionをCMSにすると何がいいのかというと、ログインしなくてもアプリを立ち上げるだけでブログを書けるという夢のブログシステムを構築できるというところですっ！',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '033bb904-4392-4751-b601-7bda7eb78347',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '0e484d8e-afc3-46e9-bd39-00b502e5ed13',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'Notionのアプリケーションを入れた人ならわかるはず。。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'Notionのアプリケーションを入れた人ならわかるはず。。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'ed880fe4-9546-4cdc-8d64-75901050bb16',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '654072a3-2220-4103-bcb0-301602d5c4c6',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'ちなみに・・・',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'ちなみに・・・',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '2c804f28-052c-40e0-a965-604113999d88',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'a14b66ba-f61d-4b16-aaa1-0932ee38daf7',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '誰でも作れるのかというと、実は誰でも作れます！！　',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '誰でも作れるのかというと、実は誰でも作れます！！　',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '4f1b40bc-9dc7-4cde-9cc7-3f20ad9ea158',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '483b47de-4dbe-474c-a749-1e6450dd7d3f',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'しかも無料で・・・',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'しかも無料で・・・',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'e80ff1a1-cbe5-4a27-914d-6900b9c3a5f9',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '2b614c46-32b0-47e2-93ff-88a045b20bcd',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'ちょっと、色々ゴニョゴニョしないといけないというところはあるのですが',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'ちょっと、色々ゴニョゴニョしないといけないというところはあるのですが',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'c286fad8-facb-4742-a268-1eeadd418b91',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '348d923a-d20b-4635-817c-40b1a99c6920',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'マニュアル通りにやっておけば簡単、',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'マニュアル通りにやっておけば簡単、',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'b0701ca6-8515-4935-ada3-dd27d2070a40',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '38456de2-6805-43a2-8eb9-362f8aa26b8f',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'さあ、どんな方法だ！！　ナオさん！',
-            link: null,
-          },
-          annotations: {
-            bold: true,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'さあ、どんな方法だ！！　ナオさん！',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '33de2b35-da0e-4aa7-b1ed-05ed4f2417a0',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '51e1d87b-05b6-41e8-95ba-f91b3cd8f981',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'って方にリンクを差し上げます。。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'って方にリンクを差し上げます。。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '802e332d-0943-493f-bdd3-64141eeee293',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'aeb3d2ba-58c9-419f-bffa-d06dd4b09652',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'astro-notion-blog',
+            content: 'NotionブログをNext.js(TS)で作る方法(基礎知識編)',
             link: {
-              url: 'https://github.com/otoyo/astro-notion-blog',
+              url: 'https://naomina.com/study/programming/notion-blog',
             },
           },
           annotations: {
@@ -2518,65 +1134,13 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: 'astro-notion-blog',
-          href: 'https://github.com/otoyo/astro-notion-blog',
+          plain_text: 'NotionブログをNext.js(TS)で作る方法(基礎知識編)',
+          href: 'https://naomina.com/study/programming/notion-blog',
         },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'b5beb413-92a1-4c0f-a9a6-e58bad29fccd',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'c4ad9dfd-5043-44f9-8b88-6b0de1930014',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
         {
           type: 'text',
           text: {
-            content:
-              '早さは正義・・・ということでダントツにおすすめしたいのはこれです。',
+            content: 'にて紹介していますので、ご覧いただければ幸いです。',
             link: null,
           },
           annotations: {
@@ -2587,8 +1151,7 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text:
-            '早さは正義・・・ということでダントツにおすすめしたいのはこれです。',
+          plain_text: 'にて紹介していますので、ご覧いただければ幸いです。',
           href: null,
         },
       ],
@@ -2597,13 +1160,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '501d1874-85f8-4e1e-95a4-8dbb23956242',
+    id: '66d87561-9fbf-4952-a02a-bddadf5b79ce',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-19T03:27:00.000Z',
+    last_edited_time: '2023-04-19T03:27:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -2622,488 +1185,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'b7e15312-699b-461c-963a-344136310ac2',
+    id: '22498ffa-abd0-4deb-823b-3c3f11a3caf5',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'おそらく「astro-notion-blog 作り方」で検索すると何か出てくるでしょう。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'おそらく「astro-notion-blog 作り方」で検索すると何か出てくるでしょう。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'b8cb4291-47ff-42f7-850e-2899dea23736',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '821a7a20-2b4a-45b9-b351-db7f01ac9380',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '他にも、「',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '他にも、「',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content: 'Notion-blog-nextjs',
-            link: null,
-          },
-          annotations: {
-            bold: true,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'Notion-blog-nextjs',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content:
-              '」というものもあるので興味のある方は検索してみるといいでしょう。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            '」というものもあるので興味のある方は検索してみるといいでしょう。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '56065af2-52c2-4e3c-b146-fcea011e4c4d',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '0cbf10ad-40f8-466b-b409-93160df2883c',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '終わり',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '終わり',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '15870969-0826-4ec1-b658-3c2d732857bc',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '5f8a0681-acfb-4452-b28f-20e6e063b2ef',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'e7b59992-bbf1-4f11-a10d-fb0fe42bd56c',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '・・・・と終わらせても良かったのですが、',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '・・・・と終わらせても良かったのですが、',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '126ef95f-cba0-4713-8949-91948ca5a209',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '55e0e665-11b7-4bee-a19c-af68a5e577af',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'そうなると私が死に物狂いで作ったブログを紹介できないので頑張って書いていこうと思います。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'そうなると私が死に物狂いで作ったブログを紹介できないので頑張って書いていこうと思います。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '1bff0cdb-8415-4458-99fe-971fe0515468',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '06304f2c-0569-41d9-b87e-2f296e15f3bb',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'ちなみに、今回は、先で紹介したリンクとかは使わずに自力で実装したらどこまでできるかな？と思い作りました！',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'ちなみに、今回は、先で紹介したリンクとかは使わずに自力で実装したらどこまでできるかな？と思い作りました！',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'fbeb429c-59ea-4bfd-bb85-e588da2a8fc0',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '8d31f026-bb5c-4f05-b7f9-027b2a3976d3',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-19T03:27:00.000Z',
+    last_edited_time: '2023-04-19T03:28:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -3120,7 +1208,7 @@ export const sampleBlocks = [
         {
           type: 'text',
           text: {
-            content: 'NotionをCMSにして実装したブログはこんな感じ',
+            content: 'Notionブログ化シリーズ',
             link: null,
           },
           annotations: {
@@ -3131,7 +1219,7 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: 'NotionをCMSにして実装したブログはこんな感じ',
+          plain_text: 'Notionブログ化シリーズ',
           href: null,
         },
       ],
@@ -3141,13 +1229,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '9e3846ef-ecad-4a28-ad0d-c410a079dd0b',
+    id: '7b346e44-1158-4717-87c2-54df2b54ad0f',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-19T03:28:00.000Z',
+    last_edited_time: '2023-04-19T03:28:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -3166,13 +1254,81 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'd3086d24-78c6-4e3d-9a15-2e14ebcdea0e',
+    id: '04a62bde-69dd-4ff2-b9f1-29926629af86',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-19T03:28:00.000Z',
+    last_edited_time: '2023-04-19T03:28:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '現在の作成記事です。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '現在の作成記事です。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'edb90078-2757-47b1-9c0e-74c2401adec2',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:28:00.000Z',
+    last_edited_time: '2023-04-19T03:28:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'aaf9c781-2d0a-47fd-a829-c4482684f6ca',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:28:00.000Z',
+    last_edited_time: '2023-04-19T03:31:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -3190,7 +1346,7 @@ export const sampleBlocks = [
           type: 'text',
           text: {
             content:
-              '「えー早くナオさんのブログ見てみたーーーーい」とお思いの方・・・',
+              '今回は環境構築をしていくので、準備ができているところは飛ばしながら進めて行きましょう。',
             link: null,
           },
           annotations: {
@@ -3202,7 +1358,7 @@ export const sampleBlocks = [
             color: 'default',
           },
           plain_text:
-            '「えー早くナオさんのブログ見てみたーーーーい」とお思いの方・・・',
+            '今回は環境構築をしていくので、準備ができているところは飛ばしながら進めて行きましょう。',
           href: null,
         },
       ],
@@ -3211,13 +1367,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '100d58ad-31cd-42ea-9ce6-fda1db200525',
+    id: '6a98a487-21bb-4866-b39d-818d8747e259',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-19T03:29:00.000Z',
+    last_edited_time: '2023-04-19T03:29:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -3236,13 +1392,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '3a279ebd-43fa-4cfc-b703-20de5bd34b07',
+    id: 'cf536868-55e6-4042-9226-4ae14ab52c32',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-19T03:29:00.000Z',
+    last_edited_time: '2023-04-21T13:03:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -3253,692 +1409,145 @@ export const sampleBlocks = [
     },
     has_children: false,
     archived: false,
-    type: 'paragraph',
-    paragraph: {
+    type: 'numbered_list_item',
+    numbered_list_item: {
       rich_text: [
         {
           type: 'text',
           text: {
-            content: 'はい、こちらです。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'はい、こちらです。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '6516e8aa-e199-464e-9bd7-588cd1096d79',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'e1ea874c-4d1f-4181-98a2-4caa369949da',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'ed0981fc-0cc6-4720-9e5a-02f82919f69a',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'え、どこって・・・',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'え、どこって・・・',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '495f0ac6-0482-4998-9bdd-50cb9e69e97b',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'ddc08764-cc4f-4600-b581-9174657a2bea',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'はい、このブログです。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'はい、このブログです。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '65eaa6d4-ce7d-4787-9083-595d1378b371',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '8c16fab6-c91b-4425-b400-5fe20dac21de',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '誰かに見せると口を合わせて「',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '誰かに見せると口を合わせて「',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content: 'え、これNext.jsっぽくないっすよ',
-            link: null,
-          },
-          annotations: {
-            bold: true,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'え、これNext.jsっぽくないっすよ',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content: '」と言われるのですが',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '」と言われるのですが',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '72c7edae-e3fe-4e99-9570-e8906e2a737f',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'コードを見せると素直に「',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'コードを見せると素直に「',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content: 'Next.jsっすね',
-            link: null,
-          },
-          annotations: {
-            bold: true,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'Next.jsっすね',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content: '」と言われるので、わかりづらいかもしれませんが、',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '」と言われるので、わかりづらいかもしれませんが、',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '92a87ad8-c4f4-4ed7-b7be-2f2b334d13a2',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'CMSにするということはこういうブログ風にカスタマイズできるので楽しいです。（私だけが）',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'CMSにするということはこういうブログ風にカスタマイズできるので楽しいです。（私だけが）',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '3ce6596f-7718-45bb-b918-76a3d0fc916e',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '4b514fd6-b3ee-4c5b-b7b0-f414c4da98a7',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'つまり、NotionでNext.jsでブログ化するとこんな感じにカスタマイズして作れるってことです。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'つまり、NotionでNext.jsでブログ化するとこんな感じにカスタマイズして作れるってことです。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '2c0ea2b8-d4d8-410a-a614-4c7bafa5319f',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '695d4063-a48a-41b8-a6d4-0a061f2be09b',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '実際に入れた機能は次で紹介しますっ',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '実際に入れた機能は次で紹介しますっ',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '40858502-b4f3-4e1e-89b1-358ca7d41bc5',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '8a3d3730-aaf9-4925-aabe-891e1f59f304',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'heading_2',
-    heading_2: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'ブログの実装機能',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'ブログの実装機能',
-          href: null,
-        },
-      ],
-      is_toggleable: false,
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'c814286e-1570-453d-bd5d-03ed28a1ede6',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '639bc92d-7f32-4b6f-856b-e0e809301aa3',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '実際のGitHubのソースコードは',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '実際のGitHubのソースコードは',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content: 'こちら',
+            content: '基礎知識編',
             link: {
-              url: 'https://github.com/naomina121/naomina',
+              url: 'https://naomina.com/study/programming/notion-blog',
+            },
+          },
+          annotations: {
+            bold: true,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '基礎知識編',
+          href: 'https://naomina.com/study/programming/notion-blog',
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f500882a-6b20-4473-afdd-fba504d62531',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T13:03:00.000Z',
+    last_edited_time: '2023-04-21T13:03:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'numbered_list_item',
+    numbered_list_item: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'インストール編←イマココ',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'インストール編←イマココ',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '70532808-3c25-402b-a8b4-2fd39e17ed54',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:30:00.000Z',
+    last_edited_time: '2023-04-19T03:30:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '12dab79b-822a-4dfd-b9be-16689e839a05',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:30:00.000Z',
+    last_edited_time: '2023-04-21T12:28:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '今回のGitHubのソースコードは「',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '今回のGitHubのソースコードは「',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'first',
+            link: {
+              url: 'https://github.com/naomina121/notion-blog/tree/first',
             },
           },
           annotations: {
@@ -3949,13 +1558,13 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: 'こちら',
-          href: 'https://github.com/naomina121/naomina',
+          plain_text: 'first',
+          href: 'https://github.com/naomina121/notion-blog/tree/first',
         },
         {
           type: 'text',
           text: {
-            content: 'から',
+            content: '」ブランチに置いてあります。',
             link: null,
           },
           annotations: {
@@ -3966,7 +1575,7 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: 'から',
+          plain_text: '」ブランチに置いてあります。',
           href: null,
         },
       ],
@@ -3975,13 +1584,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'e8ea2148-b63e-48cc-85ca-825921c8ab99',
+    id: '677d2125-49d2-4d4b-9850-d0de9c37776e',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-19T03:31:00.000Z',
+    last_edited_time: '2023-04-19T03:31:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -4000,719 +1609,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '3a69a28f-0a5e-4c77-9a28-90f84fd79603',
+    id: '7187d0e4-0304-467b-a59c-6aadb0698bc2',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'Notionで書いた記事をNext.jsで作ったサイトに表示（お知らせ含む）',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'Notionで書いた記事をNext.jsで作ったサイトに表示（お知らせ含む）',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'e7bb9d46-265f-417e-b610-e42f6ece9826',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'お問い合わせ機能（Notionのデータベースに保存）',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'お問い合わせ機能（Notionのデータベースに保存）',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '7c6302a5-ca6a-4bd0-b79f-fe7e49e1490a',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'タグ、カテゴリ機能',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'タグ、カテゴリ機能',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '0a8c1a55-5381-4a1a-a07d-baf8352e9ead',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'スラッグは、study/[カテゴリ名]/[スラッグ名]として、動的ルーティング設定。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'スラッグは、study/[カテゴリ名]/[スラッグ名]として、動的ルーティング設定。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '67db47c5-3ec4-46b6-984f-dbb14a176966',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'カテゴリー絞り込み付き検索機能実装',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'カテゴリー絞り込み付き検索機能実装',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '8bbd4c26-7cbf-4c58-8900-b82a0969384f',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '日本語対応のぱんくず表示',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '日本語対応のぱんくず表示',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '7963c191-bf7f-416b-83ae-cb9da542f5d9',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'シェアボタン（プラグイン）',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'シェアボタン（プラグイン）',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '566913fd-f783-4d77-9e28-484c0345fbe3',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '目次機能（プラグイン）',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '目次機能（プラグイン）',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'b989d63f-b574-4a59-adfe-38ee613e021b',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'OGP対応（リンクを差し込んだらカードのように表示される）',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'OGP対応（リンクを差し込んだらカードのように表示される）',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '3081b51a-21f3-437e-8c0c-bd11938dae01',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '404ページ',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '404ページ',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '7c6c3d72-7849-47ae-9584-b0d92839ed8c',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'ad6bb0a8-ab0a-46e1-aae2-89a10696ee00',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'ブログっぽい機能を入れました。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'ブログっぽい機能を入れました。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '2c20c0d8-ae4c-47c4-b6d5-bd52aa4e82e3',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '9ed3d54b-0f66-431f-99bd-f137a2f639d3',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'デプロイ先は、Vercelです。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'デプロイ先は、Vercelです。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'b9ba12ca-9dcb-4fc8-8f7d-f8c00b7644c5',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '69fdf696-dba8-45ea-a7db-0d797be56130',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'そして動画が重くて怒られました。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'そして動画が重くて怒られました。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'ae6ba71b-4e17-47d6-80a4-713f029ba39b',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '（PremiumProで圧縮したら40MBも圧縮できて驚きです。）',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '（PremiumProで圧縮したら40MBも圧縮できて驚きです。）',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '9101d60e-92b9-4350-bcff-67707b4d8f93',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '1b3e5c24-9820-4168-b4c3-347a8277e65e',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-19T03:31:00.000Z',
+    last_edited_time: '2023-04-19T03:32:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -4729,7 +1632,7 @@ export const sampleBlocks = [
         {
           type: 'text',
           text: {
-            content: 'ブログに使った技術',
+            content: 'インストールの流れ',
             link: null,
           },
           annotations: {
@@ -4740,7 +1643,7 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: 'ブログに使った技術',
+          plain_text: 'インストールの流れ',
           href: null,
         },
       ],
@@ -4750,13 +1653,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'cedb309a-11f3-42cd-8d7a-7df46cef77ca',
+    id: '627e6b19-e41c-4450-a6fe-17774a251dd3',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-19T03:32:00.000Z',
+    last_edited_time: '2023-04-19T03:32:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -4775,13 +1678,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '7ef7bd85-1414-4cc8-b72c-2bb8f3e082fb',
+    id: '2d42c69b-4dd7-4763-a23b-66b86f85d942',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-19T03:32:00.000Z',
+    last_edited_time: '2023-04-19T03:32:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -4792,13 +1695,13 @@ export const sampleBlocks = [
     },
     has_children: false,
     archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
+    type: 'numbered_list_item',
+    numbered_list_item: {
       rich_text: [
         {
           type: 'text',
           text: {
-            content: 'Next.js（React）',
+            content: 'Gitをパソコン上にインストールする',
             link: null,
           },
           annotations: {
@@ -4809,7 +1712,7 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: 'Next.js（React）',
+          plain_text: 'Gitをパソコン上にインストールする',
           href: null,
         },
       ],
@@ -4818,13 +1721,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '0cf5ba33-3be6-45be-8992-378603bfdb0c',
+    id: '8b19a18f-8a38-4f05-9233-ae645c092c04',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:06:00.000Z',
+    last_edited_time: '2023-04-21T08:08:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -4835,13 +1738,13 @@ export const sampleBlocks = [
     },
     has_children: false,
     archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
+    type: 'numbered_list_item',
+    numbered_list_item: {
       rich_text: [
         {
           type: 'text',
           text: {
-            content: 'TypeScript',
+            content: 'GitHubのアカウント開設',
             link: null,
           },
           annotations: {
@@ -4852,7 +1755,7 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: 'TypeScript',
+          plain_text: 'GitHubのアカウント開設',
           href: null,
         },
       ],
@@ -4861,13 +1764,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '2479b431-63d6-44a5-a35b-69cb9e82aee5',
+    id: 'fd4843be-27af-4cb2-9b05-046df7f68f75',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:08:00.000Z',
+    last_edited_time: '2023-04-21T08:08:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -4878,13 +1781,13 @@ export const sampleBlocks = [
     },
     has_children: false,
     archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
+    type: 'numbered_list_item',
+    numbered_list_item: {
       rich_text: [
         {
           type: 'text',
           text: {
-            content: 'NotionAPI',
+            content: '新しいリモートリポジトリを作成',
             link: null,
           },
           annotations: {
@@ -4895,7 +1798,7 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: 'NotionAPI',
+          plain_text: '新しいリモートリポジトリを作成',
           href: null,
         },
       ],
@@ -4904,13 +1807,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '97e081cd-7a2e-4853-b4ee-69f43d79b9b0',
+    id: 'd45688fb-bfcd-4565-b8ce-c4d69b1be004',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-19T03:32:00.000Z',
+    last_edited_time: '2023-04-19T03:35:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -4921,13 +1824,13 @@ export const sampleBlocks = [
     },
     has_children: false,
     archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
+    type: 'numbered_list_item',
+    numbered_list_item: {
       rich_text: [
         {
           type: 'text',
           text: {
-            content: 'エラーと戦う根性',
+            content: 'Node.jsをインストール',
             link: null,
           },
           annotations: {
@@ -4938,7 +1841,7 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: 'エラーと戦う根性',
+          plain_text: 'Node.jsをインストール',
           href: null,
         },
       ],
@@ -4947,13 +1850,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '6aa0d886-c927-4ac9-87a2-dba82bf3798d',
+    id: '4357e342-65ec-4e4f-964d-870a9c6a12a5',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-19T03:34:00.000Z',
+    last_edited_time: '2023-04-19T03:34:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -4964,13 +1867,13 @@ export const sampleBlocks = [
     },
     has_children: false,
     archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
+    type: 'numbered_list_item',
+    numbered_list_item: {
       rich_text: [
         {
           type: 'text',
           text: {
-            content: 'ググリ力（検索力）',
+            content: 'Next.jsをインストール',
             link: null,
           },
           annotations: {
@@ -4981,7 +1884,7 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: 'ググリ力（検索力）',
+          plain_text: 'Next.jsをインストール',
           href: null,
         },
       ],
@@ -4990,13 +1893,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '815ba9af-454a-4f2c-a416-62183ed0ccc3',
+    id: 'b829bbb5-9535-4bb1-98b7-7e9e65e8a966',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-19T03:34:00.000Z',
+    last_edited_time: '2023-04-21T08:09:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -5007,13 +1910,13 @@ export const sampleBlocks = [
     },
     has_children: false,
     archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
+    type: 'numbered_list_item',
+    numbered_list_item: {
       rich_text: [
         {
           type: 'text',
           text: {
-            content: 'Udemy（技術・・・？）',
+            content: 'GItHubに最初のコミットをプッシュする',
             link: null,
           },
           annotations: {
@@ -5024,7 +1927,7 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: 'Udemy（技術・・・？）',
+          plain_text: 'GItHubに最初のコミットをプッシュする',
           href: null,
         },
       ],
@@ -5033,13 +1936,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'd119c492-b5f2-4b3b-a960-888439be29ab',
+    id: 'd6ead2bb-9a43-4bbc-8d1a-f94d3fb3fd73',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:09:00.000Z',
+    last_edited_time: '2023-04-21T08:09:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -5058,13 +1961,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'e5570670-da40-4e80-b915-b668727e4c45',
+    id: '66012a95-8239-4099-8c3e-39f9ff3b53f3',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:09:00.000Z',
+    last_edited_time: '2023-04-21T08:09:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -5081,7 +1984,7 @@ export const sampleBlocks = [
         {
           type: 'text',
           text: {
-            content: 'という感じです。',
+            content: 'という流れになっています。',
             link: null,
           },
           annotations: {
@@ -5092,7 +1995,7 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: 'という感じです。',
+          plain_text: 'という流れになっています。',
           href: null,
         },
       ],
@@ -5101,13 +2004,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '58d3554f-323f-4062-acd4-fbe8979df6ef',
+    id: '63e3ccfe-ded0-4443-aaff-b68b2ba488a7',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:09:00.000Z',
+    last_edited_time: '2023-04-21T08:09:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -5126,13 +2029,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '7e9a3951-4421-4fa8-906b-832b05e177b7',
+    id: '4af64489-c09a-49af-a025-6e234c2b2238',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:09:00.000Z',
+    last_edited_time: '2023-04-21T08:10:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -5149,7 +2052,7 @@ export const sampleBlocks = [
         {
           type: 'text',
           text: {
-            content: '制作期間は',
+            content: 'それでは、初めて行きましょう。',
             link: null,
           },
           annotations: {
@@ -5160,41 +2063,7 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: '制作期間は',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content: '一ヶ月',
-            link: null,
-          },
-          annotations: {
-            bold: true,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '一ヶ月',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content: 'です。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'です。',
+          plain_text: 'それでは、初めて行きましょう。',
           href: null,
         },
       ],
@@ -5203,13 +2072,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '687c4e88-a4a6-438e-90eb-bc0dfe2c1144',
+    id: 'e57edb62-355c-43dc-8ae7-050a42cdc211',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:10:00.000Z',
+    last_edited_time: '2023-04-21T08:10:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -5228,13 +2097,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'db0ccc03-41a8-48f4-8f3c-79f7cea8b3db',
+    id: 'ae98bd27-5766-47ca-96c1-ac9736ea2597',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:10:00.000Z',
+    last_edited_time: '2023-04-21T08:10:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -5251,7 +2120,7 @@ export const sampleBlocks = [
         {
           type: 'text',
           text: {
-            content: 'ブログ作成時の私の技術レベル',
+            content: '1. Gitをパソコン上にインストールする',
             link: null,
           },
           annotations: {
@@ -5262,7 +2131,7 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: 'ブログ作成時の私の技術レベル',
+          plain_text: '1. Gitをパソコン上にインストールする',
           href: null,
         },
       ],
@@ -5272,13 +2141,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '22fade6d-214d-41b3-a9b7-db7a253409bb',
+    id: '5d81a562-cf60-46b7-8b79-7a05fcb17b81',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:10:00.000Z',
+    last_edited_time: '2023-04-21T08:10:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -5297,13 +2166,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '4b991529-c48c-43cd-b9fa-ddf6ad47f9b4',
+    id: '2772f354-a529-4196-b74f-14bbd5381e51',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:10:00.000Z',
+    last_edited_time: '2023-04-21T08:47:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -5314,13 +2183,13 @@ export const sampleBlocks = [
     },
     has_children: false,
     archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
+    type: 'paragraph',
+    paragraph: {
       rich_text: [
         {
           type: 'text',
           text: {
-            content: 'WordPress制作経験あり（PHPや多少のSQLの知識あり）',
+            content: 'Gitを導入されていない方はここから始めていきましょう。',
             link: null,
           },
           annotations: {
@@ -5331,7 +2200,7 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: 'WordPress制作経験あり（PHPや多少のSQLの知識あり）',
+          plain_text: 'Gitを導入されていない方はここから始めていきましょう。',
           href: null,
         },
       ],
@@ -5340,144 +2209,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '05ee4b8a-8bb3-404f-be09-a307669fd6fe',
+    id: '819c85c3-0e28-46b8-9411-67dd101f0a22',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'JavaScriptは独学で学習(基礎構文（ES6)、mapやfilter関数、非同期処理はなんとなく理解している）',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'JavaScriptは独学で学習(基礎構文（ES6)、mapやfilter関数、非同期処理はなんとなく理解している）',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '22872123-53fa-4abf-8350-5d5d92510030',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'TypeScript、React（Next.JS）未学習',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'TypeScript、React（Next.JS）未学習',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '761b3892-c96d-409c-8715-79fc55e6d661',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '初心者界のプロ',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '初心者界のプロ',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '19f68f12-27fe-4d33-a9b4-c359a6093d0f',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:13:00.000Z',
+    last_edited_time: '2023-04-21T08:13:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -5496,13 +2234,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'aaaba392-464b-4f98-ba0b-110c8f137816',
+    id: '1a52ffdc-741c-42f0-a443-4ab8e758f477',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:13:00.000Z',
+    last_edited_time: '2023-04-21T08:47:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -5519,8 +2257,7 @@ export const sampleBlocks = [
         {
           type: 'text',
           text: {
-            content:
-              'ちなみに、前世では、WEBデザイナーという肩書をもらっていたような記憶があるのですが、',
+            content: 'お使いのOSに合わせて',
             link: null,
           },
           annotations: {
@@ -5531,8 +2268,43 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text:
-            'ちなみに、前世では、WEBデザイナーという肩書をもらっていたような記憶があるのですが、',
+          plain_text: 'お使いのOSに合わせて',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'Gitのインストール',
+            link: {
+              url: 'https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB',
+            },
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'Gitのインストール',
+          href: 'https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB',
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'の説明を見ながらインストールしていきましょう。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'の説明を見ながらインストールしていきましょう。',
           href: null,
         },
       ],
@@ -5541,94 +2313,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '910a3e4a-1368-432a-a92c-4e82c7ddfeca',
+    id: '36f63b9a-c334-4606-a05e-ea16e87bd201',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'プロのWEBデザイナーを見て自分はデザイナーを名乗れるほどではない',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'プロのWEBデザイナーを見て自分はデザイナーを名乗れるほどではない',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content: 'ただの永遠の初心者',
-            link: null,
-          },
-          annotations: {
-            bold: true,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'ただの永遠の初心者',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content:
-              'だなと自負したため、今世ではただの初心者として生きています。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'だなと自負したため、今世ではただの初心者として生きています。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'e93b61bf-5170-4a47-84fa-986e32fcf115',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:13:00.000Z',
+    last_edited_time: '2023-04-21T08:13:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -5647,13 +2338,152 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'ce50ad8b-18e1-4959-a84f-92f66e7ae4ae',
+    id: '18e49352-4558-4d3d-ab3d-103b2ce8a983',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:13:00.000Z',
+    last_edited_time: '2023-04-21T08:14:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'heading_2',
+    heading_2: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '2.GitHubのアカウントを開設',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '2.GitHubのアカウントを開設',
+          href: null,
+        },
+      ],
+      is_toggleable: false,
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '5aadd51c-0a11-4658-9891-d99d9d80de2b',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:14:00.000Z',
+    last_edited_time: '2023-04-21T08:14:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b15433ab-9dc4-420d-8feb-f0d0befb544e',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:14:00.000Z',
+    last_edited_time: '2023-04-21T08:18:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '1分もかからない！5ステップでGitHubアカウント作成',
+            link: {
+              url: 'https://reffect.co.jp/html/create_github_account_first_time',
+            },
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '1分もかからない！5ステップでGitHubアカウント作成',
+          href: 'https://reffect.co.jp/html/create_github_account_first_time',
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '4c5b9596-d234-4040-9411-6364a7f0d987',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:32:00.000Z',
+    last_edited_time: '2023-04-19T03:32:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '8acc075f-50f6-4b51-865c-48994d7f5a7f',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:31:00.000Z',
+    last_edited_time: '2023-04-21T08:48:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -5671,7 +2501,7 @@ export const sampleBlocks = [
           type: 'text',
           text: {
             content:
-              'さて、そんな中、ブログを始める前は、JavaScriptを勉強し始めるとなかなか学習が終わらずに、どうしよう頭に入らない、という状態に陥ってました。',
+              'アカウントを開設していない方は上記のリンクが参考になるかと思います。',
             link: null,
           },
           annotations: {
@@ -5683,7 +2513,7 @@ export const sampleBlocks = [
             color: 'default',
           },
           plain_text:
-            'さて、そんな中、ブログを始める前は、JavaScriptを勉強し始めるとなかなか学習が終わらずに、どうしよう頭に入らない、という状態に陥ってました。',
+            'アカウントを開設していない方は上記のリンクが参考になるかと思います。',
           href: null,
         },
       ],
@@ -5692,13 +2522,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '12b0b2c9-a5c8-425a-91e9-09c726643154',
+    id: 'c90c612a-c892-47d8-a049-2ec5f417ee74',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:19:00.000Z',
+    last_edited_time: '2023-04-21T08:19:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -5717,13 +2547,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '0220ca4b-6fd5-46b8-bfde-4d1600dd9de5',
+    id: '301f4f80-cb71-4652-a681-deed4f01c78f',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:19:00.000Z',
+    last_edited_time: '2023-04-21T08:19:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -5740,7 +2570,7 @@ export const sampleBlocks = [
         {
           type: 'text',
           text: {
-            content: '「あーだめだ、アウトプットしないと」',
+            content: '手順を沿ってアカウントを開設してみてください。',
             link: null,
           },
           annotations: {
@@ -5751,7 +2581,7 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: '「あーだめだ、アウトプットしないと」',
+          plain_text: '手順を沿ってアカウントを開設してみてください。',
           href: null,
         },
       ],
@@ -5760,13 +2590,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '2a5d881b-e857-4778-8632-15a7c84dfe60',
+    id: '1cb12abc-5851-4b3e-9216-b58954abf640',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:19:00.000Z',
+    last_edited_time: '2023-04-21T08:19:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -5785,13 +2615,242 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '5db525a8-aa9e-44a7-b328-af422cb14142',
+    id: 'cdd0366e-659e-4ec0-ae62-ccd719e9e8cc',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:19:00.000Z',
+    last_edited_time: '2023-04-21T08:19:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'heading_2',
+    heading_2: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '3.新しいリモートリポジトリを作成',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '3.新しいリモートリポジトリを作成',
+          href: null,
+        },
+      ],
+      is_toggleable: false,
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '1f9b99d3-4457-4600-8e81-50dc6f555386',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:25:00.000Z',
+    last_edited_time: '2023-04-21T08:25:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'd2e75707-9d8d-4f27-97ab-8f1bffede23c',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:25:00.000Z',
+    last_edited_time: '2023-04-21T08:26:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'image',
+    image: {
+      caption: [],
+      type: 'file',
+      file: {
+        url: 'https://naomina.com/expired.jpg',
+        expiry_time: '2023-04-22T02:42:05.559Z',
+      },
+    },
+  },
+  {
+    object: 'block',
+    id: '2f96e53b-014d-44e0-8ded-a8829dc52185',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:30:00.000Z',
+    last_edited_time: '2023-04-21T08:26:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b1ae8823-fca9-4841-98b2-c605dc0656ce',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:30:00.000Z',
+    last_edited_time: '2023-04-21T08:31:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'ログインしてから、',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'ログインしてから、',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'GitHub',
+            link: {
+              url: 'https://github.com',
+            },
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'GitHub',
+          href: 'https://github.com',
+        },
+        {
+          type: 'text',
+          text: {
+            content:
+              'のページを表示すると右上に通知マークのベルアイコンと＋のアイコンがあります。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'のページを表示すると右上に通知マークのベルアイコンと＋のアイコンがあります。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '07aa3c0c-c8df-4f6d-b9e5-3785045b1ba7',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:31:00.000Z',
+    last_edited_time: '2023-04-21T08:31:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'c48d4b21-b6ea-421a-a391-5c65425af705',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:31:00.000Z',
+    last_edited_time: '2023-04-21T08:32:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -5809,7 +2868,7 @@ export const sampleBlocks = [
           type: 'text',
           text: {
             content:
-              'って想いに駆られ技術ブログを作成しようとしたのが今回のブログです。',
+              '+のアイコンをクリックすると「New repository」という項目があるので、クリックします。',
             link: null,
           },
           annotations: {
@@ -5821,7 +2880,7 @@ export const sampleBlocks = [
             color: 'default',
           },
           plain_text:
-            'って想いに駆られ技術ブログを作成しようとしたのが今回のブログです。',
+            '+のアイコンをクリックすると「New repository」という項目があるので、クリックします。',
           href: null,
         },
       ],
@@ -5830,13 +2889,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '357ffd26-d097-4c4d-9f9c-a1d550f70396',
+    id: '7e378692-9ef0-4946-9fc6-3abdd5c76769',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:32:00.000Z',
+    last_edited_time: '2023-04-21T08:32:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -5855,13 +2914,203 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '36b98ac9-16f5-4118-975c-b1abeac8e6cb',
+    id: '6b6c11eb-ed38-4a82-a1f4-d53328e87445',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:34:00.000Z',
+    last_edited_time: '2023-04-21T08:34:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'image',
+    image: {
+      caption: [],
+      type: 'file',
+      file: {
+        url: 'https://naomina.com/expired.jpg',
+        expiry_time: '2023-04-22T02:42:05.547Z',
+      },
+    },
+  },
+  {
+    object: 'block',
+    id: '4172f7f2-dee1-4795-8aa8-6e8666227318',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:34:00.000Z',
+    last_edited_time: '2023-04-21T08:34:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '00ffc9b7-372e-4ece-9d62-2b28b0b74e46',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:34:00.000Z',
+    last_edited_time: '2023-04-21T08:35:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '「Repository name」はお好きな名前をつけてください。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '「Repository name」はお好きな名前をつけてください。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'fafa03d0-e53b-46f7-ae7c-1a414747a9a1',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:35:00.000Z',
+    last_edited_time: '2023-04-21T08:36:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'e2abfd54-d16d-4901-aabd-b541753a0109',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:35:00.000Z',
+    last_edited_time: '2023-04-21T08:36:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '私は今回「notion-blog」という名前で作成しています。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '私は今回「notion-blog」という名前で作成しています。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '2e4e8247-3582-476c-84a3-a50e34d5eaec',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:35:00.000Z',
+    last_edited_time: '2023-04-21T08:36:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '25c9e946-55d9-4791-aaba-403d86214284',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:35:00.000Z',
+    last_edited_time: '2023-04-21T08:37:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -5879,7 +3128,7 @@ export const sampleBlocks = [
           type: 'text',
           text: {
             content:
-              'ということで。次からは、実装内容について語っていこうと思います。。',
+              '今回はデフォルトのままの設定で行きますので、特に設定を変更せず、緑色の「Create repository」を選択して作成しておきます。',
             link: null,
           },
           annotations: {
@@ -5891,7 +3140,7 @@ export const sampleBlocks = [
             color: 'default',
           },
           plain_text:
-            'ということで。次からは、実装内容について語っていこうと思います。。',
+            '今回はデフォルトのままの設定で行きますので、特に設定を変更せず、緑色の「Create repository」を選択して作成しておきます。',
           href: null,
         },
       ],
@@ -5900,13 +3149,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '8dd2d2c8-af31-40a4-999e-bac6b62423c4',
+    id: '96834377-5ff3-495d-9e2b-5b4551d2d0b3',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:37:00.000Z',
+    last_edited_time: '2023-04-21T08:37:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -5925,13 +3174,798 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '343c1316-8217-4f14-8f5d-0c4cba99a9b6',
+    id: '64f848cd-92d3-490f-ab89-e3cd2cc4004d',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:37:00.000Z',
+    last_edited_time: '2023-04-21T08:38:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'ここまでで、リモートリポジトリの準備ができました。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'ここまでで、リモートリポジトリの準備ができました。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '67c48093-aeac-4dd5-9400-a2ed66f3ebb7',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:38:00.000Z',
+    last_edited_time: '2023-04-21T08:38:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'fd6d2804-3cba-48c3-addb-b31ca83b515d',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:37:00.000Z',
+    last_edited_time: '2023-04-21T08:38:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'heading_2',
+    heading_2: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'Node.jsをインストール',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'Node.jsをインストール',
+          href: null,
+        },
+      ],
+      is_toggleable: false,
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'd2a42605-5889-4541-bb2f-34766e0e0b6a',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:38:00.000Z',
+    last_edited_time: '2023-04-21T08:38:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b2bcdfae-1dd7-40e6-8b0e-b2f30d82f515',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:38:00.000Z',
+    last_edited_time: '2023-04-21T08:46:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '公式サイト',
+            link: {
+              url: 'https://nodejs.org/ja/download',
+            },
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '公式サイト',
+          href: 'https://nodejs.org/ja/download',
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'から、Node.jsをダウンロードします。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'から、Node.jsをダウンロードします。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '7fb61a6c-ca8f-4714-9502-5f684e9e31ea',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:40:00.000Z',
+    last_edited_time: '2023-04-21T08:40:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '1f29038c-eca3-4e0f-b062-79bb6b06f2c1',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:40:00.000Z',
+    last_edited_time: '2023-04-21T08:44:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '特に理由がなければ、推奨版とされているLTSをダウンロードすると良いでしょう。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '特に理由がなければ、推奨版とされているLTSをダウンロードすると良いでしょう。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'baa742f7-18e4-472a-ba54-208ab1e54eea',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:40:00.000Z',
+    last_edited_time: '2023-04-21T08:43:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b64bd7de-9324-44e3-b432-0fb1f7eb6106',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:40:00.000Z',
+    last_edited_time: '2023-04-21T08:43:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '【Node.js入門】各OS別のインストール方法まとめ(Windows,Mac,Linux…)',
+            link: {
+              url: 'https://www.sejuku.net/blog/72545',
+            },
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '【Node.js入門】各OS別のインストール方法まとめ(Windows,Mac,Linux…)',
+          href: 'https://www.sejuku.net/blog/72545',
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'a58ec013-2fd6-49d8-95d8-bbb1b73e4380',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:40:00.000Z',
+    last_edited_time: '2023-04-21T08:43:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'ef675d12-6712-47b6-901c-4604e2a56dcc',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:40:00.000Z',
+    last_edited_time: '2023-04-21T08:46:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'もしくは、ターミナルなどを利用してインストールされる方は、上記のリンクを参考にされると良いかと思います。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'もしくは、ターミナルなどを利用してインストールされる方は、上記のリンクを参考にされると良いかと思います。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '5936630a-4658-4896-aeb8-e38f5f2d5f74',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:44:00.000Z',
+    last_edited_time: '2023-04-21T08:44:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f27e047a-074c-4f15-9c2c-37c7e5a0dbbb',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:43:00.000Z',
+    last_edited_time: '2023-04-21T08:44:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'heading_2',
+    heading_2: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '5.Next.jsをインストールする',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '5.Next.jsをインストールする',
+          href: null,
+        },
+      ],
+      is_toggleable: false,
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'fd98f45d-5be8-41a1-b07b-63e5135408a8',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:44:00.000Z',
+    last_edited_time: '2023-04-21T08:49:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '94408bbc-f704-4e9f-9653-53c7a0141db7',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:44:00.000Z',
+    last_edited_time: '2023-04-21T08:50:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'さて、いよいよターミナルを使用して、Next.jsをインストールしていきます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'さて、いよいよターミナルを使用して、Next.jsをインストールしていきます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'd61661b3-f4fb-4721-8b08-26c7f9f517fc',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:50:00.000Z',
+    last_edited_time: '2023-04-21T08:50:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '16618061-0ccc-400a-a53a-19647161c371',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:50:00.000Z',
+    last_edited_time: '2023-04-21T09:10:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '私が使用しているコードエディタは「',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '私が使用しているコードエディタは「',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'Visual Studio Code',
+            link: {
+              url: 'https://azure.microsoft.com/ja-jp/products/visual-studio-code/',
+            },
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'Visual Studio Code',
+          href: 'https://azure.microsoft.com/ja-jp/products/visual-studio-code/',
+        },
+        {
+          type: 'text',
+          text: {
+            content: '」になりますので、こちらを使用して解説していきます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '」になりますので、こちらを使用して解説していきます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '43811bbc-7695-4979-a2b0-f84a730da8f0',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:54:00.000Z',
+    last_edited_time: '2023-04-21T08:59:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '0bf81e16-6223-47ae-b09e-7a75de2d6a6b',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:54:00.000Z',
+    last_edited_time: '2023-04-22T03:23:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              ' ※ Visual Studio Code（以下VScode）は、デフォルトのままだと、日本語に設定されていないので必要に応じて、',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            ' ※ Visual Studio Code（以下VScode）は、デフォルトのままだと、日本語に設定されていないので必要に応じて、',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'Visual Studio Codeを日本語化',
+            link: {
+              url: 'https://www.javadrive.jp/vscode/install/index4.html',
+            },
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'Visual Studio Codeを日本語化',
+          href: 'https://www.javadrive.jp/vscode/install/index4.html',
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'の設定をしてみると良いかと思います。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'の設定をしてみると良いかと思います。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '44104734-9469-4395-bcdc-8e597240b5d1',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:54:00.000Z',
+    last_edited_time: '2023-04-21T09:03:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'd6fd055c-e219-4a62-a549-da7653ce18e2',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:54:00.000Z',
+    last_edited_time: '2023-04-21T09:03:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -5948,8 +3982,7 @@ export const sampleBlocks = [
         {
           type: 'text',
           text: {
-            content:
-              'Notionで書いた記事をNext.jsで作ったサイトに表示（お知らせ含む）',
+            content: 'プロジェクトフォルダを作成する',
             link: null,
           },
           annotations: {
@@ -5960,8 +3993,7 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text:
-            'Notionで書いた記事をNext.jsで作ったサイトに表示（お知らせ含む）',
+          plain_text: 'プロジェクトフォルダを作成する',
           href: null,
         },
       ],
@@ -5971,13 +4003,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'e1e9b532-2ba4-4c7d-b0d1-9c5f051d0384',
+    id: '382dbf48-96bf-4a8e-b62f-158985378b2e',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:54:00.000Z',
+    last_edited_time: '2023-04-21T09:03:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -5996,13 +4028,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'a4ff6fc4-9610-434a-babe-f6f283f8beb5',
+    id: '3b2132c3-8ac7-4c9b-92ac-047724d8ac6e',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:54:00.000Z',
+    last_edited_time: '2023-04-21T09:01:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -6019,7 +4051,7 @@ export const sampleBlocks = [
         {
           type: 'text',
           text: {
-            content: '一番の鬼門がここざます。',
+            content: 'さて、まずは、プロジェクトフォルダを作成しましょう。',
             link: null,
           },
           annotations: {
@@ -6030,7 +4062,7 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: '一番の鬼門がここざます。',
+          plain_text: 'さて、まずは、プロジェクトフォルダを作成しましょう。',
           href: null,
         },
       ],
@@ -6039,13 +4071,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'a2c0f942-e631-4441-a88f-fe61bb17e8e3',
+    id: '44c2d82b-660f-4546-bdce-db2038fe6c33',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:57:00.000Z',
+    last_edited_time: '2023-04-21T08:57:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -6064,456 +4096,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'cdb3c58b-12b2-42f1-8539-0f34f8dae9e3',
+    id: 'ea8ed9c0-fa1f-4404-a2b7-e8c762e14565',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '実際の手順は・・・',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '実際の手順は・・・',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '1ff89347-9c4d-4442-ab77-82c88926d519',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '9870bf76-8d36-43a7-9ca2-1ac18f4baedc',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'numbered_list_item',
-    numbered_list_item: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'Next.jsでルーティング設定をしてあらかじめブログページをスタイリングしておきます。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'Next.jsでルーティング設定をしてあらかじめブログページをスタイリングしておきます。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'c18176af-88c2-4908-a13c-52402f7f2fa4',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'numbered_list_item',
-    numbered_list_item: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'NotionAPIのインテグレーションを作成しデータベースと連携します',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'NotionAPIのインテグレーションを作成しデータベースと連携します',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'c0e2128c-119a-49d0-a5a0-e0f29cc05643',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'numbered_list_item',
-    numbered_list_item: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'NotionAPIからデーターベース操作して記事を取得します',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'NotionAPIからデーターベース操作して記事を取得します',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'b52ce372-632d-409a-a751-9e830d4de4e1',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'numbered_list_item',
-    numbered_list_item: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              '記事詳細に表示するために、大量のブロックデータをHTMLに変換する処理！！',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            '記事詳細に表示するために、大量のブロックデータをHTMLに変換する処理！！',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'a3b78773-1dd2-4190-9ee2-1669997eca23',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'aa4b5485-2e6c-44f7-850a-3b1f4a13a944',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'という手順を踏むのデスガァぁぁぁぁ',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'という手順を踏むのデスガァぁぁぁぁ',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '2faf1a4b-fc8e-44b7-abb6-c1c6521c29c1',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '26ffec86-aeb2-48b7-8bc3-44248ec71127',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '２と３は、WEB検索と',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '２と３は、WEB検索と',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content: 'Udemyの講座',
-            link: {
-              url: 'https://www.udemy.com/share/106MVk3@fE82cDYfRPA_Eh_A9r9L2YmWgs75-aRpuN-XQMbxrGwz_cV51tK7JJX6tFzdUU8L/',
-            },
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'Udemyの講座',
-          href: 'https://www.udemy.com/share/106MVk3@fE82cDYfRPA_Eh_A9r9L2YmWgs75-aRpuN-XQMbxrGwz_cV51tK7JJX6tFzdUU8L/',
-        },
-        {
-          type: 'text',
-          text: {
-            content: 'を参考に作成できました！！',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'を参考に作成できました！！',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '1423216e-1009-416c-9399-0511f0ed0611',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '0adbe560-0307-4e01-825c-7fac5f4dfcd9',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:57:00.000Z',
+    last_edited_time: '2023-04-21T09:01:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -6531,7 +4120,7 @@ export const sampleBlocks = [
           type: 'text',
           text: {
             content:
-              'わからない人はセールの時にUdemyが一番いいかもしれませんっ。',
+              'デスクトップでも、ご自身のユーザーフォルダでも構いません。',
             link: null,
           },
           annotations: {
@@ -6543,7 +4132,7 @@ export const sampleBlocks = [
             color: 'default',
           },
           plain_text:
-            'わからない人はセールの時にUdemyが一番いいかもしれませんっ。',
+            'デスクトップでも、ご自身のユーザーフォルダでも構いません。',
           href: null,
         },
       ],
@@ -6552,13 +4141,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '70eda329-a8ec-4700-b06d-eb2423733d32',
+    id: 'd93efdb8-22c5-4185-890c-1e20566ced83',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:44:00.000Z',
+    last_edited_time: '2023-04-21T08:45:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -6577,107 +4166,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '8069c8f1-0fcd-4ff3-96b6-0ec0c37fe557',
+    id: '4ecf3294-3d96-41f6-826c-1b39b6439aa2',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '問題は４の大量のブロックデータをHTMLに変換する作業ですっ',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            '問題は４の大量のブロックデータをHTMLに変換する作業ですっ',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'e316d092-4992-4d34-bbf1-4700035353f3',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'd578160e-7f86-472f-b76b-963182e51153',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '7d81f700-3196-46fd-b4e9-5be0721246b8',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T17:33:00.000Z',
+    created_time: '2023-04-21T08:43:00.000Z',
+    last_edited_time: '2023-04-21T09:01:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -6695,7 +4190,7 @@ export const sampleBlocks = [
           type: 'text',
           text: {
             content:
-              '記事詳細ページに、NotionのページIDを指定してブロックを取得します。',
+              '今回、私は自身のパソコンにユーザーフォルダに、「notion-blog」というフォルダを作成しました。',
             link: null,
           },
           annotations: {
@@ -6707,7 +4202,7 @@ export const sampleBlocks = [
             color: 'default',
           },
           plain_text:
-            '記事詳細ページに、NotionのページIDを指定してブロックを取得します。',
+            '今回、私は自身のパソコンにユーザーフォルダに、「notion-blog」というフォルダを作成しました。',
           href: null,
         },
       ],
@@ -6716,13 +4211,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'fde355db-3632-47a5-96f7-192fb7d6d5cb',
+    id: 'deb1fe3a-4de6-42ba-9322-28c678c7f4c2',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T17:33:00.000Z',
-    last_edited_time: '2023-04-16T17:33:00.000Z',
+    created_time: '2023-04-21T08:40:00.000Z',
+    last_edited_time: '2023-04-21T09:03:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -6741,1019 +4236,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '8de3119b-0d5b-461a-9cc3-fa70c2dcc470',
+    id: 'b9a4d573-edd2-48f9-bc33-f3fc8579458c',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T17:33:00.000Z',
-    last_edited_time: '2023-04-16T17:33:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'このブロックというのはパラグラフ（いわゆるpタグ、段落）や見出しなどの情報を一つ一つのブロックに含まれているのですが。。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'このブロックというのはパラグラフ（いわゆるpタグ、段落）や見出しなどの情報を一つ一つのブロックに含まれているのですが。。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'de42e0f1-5772-4197-a3a3-c12f80356840',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'c2f034e6-4050-499f-8bbd-0973a4cdfa35',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T17:33:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'ブロック達をTypeScriptで型定義したり、ブロックによってHTMLに変換する処理をIF文やSwich文の中で定義するのが必要になってくるので、泣きたくなります。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'ブロック達をTypeScriptで型定義したり、ブロックによってHTMLに変換する処理をIF文やSwich文の中で定義するのが必要になってくるので、泣きたくなります。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'a999a11e-2c9d-47cb-9002-58bb48ffeb5a',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '873b4fa0-0d82-4f44-87e0-5a55ba328392',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'となると、私も、Notionのブロックと格闘しながら、ブログを立ち上げたかというと',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'となると、私も、Notionのブロックと格闘しながら、ブログを立ち上げたかというと',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '052cce3e-a5c0-4a11-b779-c348638836ea',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'd228b39c-d75c-49ec-9ee6-181bcbeffbbe',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T17:33:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '実はそうではありません・・・。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '実はそうではありません・・・。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '371ed6b5-e803-44b3-8d04-fdf1177fd410',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '449e1d46-6bb4-4be3-8062-b92f28c2e486',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T17:33:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'ライブラリ神！！！',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'ライブラリ神！！！',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'b88ca54c-f079-4ba1-8fcd-1c4a16fdc5fb',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '6efd5056-2eb9-45db-b1f2-a37f6e9fbda2',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'ということでライブラリに頼る作戦です。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'ということでライブラリに頼る作戦です。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '899c5d55-2bd6-429b-bd4b-d31521c2b7f0',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '0586363d-23a8-409c-a53b-b117444dd6c8',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '使ったライブラリは、',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '使ったライブラリは、',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content: '@notion-stuff/blocks-html-parser',
-            link: {
-              url: 'https://github.com/nartc/notion-stuff/tree/main/libs/blocks-html-parser',
-            },
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '@notion-stuff/blocks-html-parser',
-          href: 'https://github.com/nartc/notion-stuff/tree/main/libs/blocks-html-parser',
-        },
-        {
-          type: 'text',
-          text: {
-            content: 'というものです。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'というものです。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '5a66f516-bc2e-441a-bff8-c2bbdea5370b',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '5bf358e7-7699-4a80-925a-9ee24541208e',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              '実はUdemyの講座にもライブラリがあったのですが、講座に対応しているNotionのバージョンが最新のものではなかったため、私は使っていません。。（それ以外のコードに関してはちょくちょく参考にして作っています）',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            '実はUdemyの講座にもライブラリがあったのですが、講座に対応しているNotionのバージョンが最新のものではなかったため、私は使っていません。。（それ以外のコードに関してはちょくちょく参考にして作っています）',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '253f6cea-a859-492c-82f2-5217408a4675',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '726f6347-8081-472f-afd9-2af52e3da143',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'ただ私が使ったライブラリは、NotionのブロックをHTMLとして解析してくれるのだが、HTMLに変換してくれるわけではないので、別のライブラリでHTMLに変換するという処理が必要になりました？（',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'ただ私が使ったライブラリは、NotionのブロックをHTMLとして解析してくれるのだが、HTMLに変換してくれるわけではないので、別のライブラリでHTMLに変換するという処理が必要になりました？（',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content: 'html-react-parser',
-            link: {
-              url: 'https://www.npmjs.com/package/html-react-parser',
-            },
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'html-react-parser',
-          href: 'https://www.npmjs.com/package/html-react-parser',
-        },
-        {
-          type: 'text',
-          text: {
-            content: '）',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '）',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '0a1f1133-4f1a-47bf-bd89-3cb33fd5ce4c',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '68655ba7-deb7-449b-94a1-fad5c1eb3cb1',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'この辺りよく分かってません。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'この辺りよく分かってません。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'c2a9cde5-f9ed-4316-98bd-5cf386a1a25c',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'a9520f7d-497a-42c9-88f8-60d3e671e3c3',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'ブロックを全てHTMLに変かーんという感じで変換してくれないので、時間があったら、もっといい方法を模索してみようかなと思いました！',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'ブロックを全てHTMLに変かーんという感じで変換してくれないので、時間があったら、もっといい方法を模索してみようかなと思いました！',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '331c782b-e313-4ab6-8f3c-37330a0b037d',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '7ff29a52-ce78-4c1f-a251-1ccf054b15ff',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '対応しているタグは',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '対応しているタグは',
-          href: null,
-        },
-        {
-          type: 'text',
-          text: {
-            content: 'こちら',
-            link: {
-              url: 'https://naomina.com/study/others/htmltest',
-            },
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'こちら',
-          href: 'https://naomina.com/study/others/htmltest',
-        },
-        {
-          type: 'text',
-          text: {
-            content: 'から。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'から。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'dcc2a217-b655-4948-a74e-102d88ee4d01',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T17:33:00.000Z',
-    last_edited_time: '2023-04-16T17:33:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'ad232347-0bc5-47bf-a506-b7c173993c5a',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T17:33:00.000Z',
-    last_edited_time: '2023-04-16T17:34:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'うーん、地道にブロックを変換する作業がいいのかもしれないなと思い始めてきた今日この頃ざますよ。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'うーん、地道にブロックを変換する作業がいいのかもしれないなと思い始めてきた今日この頃ざますよ。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '9786eb0b-578a-4a85-8079-941d10f7cc73',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'f9296abc-3b30-4b75-90ab-2d67808cb5e1',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:40:00.000Z',
+    last_edited_time: '2023-04-21T09:03:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -7770,7 +4259,7 @@ export const sampleBlocks = [
         {
           type: 'text',
           text: {
-            content: 'お問い合わせ機能（Notionのデータベースに保存）',
+            content: 'VSCodeのアプリケーションを起動する',
             link: null,
           },
           annotations: {
@@ -7781,7 +4270,7 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: 'お問い合わせ機能（Notionのデータベースに保存）',
+          plain_text: 'VSCodeのアプリケーションを起動する',
           href: null,
         },
       ],
@@ -7791,13 +4280,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '4cfa8ded-3d49-402a-b5a0-1b94e6934eea',
+    id: '7c6ec500-0cda-4f2e-b6dc-067287b14d25',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T09:03:00.000Z',
+    last_edited_time: '2023-04-21T09:03:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -7816,100 +4305,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '123c7c7b-ed10-4bcd-b7a9-b0086db015a2',
+    id: '1a1a5349-6a7c-4262-884d-d88d9f052e36',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'Creating contact forms with the Notion API and Next.js',
-            link: {
-              url: 'https://blog.logrocket.com/creating-contact-forms-with-the-notion-api-and-next-js/',
-            },
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'Creating contact forms with the Notion API and Next.js',
-          href: 'https://blog.logrocket.com/creating-contact-forms-with-the-notion-api-and-next-js/',
-        },
-        {
-          type: 'text',
-          text: {
-            content: 'が参考になりました。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'が参考になりました。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '604bf9ef-6010-472e-b17f-73f27f528091',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '323d5377-9c93-432b-ab20-255f4693e3a6',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T09:03:00.000Z',
+    last_edited_time: '2023-04-21T09:05:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -7927,7 +4329,7 @@ export const sampleBlocks = [
           type: 'text',
           text: {
             content:
-              'ちなみに、私はNotionのページ内容にブロックとして入れたかったので一部書き方が違っています。',
+              'VSCodeを起動したら、プロジェクトフォルダをVSCodeで開きます。',
             link: null,
           },
           annotations: {
@@ -7939,7 +4341,7 @@ export const sampleBlocks = [
             color: 'default',
           },
           plain_text:
-            'ちなみに、私はNotionのページ内容にブロックとして入れたかったので一部書き方が違っています。',
+            'VSCodeを起動したら、プロジェクトフォルダをVSCodeで開きます。',
           href: null,
         },
       ],
@@ -7948,13 +4350,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '558d8088-a4e4-4aae-890c-5d94dd618fa2',
+    id: 'b0a00c37-731b-4d69-97d2-52c7ccff12cd',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T09:08:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -7973,13 +4375,824 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '5987f6ee-2f6d-49e8-b6cb-1d2908da47f7',
+    id: '32db62d0-ab55-44a4-b575-8167dcd4d38b',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T09:09:00.000Z',
+    last_edited_time: '2023-04-21T09:09:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'image',
+    image: {
+      caption: [],
+      type: 'file',
+      file: {
+        url: 'https://naomina.com/expired.jpg',
+        expiry_time: '2023-04-22T02:42:05.547Z',
+      },
+    },
+  },
+  {
+    object: 'block',
+    id: 'c90726bf-1ec6-43ea-86a6-9475d18ff949',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T09:08:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '50a84c57-5109-4011-9c6b-2ab4b15fa14d',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T09:08:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '開き方は、VScodeの上部ナビメニューから「ファイル（File)」から「フォルダを開く（Find in Folder…)」から先ほど作成したプロジェクトフォルダを開きます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '開き方は、VScodeの上部ナビメニューから「ファイル（File)」から「フォルダを開く（Find in Folder…)」から先ほど作成したプロジェクトフォルダを開きます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '5dd67a27-096f-4122-8b09-2ccf5dd028f7',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:08:00.000Z',
+    last_edited_time: '2023-04-21T09:10:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '95c8769c-dd38-48d4-b2b2-c0dcc5d2de1c',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:08:00.000Z',
+    last_edited_time: '2023-04-21T09:13:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'heading_3',
+    heading_3: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'ターミナルから、Next.jsをインストールする',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'ターミナルから、Next.jsをインストールする',
+          href: null,
+        },
+      ],
+      is_toggleable: false,
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b5f3a59c-0cce-4a77-ad8f-dee8aef1a4cc',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:13:00.000Z',
+    last_edited_time: '2023-04-21T09:16:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'db107063-9545-4297-8443-b08698bbebc1',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:13:00.000Z',
+    last_edited_time: '2023-04-21T09:18:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '続いて、特にVScodeの設定をしていない場合、Windowsの方は、「Ctrl + J」、Macの方は「Command + J」にてターミナルを表示できます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '続いて、特にVScodeの設定をしていない場合、Windowsの方は、「Ctrl + J」、Macの方は「Command + J」にてターミナルを表示できます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '810a55e4-1cdf-4943-b10b-47bdf75a9a5d',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:17:00.000Z',
+    last_edited_time: '2023-04-21T09:17:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b910c80e-89a6-4f6e-90e8-fd6f6784bd40',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:17:00.000Z',
+    last_edited_time: '2023-04-21T09:18:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'それか、もしくは上部のメニューの「ターミナル（Termminal)」から「新しいターミナル(New Terminal)」からターミナルを表示します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'それか、もしくは上部のメニューの「ターミナル（Termminal)」から「新しいターミナル(New Terminal)」からターミナルを表示します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '255a98cf-220e-4735-8bcd-9d205a2c4366',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:18:00.000Z',
+    last_edited_time: '2023-04-21T09:19:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '1b424b60-14b4-42bc-b55b-216b67ad5f94',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:18:00.000Z',
+    last_edited_time: '2023-04-21T09:20:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'ターミナルを開いたら、next.jsをインストールするコマンドを実行します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'ターミナルを開いたら、next.jsをインストールするコマンドを実行します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b09e89bf-015d-432f-9d38-6329af1504b2',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:20:00.000Z',
+    last_edited_time: '2023-04-21T09:20:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '61dd8118-42dc-4022-8ed8-73deae6dcd39',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:20:00.000Z',
+    last_edited_time: '2023-04-21T09:22:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'コマンドについては',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'コマンドについては',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: '公式サイト',
+            link: {
+              url: 'https://nextjs.org/docs/api-reference/create-next-app',
+            },
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '公式サイト',
+          href: 'https://nextjs.org/docs/api-reference/create-next-app',
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'を参考にしています。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'を参考にしています。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '27a53725-0d3a-4afc-bbef-056ad9a43384',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:22:00.000Z',
+    last_edited_time: '2023-04-21T09:22:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '0e564cff-de36-4320-815e-d6286e168287',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:23:00.000Z',
+    last_edited_time: '2023-04-21T09:40:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'code',
+    code: {
+      caption: [],
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'npx create-next-app@latest .',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'npx create-next-app@latest .',
+          href: null,
+        },
+      ],
+      language: 'plain text',
+    },
+  },
+  {
+    object: 'block',
+    id: 'a0e619ad-a1b1-45ca-b135-243288e6588c',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:08:00.000Z',
+    last_edited_time: '2023-04-21T09:39:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '0fe282bb-08b9-4e49-b444-c510cb917991',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:08:00.000Z',
+    last_edited_time: '2023-04-21T09:41:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              ' 最新版のNext.jsをプロジェクト配下と同じフォルダに作成するというコマンドです。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            ' 最新版のNext.jsをプロジェクト配下と同じフォルダに作成するというコマンドです。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '607c64cb-a279-4cb3-a377-280a67074a11',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:41:00.000Z',
+    last_edited_time: '2023-04-21T09:41:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '18d272d4-e71b-44a5-bfa7-0e730e185d21',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:41:00.000Z',
+    last_edited_time: '2023-04-21T09:55:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'コマンドをコピーしたらVScodeのターミナルに貼り付けて実行しましょう。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'コマンドをコピーしたらVScodeのターミナルに貼り付けて実行しましょう。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'a4ee69dd-4f52-4fb1-a595-b879fdfe2db5',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:39:00.000Z',
+    last_edited_time: '2023-04-21T11:39:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '064553cc-168f-45a7-939d-8b0e8b497069',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:39:00.000Z',
+    last_edited_time: '2023-04-21T11:40:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '下記はプロジェクトフォルダを作る際の対話コマンドの設定に関してです。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '下記はプロジェクトフォルダを作る際の対話コマンドの設定に関してです。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '8b8b0e74-ea1c-434f-974a-c6185a323927',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:40:00.000Z',
+    last_edited_time: '2023-04-21T11:40:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f9174fff-4a51-434c-b7a2-c3e91e7068df',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:41:00.000Z',
+    last_edited_time: '2023-04-21T09:55:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'd4eeb1f0-c1e6-4087-b94b-7d3dc0f0388d',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:42:00.000Z',
+    last_edited_time: '2023-04-21T11:48:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -7998,7 +5211,7 @@ export const sampleBlocks = [
           type: 'text',
           text: {
             content:
-              "children: [\n        {\n          object: 'block',\n          paragraph: {\n            rich_text: [\n              {\n                text: {\n                  content: message,\n                },\n              },\n            ],\n          },\n        },\n      ],",
+              'Need to install the following packages:\n  create-next-app@13.3.0\nOk to proceed? (y)\n// 次のパッケージをインストールする必要がありますと出てくるのでキーボードの Yを入力してエンター\n\n? Would you like to use TypeScript with this project? › No / Yes\n// TypeScriptも一緒にプロジェクトにインストールしますかと yesが選択されている（水色）のを確認してエンター\n\n? Would you like to use ESLint with this project? › No / Yes\n// 構文解析エラーツールのESLintもプロジェクトにインストールしますかと聞かれるので理由がなければyes\n\n? Would you like to use Tailwind CSS with this project? › No / Yes\n// Tailwind CSSも一緒に（以下略　今回使用したいのでyes\n\n? Would you like to use `src/` directory with this project? › No / Yes\n// 作業フォルダはsrc配下に設置するものとするか？と聞かれるのでyes\n\n? Would you like to use experimental `app/` directory with this project? › No / Yes\n// 実験的なappディレクトリを作成しますかと聞かれるのでNo\n\n? What import alias would you like configured? › @/*\n// エイリアス（ファイルの場所を別の名前で参照する）をどの名前で利用しますか？　何も考えずにエンター',
             link: null,
           },
           annotations: {
@@ -8010,22 +5223,22 @@ export const sampleBlocks = [
             color: 'default',
           },
           plain_text:
-            "children: [\n        {\n          object: 'block',\n          paragraph: {\n            rich_text: [\n              {\n                text: {\n                  content: message,\n                },\n              },\n            ],\n          },\n        },\n      ],",
+            'Need to install the following packages:\n  create-next-app@13.3.0\nOk to proceed? (y)\n// 次のパッケージをインストールする必要がありますと出てくるのでキーボードの Yを入力してエンター\n\n? Would you like to use TypeScript with this project? › No / Yes\n// TypeScriptも一緒にプロジェクトにインストールしますかと yesが選択されている（水色）のを確認してエンター\n\n? Would you like to use ESLint with this project? › No / Yes\n// 構文解析エラーツールのESLintもプロジェクトにインストールしますかと聞かれるので理由がなければyes\n\n? Would you like to use Tailwind CSS with this project? › No / Yes\n// Tailwind CSSも一緒に（以下略　今回使用したいのでyes\n\n? Would you like to use `src/` directory with this project? › No / Yes\n// 作業フォルダはsrc配下に設置するものとするか？と聞かれるのでyes\n\n? Would you like to use experimental `app/` directory with this project? › No / Yes\n// 実験的なappディレクトリを作成しますかと聞かれるのでNo\n\n? What import alias would you like configured? › @/*\n// エイリアス（ファイルの場所を別の名前で参照する）をどの名前で利用しますか？　何も考えずにエンター',
           href: null,
         },
       ],
-      language: 'javascript',
+      language: 'plain text',
     },
   },
   {
     object: 'block',
-    id: '4beb55fc-f996-422e-944e-6a9ce00d4536',
+    id: '0970b254-6387-4714-8827-7a144f7561c0',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T09:56:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -8044,13 +5257,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '5dac1b3d-aa49-4322-b625-e58f4137b84b',
+    id: 'f5f7462b-de17-4e5c-b3dd-2c6e9bf55f16',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T09:56:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -8069,82 +5282,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '79b50b7e-7c11-401f-8fa6-de4e32d3fcff',
+    id: '3163e7d7-9a46-4f77-9251-6163a316c7df',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'heading_3',
-    heading_3: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'タグ、カテゴリ機能',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'タグ、カテゴリ機能',
-          href: null,
-        },
-      ],
-      is_toggleable: false,
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '5ca2f822-c219-4c9b-890c-647432ddfe9f',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '89955659-e071-488f-ad72-2505b88c16f7',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T09:58:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -8162,7 +5306,7 @@ export const sampleBlocks = [
           type: 'text',
           text: {
             content:
-              ' Notion APIから取得するデータをいい感じに加工すればいい感じになるのです。。。',
+              '成功したらフォルダがプロジェクト配下に作成され、ターミナルに緑色の文字で「Sucess!」と表示されます。',
             link: null,
           },
           annotations: {
@@ -8174,7 +5318,7 @@ export const sampleBlocks = [
             color: 'default',
           },
           plain_text:
-            ' Notion APIから取得するデータをいい感じに加工すればいい感じになるのです。。。',
+            '成功したらフォルダがプロジェクト配下に作成され、ターミナルに緑色の文字で「Sucess!」と表示されます。',
           href: null,
         },
       ],
@@ -8183,13 +5327,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'b70cd461-0512-448a-8a50-ccac95d73073',
+    id: 'b7ee7b04-f0d1-4263-8aaa-c62617dedf32',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T11:27:00.000Z',
+    last_edited_time: '2023-04-21T11:27:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -8208,197 +5352,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '2f1114f8-0db2-4845-a575-637cd2bec137',
+    id: 'fd121432-f5bf-4fa5-b18b-4e7302e38783',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T17:34:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'いい感じに取得する例',
-            link: {
-              url: 'https://github.com/naomina121/naomina/blob/main/utils/property.ts',
-            },
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'いい感じに取得する例',
-          href: 'https://github.com/naomina121/naomina/blob/main/utils/property.ts',
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'c4eeafa3-b28c-4606-a2d2-9fdbd5664278',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '96e57f2f-b5cd-4a7f-bad1-8b02bfaeee47',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'heading_3',
-    heading_3: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'スラッグは、study/[カテゴリ名]/[スラッグ名]として、動的ルーティング設定。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'スラッグは、study/[カテゴリ名]/[スラッグ名]として、動的ルーティング設定。',
-          href: null,
-        },
-      ],
-      is_toggleable: false,
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '03fd0d21-8e02-4e4e-ac9b-a0073ba5ea95',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '43ae13a9-0087-4f7a-a37e-f2c163c6d185',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'やってることとしてはそこまで難しくないです',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'やってることとしてはそこまで難しくないです',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '6e83131c-06eb-4949-b05c-27e2b49741e1',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T11:27:00.000Z',
+    last_edited_time: '2023-04-21T11:28:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -8416,7 +5376,7 @@ export const sampleBlocks = [
           type: 'text',
           text: {
             content:
-              'カテゴリの部分は[category]というフォルダを作ってそこにindex.tsxと[slug.tsx]を格納するということだけ。',
+              'Gitがすでにパソコン上にインストールされていると「Git init」コマンドを実行しなくても自動的に実行されるようです。',
             link: null,
           },
           annotations: {
@@ -8428,7 +5388,7 @@ export const sampleBlocks = [
             color: 'default',
           },
           plain_text:
-            'カテゴリの部分は[category]というフォルダを作ってそこにindex.tsxと[slug.tsx]を格納するということだけ。',
+            'Gitがすでにパソコン上にインストールされていると「Git init」コマンドを実行しなくても自動的に実行されるようです。',
           href: null,
         },
       ],
@@ -8437,13 +5397,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'b79633d2-1a39-4802-b3c2-2d43d84d32e0',
+    id: '1633cc66-a056-4045-8467-132aa4747c54',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T11:21:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -8462,81 +5422,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'fa06de71-a6ea-42d1-a22a-209818899b81',
+    id: 'c63e273b-316a-46a0-bb91-88d89b6853a2',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '勝手にURLが設定（ルーティング）されるみたいですっ。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '勝手にURLが設定（ルーティング）されるみたいですっ。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '500bd6d1-d88b-4c8c-be3e-9a39fc002274',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '358bb9a0-fedf-43a0-9182-0d83fd5df016',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T11:45:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -8554,7 +5446,7 @@ export const sampleBlocks = [
           type: 'text',
           text: {
             content:
-              'index.tsxは、取得してきたカテゴリーに応じて記事内容をフィルタリングして取得するだけでした。',
+              'Gitの操作に慣れるために、ここでは、プロジェクト配下の、「',
             link: null,
           },
           annotations: {
@@ -8566,64 +5458,30 @@ export const sampleBlocks = [
             color: 'default',
           },
           plain_text:
-            'index.tsxは、取得してきたカテゴリーに応じて記事内容をフィルタリングして取得するだけでした。',
+            'Gitの操作に慣れるために、ここでは、プロジェクト配下の、「',
           href: null,
         },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '946a1080-86fb-4849-b1fa-eb32f664bdcd',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '6ef03f2e-efef-4f3d-b7f3-750ba34aab4c',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'heading_3',
-    heading_3: {
-      rich_text: [
         {
           type: 'text',
           text: {
-            content: 'カテゴリー絞り込み付き検索機能実装',
+            content: 'src > pages > _document.tsx',
+            link: null,
+          },
+          annotations: {
+            bold: true,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'src > pages > _document.tsx',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: '」を編集します。',
             link: null,
           },
           annotations: {
@@ -8634,23 +5492,22 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: 'カテゴリー絞り込み付き検索機能実装',
+          plain_text: '」を編集します。',
           href: null,
         },
       ],
-      is_toggleable: false,
       color: 'default',
     },
   },
   {
     object: 'block',
-    id: '07d9a623-41da-4b25-87fd-8780e00c5071',
+    id: '746259bb-1a83-4cb9-ac3c-ecbd4d359040',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T11:59:00.000Z',
+    last_edited_time: '2023-04-21T11:59:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -8669,13 +5526,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'efb4d204-7dd3-4363-baaa-68305962e8f3',
+    id: 'aeb34bf3-ac0b-4771-bfe7-5e5982623abc',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T11:59:00.000Z',
+    last_edited_time: '2023-04-22T02:45:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -8692,7 +5549,24 @@ export const sampleBlocks = [
         {
           type: 'text',
           text: {
-            content: '検索機能の実装はどうしようか悩みに悩んだ結果。',
+            content: '<Html lang="en">',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: true,
+            color: 'default',
+          },
+          plain_text: '<Html lang="en">',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'を',
             link: null,
           },
           annotations: {
@@ -8703,7 +5577,41 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: '検索機能の実装はどうしようか悩みに悩んだ結果。',
+          plain_text: 'を',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: '<Html lang="ja">',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: true,
+            color: 'default',
+          },
+          plain_text: '<Html lang="ja">',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'に変えます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'に変えます。',
           href: null,
         },
       ],
@@ -8712,13 +5620,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '32ec150b-9787-4dc2-9909-c6443ef5d96a',
+    id: 'fbaf7e7d-f9ee-4fbc-87a6-a6becf4e71ef',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T11:57:00.000Z',
+    last_edited_time: '2023-04-21T12:02:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -8737,13 +5645,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'f30d290e-bd64-4dca-95dd-27980f59d3d9',
+    id: '8973aea1-fc61-4fac-84e2-e0906ce7a7c0',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T11:26:00.000Z',
+    last_edited_time: '2023-04-21T11:47:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -8761,7 +5669,7 @@ export const sampleBlocks = [
           type: 'text',
           text: {
             content:
-              'サーバ側をレンダリングしてページを動的に表示してくれるSSRなら、検索したキーワードのクエリ文字列を取得できると知り試そうと思ったのですが、',
+              'ここで変更したファイルをコミットするために、GItに追加するファイルをステージングに追加する作業をします。',
             link: null,
           },
           annotations: {
@@ -8773,7 +5681,7 @@ export const sampleBlocks = [
             color: 'default',
           },
           plain_text:
-            'サーバ側をレンダリングしてページを動的に表示してくれるSSRなら、検索したキーワードのクエリ文字列を取得できると知り試そうと思ったのですが、',
+            'ここで変更したファイルをコミットするために、GItに追加するファイルをステージングに追加する作業をします。',
           href: null,
         },
       ],
@@ -8782,13 +5690,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '94f17f56-8dec-4b40-a5a5-031b0dcc38d8',
+    id: '2b12b7b8-2bc7-4f45-b9b1-a07b7a5c1eeb',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T11:31:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -8807,13 +5715,82 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '2372437e-2809-4bcb-8e8b-71f2f38c03cf',
+    id: '3342261c-99c8-496b-8a56-2d92f91c2c7e',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T11:31:00.000Z',
+    last_edited_time: '2023-04-21T11:33:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'code',
+    code: {
+      caption: [],
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'git add .',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'git add .',
+          href: null,
+        },
+      ],
+      language: 'plain text',
+    },
+  },
+  {
+    object: 'block',
+    id: '980bf9db-2e90-4684-8750-390a27152633',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T11:34:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'a1d3ce81-90df-4915-8774-c10f5c1f9fc6',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T11:34:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -8830,7 +5807,7 @@ export const sampleBlocks = [
         {
           type: 'text',
           text: {
-            content: '一点問題が',
+            content: 'ステージングに追加されたので、コミットもしましょう。',
             link: null,
           },
           annotations: {
@@ -8841,7 +5818,7 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: '一点問題が',
+          plain_text: 'ステージングに追加されたので、コミットもしましょう。',
           href: null,
         },
       ],
@@ -8850,13 +5827,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '79bf48fd-ae73-4fbe-9c8f-264371b9357d',
+    id: 'f297daf9-0f87-41b3-8eb5-eb61f642a1e7',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T11:35:00.000Z',
+    last_edited_time: '2023-04-21T11:35:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -8875,13 +5852,81 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'c5bc4d6e-4e9c-4065-b274-f61428c6de2b',
+    id: '53bb6a79-2a10-4c29-92a1-e3a5ea3b6d0a',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T11:35:00.000Z',
+    last_edited_time: '2023-04-21T11:36:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '今回は初めてのコミットなので「first commit」とします。 ',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '今回は初めてのコミットなので「first commit」とします。 ',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '173871f4-7bf3-4aeb-a790-08cee944c609',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:36:00.000Z',
+    last_edited_time: '2023-04-21T11:36:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '277bc5e6-a9ca-4aba-bb37-77692ec5d623',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:36:00.000Z',
+    last_edited_time: '2023-04-21T11:36:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -8899,7 +5944,7 @@ export const sampleBlocks = [
           type: 'text',
           text: {
             content:
-              'それは、検索機能はNotionのAPIでフィルタリングして検索ページを取得ということはできないみたいなんです。',
+              '「-m」はコミットメッセージを入力するときに使うオプションです。',
             link: null,
           },
           annotations: {
@@ -8911,7 +5956,7 @@ export const sampleBlocks = [
             color: 'default',
           },
           plain_text:
-            'それは、検索機能はNotionのAPIでフィルタリングして検索ページを取得ということはできないみたいなんです。',
+            '「-m」はコミットメッセージを入力するときに使うオプションです。',
           href: null,
         },
       ],
@@ -8920,13 +5965,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '45c382a7-f62d-4ec7-bf1a-23c1f20ef149',
+    id: '93738505-f0fb-446c-870e-67e07f8ce183',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T11:34:00.000Z',
+    last_edited_time: '2023-04-21T11:34:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -8945,13 +5990,107 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'eaa39251-cc5e-4162-b3ad-30d325ce76f2',
+    id: 'ccf8794c-b673-4caf-9d80-c4a290db12e2',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T11:34:00.000Z',
+    last_edited_time: '2023-04-21T11:35:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'code',
+    code: {
+      caption: [],
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'git commit -m "first commit"',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'git commit -m "first commit"',
+          href: null,
+        },
+      ],
+      language: 'plain text',
+    },
+  },
+  {
+    object: 'block',
+    id: '219e06b6-02f9-45a8-92a5-01b80152f1b4',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T11:37:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'af1c0d45-ec6d-43f9-b8cc-9e51205be346',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T11:35:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '06aa3c41-3895-4d89-aa46-0e959f40876e',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T10:07:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -8969,7 +6108,7 @@ export const sampleBlocks = [
           type: 'text',
           text: {
             content:
-              'そのため、一旦、ページを全取得し、ページIDをループさせてブロックの中で最初にキーワードが出現していたら、そのページ情報を配列に格納して、検索結果に表示させるという手順で試しに実装してみたら行きましたが',
+              'ここまで、できたら次は、コミットをGitHubにPushしましょう。',
             link: null,
           },
           annotations: {
@@ -8981,7 +6120,7 @@ export const sampleBlocks = [
             color: 'default',
           },
           plain_text:
-            'そのため、一旦、ページを全取得し、ページIDをループさせてブロックの中で最初にキーワードが出現していたら、そのページ情報を配列に格納して、検索結果に表示させるという手順で試しに実装してみたら行きましたが',
+            'ここまで、できたら次は、コミットをGitHubにPushしましょう。',
           href: null,
         },
       ],
@@ -8990,13 +6129,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'e20ca598-9f31-4854-8334-11b38382ecf6',
+    id: 'a22cec78-b2c5-4c5c-983c-e7e0e5973c9e',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T09:58:00.000Z',
+    last_edited_time: '2023-04-21T09:58:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -9015,969 +6154,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '222dc4fa-7c89-4e83-8a88-a270239640ab',
+    id: '8231ae7f-4034-45be-a64d-44418249ddcb',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'これAPI側めちゃくちゃ重くなるんじゃないのかなって思い・・・うーん。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'これAPI側めちゃくちゃ重くなるんじゃないのかなって思い・・・うーん。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '0b7f0a8c-04f5-4cb9-92d8-d07dfa5ef109',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'f5c559cf-3169-46bf-9203-06b83d4e6490',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              '今はページ数が少ないが、ページが増えてきたら外すかもしれないです。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            '今はページ数が少ないが、ページが増えてきたら外すかもしれないです。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '004b22a4-6ece-40e5-8d4a-490c8f5058c7',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '6c5351d3-d2f5-4743-abe0-b60725320ba8',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'heading_3',
-    heading_3: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '日本語対応のぱんくず表示',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '日本語対応のぱんくず表示',
-          href: null,
-        },
-      ],
-      is_toggleable: false,
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'b828bf18-2fb8-44d0-b90e-fb14bb976db1',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'adcd1786-f7be-449c-8ad7-42dbb64b9d56',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'カテゴリー名はNotion側のデーターベース側で、スラッグ用のカテゴリを設定し、日本語だった場合のカテゴリを紐付けした関数で取得できるようにしたら動的に取得できるようになりました。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'カテゴリー名はNotion側のデーターベース側で、スラッグ用のカテゴリを設定し、日本語だった場合のカテゴリを紐付けした関数で取得できるようにしたら動的に取得できるようになりました。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '430e9b41-4c60-4664-9f96-f09c5b3b7b19',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'fd6263f6-eb4d-469e-be47-a8477dd0dadb',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T17:35:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'パンクズ対応コード',
-            link: {
-              url: 'https://github.com/naomina121/naomina/blob/main/components/Breadcrumb.tsx',
-            },
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'パンクズ対応コード',
-          href: 'https://github.com/naomina121/naomina/blob/main/components/Breadcrumb.tsx',
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '29ebe68e-b2d8-4b40-ae2e-2da672245664',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T17:39:00.000Z',
-    last_edited_time: '2023-04-16T17:39:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '7e89a7a7-7ddf-4f73-b25a-7af11f5657e7',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'heading_3',
-    heading_3: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'シェアボタン（プラグイン）',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'シェアボタン（プラグイン）',
-          href: null,
-        },
-      ],
-      is_toggleable: false,
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '8f5e7af8-6a1b-4dc1-a1f3-38242e71e708',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '79501aa2-c6bb-4416-a91a-0c17e228bb6f',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'react-share',
-            link: {
-              url: 'https://www.npmjs.com/package/react-share',
-            },
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'react-share',
-          href: 'https://www.npmjs.com/package/react-share',
-        },
-        {
-          type: 'text',
-          text: {
-            content: 'にて対応・・・',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'にて対応・・・',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'eef2f2ba-7369-4bc5-abc3-9034070bea6a',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '96810d8b-7e23-4849-b640-40b907cd1024',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'heading_3',
-    heading_3: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '目次機能（プラグイン）',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '目次機能（プラグイン）',
-          href: null,
-        },
-      ],
-      is_toggleable: false,
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'cfefc2a6-6ad7-4595-aa69-b3ead557e69d',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'a87be20e-7073-439d-a8d0-dda110cc7bf2',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'Tocbot',
-            link: {
-              url: 'https://tscanlin.github.io/tocbot/',
-            },
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'Tocbot',
-          href: 'https://tscanlin.github.io/tocbot/',
-        },
-        {
-          type: 'text',
-          text: {
-            content: 'にて対応。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'にて対応。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '1e6c8501-f7b4-4558-8dc0-ed74fa7df3ae',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '0f21bfff-b3e0-4806-8aa0-221658fb3679',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'heading_3',
-    heading_3: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'OGP対応',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'OGP対応',
-          href: null,
-        },
-      ],
-      is_toggleable: false,
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'b5287d02-20cf-4ecf-9874-b2a29396efd8',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '4cc3eb21-701c-496c-9de5-c6d447c16065',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'next/head',
-            link: {
-              url: 'https://nextjs.org/docs/api-reference/next/head',
-            },
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'next/head',
-          href: 'https://nextjs.org/docs/api-reference/next/head',
-        },
-        {
-          type: 'text',
-          text: {
-            content: 'という公式ドキュメントを参考にしながら作成。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'という公式ドキュメントを参考にしながら作成。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '34d9cc5f-046c-41bf-a232-a2559d733bef',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'a9a74005-f22d-4d9a-b812-bad0d97f5f68',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'heading_3',
-    heading_3: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '404ページ',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: '404ページ',
-          href: null,
-        },
-      ],
-      is_toggleable: false,
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'edd339ec-2ecf-49e7-8f07-766accc3d787',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '5039d65e-9841-480f-9b2c-f6f2e52aa839',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              '動的ルーティングだと、カテゴリ名やスラッグ名を適当に入れてもページが表示されてしまうため、ページデータがない場合は、４０４を返すようにしています。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            '動的ルーティングだと、カテゴリ名やスラッグ名を適当に入れてもページが表示されてしまうため、ページデータがない場合は、４０４を返すようにしています。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '0844f610-4259-4144-b180-d4b8cfd42600',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'c52d494c-a8f8-4e1f-a4be-af3ddaf5c067',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T09:58:00.000Z',
+    last_edited_time: '2023-04-21T10:00:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -9994,7 +6177,7 @@ export const sampleBlocks = [
         {
           type: 'text',
           text: {
-            content: '今後の課題',
+            content: '6.GItHubに最初のコミットをプッシュする',
             link: null,
           },
           annotations: {
@@ -10005,7 +6188,7 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: '今後の課題',
+          plain_text: '6.GItHubに最初のコミットをプッシュする',
           href: null,
         },
       ],
@@ -10015,13 +6198,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '662125b0-0fd8-4643-a3a0-718744547634',
+    id: '9f56d13f-b878-443e-b4aa-faf9b685829e',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:40:00.000Z',
+    last_edited_time: '2023-04-21T10:00:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -10040,167 +6223,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'b160a91c-7251-4563-a4a7-76fa149aefff',
+    id: 'f898a6ad-0363-4e5a-bd08-8cbcf6c0ea6e',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'コードのリファクタリング',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'コードのリファクタリング',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'd5be5fae-108f-4ffd-a47f-f2197e4cf86b',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'ブロックの取得方法を改善',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'ブロックの取得方法を改善',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '2906fe6a-111d-4bf1-a839-8c8f8dd857ad',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'CSSの調整',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'CSSの調整',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '6cfa5c3a-bbab-4e31-a441-5d78e66b2e57',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: '52d542ce-4a67-4b53-90f4-aeaf6fde0905',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:40:00.000Z',
+    last_edited_time: '2023-04-21T10:02:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -10218,7 +6247,7 @@ export const sampleBlocks = [
           type: 'text',
           text: {
             content:
-              '初心者が新しい技術を使おうとすると検索力でどうにかなってしまうので',
+              ' VScodeのターミナルから新しくコマンドを入力していきます。',
             link: null,
           },
           annotations: {
@@ -10230,7 +6259,7 @@ export const sampleBlocks = [
             color: 'default',
           },
           plain_text:
-            '初心者が新しい技術を使おうとすると検索力でどうにかなってしまうので',
+            ' VScodeのターミナルから新しくコマンドを入力していきます。',
           href: null,
         },
       ],
@@ -10239,57 +6268,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '8dc73ca2-d15c-4abb-a76d-01c2896a590c',
+    id: 'ab7133a5-9bf7-4095-aa22-230f5c6069dd',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: '自分で考えてコードを考えないとと思い至り反省しました。。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            '自分で考えてコードを考えないとと思い至り反省しました。。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'd0aba589-8519-46bb-b902-4768e32145b5',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T10:08:00.000Z',
+    last_edited_time: '2023-04-21T10:08:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -10308,13 +6293,98 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '6c42468e-6ce7-46a9-a1ed-c8c4345c605a',
+    id: '968040ba-c584-44e4-b589-106b5defeb4a',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T10:08:00.000Z',
+    last_edited_time: '2023-04-21T11:30:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'しかし、その前に、GitHubにプッシュする際、',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'しかし、その前に、GitHubにプッシュする際、',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'SSH接続をしないと、悲しいことにプッシュできません。',
+            link: null,
+          },
+          annotations: {
+            bold: true,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'SSH接続をしないと、悲しいことにプッシュできません。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f9e9116f-2823-48da-83d6-ee0502375f96',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:09:00.000Z',
+    last_edited_time: '2023-04-21T12:13:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'e0ada523-ef33-4a6e-8fff-7a02cfba4579',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:33:00.000Z',
+    last_edited_time: '2023-04-21T12:13:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -10332,7 +6402,7 @@ export const sampleBlocks = [
           type: 'text',
           text: {
             content:
-              '今後は自分でアプリ開発も実際にしていきたいので頑張っていきます！！',
+              'SSH接続とは、違うネットワーク上の別のコンピューターにログインして遠隔操作するソフトウェアプロトコル（決まりごと）の総称です。',
             link: null,
           },
           annotations: {
@@ -10344,7 +6414,7 @@ export const sampleBlocks = [
             color: 'default',
           },
           plain_text:
-            '今後は自分でアプリ開発も実際にしていきたいので頑張っていきます！！',
+            'SSH接続とは、違うネットワーク上の別のコンピューターにログインして遠隔操作するソフトウェアプロトコル（決まりごと）の総称です。',
           href: null,
         },
       ],
@@ -10353,13 +6423,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '08400fb2-ade9-4159-94e4-043eaf24eccb',
+    id: '7b0b1b3b-99ba-4f21-a3a7-e15bb88ef009',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T10:33:00.000Z',
+    last_edited_time: '2023-04-21T12:12:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -10378,13 +6448,3569 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'd17fa090-ee3b-4512-b343-6d7bbe5e1293',
+    id: '5a306829-8045-4ac4-8ae8-f0c7377d43f9',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T10:33:00.000Z',
+    last_edited_time: '2023-04-22T03:25:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'GitHubでは、SSH接続する際に、クライアント側のコンピューターに秘密鍵を保持し、接続先のGItHub上では公開鍵を登録しておかなければなりません。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'GitHubでは、SSH接続する際に、クライアント側のコンピューターに秘密鍵を保持し、接続先のGItHub上では公開鍵を登録しておかなければなりません。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '4158af8d-1e04-4864-9bf7-c9b36bfc8475',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-22T03:25:00.000Z',
+    last_edited_time: '2023-04-22T03:25:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '3564f56d-2abf-4ad7-84d7-29702a8a11ca',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-22T03:25:00.000Z',
+    last_edited_time: '2023-04-22T03:26:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '秘密鍵と公開鍵の二つの鍵がペアになっているか確認してから接続を許可する仕組みをとっているからです。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '秘密鍵と公開鍵の二つの鍵がペアになっているか確認してから接続を許可する仕組みをとっているからです。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f7ff59db-f6b0-4da9-a7e0-6a64036319af',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:37:00.000Z',
+    last_edited_time: '2023-04-21T10:37:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'bccd8029-e332-4643-a59f-f4b1e9e48fb6',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:15:00.000Z',
+    last_edited_time: '2023-04-21T11:04:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'heading_3',
+    heading_3: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'SSH接続の準備をする',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'SSH接続の準備をする',
+          href: null,
+        },
+      ],
+      is_toggleable: false,
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '0ac911d9-06ff-404a-a8db-54416b6dac87',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:27:00.000Z',
+    last_edited_time: '2023-04-21T10:39:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '36359572-8336-4229-8c5d-58cafce894a3',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:27:00.000Z',
+    last_edited_time: '2023-04-21T10:40:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '参考サイト：',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '参考サイト：',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'GitHub・SSH接続の環境設定方法（Windows）',
+            link: {
+              url: 'https://arrown-blog.com/windows-github-ssh/#PC',
+            },
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'GitHub・SSH接続の環境設定方法（Windows）',
+          href: 'https://arrown-blog.com/windows-github-ssh/#PC',
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '76aa3a30-6e46-48ba-b912-20302d8f26fa',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:27:00.000Z',
+    last_edited_time: '2023-04-21T11:04:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'd328cbc1-5e6f-4186-ace9-d51ecb0a94f0',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:27:00.000Z',
+    last_edited_time: '2023-04-21T11:04:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'Macで操作する際は、ターミナルアプリに打ち込みます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'Macで操作する際は、ターミナルアプリに打ち込みます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'bdf984b5-9f0a-45f4-bef8-0ce3f3f5944f',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:27:00.000Z',
+    last_edited_time: '2023-04-21T11:04:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'Windowsの場合は、PowerShellを使用していきましょう。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'Windowsの場合は、PowerShellを使用していきましょう。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'e0bd5acd-0c17-4af3-ad4c-f75cbf5707cc',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:42:00.000Z',
+    last_edited_time: '2023-04-21T10:42:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '5d0bbb83-03f5-4337-9d54-00c1272f97a4',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:42:00.000Z',
+    last_edited_time: '2023-04-21T10:43:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'ユーザーディレクトリ配下に、「.ssh」フォルダがない場合は下記のコマンドで作成しておきます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'ユーザーディレクトリ配下に、「.ssh」フォルダがない場合は下記のコマンドで作成しておきます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '1bb61a31-591d-4aad-8587-df2e940d6f10',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:46:00.000Z',
+    last_edited_time: '2023-04-21T10:46:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'aba233d5-94fb-4879-85a2-4d46aadf392d',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:41:00.000Z',
+    last_edited_time: '2023-04-21T10:45:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'code',
+    code: {
+      caption: [],
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'mkdir ~/.ssh',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'mkdir ~/.ssh',
+          href: null,
+        },
+      ],
+      language: 'plain text',
+    },
+  },
+  {
+    object: 'block',
+    id: '8ed4a1d9-30f4-45b4-a411-b6bc843ff542',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:43:00.000Z',
+    last_edited_time: '2023-04-21T10:43:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f2ec7047-5d3f-45b9-9cbb-917284f0e712',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:43:00.000Z',
+    last_edited_time: '2023-04-21T10:44:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '※ 通常、「.ssh」フォルダは、隠しフォルダとなっているので、フォルダのエクスプローラーの設定から、隠しファイルが表示されるように設定しておきます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '※ 通常、「.ssh」フォルダは、隠しフォルダとなっているので、フォルダのエクスプローラーの設定から、隠しファイルが表示されるように設定しておきます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'c249b5cb-1678-4f6c-9088-05b0786e97de',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:43:00.000Z',
+    last_edited_time: '2023-04-22T03:26:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f762f8ad-e849-4e62-af49-fd36988ce968',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:43:00.000Z',
+    last_edited_time: '2023-04-22T03:27:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'macでは隠しフォルダを表示させる際、「shitft + command + .」を押すことにより表示の切り替えができるようになっています。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'macでは隠しフォルダを表示させる際、「shitft + command + .」を押すことにより表示の切り替えができるようになっています。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f42288d4-105e-49fe-be74-8da687e05fb1',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-22T03:26:00.000Z',
+    last_edited_time: '2023-04-22T03:26:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'e91072c0-981f-4c65-9271-0ffadc0b9b0b',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:43:00.000Z',
+    last_edited_time: '2023-04-22T03:26:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '隠しフォルダの表示方法',
+            link: {
+              url: 'https://support.microsoft.com/ja-jp/windows/windows-%E3%81%AE%E9%9A%A0%E3%81%97%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A8%E9%9A%A0%E3%81%97%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E3%82%92%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B-97fbc472-c603-9d90-91d0-1166d1d9f4b5#:~:text=%E9%81%B8%E6%8A%9E%E3%81%97%E3%81%BE%E3%81%99%E3%80%82-,%E3%82%BF%E3%82%B9%E3%82%AF%20%E3%83%90%E3%83%BC%E3%81%8B%E3%82%89%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%82%92%E9%96%8B%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82,OK%5D%20%E3%82%92%E9%81%B8%E6%8A%9E%E3%81%97%E3%81%BE%E3%81%99%E3%80%82',
+            },
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '隠しフォルダの表示方法',
+          href: 'https://support.microsoft.com/ja-jp/windows/windows-%E3%81%AE%E9%9A%A0%E3%81%97%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A8%E9%9A%A0%E3%81%97%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E3%82%92%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B-97fbc472-c603-9d90-91d0-1166d1d9f4b5#:~:text=%E9%81%B8%E6%8A%9E%E3%81%97%E3%81%BE%E3%81%99%E3%80%82-,%E3%82%BF%E3%82%B9%E3%82%AF%20%E3%83%90%E3%83%BC%E3%81%8B%E3%82%89%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%82%92%E9%96%8B%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82,OK%5D%20%E3%82%92%E9%81%B8%E6%8A%9E%E3%81%97%E3%81%BE%E3%81%99%E3%80%82',
+        },
+        {
+          type: 'text',
+          text: {
+            content: '（windows)',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '（windows)',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'd2623e89-aa32-45f4-86f5-a1966658beef',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:50:00.000Z',
+    last_edited_time: '2023-04-21T10:50:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f574e605-ca0c-4ae2-9b94-1e7a66c11b0f',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:41:00.000Z',
+    last_edited_time: '2023-04-21T10:50:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '「.ssh」フォルダのアクセス権限（パーミッション）を自分だけがアクセスできる状態にしておきます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '「.ssh」フォルダのアクセス権限（パーミッション）を自分だけがアクセスできる状態にしておきます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'e7b538a2-cf4f-4a4a-b347-3ee8ee0634ec',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:49:00.000Z',
+    last_edited_time: '2023-04-21T10:50:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '914a14dd-a59b-433a-b319-bd09808e4313',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:47:00.000Z',
+    last_edited_time: '2023-04-21T10:50:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'code',
+    code: {
+      caption: [],
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'chmod 700 ~/.ssh',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'chmod 700 ~/.ssh',
+          href: null,
+        },
+      ],
+      language: 'plain text',
+    },
+  },
+  {
+    object: 'block',
+    id: '24d50112-5bf3-46cd-918d-4bfaae44e951',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:25:00.000Z',
+    last_edited_time: '2023-04-21T10:50:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '079f6a0c-799f-4d26-8007-a54ea52d978d',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:25:00.000Z',
+    last_edited_time: '2023-04-21T10:50:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '下記のコマンドで、秘密鍵と公開鍵を作成します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '下記のコマンドで、秘密鍵と公開鍵を作成します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'd10e1145-2320-423d-b537-a6f0ce3166ed',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:25:00.000Z',
+    last_edited_time: '2023-04-21T10:41:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '9c508de7-2bfd-4d9b-81ed-5db44f77129a',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:04:00.000Z',
+    last_edited_time: '2023-04-21T10:48:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'code',
+    code: {
+      caption: [],
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'ssh-keygen -t rsa -b 4096 -C "arrown" -f  ~/.ssh/id_rsa',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'ssh-keygen -t rsa -b 4096 -C "arrown" -f  ~/.ssh/id_rsa',
+          href: null,
+        },
+      ],
+      language: 'plain text',
+    },
+  },
+  {
+    object: 'block',
+    id: 'c8a6c4bd-205d-4a65-80f0-d8f076738d27',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:41:00.000Z',
+    last_edited_time: '2023-04-21T10:47:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '40aab695-d332-456e-9d19-d6a5f43aeb38',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:47:00.000Z',
+    last_edited_time: '2023-04-21T11:05:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'Macの場合は、下記のコマンドで公開鍵の中身をクリップボードにコピーされるのでGitHub上に公開鍵として登録します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'Macの場合は、下記のコマンドで公開鍵の中身をクリップボードにコピーされるのでGitHub上に公開鍵として登録します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'da9c0d3e-b91e-4512-aaaa-8969c35d50fe',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:05:00.000Z',
+    last_edited_time: '2023-04-21T10:48:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b8e8a07b-868a-40f0-b9a8-3fb9a2f7cef0',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:49:00.000Z',
+    last_edited_time: '2023-04-21T10:49:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'code',
+    code: {
+      caption: [],
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'pbcopy < ~/.ssh/id_rsa.pub',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'pbcopy < ~/.ssh/id_rsa.pub',
+          href: null,
+        },
+      ],
+      language: 'plain text',
+    },
+  },
+  {
+    object: 'block',
+    id: '7bea8509-32dd-4961-9c6b-2d758c73ee13',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:05:00.000Z',
+    last_edited_time: '2023-04-21T11:00:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '42b6e4ee-8b8a-49e9-a96b-536fb96122c4',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:05:00.000Z',
+    last_edited_time: '2023-04-21T11:06:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'windowsでは、このコマンドを使えないので、代わりにcatコマンドで代用します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'windowsでは、このコマンドを使えないので、代わりにcatコマンドで代用します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '89b1fe6e-3b21-4824-8115-79547bce4eb6',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:06:00.000Z',
+    last_edited_time: '2023-04-21T11:06:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '033da94f-9fe8-423a-8f13-a41f3cc8a5e6',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:06:00.000Z',
+    last_edited_time: '2023-04-21T11:06:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'code',
+    code: {
+      caption: [],
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'cat ~/.ssh/id_rsa.pub',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'cat ~/.ssh/id_rsa.pub',
+          href: null,
+        },
+      ],
+      language: 'plain text',
+    },
+  },
+  {
+    object: 'block',
+    id: '2945391b-b773-4122-9ab8-71b739920d15',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:01:00.000Z',
+    last_edited_time: '2023-04-21T11:03:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'bdc9f5bf-17fa-4a19-9098-6b30315438b7',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:01:00.000Z',
+    last_edited_time: '2023-04-21T11:07:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'そうすると、公開鍵の中身が表示されるので、公開鍵の中身をコピーしてGitHubに登録します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'そうすると、公開鍵の中身が表示されるので、公開鍵の中身をコピーしてGitHubに登録します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '1660a452-1ba4-427f-8eb3-31b77c458eda',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:07:00.000Z',
+    last_edited_time: '2023-04-21T11:07:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '55f55b7b-d97b-4e24-af5c-1d3986e13825',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:07:00.000Z',
+    last_edited_time: '2023-04-21T11:10:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'Githubを開いたら、右上の自分のアイコンから、「Settings」を選びます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'Githubを開いたら、右上の自分のアイコンから、「Settings」を選びます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '3a2b5ff8-1959-4303-8576-bd957c1b71a7',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:05:00.000Z',
+    last_edited_time: '2023-04-21T11:00:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'd7789728-3579-4f7a-adac-816728045c7f',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:59:00.000Z',
+    last_edited_time: '2023-04-21T10:59:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'image',
+    image: {
+      caption: [],
+      type: 'file',
+      file: {
+        url: 'https://naomina.com/expired.jpg',
+        expiry_time: '2023-04-22T02:42:08.333Z',
+      },
+    },
+  },
+  {
+    object: 'block',
+    id: 'a7e7661e-309e-4325-9ca4-4163265f5bd3',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:53:00.000Z',
+    last_edited_time: '2023-04-21T11:08:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'd8a083dc-898b-45b2-819c-8f5b4c64243d',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:53:00.000Z',
+    last_edited_time: '2023-04-21T11:10:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '次に、左側のメニューにある「Access」の「SSH and GPG keys」を選択します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '次に、左側のメニューにある「Access」の「SSH and GPG keys」を選択します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '2566a5e6-f720-481b-9731-de62bdc9fba9',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:10:00.000Z',
+    last_edited_time: '2023-04-21T11:10:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '2796c251-972a-4b8d-9482-e2bc9c995cb1',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:11:00.000Z',
+    last_edited_time: '2023-04-21T11:11:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'image',
+    image: {
+      caption: [],
+      type: 'file',
+      file: {
+        url: 'https://naomina.com/expired.jpg',
+        expiry_time: '2023-04-22T02:42:08.340Z',
+      },
+    },
+  },
+  {
+    object: 'block',
+    id: '836304e3-7e17-4496-bd88-56b5059b8ec6',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:11:00.000Z',
+    last_edited_time: '2023-04-21T11:11:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '9e7bcf47-3284-4ec2-9d34-9c971967b4b9',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:11:00.000Z',
+    last_edited_time: '2023-04-21T11:12:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '「SSH keys」の項目の緑色のボタン「New SSH key」を選択します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '「SSH keys」の項目の緑色のボタン「New SSH key」を選択します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '3937ff89-784d-4ace-9c9e-390f77733e9b',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:12:00.000Z',
+    last_edited_time: '2023-04-21T11:12:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '59d705d5-a3ac-4ede-9378-ca2f1bc9873d',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:12:00.000Z',
+    last_edited_time: '2023-04-21T11:13:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'image',
+    image: {
+      caption: [],
+      type: 'file',
+      file: {
+        url: 'https://naomina.com/expired.jpg',
+        expiry_time: '2023-04-22T02:42:08.333Z',
+      },
+    },
+  },
+  {
+    object: 'block',
+    id: 'da5a2254-06e2-4dc2-9e66-5324cc43a558',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:13:00.000Z',
+    last_edited_time: '2023-04-21T11:14:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'c2d4d2d8-0b2d-4c3d-8c6d-c69f7587bbdb',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:13:00.000Z',
+    last_edited_time: '2023-04-21T11:14:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '6b614348-5d26-46f9-b2cb-83e3e99d1736',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:13:00.000Z',
+    last_edited_time: '2023-04-21T11:14:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'そうしたら下記のような画面になります。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'そうしたら下記のような画面になります。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'fedb6a29-e76c-49fa-bc2a-e90474db0c52',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:13:00.000Z',
+    last_edited_time: '2023-04-21T11:14:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'bb2aacad-73ad-46ff-b847-2c1e4c097704',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:14:00.000Z',
+    last_edited_time: '2023-04-21T11:14:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'image',
+    image: {
+      caption: [],
+      type: 'file',
+      file: {
+        url: 'https://naomina.com/expired.jpg',
+        expiry_time: '2023-04-22T02:42:08.903Z',
+      },
+    },
+  },
+  {
+    object: 'block',
+    id: 'b156f345-9c33-4335-ad5e-62a108161b0e',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:15:00.000Z',
+    last_edited_time: '2023-04-21T12:33:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'e7469b58-98f8-4e06-b704-66aff893855e',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:14:00.000Z',
+    last_edited_time: '2023-04-21T12:33:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'Title',
+            link: null,
+          },
+          annotations: {
+            bold: true,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'Title',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content:
+              ' : 名前は自由ですが、後で見返してわかりやすい名前をつけると良いでしょう。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            ' : 名前は自由ですが、後で見返してわかりやすい名前をつけると良いでしょう。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '62e227dd-8b81-42ba-93fe-c668ebd39cec',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:14:00.000Z',
+    last_edited_time: '2023-04-21T12:33:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'Key Type',
+            link: null,
+          },
+          annotations: {
+            bold: true,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'Key Type',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: '  : Authentication Key',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '  : Authentication Key',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '62e4e1da-318e-4417-8b64-39c4d5f55e43',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:14:00.000Z',
+    last_edited_time: '2023-04-21T12:32:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'Key',
+            link: null,
+          },
+          annotations: {
+            bold: true,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'Key',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: ' : 先ほどコピーされた公開鍵の内容を貼り付けます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: ' : 先ほどコピーされた公開鍵の内容を貼り付けます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '51b2d5d4-65eb-4dd9-8bf4-199164b817e3',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:17:00.000Z',
+    last_edited_time: '2023-04-21T12:13:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f50b5c4e-ee8c-40bc-815b-709a032c8f3c',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:17:00.000Z',
+    last_edited_time: '2023-04-21T11:18:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '設定が終わったら、「Add SSH key」を押して公開鍵を登録します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '設定が終わったら、「Add SSH key」を押して公開鍵を登録します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '456f8a3c-dac9-4bf1-b2df-4382b82ec8a0',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:18:00.000Z',
+    last_edited_time: '2023-04-21T11:18:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'c88c31a4-e82f-4409-9e73-1937d5340fc0',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:18:00.000Z',
+    last_edited_time: '2023-04-21T12:14:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'ここまでが、SSH接続の準備となります。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'ここまでが、SSH接続の準備となります。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b844c1da-0e3e-4dc5-9800-e0b763b41e63',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:18:00.000Z',
+    last_edited_time: '2023-04-21T11:18:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '4b823799-3114-4a27-abbc-2d4be8a374ba',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:18:00.000Z',
+    last_edited_time: '2023-04-21T11:20:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'では、プロジェクトを早速プッシュしていきましょう。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'では、プロジェクトを早速プッシュしていきましょう。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '75a62cf0-f66c-41a5-a9ac-090cf4eccd03',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:20:00.000Z',
+    last_edited_time: '2023-04-21T11:20:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'a99eae70-923b-4b94-8341-e7b0fc6289d1',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:20:00.000Z',
+    last_edited_time: '2023-04-21T11:21:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'heading_3',
+    heading_3: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'コミットを Githubにプッシュする。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'コミットを Githubにプッシュする。',
+          href: null,
+        },
+      ],
+      is_toggleable: false,
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '0f4cd7db-0d20-4f8a-8b5c-90d81d49cfb9',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:21:00.000Z',
+    last_edited_time: '2023-04-21T11:37:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'c5a271ed-5f7f-4852-af74-4ba11eba7bbe',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:21:00.000Z',
+    last_edited_time: '2023-04-21T12:16:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'それでは、SSH接続の準備が終わったので、リモートリポジトリにコミットをプッシュする作業をします。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'それでは、SSH接続の準備が終わったので、リモートリポジトリにコミットをプッシュする作業をします。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '26744cf9-1b78-4c26-bde5-77ba4ae9bd9e',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:16:00.000Z',
+    last_edited_time: '2023-04-21T12:16:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '9bd2e0be-151a-426b-8c83-f373c0d5cc55',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:16:00.000Z',
+    last_edited_time: '2023-04-21T12:16:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '作成しておいたGithubのリポジトリのページに行きます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '作成しておいたGithubのリポジトリのページに行きます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '80a44505-ed49-475b-ae12-aaa39d122117',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:18:00.000Z',
+    last_edited_time: '2023-04-21T12:18:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b9a2559f-9df3-4117-b766-60a3eb264915',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:18:00.000Z',
+    last_edited_time: '2023-04-21T12:19:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '（https://github.com/アカウント名/リポジトリ名）',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '（https://github.com/アカウント名/リポジトリ名）',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'cf6728d7-45e2-4283-ab54-38b5a65b7ae6',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:16:00.000Z',
+    last_edited_time: '2023-04-21T12:16:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '40018da9-0870-4c04-bbde-8a68b488e947',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:17:00.000Z',
+    last_edited_time: '2023-04-21T12:18:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'image',
+    image: {
+      caption: [],
+      type: 'file',
+      file: {
+        url: 'https://naomina.com/expired.jpg',
+        expiry_time: '2023-04-22T02:42:08.916Z',
+      },
+    },
+  },
+  {
+    object: 'block',
+    id: '4462d3e8-f8a5-4dbd-b54d-d5b70d943765',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:21:00.000Z',
+    last_edited_time: '2023-04-21T11:21:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '75b87a73-d342-4e30-ae17-0554d203527f',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:18:00.000Z',
+    last_edited_time: '2023-04-21T12:18:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '「SSH」を選択します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '「SSH」を選択します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '74ce6f18-8e24-4c66-b806-b456c29c974c',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:19:00.000Z',
+    last_edited_time: '2023-04-21T12:21:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'fd922d94-65fb-44fb-8056-3f79867fa201',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:19:00.000Z',
+    last_edited_time: '2023-04-21T12:21:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f888d3f5-e445-4017-88b9-0bbe282d9c22',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:19:00.000Z',
+    last_edited_time: '2023-04-21T12:23:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'プロジェクトフォルダの場所でターミナルを使って、「',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'プロジェクトフォルダの場所でターミナルを使って、「',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content:
+              '…or push an existing repository from the command line」のコマンドを実行します。',
+            link: null,
+          },
+          annotations: {
+            bold: true,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '…or push an existing repository from the command line」のコマンドを実行します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '0a54d40c-7ecb-44d7-9a92-c13aeca3d29c',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:20:00.000Z',
+    last_edited_time: '2023-04-21T12:20:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'ae2dbe67-3bfe-4273-aa8d-6e3c4d50c6c2',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:20:00.000Z',
+    last_edited_time: '2023-04-21T12:20:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '私の場合は下記です。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '私の場合は下記です。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'e6ca4fa1-fd83-4560-a285-175b75608490',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:20:00.000Z',
+    last_edited_time: '2023-04-21T12:23:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'af170110-1e42-4eaa-9aa5-78125be2523b',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:19:00.000Z',
+    last_edited_time: '2023-04-21T12:23:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'code',
+    code: {
+      caption: [],
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'git remote add origin git@github.com:naomina121/notion-blog.git\ngit branch -M main\ngit push -u origin main',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'git remote add origin git@github.com:naomina121/notion-blog.git\ngit branch -M main\ngit push -u origin main',
+          href: null,
+        },
+      ],
+      language: 'plain text',
+    },
+  },
+  {
+    object: 'block',
+    id: '95e006b0-8db7-442d-a0e3-926d796c0a26',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:18:00.000Z',
+    last_edited_time: '2023-04-21T12:23:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b642e38a-c5dc-413d-8784-9e4d945562fb',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:18:00.000Z',
+    last_edited_time: '2023-04-21T12:24:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'やっていることは、リモートリポジトリにローカルリポジトリの内容を反映させる作業です。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'やっていることは、リモートリポジトリにローカルリポジトリの内容を反映させる作業です。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '0a114e17-840d-4851-8731-0a58abe4abdc',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:24:00.000Z',
+    last_edited_time: '2023-04-21T12:24:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'bd88052a-08b2-4a78-9f6d-ebd4821f0ade',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:23:00.000Z',
+    last_edited_time: '2023-04-21T12:24:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'ローカルリポジトリの内容を反映させるリモートリポジトリをコマンドで登録します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'ローカルリポジトリの内容を反映させるリモートリポジトリをコマンドで登録します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '4dc43d84-eabb-4bd3-847d-7316a8432aa4',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:23:00.000Z',
+    last_edited_time: '2023-04-21T12:25:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'その次に、メインブランチをmainとして登録して、プッシュするという流れです。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'その次に、メインブランチをmainとして登録して、プッシュするという流れです。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '2a9e0c9c-e2e3-4912-81b4-288eb8bf9397',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:25:00.000Z',
+    last_edited_time: '2023-04-21T12:26:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '9ad58221-0a4a-41eb-931e-8acf3599d879',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:25:00.000Z',
+    last_edited_time: '2023-04-21T12:26:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'ここまでできていたら、GItHubのリポジトリに今回行ったコミットが反映されているでしょう。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'ここまでできていたら、GItHubのリポジトリに今回行ったコミットが反映されているでしょう。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'add889da-7f95-4c3d-97f2-3dfd0d53a633',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-22T03:18:00.000Z',
+    last_edited_time: '2023-04-22T03:18:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '4e13adf9-a450-4d8c-b338-6d6d010fd7b6',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-22T03:18:00.000Z',
+    last_edited_time: '2023-04-22T03:22:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '今回のGitHubのソースコードは「',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '今回のGitHubのソースコードは「',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'first',
+            link: {
+              url: 'https://github.com/naomina121/notion-blog/tree/first',
+            },
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'first',
+          href: 'https://github.com/naomina121/notion-blog/tree/first',
+        },
+        {
+          type: 'text',
+          text: {
+            content: '」ブランチに置いてあります。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '」ブランチに置いてあります。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+];
+
+export const sampleBlocks = [
+  {
+    object: 'block',
+    id: '86ad1414-1142-4ddc-981b-2bed1a3db133',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:24:00.000Z',
+    last_edited_time: '2023-04-19T03:25:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'さて、いよいよ環境構築からスタートです。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'さて、いよいよ環境構築からスタートです。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '353211e1-1a7d-4261-95cb-a8bbd70b82fc',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:25:00.000Z',
+    last_edited_time: '2023-04-19T03:25:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '180333ae-029b-4422-8f76-798300dcf0ef',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:25:00.000Z',
+    last_edited_time: '2023-04-19T03:26:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '今回は、インストールして、GitHubにてプッシュするまでの流れをご紹介します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '今回は、インストールして、GitHubにてプッシュするまでの流れをご紹介します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '77d36397-a501-4068-ad77-3a60cb331106',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:26:00.000Z',
+    last_edited_time: '2023-04-19T03:26:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '27fb3c6f-5dde-49d8-9a18-61005e621ff7',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:26:00.000Z',
+    last_edited_time: '2023-04-19T03:27:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '何かご不明な単語がありましたら、',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '何かご不明な単語がありましたら、',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'NotionブログをNext.js(TS)で作る方法(基礎知識編)',
+            link: {
+              url: 'https://naomina.com/study/programming/notion-blog',
+            },
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'NotionブログをNext.js(TS)で作る方法(基礎知識編)',
+          href: 'https://naomina.com/study/programming/notion-blog',
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'にて紹介していますので、ご覧いただければ幸いです。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'にて紹介していますので、ご覧いただければ幸いです。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '66d87561-9fbf-4952-a02a-bddadf5b79ce',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:27:00.000Z',
+    last_edited_time: '2023-04-19T03:27:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '22498ffa-abd0-4deb-823b-3c3f11a3caf5',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:27:00.000Z',
+    last_edited_time: '2023-04-19T03:28:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -10401,7 +10027,7 @@ export const sampleBlocks = [
         {
           type: 'text',
           text: {
-            content: '参考サイトやお借りしたソースコード',
+            content: 'Notionブログ化シリーズ',
             link: null,
           },
           annotations: {
@@ -10412,7 +10038,7 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: '参考サイトやお借りしたソースコード',
+          plain_text: 'Notionブログ化シリーズ',
           href: null,
         },
       ],
@@ -10422,13 +10048,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '2c85a33c-0086-46d0-8aa7-e1bdc00c336a',
+    id: '7b346e44-1158-4717-87c2-54df2b54ad0f',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-19T03:28:00.000Z',
+    last_edited_time: '2023-04-19T03:28:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -10447,13 +10073,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '456d242d-86d7-4552-a11c-53117e203a38',
+    id: '04a62bde-69dd-4ff2-b9f1-29926629af86',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-19T03:28:00.000Z',
+    last_edited_time: '2023-04-19T03:28:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -10470,8 +10096,7 @@ export const sampleBlocks = [
         {
           type: 'text',
           text: {
-            content:
-              'CodePenにてお借りしたソースコードやGitHubにて公開されたソースコードにつきましては、著作者に帰属します。',
+            content: '現在の作成記事です。',
             link: null,
           },
           annotations: {
@@ -10482,8 +10107,7 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text:
-            'CodePenにてお借りしたソースコードやGitHubにて公開されたソースコードにつきましては、著作者に帰属します。',
+          plain_text: '現在の作成記事です。',
           href: null,
         },
       ],
@@ -10492,56 +10116,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '106d2e9f-e1e4-40c2-8843-7b86be2cec63',
+    id: 'edb90078-2757-47b1-9c0e-74c2401adec2',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
-    created_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    last_edited_by: {
-      object: 'user',
-      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
-    },
-    has_children: false,
-    archived: false,
-    type: 'paragraph',
-    paragraph: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content: 'ライセンスに関しては、こちらに載せておきます。',
-            link: null,
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text: 'ライセンスに関しては、こちらに載せておきます。',
-          href: null,
-        },
-      ],
-      color: 'default',
-    },
-  },
-  {
-    object: 'block',
-    id: 'da18394a-6733-4f49-b919-9e1cfcde44a7',
-    parent: {
-      type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
-    },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-19T03:28:00.000Z',
+    last_edited_time: '2023-04-19T03:28:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -10560,13 +10141,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'b4b96bd3-eed2-4514-a0f9-78120c6e3b9e',
+    id: 'aaf9c781-2d0a-47fd-a829-c4482684f6ca',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-19T03:28:00.000Z',
+    last_edited_time: '2023-04-19T03:31:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -10577,15 +10158,215 @@ export const sampleBlocks = [
     },
     has_children: false,
     archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
+    type: 'paragraph',
+    paragraph: {
       rich_text: [
         {
           type: 'text',
           text: {
-            content: '2023年に誰よりも早くに本気のBlogを作ったよ',
+            content:
+              '今回は環境構築をしていくので、準備ができているところは飛ばしながら進めて行きましょう。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '今回は環境構築をしていくので、準備ができているところは飛ばしながら進めて行きましょう。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '6a98a487-21bb-4866-b39d-818d8747e259',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:29:00.000Z',
+    last_edited_time: '2023-04-19T03:29:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'cf536868-55e6-4042-9226-4ae14ab52c32',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:29:00.000Z',
+    last_edited_time: '2023-04-21T13:03:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'numbered_list_item',
+    numbered_list_item: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '基礎知識編',
             link: {
-              url: 'https://zenn.dev/nbr41to/articles/474df7540c475c',
+              url: 'https://naomina.com/study/programming/notion-blog',
+            },
+          },
+          annotations: {
+            bold: true,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '基礎知識編',
+          href: 'https://naomina.com/study/programming/notion-blog',
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f500882a-6b20-4473-afdd-fba504d62531',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T13:03:00.000Z',
+    last_edited_time: '2023-04-21T13:03:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'numbered_list_item',
+    numbered_list_item: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'インストール編←イマココ',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'インストール編←イマココ',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '70532808-3c25-402b-a8b4-2fd39e17ed54',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:30:00.000Z',
+    last_edited_time: '2023-04-19T03:30:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '12dab79b-822a-4dfd-b9be-16689e839a05',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:30:00.000Z',
+    last_edited_time: '2023-04-21T12:28:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '今回のGitHubのソースコードは「',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '今回のGitHubのソースコードは「',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'first',
+            link: {
+              url: 'https://github.com/naomina121/notion-blog/tree/first',
             },
           },
           annotations: {
@@ -10596,8 +10377,25 @@ export const sampleBlocks = [
             code: false,
             color: 'default',
           },
-          plain_text: '2023年に誰よりも早くに本気のBlogを作ったよ',
-          href: 'https://zenn.dev/nbr41to/articles/474df7540c475c',
+          plain_text: 'first',
+          href: 'https://github.com/naomina121/notion-blog/tree/first',
+        },
+        {
+          type: 'text',
+          text: {
+            content: '」ブランチに置いてあります。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '」ブランチに置いてあります。',
+          href: null,
         },
       ],
       color: 'default',
@@ -10605,13 +10403,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: 'c048692d-aa72-418c-8374-f2185e6a6385',
+    id: '677d2125-49d2-4d4b-9850-d0de9c37776e',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-19T03:31:00.000Z',
+    last_edited_time: '2023-04-19T03:31:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -10622,16 +10420,1900 @@ export const sampleBlocks = [
     },
     has_children: false,
     archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '7187d0e4-0304-467b-a59c-6aadb0698bc2',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:31:00.000Z',
+    last_edited_time: '2023-04-19T03:32:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'heading_2',
+    heading_2: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'インストールの流れ',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'インストールの流れ',
+          href: null,
+        },
+      ],
+      is_toggleable: false,
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '627e6b19-e41c-4450-a6fe-17774a251dd3',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:32:00.000Z',
+    last_edited_time: '2023-04-19T03:32:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '2d42c69b-4dd7-4763-a23b-66b86f85d942',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:32:00.000Z',
+    last_edited_time: '2023-04-19T03:32:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'numbered_list_item',
+    numbered_list_item: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'Gitをパソコン上にインストールする',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'Gitをパソコン上にインストールする',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '8b19a18f-8a38-4f05-9233-ae645c092c04',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:06:00.000Z',
+    last_edited_time: '2023-04-21T08:08:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'numbered_list_item',
+    numbered_list_item: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'GitHubのアカウント開設',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'GitHubのアカウント開設',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'fd4843be-27af-4cb2-9b05-046df7f68f75',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:08:00.000Z',
+    last_edited_time: '2023-04-21T08:08:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'numbered_list_item',
+    numbered_list_item: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '新しいリモートリポジトリを作成',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '新しいリモートリポジトリを作成',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'd45688fb-bfcd-4565-b8ce-c4d69b1be004',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:32:00.000Z',
+    last_edited_time: '2023-04-19T03:35:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'numbered_list_item',
+    numbered_list_item: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'Node.jsをインストール',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'Node.jsをインストール',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '4357e342-65ec-4e4f-964d-870a9c6a12a5',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:34:00.000Z',
+    last_edited_time: '2023-04-19T03:34:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'numbered_list_item',
+    numbered_list_item: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'Next.jsをインストール',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'Next.jsをインストール',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b829bbb5-9535-4bb1-98b7-7e9e65e8a966',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:34:00.000Z',
+    last_edited_time: '2023-04-21T08:09:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'numbered_list_item',
+    numbered_list_item: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'GItHubに最初のコミットをプッシュする',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'GItHubに最初のコミットをプッシュする',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'd6ead2bb-9a43-4bbc-8d1a-f94d3fb3fd73',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:09:00.000Z',
+    last_edited_time: '2023-04-21T08:09:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '66012a95-8239-4099-8c3e-39f9ff3b53f3',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:09:00.000Z',
+    last_edited_time: '2023-04-21T08:09:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'という流れになっています。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'という流れになっています。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '63e3ccfe-ded0-4443-aaff-b68b2ba488a7',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:09:00.000Z',
+    last_edited_time: '2023-04-21T08:09:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '4af64489-c09a-49af-a025-6e234c2b2238',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:09:00.000Z',
+    last_edited_time: '2023-04-21T08:10:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'それでは、初めて行きましょう。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'それでは、初めて行きましょう。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'e57edb62-355c-43dc-8ae7-050a42cdc211',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:10:00.000Z',
+    last_edited_time: '2023-04-21T08:10:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'ae98bd27-5766-47ca-96c1-ac9736ea2597',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:10:00.000Z',
+    last_edited_time: '2023-04-21T08:10:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'heading_2',
+    heading_2: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '1. Gitをパソコン上にインストールする',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '1. Gitをパソコン上にインストールする',
+          href: null,
+        },
+      ],
+      is_toggleable: false,
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '5d81a562-cf60-46b7-8b79-7a05fcb17b81',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:10:00.000Z',
+    last_edited_time: '2023-04-21T08:10:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '2772f354-a529-4196-b74f-14bbd5381e51',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:10:00.000Z',
+    last_edited_time: '2023-04-21T08:47:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'Gitを導入されていない方はここから始めていきましょう。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'Gitを導入されていない方はここから始めていきましょう。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '819c85c3-0e28-46b8-9411-67dd101f0a22',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:13:00.000Z',
+    last_edited_time: '2023-04-21T08:13:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '1a52ffdc-741c-42f0-a443-4ab8e758f477',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:13:00.000Z',
+    last_edited_time: '2023-04-21T08:47:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'お使いのOSに合わせて',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'お使いのOSに合わせて',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'Gitのインストール',
+            link: {
+              url: 'https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB',
+            },
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'Gitのインストール',
+          href: 'https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB',
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'の説明を見ながらインストールしていきましょう。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'の説明を見ながらインストールしていきましょう。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '36f63b9a-c334-4606-a05e-ea16e87bd201',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:13:00.000Z',
+    last_edited_time: '2023-04-21T08:13:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '18e49352-4558-4d3d-ab3d-103b2ce8a983',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:13:00.000Z',
+    last_edited_time: '2023-04-21T08:14:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'heading_2',
+    heading_2: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '2.GitHubのアカウントを開設',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '2.GitHubのアカウントを開設',
+          href: null,
+        },
+      ],
+      is_toggleable: false,
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '5aadd51c-0a11-4658-9891-d99d9d80de2b',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:14:00.000Z',
+    last_edited_time: '2023-04-21T08:14:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b15433ab-9dc4-420d-8feb-f0d0befb544e',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:14:00.000Z',
+    last_edited_time: '2023-04-21T08:18:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '1分もかからない！5ステップでGitHubアカウント作成',
+            link: {
+              url: 'https://reffect.co.jp/html/create_github_account_first_time',
+            },
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '1分もかからない！5ステップでGitHubアカウント作成',
+          href: 'https://reffect.co.jp/html/create_github_account_first_time',
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '4c5b9596-d234-4040-9411-6364a7f0d987',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:32:00.000Z',
+    last_edited_time: '2023-04-19T03:32:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '8acc075f-50f6-4b51-865c-48994d7f5a7f',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:31:00.000Z',
+    last_edited_time: '2023-04-21T08:48:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
       rich_text: [
         {
           type: 'text',
           text: {
             content:
-              'カウントアップも同時に表示する円形プログレスバーの表示デモ',
+              'アカウントを開設していない方は上記のリンクが参考になるかと思います。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'アカウントを開設していない方は上記のリンクが参考になるかと思います。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'c90c612a-c892-47d8-a049-2ec5f417ee74',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:19:00.000Z',
+    last_edited_time: '2023-04-21T08:19:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '301f4f80-cb71-4652-a681-deed4f01c78f',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:19:00.000Z',
+    last_edited_time: '2023-04-21T08:19:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '手順を沿ってアカウントを開設してみてください。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '手順を沿ってアカウントを開設してみてください。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '1cb12abc-5851-4b3e-9216-b58954abf640',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:19:00.000Z',
+    last_edited_time: '2023-04-21T08:19:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'cdd0366e-659e-4ec0-ae62-ccd719e9e8cc',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:19:00.000Z',
+    last_edited_time: '2023-04-21T08:19:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'heading_2',
+    heading_2: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '3.新しいリモートリポジトリを作成',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '3.新しいリモートリポジトリを作成',
+          href: null,
+        },
+      ],
+      is_toggleable: false,
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '1f9b99d3-4457-4600-8e81-50dc6f555386',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:25:00.000Z',
+    last_edited_time: '2023-04-21T08:25:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'd2e75707-9d8d-4f27-97ab-8f1bffede23c',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:25:00.000Z',
+    last_edited_time: '2023-04-21T08:26:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'image',
+    image: {
+      caption: [],
+      type: 'file',
+      file: {
+        url: 'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1de6428f-a346-46e3-a7cc-325c12cea178/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230423%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230423T014205Z&X-Amz-Expires=3600&X-Amz-Signature=4c849a401f2d446338ec4f230511d577db636a211bac32d46e104e4637e9b0a7&X-Amz-SignedHeaders=host&x-id=GetObject',
+        expiry_time: now,
+      },
+    },
+  },
+  {
+    object: 'block',
+    id: '2f96e53b-014d-44e0-8ded-a8829dc52185',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:30:00.000Z',
+    last_edited_time: '2023-04-21T08:26:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b1ae8823-fca9-4841-98b2-c605dc0656ce',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-19T03:30:00.000Z',
+    last_edited_time: '2023-04-21T08:31:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'ログインしてから、',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'ログインしてから、',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'GitHub',
             link: {
-              url: 'https://digipress.info/tech/circular-progress-bar-with-count-up/',
+              url: 'https://github.com',
+            },
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'GitHub',
+          href: 'https://github.com',
+        },
+        {
+          type: 'text',
+          text: {
+            content:
+              'のページを表示すると右上に通知マークのベルアイコンと＋のアイコンがあります。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'のページを表示すると右上に通知マークのベルアイコンと＋のアイコンがあります。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '07aa3c0c-c8df-4f6d-b9e5-3785045b1ba7',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:31:00.000Z',
+    last_edited_time: '2023-04-21T08:31:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'c48d4b21-b6ea-421a-a391-5c65425af705',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:31:00.000Z',
+    last_edited_time: '2023-04-21T08:32:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '+のアイコンをクリックすると「New repository」という項目があるので、クリックします。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '+のアイコンをクリックすると「New repository」という項目があるので、クリックします。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '7e378692-9ef0-4946-9fc6-3abdd5c76769',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:32:00.000Z',
+    last_edited_time: '2023-04-21T08:32:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '6b6c11eb-ed38-4a82-a1f4-d53328e87445',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:34:00.000Z',
+    last_edited_time: '2023-04-21T08:34:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'image',
+    image: {
+      caption: [],
+      type: 'file',
+      file: {
+        url: 'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1c2de11e-f67d-41a4-9dcd-03154730eef7/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230423%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230423T014205Z&X-Amz-Expires=3600&X-Amz-Signature=b26208482cef283fb408c04e82b0bd4e0321ef892ac72bb1a11ffa7931ef9691&X-Amz-SignedHeaders=host&x-id=GetObject',
+        expiry_time: now,
+      },
+    },
+  },
+  {
+    object: 'block',
+    id: '4172f7f2-dee1-4795-8aa8-6e8666227318',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:34:00.000Z',
+    last_edited_time: '2023-04-21T08:34:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '00ffc9b7-372e-4ece-9d62-2b28b0b74e46',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:34:00.000Z',
+    last_edited_time: '2023-04-21T08:35:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '「Repository name」はお好きな名前をつけてください。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '「Repository name」はお好きな名前をつけてください。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'fafa03d0-e53b-46f7-ae7c-1a414747a9a1',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:35:00.000Z',
+    last_edited_time: '2023-04-21T08:36:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'e2abfd54-d16d-4901-aabd-b541753a0109',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:35:00.000Z',
+    last_edited_time: '2023-04-21T08:36:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '私は今回「notion-blog」という名前で作成しています。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '私は今回「notion-blog」という名前で作成しています。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '2e4e8247-3582-476c-84a3-a50e34d5eaec',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:35:00.000Z',
+    last_edited_time: '2023-04-21T08:36:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '25c9e946-55d9-4791-aaba-403d86214284',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:35:00.000Z',
+    last_edited_time: '2023-04-21T08:37:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '今回はデフォルトのままの設定で行きますので、特に設定を変更せず、緑色の「Create repository」を選択して作成しておきます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '今回はデフォルトのままの設定で行きますので、特に設定を変更せず、緑色の「Create repository」を選択して作成しておきます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '96834377-5ff3-495d-9e2b-5b4551d2d0b3',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:37:00.000Z',
+    last_edited_time: '2023-04-21T08:37:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '64f848cd-92d3-490f-ab89-e3cd2cc4004d',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:37:00.000Z',
+    last_edited_time: '2023-04-21T08:38:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'ここまでで、リモートリポジトリの準備ができました。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'ここまでで、リモートリポジトリの準備ができました。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '67c48093-aeac-4dd5-9400-a2ed66f3ebb7',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:38:00.000Z',
+    last_edited_time: '2023-04-21T08:38:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'fd6d2804-3cba-48c3-addb-b31ca83b515d',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:37:00.000Z',
+    last_edited_time: '2023-04-21T08:38:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'heading_2',
+    heading_2: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'Node.jsをインストール',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'Node.jsをインストール',
+          href: null,
+        },
+      ],
+      is_toggleable: false,
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'd2a42605-5889-4541-bb2f-34766e0e0b6a',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:38:00.000Z',
+    last_edited_time: '2023-04-21T08:38:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b2bcdfae-1dd7-40e6-8b0e-b2f30d82f515',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:38:00.000Z',
+    last_edited_time: '2023-04-21T08:46:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '公式サイト',
+            link: {
+              url: 'https://nodejs.org/ja/download',
+            },
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '公式サイト',
+          href: 'https://nodejs.org/ja/download',
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'から、Node.jsをダウンロードします。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'から、Node.jsをダウンロードします。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '7fb61a6c-ca8f-4714-9502-5f684e9e31ea',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:40:00.000Z',
+    last_edited_time: '2023-04-21T08:40:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '1f29038c-eca3-4e0f-b062-79bb6b06f2c1',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:40:00.000Z',
+    last_edited_time: '2023-04-21T08:44:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '特に理由がなければ、推奨版とされているLTSをダウンロードすると良いでしょう。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '特に理由がなければ、推奨版とされているLTSをダウンロードすると良いでしょう。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'baa742f7-18e4-472a-ba54-208ab1e54eea',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:40:00.000Z',
+    last_edited_time: '2023-04-21T08:43:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b64bd7de-9324-44e3-b432-0fb1f7eb6106',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:40:00.000Z',
+    last_edited_time: '2023-04-21T08:43:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '【Node.js入門】各OS別のインストール方法まとめ(Windows,Mac,Linux…)',
+            link: {
+              url: 'https://www.sejuku.net/blog/72545',
             },
           },
           annotations: {
@@ -10643,8 +12325,8 @@ export const sampleBlocks = [
             color: 'default',
           },
           plain_text:
-            'カウントアップも同時に表示する円形プログレスバーの表示デモ',
-          href: 'https://digipress.info/tech/circular-progress-bar-with-count-up/',
+            '【Node.js入門】各OS別のインストール方法まとめ(Windows,Mac,Linux…)',
+          href: 'https://www.sejuku.net/blog/72545',
         },
       ],
       color: 'default',
@@ -10652,13 +12334,13 @@ export const sampleBlocks = [
   },
   {
     object: 'block',
-    id: '8cac42fe-1e8f-4580-9929-50408e1cc007',
+    id: 'a58ec013-2fd6-49d8-95d8-bbb1b73e4380',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:40:00.000Z',
+    last_edited_time: '2023-04-21T08:43:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -10669,43 +12351,21 @@ export const sampleBlocks = [
     },
     has_children: false,
     archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
-      rich_text: [
-        {
-          type: 'text',
-          text: {
-            content:
-              'CodePen Home Animated Circular Progress Bar with Count Up',
-            link: {
-              url: 'https://codepen.io/digistate/pen/poOgZoP',
-            },
-          },
-          annotations: {
-            bold: false,
-            italic: false,
-            strikethrough: false,
-            underline: false,
-            code: false,
-            color: 'default',
-          },
-          plain_text:
-            'CodePen Home Animated Circular Progress Bar with Count Up',
-          href: 'https://codepen.io/digistate/pen/poOgZoP',
-        },
-      ],
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
       color: 'default',
     },
   },
   {
     object: 'block',
-    id: '7a3c1574-af57-44a3-8ae8-a32dcac34051',
+    id: 'ef675d12-6712-47b6-901c-4604e2a56dcc',
     parent: {
       type: 'page_id',
-      page_id: '4adaebf6-582b-424b-9e6e-308a7069da74',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
     },
-    created_time: '2023-04-16T13:18:00.000Z',
-    last_edited_time: '2023-04-16T13:18:00.000Z',
+    created_time: '2023-04-21T08:40:00.000Z',
+    last_edited_time: '2023-04-21T08:46:00.000Z',
     created_by: {
       object: 'user',
       id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
@@ -10716,17 +12376,15 @@ export const sampleBlocks = [
     },
     has_children: false,
     archived: false,
-    type: 'bulleted_list_item',
-    bulleted_list_item: {
+    type: 'paragraph',
+    paragraph: {
       rich_text: [
         {
           type: 'text',
           text: {
             content:
-              '【NotionをCMSに】NotionAPI + Next.js + TypeScript でブログ開発〜デプロイまで',
-            link: {
-              url: 'https://www.udemy.com/share/106MVk3@fE82cDYfRPA_Eh_A9r9L2YmWgs75-aRpuN-XQMbxrGwz_cV51tK7JJX6tFzdUU8L/',
-            },
+              'もしくは、ターミナルなどを利用してインストールされる方は、上記のリンクを参考にされると良いかと思います。',
+            link: null,
           },
           annotations: {
             bold: false,
@@ -10737,8 +12395,6182 @@ export const sampleBlocks = [
             color: 'default',
           },
           plain_text:
-            '【NotionをCMSに】NotionAPI + Next.js + TypeScript でブログ開発〜デプロイまで',
-          href: 'https://www.udemy.com/share/106MVk3@fE82cDYfRPA_Eh_A9r9L2YmWgs75-aRpuN-XQMbxrGwz_cV51tK7JJX6tFzdUU8L/',
+            'もしくは、ターミナルなどを利用してインストールされる方は、上記のリンクを参考にされると良いかと思います。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '5936630a-4658-4896-aeb8-e38f5f2d5f74',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:44:00.000Z',
+    last_edited_time: '2023-04-21T08:44:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f27e047a-074c-4f15-9c2c-37c7e5a0dbbb',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:43:00.000Z',
+    last_edited_time: '2023-04-21T08:44:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'heading_2',
+    heading_2: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '5.Next.jsをインストールする',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '5.Next.jsをインストールする',
+          href: null,
+        },
+      ],
+      is_toggleable: false,
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'fd98f45d-5be8-41a1-b07b-63e5135408a8',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:44:00.000Z',
+    last_edited_time: '2023-04-21T08:49:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '94408bbc-f704-4e9f-9653-53c7a0141db7',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:44:00.000Z',
+    last_edited_time: '2023-04-21T08:50:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'さて、いよいよターミナルを使用して、Next.jsをインストールしていきます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'さて、いよいよターミナルを使用して、Next.jsをインストールしていきます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'd61661b3-f4fb-4721-8b08-26c7f9f517fc',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:50:00.000Z',
+    last_edited_time: '2023-04-21T08:50:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '16618061-0ccc-400a-a53a-19647161c371',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:50:00.000Z',
+    last_edited_time: '2023-04-21T09:10:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '私が使用しているコードエディタは「',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '私が使用しているコードエディタは「',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'Visual Studio Code',
+            link: {
+              url: 'https://azure.microsoft.com/ja-jp/products/visual-studio-code/',
+            },
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'Visual Studio Code',
+          href: 'https://azure.microsoft.com/ja-jp/products/visual-studio-code/',
+        },
+        {
+          type: 'text',
+          text: {
+            content: '」になりますので、こちらを使用して解説していきます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '」になりますので、こちらを使用して解説していきます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '43811bbc-7695-4979-a2b0-f84a730da8f0',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:54:00.000Z',
+    last_edited_time: '2023-04-21T08:59:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '0bf81e16-6223-47ae-b09e-7a75de2d6a6b',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:54:00.000Z',
+    last_edited_time: '2023-04-22T03:23:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              ' ※ Visual Studio Code（以下VScode）は、デフォルトのままだと、日本語に設定されていないので必要に応じて、',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            ' ※ Visual Studio Code（以下VScode）は、デフォルトのままだと、日本語に設定されていないので必要に応じて、',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'Visual Studio Codeを日本語化',
+            link: {
+              url: 'https://www.javadrive.jp/vscode/install/index4.html',
+            },
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'Visual Studio Codeを日本語化',
+          href: 'https://www.javadrive.jp/vscode/install/index4.html',
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'の設定をしてみると良いかと思います。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'の設定をしてみると良いかと思います。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '44104734-9469-4395-bcdc-8e597240b5d1',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:54:00.000Z',
+    last_edited_time: '2023-04-21T09:03:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'd6fd055c-e219-4a62-a549-da7653ce18e2',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:54:00.000Z',
+    last_edited_time: '2023-04-21T09:03:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'heading_3',
+    heading_3: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'プロジェクトフォルダを作成する',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'プロジェクトフォルダを作成する',
+          href: null,
+        },
+      ],
+      is_toggleable: false,
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '382dbf48-96bf-4a8e-b62f-158985378b2e',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:54:00.000Z',
+    last_edited_time: '2023-04-21T09:03:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '3b2132c3-8ac7-4c9b-92ac-047724d8ac6e',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:54:00.000Z',
+    last_edited_time: '2023-04-21T09:01:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'さて、まずは、プロジェクトフォルダを作成しましょう。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'さて、まずは、プロジェクトフォルダを作成しましょう。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '44c2d82b-660f-4546-bdce-db2038fe6c33',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:57:00.000Z',
+    last_edited_time: '2023-04-21T08:57:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'ea8ed9c0-fa1f-4404-a2b7-e8c762e14565',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:57:00.000Z',
+    last_edited_time: '2023-04-21T09:01:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'デスクトップでも、ご自身のユーザーフォルダでも構いません。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'デスクトップでも、ご自身のユーザーフォルダでも構いません。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'd93efdb8-22c5-4185-890c-1e20566ced83',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:44:00.000Z',
+    last_edited_time: '2023-04-21T08:45:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '4ecf3294-3d96-41f6-826c-1b39b6439aa2',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:43:00.000Z',
+    last_edited_time: '2023-04-21T09:01:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '今回、私は自身のパソコンにユーザーフォルダに、「notion-blog」というフォルダを作成しました。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '今回、私は自身のパソコンにユーザーフォルダに、「notion-blog」というフォルダを作成しました。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'deb1fe3a-4de6-42ba-9322-28c678c7f4c2',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:40:00.000Z',
+    last_edited_time: '2023-04-21T09:03:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b9a4d573-edd2-48f9-bc33-f3fc8579458c',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:40:00.000Z',
+    last_edited_time: '2023-04-21T09:03:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'heading_3',
+    heading_3: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'VSCodeのアプリケーションを起動する',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'VSCodeのアプリケーションを起動する',
+          href: null,
+        },
+      ],
+      is_toggleable: false,
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '7c6ec500-0cda-4f2e-b6dc-067287b14d25',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:03:00.000Z',
+    last_edited_time: '2023-04-21T09:03:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '1a1a5349-6a7c-4262-884d-d88d9f052e36',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:03:00.000Z',
+    last_edited_time: '2023-04-21T09:05:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'VSCodeを起動したら、プロジェクトフォルダをVSCodeで開きます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'VSCodeを起動したら、プロジェクトフォルダをVSCodeで開きます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b0a00c37-731b-4d69-97d2-52c7ccff12cd',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T09:08:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '32db62d0-ab55-44a4-b575-8167dcd4d38b',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:09:00.000Z',
+    last_edited_time: '2023-04-21T09:09:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'image',
+    image: {
+      caption: [],
+      type: 'file',
+      file: {
+        url: 'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/59a53129-823a-4541-b632-23118e9a7fc5/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230423%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230423T014205Z&X-Amz-Expires=3600&X-Amz-Signature=86bf94a94ec7af25868c7776b53d7df8a7e924efab49b2fa17786dba8b929788&X-Amz-SignedHeaders=host&x-id=GetObject',
+        expiry_time: now,
+      },
+    },
+  },
+  {
+    object: 'block',
+    id: 'c90726bf-1ec6-43ea-86a6-9475d18ff949',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T09:08:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '50a84c57-5109-4011-9c6b-2ab4b15fa14d',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T09:08:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '開き方は、VScodeの上部ナビメニューから「ファイル（File)」から「フォルダを開く（Find in Folder…)」から先ほど作成したプロジェクトフォルダを開きます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '開き方は、VScodeの上部ナビメニューから「ファイル（File)」から「フォルダを開く（Find in Folder…)」から先ほど作成したプロジェクトフォルダを開きます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '5dd67a27-096f-4122-8b09-2ccf5dd028f7',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:08:00.000Z',
+    last_edited_time: '2023-04-21T09:10:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '95c8769c-dd38-48d4-b2b2-c0dcc5d2de1c',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:08:00.000Z',
+    last_edited_time: '2023-04-21T09:13:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'heading_3',
+    heading_3: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'ターミナルから、Next.jsをインストールする',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'ターミナルから、Next.jsをインストールする',
+          href: null,
+        },
+      ],
+      is_toggleable: false,
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b5f3a59c-0cce-4a77-ad8f-dee8aef1a4cc',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:13:00.000Z',
+    last_edited_time: '2023-04-21T09:16:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'db107063-9545-4297-8443-b08698bbebc1',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:13:00.000Z',
+    last_edited_time: '2023-04-21T09:18:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '続いて、特にVScodeの設定をしていない場合、Windowsの方は、「Ctrl + J」、Macの方は「Command + J」にてターミナルを表示できます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '続いて、特にVScodeの設定をしていない場合、Windowsの方は、「Ctrl + J」、Macの方は「Command + J」にてターミナルを表示できます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '810a55e4-1cdf-4943-b10b-47bdf75a9a5d',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:17:00.000Z',
+    last_edited_time: '2023-04-21T09:17:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b910c80e-89a6-4f6e-90e8-fd6f6784bd40',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:17:00.000Z',
+    last_edited_time: '2023-04-21T09:18:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'それか、もしくは上部のメニューの「ターミナル（Termminal)」から「新しいターミナル(New Terminal)」からターミナルを表示します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'それか、もしくは上部のメニューの「ターミナル（Termminal)」から「新しいターミナル(New Terminal)」からターミナルを表示します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '255a98cf-220e-4735-8bcd-9d205a2c4366',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:18:00.000Z',
+    last_edited_time: '2023-04-21T09:19:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '1b424b60-14b4-42bc-b55b-216b67ad5f94',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:18:00.000Z',
+    last_edited_time: '2023-04-21T09:20:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'ターミナルを開いたら、next.jsをインストールするコマンドを実行します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'ターミナルを開いたら、next.jsをインストールするコマンドを実行します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b09e89bf-015d-432f-9d38-6329af1504b2',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:20:00.000Z',
+    last_edited_time: '2023-04-21T09:20:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '61dd8118-42dc-4022-8ed8-73deae6dcd39',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:20:00.000Z',
+    last_edited_time: '2023-04-21T09:22:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'コマンドについては',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'コマンドについては',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: '公式サイト',
+            link: {
+              url: 'https://nextjs.org/docs/api-reference/create-next-app',
+            },
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '公式サイト',
+          href: 'https://nextjs.org/docs/api-reference/create-next-app',
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'を参考にしています。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'を参考にしています。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '27a53725-0d3a-4afc-bbef-056ad9a43384',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:22:00.000Z',
+    last_edited_time: '2023-04-21T09:22:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '0e564cff-de36-4320-815e-d6286e168287',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:23:00.000Z',
+    last_edited_time: '2023-04-21T09:40:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'code',
+    code: {
+      caption: [],
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'npx create-next-app@latest .',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'npx create-next-app@latest .',
+          href: null,
+        },
+      ],
+      language: 'plain text',
+    },
+  },
+  {
+    object: 'block',
+    id: 'a0e619ad-a1b1-45ca-b135-243288e6588c',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:08:00.000Z',
+    last_edited_time: '2023-04-21T09:39:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '0fe282bb-08b9-4e49-b444-c510cb917991',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:08:00.000Z',
+    last_edited_time: '2023-04-21T09:41:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              ' 最新版のNext.jsをプロジェクト配下と同じフォルダに作成するというコマンドです。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            ' 最新版のNext.jsをプロジェクト配下と同じフォルダに作成するというコマンドです。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '607c64cb-a279-4cb3-a377-280a67074a11',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:41:00.000Z',
+    last_edited_time: '2023-04-21T09:41:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '18d272d4-e71b-44a5-bfa7-0e730e185d21',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:41:00.000Z',
+    last_edited_time: '2023-04-21T09:55:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'コマンドをコピーしたらVScodeのターミナルに貼り付けて実行しましょう。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'コマンドをコピーしたらVScodeのターミナルに貼り付けて実行しましょう。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'a4ee69dd-4f52-4fb1-a595-b879fdfe2db5',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:39:00.000Z',
+    last_edited_time: '2023-04-21T11:39:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '064553cc-168f-45a7-939d-8b0e8b497069',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:39:00.000Z',
+    last_edited_time: '2023-04-21T11:40:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '下記はプロジェクトフォルダを作る際の対話コマンドの設定に関してです。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '下記はプロジェクトフォルダを作る際の対話コマンドの設定に関してです。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '8b8b0e74-ea1c-434f-974a-c6185a323927',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:40:00.000Z',
+    last_edited_time: '2023-04-21T11:40:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f9174fff-4a51-434c-b7a2-c3e91e7068df',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:41:00.000Z',
+    last_edited_time: '2023-04-21T09:55:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'd4eeb1f0-c1e6-4087-b94b-7d3dc0f0388d',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:42:00.000Z',
+    last_edited_time: '2023-04-21T11:48:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'code',
+    code: {
+      caption: [],
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'Need to install the following packages:\n  create-next-app@13.3.0\nOk to proceed? (y)\n// 次のパッケージをインストールする必要がありますと出てくるのでキーボードの Yを入力してエンター\n\n? Would you like to use TypeScript with this project? › No / Yes\n// TypeScriptも一緒にプロジェクトにインストールしますかと yesが選択されている（水色）のを確認してエンター\n\n? Would you like to use ESLint with this project? › No / Yes\n// 構文解析エラーツールのESLintもプロジェクトにインストールしますかと聞かれるので理由がなければyes\n\n? Would you like to use Tailwind CSS with this project? › No / Yes\n// Tailwind CSSも一緒に（以下略　今回使用したいのでyes\n\n? Would you like to use `src/` directory with this project? › No / Yes\n// 作業フォルダはsrc配下に設置するものとするか？と聞かれるのでyes\n\n? Would you like to use experimental `app/` directory with this project? › No / Yes\n// 実験的なappディレクトリを作成しますかと聞かれるのでNo\n\n? What import alias would you like configured? › @/*\n// エイリアス（ファイルの場所を別の名前で参照する）をどの名前で利用しますか？　何も考えずにエンター',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'Need to install the following packages:\n  create-next-app@13.3.0\nOk to proceed? (y)\n// 次のパッケージをインストールする必要がありますと出てくるのでキーボードの Yを入力してエンター\n\n? Would you like to use TypeScript with this project? › No / Yes\n// TypeScriptも一緒にプロジェクトにインストールしますかと yesが選択されている（水色）のを確認してエンター\n\n? Would you like to use ESLint with this project? › No / Yes\n// 構文解析エラーツールのESLintもプロジェクトにインストールしますかと聞かれるので理由がなければyes\n\n? Would you like to use Tailwind CSS with this project? › No / Yes\n// Tailwind CSSも一緒に（以下略　今回使用したいのでyes\n\n? Would you like to use `src/` directory with this project? › No / Yes\n// 作業フォルダはsrc配下に設置するものとするか？と聞かれるのでyes\n\n? Would you like to use experimental `app/` directory with this project? › No / Yes\n// 実験的なappディレクトリを作成しますかと聞かれるのでNo\n\n? What import alias would you like configured? › @/*\n// エイリアス（ファイルの場所を別の名前で参照する）をどの名前で利用しますか？　何も考えずにエンター',
+          href: null,
+        },
+      ],
+      language: 'plain text',
+    },
+  },
+  {
+    object: 'block',
+    id: '0970b254-6387-4714-8827-7a144f7561c0',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T09:56:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f5f7462b-de17-4e5c-b3dd-2c6e9bf55f16',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T09:56:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '3163e7d7-9a46-4f77-9251-6163a316c7df',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T09:58:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '成功したらフォルダがプロジェクト配下に作成され、ターミナルに緑色の文字で「Sucess!」と表示されます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '成功したらフォルダがプロジェクト配下に作成され、ターミナルに緑色の文字で「Sucess!」と表示されます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b7ee7b04-f0d1-4263-8aaa-c62617dedf32',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:27:00.000Z',
+    last_edited_time: '2023-04-21T11:27:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'fd121432-f5bf-4fa5-b18b-4e7302e38783',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:27:00.000Z',
+    last_edited_time: '2023-04-21T11:28:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'Gitがすでにパソコン上にインストールされていると「Git init」コマンドを実行しなくても自動的に実行されるようです。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'Gitがすでにパソコン上にインストールされていると「Git init」コマンドを実行しなくても自動的に実行されるようです。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '1633cc66-a056-4045-8467-132aa4747c54',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T11:21:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'c63e273b-316a-46a0-bb91-88d89b6853a2',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T11:45:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'Gitの操作に慣れるために、ここでは、プロジェクト配下の、「',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'Gitの操作に慣れるために、ここでは、プロジェクト配下の、「',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'src > pages > _document.tsx',
+            link: null,
+          },
+          annotations: {
+            bold: true,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'src > pages > _document.tsx',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: '」を編集します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '」を編集します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '746259bb-1a83-4cb9-ac3c-ecbd4d359040',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:59:00.000Z',
+    last_edited_time: '2023-04-21T11:59:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'aeb34bf3-ac0b-4771-bfe7-5e5982623abc',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:59:00.000Z',
+    last_edited_time: '2023-04-22T02:45:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '<Html lang="en">',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: true,
+            color: 'default',
+          },
+          plain_text: '<Html lang="en">',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'を',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'を',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: '<Html lang="ja">',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: true,
+            color: 'default',
+          },
+          plain_text: '<Html lang="ja">',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'に変えます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'に変えます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'fbaf7e7d-f9ee-4fbc-87a6-a6becf4e71ef',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:57:00.000Z',
+    last_edited_time: '2023-04-21T12:02:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '8973aea1-fc61-4fac-84e2-e0906ce7a7c0',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:26:00.000Z',
+    last_edited_time: '2023-04-21T11:47:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'ここで変更したファイルをコミットするために、GItに追加するファイルをステージングに追加する作業をします。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'ここで変更したファイルをコミットするために、GItに追加するファイルをステージングに追加する作業をします。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '2b12b7b8-2bc7-4f45-b9b1-a07b7a5c1eeb',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T11:31:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '3342261c-99c8-496b-8a56-2d92f91c2c7e',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:31:00.000Z',
+    last_edited_time: '2023-04-21T11:33:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'code',
+    code: {
+      caption: [],
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'git add .',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'git add .',
+          href: null,
+        },
+      ],
+      language: 'plain text',
+    },
+  },
+  {
+    object: 'block',
+    id: '980bf9db-2e90-4684-8750-390a27152633',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T11:34:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'a1d3ce81-90df-4915-8774-c10f5c1f9fc6',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T11:34:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'ステージングに追加されたので、コミットもしましょう。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'ステージングに追加されたので、コミットもしましょう。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f297daf9-0f87-41b3-8eb5-eb61f642a1e7',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:35:00.000Z',
+    last_edited_time: '2023-04-21T11:35:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '53bb6a79-2a10-4c29-92a1-e3a5ea3b6d0a',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:35:00.000Z',
+    last_edited_time: '2023-04-21T11:36:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '今回は初めてのコミットなので「first commit」とします。 ',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '今回は初めてのコミットなので「first commit」とします。 ',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '173871f4-7bf3-4aeb-a790-08cee944c609',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:36:00.000Z',
+    last_edited_time: '2023-04-21T11:36:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '277bc5e6-a9ca-4aba-bb37-77692ec5d623',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:36:00.000Z',
+    last_edited_time: '2023-04-21T11:36:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '「-m」はコミットメッセージを入力するときに使うオプションです。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '「-m」はコミットメッセージを入力するときに使うオプションです。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '93738505-f0fb-446c-870e-67e07f8ce183',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:34:00.000Z',
+    last_edited_time: '2023-04-21T11:34:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'ccf8794c-b673-4caf-9d80-c4a290db12e2',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:34:00.000Z',
+    last_edited_time: '2023-04-21T11:35:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'code',
+    code: {
+      caption: [],
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'git commit -m "first commit"',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'git commit -m "first commit"',
+          href: null,
+        },
+      ],
+      language: 'plain text',
+    },
+  },
+  {
+    object: 'block',
+    id: '219e06b6-02f9-45a8-92a5-01b80152f1b4',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T11:37:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'af1c0d45-ec6d-43f9-b8cc-9e51205be346',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T11:35:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '06aa3c41-3895-4d89-aa46-0e959f40876e',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:05:00.000Z',
+    last_edited_time: '2023-04-21T10:07:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'ここまで、できたら次は、コミットをGitHubにPushしましょう。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'ここまで、できたら次は、コミットをGitHubにPushしましょう。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'a22cec78-b2c5-4c5c-983c-e7e0e5973c9e',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:58:00.000Z',
+    last_edited_time: '2023-04-21T09:58:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '8231ae7f-4034-45be-a64d-44418249ddcb',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T09:58:00.000Z',
+    last_edited_time: '2023-04-21T10:00:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'heading_2',
+    heading_2: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '6.GItHubに最初のコミットをプッシュする',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '6.GItHubに最初のコミットをプッシュする',
+          href: null,
+        },
+      ],
+      is_toggleable: false,
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '9f56d13f-b878-443e-b4aa-faf9b685829e',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:40:00.000Z',
+    last_edited_time: '2023-04-21T10:00:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f898a6ad-0363-4e5a-bd08-8cbcf6c0ea6e',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T08:40:00.000Z',
+    last_edited_time: '2023-04-21T10:02:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              ' VScodeのターミナルから新しくコマンドを入力していきます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            ' VScodeのターミナルから新しくコマンドを入力していきます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'ab7133a5-9bf7-4095-aa22-230f5c6069dd',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:08:00.000Z',
+    last_edited_time: '2023-04-21T10:08:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '968040ba-c584-44e4-b589-106b5defeb4a',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:08:00.000Z',
+    last_edited_time: '2023-04-21T11:30:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'しかし、その前に、GitHubにプッシュする際、',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'しかし、その前に、GitHubにプッシュする際、',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'SSH接続をしないと、悲しいことにプッシュできません。',
+            link: null,
+          },
+          annotations: {
+            bold: true,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'SSH接続をしないと、悲しいことにプッシュできません。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f9e9116f-2823-48da-83d6-ee0502375f96',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:09:00.000Z',
+    last_edited_time: '2023-04-21T12:13:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'e0ada523-ef33-4a6e-8fff-7a02cfba4579',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:33:00.000Z',
+    last_edited_time: '2023-04-21T12:13:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'SSH接続とは、違うネットワーク上の別のコンピューターにログインして遠隔操作するソフトウェアプロトコル（決まりごと）の総称です。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'SSH接続とは、違うネットワーク上の別のコンピューターにログインして遠隔操作するソフトウェアプロトコル（決まりごと）の総称です。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '7b0b1b3b-99ba-4f21-a3a7-e15bb88ef009',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:33:00.000Z',
+    last_edited_time: '2023-04-21T12:12:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '5a306829-8045-4ac4-8ae8-f0c7377d43f9',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:33:00.000Z',
+    last_edited_time: '2023-04-22T03:25:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'GitHubでは、SSH接続する際に、クライアント側のコンピューターに秘密鍵を保持し、接続先のGItHub上では公開鍵を登録しておかなければなりません。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'GitHubでは、SSH接続する際に、クライアント側のコンピューターに秘密鍵を保持し、接続先のGItHub上では公開鍵を登録しておかなければなりません。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '4158af8d-1e04-4864-9bf7-c9b36bfc8475',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-22T03:25:00.000Z',
+    last_edited_time: '2023-04-22T03:25:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '3564f56d-2abf-4ad7-84d7-29702a8a11ca',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-22T03:25:00.000Z',
+    last_edited_time: '2023-04-22T03:26:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '秘密鍵と公開鍵の二つの鍵がペアになっているか確認してから接続を許可する仕組みをとっているからです。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '秘密鍵と公開鍵の二つの鍵がペアになっているか確認してから接続を許可する仕組みをとっているからです。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f7ff59db-f6b0-4da9-a7e0-6a64036319af',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:37:00.000Z',
+    last_edited_time: '2023-04-21T10:37:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'bccd8029-e332-4643-a59f-f4b1e9e48fb6',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:15:00.000Z',
+    last_edited_time: '2023-04-21T11:04:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'heading_3',
+    heading_3: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'SSH接続の準備をする',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'SSH接続の準備をする',
+          href: null,
+        },
+      ],
+      is_toggleable: false,
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '0ac911d9-06ff-404a-a8db-54416b6dac87',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:27:00.000Z',
+    last_edited_time: '2023-04-21T10:39:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '36359572-8336-4229-8c5d-58cafce894a3',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:27:00.000Z',
+    last_edited_time: '2023-04-21T10:40:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '参考サイト：',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '参考サイト：',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'GitHub・SSH接続の環境設定方法（Windows）',
+            link: {
+              url: 'https://arrown-blog.com/windows-github-ssh/#PC',
+            },
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'GitHub・SSH接続の環境設定方法（Windows）',
+          href: 'https://arrown-blog.com/windows-github-ssh/#PC',
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '76aa3a30-6e46-48ba-b912-20302d8f26fa',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:27:00.000Z',
+    last_edited_time: '2023-04-21T11:04:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'd328cbc1-5e6f-4186-ace9-d51ecb0a94f0',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:27:00.000Z',
+    last_edited_time: '2023-04-21T11:04:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'Macで操作する際は、ターミナルアプリに打ち込みます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'Macで操作する際は、ターミナルアプリに打ち込みます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'bdf984b5-9f0a-45f4-bef8-0ce3f3f5944f',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:27:00.000Z',
+    last_edited_time: '2023-04-21T11:04:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'Windowsの場合は、PowerShellを使用していきましょう。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'Windowsの場合は、PowerShellを使用していきましょう。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'e0bd5acd-0c17-4af3-ad4c-f75cbf5707cc',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:42:00.000Z',
+    last_edited_time: '2023-04-21T10:42:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '5d0bbb83-03f5-4337-9d54-00c1272f97a4',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:42:00.000Z',
+    last_edited_time: '2023-04-21T10:43:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'ユーザーディレクトリ配下に、「.ssh」フォルダがない場合は下記のコマンドで作成しておきます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'ユーザーディレクトリ配下に、「.ssh」フォルダがない場合は下記のコマンドで作成しておきます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '1bb61a31-591d-4aad-8587-df2e940d6f10',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:46:00.000Z',
+    last_edited_time: '2023-04-21T10:46:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'aba233d5-94fb-4879-85a2-4d46aadf392d',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:41:00.000Z',
+    last_edited_time: '2023-04-21T10:45:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'code',
+    code: {
+      caption: [],
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'mkdir ~/.ssh',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'mkdir ~/.ssh',
+          href: null,
+        },
+      ],
+      language: 'plain text',
+    },
+  },
+  {
+    object: 'block',
+    id: '8ed4a1d9-30f4-45b4-a411-b6bc843ff542',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:43:00.000Z',
+    last_edited_time: '2023-04-21T10:43:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f2ec7047-5d3f-45b9-9cbb-917284f0e712',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:43:00.000Z',
+    last_edited_time: '2023-04-21T10:44:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '※ 通常、「.ssh」フォルダは、隠しフォルダとなっているので、フォルダのエクスプローラーの設定から、隠しファイルが表示されるように設定しておきます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '※ 通常、「.ssh」フォルダは、隠しフォルダとなっているので、フォルダのエクスプローラーの設定から、隠しファイルが表示されるように設定しておきます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'c249b5cb-1678-4f6c-9088-05b0786e97de',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:43:00.000Z',
+    last_edited_time: '2023-04-22T03:26:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f762f8ad-e849-4e62-af49-fd36988ce968',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:43:00.000Z',
+    last_edited_time: '2023-04-22T03:27:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'macでは隠しフォルダを表示させる際、「shitft + command + .」を押すことにより表示の切り替えができるようになっています。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'macでは隠しフォルダを表示させる際、「shitft + command + .」を押すことにより表示の切り替えができるようになっています。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f42288d4-105e-49fe-be74-8da687e05fb1',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-22T03:26:00.000Z',
+    last_edited_time: '2023-04-22T03:26:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'e91072c0-981f-4c65-9271-0ffadc0b9b0b',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:43:00.000Z',
+    last_edited_time: '2023-04-22T03:26:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '隠しフォルダの表示方法',
+            link: {
+              url: 'https://support.microsoft.com/ja-jp/windows/windows-%E3%81%AE%E9%9A%A0%E3%81%97%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A8%E9%9A%A0%E3%81%97%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E3%82%92%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B-97fbc472-c603-9d90-91d0-1166d1d9f4b5#:~:text=%E9%81%B8%E6%8A%9E%E3%81%97%E3%81%BE%E3%81%99%E3%80%82-,%E3%82%BF%E3%82%B9%E3%82%AF%20%E3%83%90%E3%83%BC%E3%81%8B%E3%82%89%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%82%92%E9%96%8B%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82,OK%5D%20%E3%82%92%E9%81%B8%E6%8A%9E%E3%81%97%E3%81%BE%E3%81%99%E3%80%82',
+            },
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '隠しフォルダの表示方法',
+          href: 'https://support.microsoft.com/ja-jp/windows/windows-%E3%81%AE%E9%9A%A0%E3%81%97%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A8%E9%9A%A0%E3%81%97%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E3%82%92%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B-97fbc472-c603-9d90-91d0-1166d1d9f4b5#:~:text=%E9%81%B8%E6%8A%9E%E3%81%97%E3%81%BE%E3%81%99%E3%80%82-,%E3%82%BF%E3%82%B9%E3%82%AF%20%E3%83%90%E3%83%BC%E3%81%8B%E3%82%89%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%82%92%E9%96%8B%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82,OK%5D%20%E3%82%92%E9%81%B8%E6%8A%9E%E3%81%97%E3%81%BE%E3%81%99%E3%80%82',
+        },
+        {
+          type: 'text',
+          text: {
+            content: '（windows)',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '（windows)',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'd2623e89-aa32-45f4-86f5-a1966658beef',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:50:00.000Z',
+    last_edited_time: '2023-04-21T10:50:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f574e605-ca0c-4ae2-9b94-1e7a66c11b0f',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:41:00.000Z',
+    last_edited_time: '2023-04-21T10:50:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '「.ssh」フォルダのアクセス権限（パーミッション）を自分だけがアクセスできる状態にしておきます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '「.ssh」フォルダのアクセス権限（パーミッション）を自分だけがアクセスできる状態にしておきます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'e7b538a2-cf4f-4a4a-b347-3ee8ee0634ec',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:49:00.000Z',
+    last_edited_time: '2023-04-21T10:50:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '914a14dd-a59b-433a-b319-bd09808e4313',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:47:00.000Z',
+    last_edited_time: '2023-04-21T10:50:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'code',
+    code: {
+      caption: [],
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'chmod 700 ~/.ssh',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'chmod 700 ~/.ssh',
+          href: null,
+        },
+      ],
+      language: 'plain text',
+    },
+  },
+  {
+    object: 'block',
+    id: '24d50112-5bf3-46cd-918d-4bfaae44e951',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:25:00.000Z',
+    last_edited_time: '2023-04-21T10:50:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '079f6a0c-799f-4d26-8007-a54ea52d978d',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:25:00.000Z',
+    last_edited_time: '2023-04-21T10:50:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '下記のコマンドで、秘密鍵と公開鍵を作成します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '下記のコマンドで、秘密鍵と公開鍵を作成します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'd10e1145-2320-423d-b537-a6f0ce3166ed',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:25:00.000Z',
+    last_edited_time: '2023-04-21T10:41:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '9c508de7-2bfd-4d9b-81ed-5db44f77129a',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:04:00.000Z',
+    last_edited_time: '2023-04-21T10:48:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'code',
+    code: {
+      caption: [],
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'ssh-keygen -t rsa -b 4096 -C "arrown" -f  ~/.ssh/id_rsa',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'ssh-keygen -t rsa -b 4096 -C "arrown" -f  ~/.ssh/id_rsa',
+          href: null,
+        },
+      ],
+      language: 'plain text',
+    },
+  },
+  {
+    object: 'block',
+    id: 'c8a6c4bd-205d-4a65-80f0-d8f076738d27',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:41:00.000Z',
+    last_edited_time: '2023-04-21T10:47:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '40aab695-d332-456e-9d19-d6a5f43aeb38',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:47:00.000Z',
+    last_edited_time: '2023-04-21T11:05:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'Macの場合は、下記のコマンドで公開鍵の中身をクリップボードにコピーされるのでGitHub上に公開鍵として登録します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'Macの場合は、下記のコマンドで公開鍵の中身をクリップボードにコピーされるのでGitHub上に公開鍵として登録します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'da9c0d3e-b91e-4512-aaaa-8969c35d50fe',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:05:00.000Z',
+    last_edited_time: '2023-04-21T10:48:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b8e8a07b-868a-40f0-b9a8-3fb9a2f7cef0',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:49:00.000Z',
+    last_edited_time: '2023-04-21T10:49:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'code',
+    code: {
+      caption: [],
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'pbcopy < ~/.ssh/id_rsa.pub',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'pbcopy < ~/.ssh/id_rsa.pub',
+          href: null,
+        },
+      ],
+      language: 'plain text',
+    },
+  },
+  {
+    object: 'block',
+    id: '7bea8509-32dd-4961-9c6b-2d758c73ee13',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:05:00.000Z',
+    last_edited_time: '2023-04-21T11:00:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '42b6e4ee-8b8a-49e9-a96b-536fb96122c4',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:05:00.000Z',
+    last_edited_time: '2023-04-21T11:06:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'windowsでは、このコマンドを使えないので、代わりにcatコマンドで代用します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'windowsでは、このコマンドを使えないので、代わりにcatコマンドで代用します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '89b1fe6e-3b21-4824-8115-79547bce4eb6',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:06:00.000Z',
+    last_edited_time: '2023-04-21T11:06:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '033da94f-9fe8-423a-8f13-a41f3cc8a5e6',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:06:00.000Z',
+    last_edited_time: '2023-04-21T11:06:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'code',
+    code: {
+      caption: [],
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'cat ~/.ssh/id_rsa.pub',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'cat ~/.ssh/id_rsa.pub',
+          href: null,
+        },
+      ],
+      language: 'plain text',
+    },
+  },
+  {
+    object: 'block',
+    id: '2945391b-b773-4122-9ab8-71b739920d15',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:01:00.000Z',
+    last_edited_time: '2023-04-21T11:03:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'bdc9f5bf-17fa-4a19-9098-6b30315438b7',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:01:00.000Z',
+    last_edited_time: '2023-04-21T11:07:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'そうすると、公開鍵の中身が表示されるので、公開鍵の中身をコピーしてGitHubに登録します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'そうすると、公開鍵の中身が表示されるので、公開鍵の中身をコピーしてGitHubに登録します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '1660a452-1ba4-427f-8eb3-31b77c458eda',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:07:00.000Z',
+    last_edited_time: '2023-04-21T11:07:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '55f55b7b-d97b-4e24-af5c-1d3986e13825',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:07:00.000Z',
+    last_edited_time: '2023-04-21T11:10:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'Githubを開いたら、右上の自分のアイコンから、「Settings」を選びます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'Githubを開いたら、右上の自分のアイコンから、「Settings」を選びます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '3a2b5ff8-1959-4303-8576-bd957c1b71a7',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:05:00.000Z',
+    last_edited_time: '2023-04-21T11:00:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'd7789728-3579-4f7a-adac-816728045c7f',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:59:00.000Z',
+    last_edited_time: '2023-04-21T10:59:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'image',
+    image: {
+      caption: [],
+      type: 'file',
+      file: {
+        url: 'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4c997607-bef7-4849-9bb3-cff7f69abb25/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230423%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230423T014208Z&X-Amz-Expires=3600&X-Amz-Signature=67863589e75f59b47a1fa45e4eadd0ca53813aa0ca3796805e1615817ae7db69&X-Amz-SignedHeaders=host&x-id=GetObject',
+        expiry_time: now,
+      },
+    },
+  },
+  {
+    object: 'block',
+    id: 'a7e7661e-309e-4325-9ca4-4163265f5bd3',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:53:00.000Z',
+    last_edited_time: '2023-04-21T11:08:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'd8a083dc-898b-45b2-819c-8f5b4c64243d',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T10:53:00.000Z',
+    last_edited_time: '2023-04-21T11:10:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '次に、左側のメニューにある「Access」の「SSH and GPG keys」を選択します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '次に、左側のメニューにある「Access」の「SSH and GPG keys」を選択します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '2566a5e6-f720-481b-9731-de62bdc9fba9',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:10:00.000Z',
+    last_edited_time: '2023-04-21T11:10:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '2796c251-972a-4b8d-9482-e2bc9c995cb1',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:11:00.000Z',
+    last_edited_time: '2023-04-21T11:11:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'image',
+    image: {
+      caption: [],
+      type: 'file',
+      file: {
+        url: 'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fe4286ee-af6c-4152-aee3-5ec330bfadc4/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230423%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230423T014208Z&X-Amz-Expires=3600&X-Amz-Signature=c1e52d86c4d6845cb393dbf8f476bb950f28be6b2888c36b5dfd1f78f1149f5b&X-Amz-SignedHeaders=host&x-id=GetObject',
+        expiry_time: now,
+      },
+    },
+  },
+  {
+    object: 'block',
+    id: '836304e3-7e17-4496-bd88-56b5059b8ec6',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:11:00.000Z',
+    last_edited_time: '2023-04-21T11:11:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '9e7bcf47-3284-4ec2-9d34-9c971967b4b9',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:11:00.000Z',
+    last_edited_time: '2023-04-21T11:12:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '「SSH keys」の項目の緑色のボタン「New SSH key」を選択します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '「SSH keys」の項目の緑色のボタン「New SSH key」を選択します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '3937ff89-784d-4ace-9c9e-390f77733e9b',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:12:00.000Z',
+    last_edited_time: '2023-04-21T11:12:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '59d705d5-a3ac-4ede-9378-ca2f1bc9873d',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:12:00.000Z',
+    last_edited_time: '2023-04-21T11:13:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'image',
+    image: {
+      caption: [],
+      type: 'file',
+      file: {
+        url: 'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/572c7a68-7d37-4f8d-94f8-b8aeddc0b78a/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230423%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230423T014208Z&X-Amz-Expires=3600&X-Amz-Signature=693e85134d75dc06c47a90c7c13fcdc52bc5021d2c73109cb9bad2ca0b72f140&X-Amz-SignedHeaders=host&x-id=GetObject',
+        expiry_time: now,
+      },
+    },
+  },
+  {
+    object: 'block',
+    id: 'da5a2254-06e2-4dc2-9e66-5324cc43a558',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:13:00.000Z',
+    last_edited_time: '2023-04-21T11:14:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'c2d4d2d8-0b2d-4c3d-8c6d-c69f7587bbdb',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:13:00.000Z',
+    last_edited_time: '2023-04-21T11:14:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '6b614348-5d26-46f9-b2cb-83e3e99d1736',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:13:00.000Z',
+    last_edited_time: '2023-04-21T11:14:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'そうしたら下記のような画面になります。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'そうしたら下記のような画面になります。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'fedb6a29-e76c-49fa-bc2a-e90474db0c52',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:13:00.000Z',
+    last_edited_time: '2023-04-21T11:14:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'bb2aacad-73ad-46ff-b847-2c1e4c097704',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:14:00.000Z',
+    last_edited_time: '2023-04-21T11:14:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'image',
+    image: {
+      caption: [],
+      type: 'file',
+      file: {
+        url: 'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4eff9dba-717f-4c7c-8479-60b24fc0206a/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230423%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230423T014208Z&X-Amz-Expires=3600&X-Amz-Signature=0b725a2bfd989c4761ad1622f27df5842ddc980d360f9c04aab7705a03595c51&X-Amz-SignedHeaders=host&x-id=GetObject',
+        expiry_time: now,
+      },
+    },
+  },
+  {
+    object: 'block',
+    id: 'b156f345-9c33-4335-ad5e-62a108161b0e',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:15:00.000Z',
+    last_edited_time: '2023-04-21T12:33:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'e7469b58-98f8-4e06-b704-66aff893855e',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:14:00.000Z',
+    last_edited_time: '2023-04-21T12:33:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'Title',
+            link: null,
+          },
+          annotations: {
+            bold: true,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'Title',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content:
+              ' : 名前は自由ですが、後で見返してわかりやすい名前をつけると良いでしょう。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            ' : 名前は自由ですが、後で見返してわかりやすい名前をつけると良いでしょう。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '62e227dd-8b81-42ba-93fe-c668ebd39cec',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:14:00.000Z',
+    last_edited_time: '2023-04-21T12:33:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'Key Type',
+            link: null,
+          },
+          annotations: {
+            bold: true,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'Key Type',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: '  : Authentication Key',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '  : Authentication Key',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '62e4e1da-318e-4417-8b64-39c4d5f55e43',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:14:00.000Z',
+    last_edited_time: '2023-04-21T12:32:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'Key',
+            link: null,
+          },
+          annotations: {
+            bold: true,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'Key',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: ' : 先ほどコピーされた公開鍵の内容を貼り付けます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: ' : 先ほどコピーされた公開鍵の内容を貼り付けます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '51b2d5d4-65eb-4dd9-8bf4-199164b817e3',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:17:00.000Z',
+    last_edited_time: '2023-04-21T12:13:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f50b5c4e-ee8c-40bc-815b-709a032c8f3c',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:17:00.000Z',
+    last_edited_time: '2023-04-21T11:18:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              '設定が終わったら、「Add SSH key」を押して公開鍵を登録します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '設定が終わったら、「Add SSH key」を押して公開鍵を登録します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '456f8a3c-dac9-4bf1-b2df-4382b82ec8a0',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:18:00.000Z',
+    last_edited_time: '2023-04-21T11:18:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'c88c31a4-e82f-4409-9e73-1937d5340fc0',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:18:00.000Z',
+    last_edited_time: '2023-04-21T12:14:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'ここまでが、SSH接続の準備となります。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'ここまでが、SSH接続の準備となります。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b844c1da-0e3e-4dc5-9800-e0b763b41e63',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:18:00.000Z',
+    last_edited_time: '2023-04-21T11:18:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '4b823799-3114-4a27-abbc-2d4be8a374ba',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:18:00.000Z',
+    last_edited_time: '2023-04-21T11:20:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'では、プロジェクトを早速プッシュしていきましょう。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'では、プロジェクトを早速プッシュしていきましょう。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '75a62cf0-f66c-41a5-a9ac-090cf4eccd03',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:20:00.000Z',
+    last_edited_time: '2023-04-21T11:20:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'a99eae70-923b-4b94-8341-e7b0fc6289d1',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:20:00.000Z',
+    last_edited_time: '2023-04-21T11:21:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'heading_3',
+    heading_3: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'コミットを Githubにプッシュする。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'コミットを Githubにプッシュする。',
+          href: null,
+        },
+      ],
+      is_toggleable: false,
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '0f4cd7db-0d20-4f8a-8b5c-90d81d49cfb9',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:21:00.000Z',
+    last_edited_time: '2023-04-21T11:37:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'c5a271ed-5f7f-4852-af74-4ba11eba7bbe',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:21:00.000Z',
+    last_edited_time: '2023-04-21T12:16:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'それでは、SSH接続の準備が終わったので、リモートリポジトリにコミットをプッシュする作業をします。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'それでは、SSH接続の準備が終わったので、リモートリポジトリにコミットをプッシュする作業をします。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '26744cf9-1b78-4c26-bde5-77ba4ae9bd9e',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:16:00.000Z',
+    last_edited_time: '2023-04-21T12:16:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '9bd2e0be-151a-426b-8c83-f373c0d5cc55',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:16:00.000Z',
+    last_edited_time: '2023-04-21T12:16:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '作成しておいたGithubのリポジトリのページに行きます。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '作成しておいたGithubのリポジトリのページに行きます。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '80a44505-ed49-475b-ae12-aaa39d122117',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:18:00.000Z',
+    last_edited_time: '2023-04-21T12:18:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b9a2559f-9df3-4117-b766-60a3eb264915',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:18:00.000Z',
+    last_edited_time: '2023-04-21T12:19:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '（https://github.com/アカウント名/リポジトリ名）',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '（https://github.com/アカウント名/リポジトリ名）',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'cf6728d7-45e2-4283-ab54-38b5a65b7ae6',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:16:00.000Z',
+    last_edited_time: '2023-04-21T12:16:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '40018da9-0870-4c04-bbde-8a68b488e947',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:17:00.000Z',
+    last_edited_time: '2023-04-21T12:18:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'image',
+    image: {
+      caption: [],
+      type: 'file',
+      file: {
+        url: 'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/0128cb8d-aa5e-4bee-aeb0-f34bb3a1c825/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230423%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230423T014208Z&X-Amz-Expires=3600&X-Amz-Signature=7936492f00eb5b72534e7845ded8a1963d050428f739aef2492b6df13bb9cfb7&X-Amz-SignedHeaders=host&x-id=GetObject',
+        expiry_time: now,
+      },
+    },
+  },
+  {
+    object: 'block',
+    id: '4462d3e8-f8a5-4dbd-b54d-d5b70d943765',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:21:00.000Z',
+    last_edited_time: '2023-04-21T11:21:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '75b87a73-d342-4e30-ae17-0554d203527f',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:18:00.000Z',
+    last_edited_time: '2023-04-21T12:18:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '「SSH」を選択します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '「SSH」を選択します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '74ce6f18-8e24-4c66-b806-b456c29c974c',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:19:00.000Z',
+    last_edited_time: '2023-04-21T12:21:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'fd922d94-65fb-44fb-8056-3f79867fa201',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:19:00.000Z',
+    last_edited_time: '2023-04-21T12:21:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'f888d3f5-e445-4017-88b9-0bbe282d9c22',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:19:00.000Z',
+    last_edited_time: '2023-04-21T12:23:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: 'プロジェクトフォルダの場所でターミナルを使って、「',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'プロジェクトフォルダの場所でターミナルを使って、「',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content:
+              '…or push an existing repository from the command line」のコマンドを実行します。',
+            link: null,
+          },
+          annotations: {
+            bold: true,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            '…or push an existing repository from the command line」のコマンドを実行します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '0a54d40c-7ecb-44d7-9a92-c13aeca3d29c',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:20:00.000Z',
+    last_edited_time: '2023-04-21T12:20:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'ae2dbe67-3bfe-4273-aa8d-6e3c4d50c6c2',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:20:00.000Z',
+    last_edited_time: '2023-04-21T12:20:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '私の場合は下記です。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '私の場合は下記です。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'e6ca4fa1-fd83-4560-a285-175b75608490',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:20:00.000Z',
+    last_edited_time: '2023-04-21T12:23:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'af170110-1e42-4eaa-9aa5-78125be2523b',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:19:00.000Z',
+    last_edited_time: '2023-04-21T12:23:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'code',
+    code: {
+      caption: [],
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'git remote add origin git@github.com:naomina121/notion-blog.git\ngit branch -M main\ngit push -u origin main',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'git remote add origin git@github.com:naomina121/notion-blog.git\ngit branch -M main\ngit push -u origin main',
+          href: null,
+        },
+      ],
+      language: 'plain text',
+    },
+  },
+  {
+    object: 'block',
+    id: '95e006b0-8db7-442d-a0e3-926d796c0a26',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:18:00.000Z',
+    last_edited_time: '2023-04-21T12:23:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'b642e38a-c5dc-413d-8784-9e4d945562fb',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T11:18:00.000Z',
+    last_edited_time: '2023-04-21T12:24:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'やっていることは、リモートリポジトリにローカルリポジトリの内容を反映させる作業です。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'やっていることは、リモートリポジトリにローカルリポジトリの内容を反映させる作業です。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '0a114e17-840d-4851-8731-0a58abe4abdc',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:24:00.000Z',
+    last_edited_time: '2023-04-21T12:24:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'bd88052a-08b2-4a78-9f6d-ebd4821f0ade',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:23:00.000Z',
+    last_edited_time: '2023-04-21T12:24:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'ローカルリポジトリの内容を反映させるリモートリポジトリをコマンドで登録します。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'ローカルリポジトリの内容を反映させるリモートリポジトリをコマンドで登録します。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '4dc43d84-eabb-4bd3-847d-7316a8432aa4',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:23:00.000Z',
+    last_edited_time: '2023-04-21T12:25:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'その次に、メインブランチをmainとして登録して、プッシュするという流れです。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'その次に、メインブランチをmainとして登録して、プッシュするという流れです。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '2a9e0c9c-e2e3-4912-81b4-288eb8bf9397',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:25:00.000Z',
+    last_edited_time: '2023-04-21T12:26:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '9ad58221-0a4a-41eb-931e-8acf3599d879',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-21T12:25:00.000Z',
+    last_edited_time: '2023-04-21T12:26:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content:
+              'ここまでできていたら、GItHubのリポジトリに今回行ったコミットが反映されているでしょう。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text:
+            'ここまでできていたら、GItHubのリポジトリに今回行ったコミットが反映されているでしょう。',
+          href: null,
+        },
+      ],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: 'add889da-7f95-4c3d-97f2-3dfd0d53a633',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-22T03:18:00.000Z',
+    last_edited_time: '2023-04-22T03:18:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [],
+      color: 'default',
+    },
+  },
+  {
+    object: 'block',
+    id: '4e13adf9-a450-4d8c-b338-6d6d010fd7b6',
+    parent: {
+      type: 'page_id',
+      page_id: 'f2510f15-636c-4aa6-8a43-3c9eaca24007',
+    },
+    created_time: '2023-04-22T03:18:00.000Z',
+    last_edited_time: '2023-04-22T03:22:00.000Z',
+    created_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    last_edited_by: {
+      object: 'user',
+      id: 'c4b366b5-68d0-47e6-9656-dd4d049d4fcc',
+    },
+    has_children: false,
+    archived: false,
+    type: 'paragraph',
+    paragraph: {
+      rich_text: [
+        {
+          type: 'text',
+          text: {
+            content: '今回のGitHubのソースコードは「',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '今回のGitHubのソースコードは「',
+          href: null,
+        },
+        {
+          type: 'text',
+          text: {
+            content: 'first',
+            link: {
+              url: 'https://github.com/naomina121/notion-blog/tree/first',
+            },
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: 'first',
+          href: 'https://github.com/naomina121/notion-blog/tree/first',
+        },
+        {
+          type: 'text',
+          text: {
+            content: '」ブランチに置いてあります。',
+            link: null,
+          },
+          annotations: {
+            bold: false,
+            italic: false,
+            strikethrough: false,
+            underline: false,
+            code: false,
+            color: 'default',
+          },
+          plain_text: '」ブランチに置いてあります。',
+          href: null,
         },
       ],
       color: 'default',
