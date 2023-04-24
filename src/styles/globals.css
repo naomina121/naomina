@@ -214,8 +214,13 @@ p {
 
 /* post */
 .post .context p {
-	margin: 10px 0;
+	margin: 15px 0;
 	font-weight:400;
+	line-height:2;
+}
+
+.post .context > p{
+	margin:25px 0;
 }
 
 .post h2 {
@@ -384,11 +389,14 @@ blockquote cite {
 
 /* code */
 code {
-	font-size: 16px;
+	font-size: 13px;
+}
+s{
+	color:red;
 }
 
 .context p > code{
-	@apply text-red-500 bg-gray-200 p-1;
+	@apply text-red-500 bg-gray-200 text-xs p-1;
 }
 
 div div.code-toolbar>.toolbar {

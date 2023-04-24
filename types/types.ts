@@ -1,6 +1,7 @@
 import { ParsedUrlQuery } from 'querystring';
 import { MouseEventHandler, ReactNode, RefObject } from 'react';
 import type { Blocks } from '@notion-stuff/v4-types';
+import { NotionTypes } from './notion';
 
 export type Params = ParsedUrlQuery & {
   slug: string;
@@ -91,7 +92,7 @@ export type cardData = {
 
 export type ArticleProps = {
   page: PageType;
-  blocks: Blocks;
+  blocks: NotionTypes[];
   pages: PageType[];
 };
 
