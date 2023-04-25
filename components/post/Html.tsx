@@ -112,12 +112,17 @@ const Html: FC<Props> = ({ blocks }) => {
                 Styling.push(`<code>'${text}</code>`);
               } else if (link) {
                 Styling.push(`<a href="${link.url})${text}</a>`);
-              } else {
+              } else if (
+                content.annotations.bold ||
+                content.annotations.underline
+              ) {
                 Styling.push(
                   `<span class="${content.annotations.bold ? style.bold : ''}${
                     content.annotations.underline ? style.underline : ''
                   }">${text}</span>`
                 );
+              } else {
+                Styling.push(`${text}`);
               }
             } else {
               Styling.push(`${text}`);
@@ -134,10 +139,14 @@ const Html: FC<Props> = ({ blocks }) => {
     //ブロックタイプをHTMLに変換する
     const NotionBlockToTag = (block: NotionTypes) => {
       if (block.type == 'heading_2') {
-        return `<h2>${RichTextStyling(block.heading_2?.rich_text)}</h2>`;
+        return `<h2 id="${RichTextStyling(
+          block.heading_2?.rich_text
+        )}">${RichTextStyling(block.heading_2?.rich_text)}</h2>`;
       }
       if (block.type === 'heading_3') {
-        return `<h3>${RichTextStyling(block.heading_3?.rich_text)}</h3>`;
+        return `<h3 id="${RichTextStyling(
+          block.heading_3?.rich_text
+        )}">${RichTextStyling(block.heading_3?.rich_text)}</h3>`;
       }
       if (block.type === 'paragraph') {
         if (!RichTextStyling(block.paragraph?.rich_text)) {
