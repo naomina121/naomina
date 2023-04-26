@@ -109,7 +109,7 @@ const Html: FC<Props> = ({ blocks }) => {
                   }" ><s>${text}</s></span>`
                 );
               } else if (content.annotations.code) {
-                Styling.push(`<code>'${text}</code>`);
+                Styling.push(`<code>${text}</code>`);
               } else if (link) {
                 Styling.push(`<a href="${link.url})${text}</a>`);
               } else if (
@@ -132,8 +132,8 @@ const Html: FC<Props> = ({ blocks }) => {
           return Styling;
         }
       });
-      const join = Styling.join('');
-      return join;
+      const Join = Styling.join('');
+      return Join;
     };
 
     //ブロックタイプをHTMLに変換する
@@ -313,13 +313,13 @@ const Html: FC<Props> = ({ blocks }) => {
               return <BlogCard cardData={cardData} blankProp={blankProp} />;
             }
             return (
-              <a href={cardData.url} {...blankProp} data-nemui="nemui">
+              <a href={cardData.url} {...blankProp}>
                 {domToReact(node.children)}
               </a>
             );
           }
           return (
-            <a {...node.attribs} target="_blank" data-nemukunai="nemukunaiyou">
+            <a {...node.attribs} target="_blank">
               {domToReact(node.children)}
             </a>
           );
