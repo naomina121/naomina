@@ -109,7 +109,7 @@ const Html: FC<Props> = ({ blocks }) => {
                   }" ><s>${text}</s></span>`
                 );
               } else if (content.annotations.code) {
-                Styling.push(`<code>'${text}</code>`);
+                Styling.push(`<code>${text}</code>`);
               } else if (link) {
                 Styling.push(`<a href="${link.url})${text}</a>`);
               } else if (
@@ -132,8 +132,8 @@ const Html: FC<Props> = ({ blocks }) => {
           return Styling;
         }
       });
-      const join = Styling.join('');
-      return join;
+      const Join = Styling.join('');
+      return Join;
     };
 
     //ブロックタイプをHTMLに変換する
@@ -223,7 +223,7 @@ const Html: FC<Props> = ({ blocks }) => {
       let UlArray: any[] = [];
       let OlArray: any[] = [];
 
-      BlocksFilter.map((block) => {
+      BlocksFilter.map((block, index) => {
         const add = NotionBlockToTag(block);
 
         if (block.type === 'bulleted_list_item') {
@@ -256,6 +256,20 @@ const Html: FC<Props> = ({ blocks }) => {
           const ul_string = ul.join('');
           HtmlArray.push(ul_string);
           UlArray = [];
+        } else if (index === BlocksFilter.length - 1) {
+          if (OlArray.length > 0) {
+            OlArray.push('</ol>');
+            const ol = ([...OlArray] = OlArray);
+            const ol_string = ol.join('');
+            HtmlArray.push(ol_string);
+            OlArray = [];
+          } else if (UlArray.length > 0) {
+            UlArray.push('</ul>');
+            const ul = ([...UlArray] = UlArray);
+            const ul_string = ul.join('');
+            HtmlArray.push(ul_string);
+            UlArray = [];
+          }
         } else if (
           block.type !== 'numbered_list_item' &&
           block.type !== 'bulleted_list_item'
@@ -265,6 +279,13 @@ const Html: FC<Props> = ({ blocks }) => {
 
         return HtmlArray;
       });
+
+      // if(HtmlArray[length-1].match( /^<li>/g )){
+      //   HtmlArray.push('</ul>');
+      //   HtmlArray.push('</ol>');
+
+      // }
+
       const html = HtmlArray.join(' ');
       return html;
     };
@@ -313,13 +334,13 @@ const Html: FC<Props> = ({ blocks }) => {
               return <BlogCard cardData={cardData} blankProp={blankProp} />;
             }
             return (
-              <a href={cardData.url} {...blankProp} data-nemui="nemui">
+              <a href={cardData.url} {...blankProp}>
                 {domToReact(node.children)}
               </a>
             );
           }
           return (
-            <a {...node.attribs} target="_blank" data-nemukunai="nemukunaiyou">
+            <a {...node.attribs} target="_blank">
               {domToReact(node.children)}
             </a>
           );
