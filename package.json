@@ -35,7 +35,7 @@
     "@notion-stuff/blocks-html-parser": "^6.0.0",
     "@notion-stuff/blocks-markdown-parser": "^6.0.0",
     "@notion-stuff/v4-types": "^6.0.0",
-    "@notionhq/client": "^2.2.3",
+    "@notionhq/client": "^2.2.13",
     "@types/marked": "^4.0.8",
     "@types/prismjs": "^1.26.0",
     "@types/react-copy-to-clipboard": "^5.0.4",
