@@ -44,7 +44,7 @@ const FirstView: FC<FirstViewProps> = ({ item, pages }) => {
 			>
 				<div className="max-h-smart max-w-6xl mx-auto flex flex-col items-center text-white justify-center relative">
 					<p className="xl:relative text-white sub-title">
-						<span>病気を抱えながら、挑戦する個人的学習記録</span>
+						<span>プログラミングなどを、挑戦する個人的学習記録</span>
 					</p>
 					<p className="text-white  title font-['Montserrat',sans-serif] font-black">
 						<span className="w-full flex">
