@@ -23,7 +23,7 @@ const About: FC<TopProps> = ({ item }) => {
 							<span className="ml-4">について</span>
 						</p>
 						<p className="text-white skil-text leading-8">
-							当サイトは、私が健康管理で思ったことや、趣味であるプログラミングの知識をまとめているサイトです。
+							当サイトは、趣味であるプログラミングの知識をまとめているサイトです。
 						</p>
 						<p className="text-white skil-text leading-8 my-5">
 							ちなみにこのサイトは、Next.js、TypeScript、NotionAPIを利用して、

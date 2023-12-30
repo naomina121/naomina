@@ -45,22 +45,7 @@ const SpNavgation = () => {
 							<Link href="/study/it">IT知識</Link>
 						</li>
 						<li>
-							<Link href="/study/sickness">病気</Link>
-						</li>
-						<li>
-							<Link href="/study/transcription">文字起こし</Link>
-						</li>
-						<li>
 							<Link href="/study/programming">プログラミング</Link>
-						</li>
-						<li>
-							<Link href="/study/concerns">お悩み相談</Link>
-						</li>
-						<li>
-							<Link href="/study/design">デザイン</Link>
-						</li>
-						<li>
-							<Link href="/study/health">健康</Link>
 						</li>
 						<li>
 							<Link href="/study/others">その他</Link>
