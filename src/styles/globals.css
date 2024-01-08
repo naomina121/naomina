@@ -561,14 +561,14 @@ div div.code-toolbar > .toolbar > .toolbar-item > span {
 	opacity: 0.7;
 }
 
-.sns-button.twitter > button {
-	background: #06aced !important;
-	box-shadow: 0 4px 0 #0880af;
+.sns-button.x > button {
+	background: #000 !important;
+	box-shadow: 0 4px 0 #333;
 }
 
 .sns-button.facebook > button {
-	background: #3b5997 !important;
-	box-shadow: 0 4px 0 #243b6b;
+	background: #0965fe !important;
+	box-shadow: 0 4px 0 #362eb2;
 }
 
 .sns-button.hatena > button {
