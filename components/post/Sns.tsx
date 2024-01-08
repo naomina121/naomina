@@ -26,7 +26,7 @@ const Sns: FC<ContentBottomProps> = (page) => {
 			<div className="sns-button x">
 				<TwitterShareButton url={snsUrl} title={snsTitle}>
 					<XIcon size={45} round={false} />
-					<span className="xl:hidden">X</span>
+					<span className="xl:hidden">エックス</span>
 				</TwitterShareButton>
 			</div>
 			<div className="sns-button facebook">
