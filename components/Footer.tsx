@@ -4,6 +4,8 @@ import React from 'react';
 import 'remixicon/fonts/remixicon.css';
 
 const Footer = () => {
+	const now = new Date();
+	const year = now.getFullYear();
 	return (
 		<footer className="py-4 bg-gray-900">
 			<div className="max-w-6xl xl:px-5 w-full my-5 py-5 mx-auto border-solid border-b-[1px] lg:border-none border-gray-700">
@@ -64,7 +66,7 @@ const Footer = () => {
 				</div>
 			</div>
 			<small className="text-white/80 block xl:px-5 w-full mx-auto max-w-6xl">
-				© 2023 {siteConfig.title}
+				© {year} {siteConfig.title}
 			</small>
 		</footer>
 	);
