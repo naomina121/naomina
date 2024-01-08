@@ -56,7 +56,7 @@ const Footer = () => {
 					</span>
 					BLOG
 				</div>
-				<div className="flex my-5">
+				<div className="flex my-6">
 					<Link href={siteConfig.twitterUrl} target="_blank">
 						<i className="rounded-full p-2 w-[36px] h-[36px] bg-gray-700 ri-twitter-x-fill text-gray-300 text-2xl mr-4 hover:text-white hover:bg-[#xF3E6;]"></i>
 					</Link>
