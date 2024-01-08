@@ -56,7 +56,7 @@ const Footer = () => {
 				</div>
 				<div className="flex my-5">
 					<Link href={siteConfig.twitterUrl} target="_blank">
-						<i className="rounded-full p-1 bg-gray-700 ri-twitter-fill text-gray-300 text-3xl mr-4 hover:text-white hover:bg-[#1DA1F2]"></i>
+						<i className="rounded-full p-1 bg-gray-700 ri-twitter-x-fill text-gray-300 text-3xl mr-4 hover:text-white hover:bg-[#xF3E6;]"></i>
 					</Link>
 					<Link href={siteConfig.githubUrl} target="_blank">
 						<i className="rounded-full p-1 bg-gray-700 ri-github-fill text-gray-300 text-3xl hover:text-white hover:bg-[#2dba4e]"></i>

@@ -45,6 +45,12 @@ const SpNavgation = () => {
 							<Link href="/study/it">IT知識</Link>
 						</li>
 						<li>
+							<Link href="/study/design">デザイン</Link>
+						</li>
+						<li>
+							<Link href="/study/cording">コーディング</Link>
+						</li>
+						<li>
 							<Link href="/study/programming">プログラミング</Link>
 						</li>
 						<li>

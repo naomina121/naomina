@@ -176,11 +176,11 @@ td {
 	@apply bg-sky-600;
 }
 
-.health {
+.cording {
 	@apply bg-green-900 border-green-900;
 }
 
-.category[data-cat='health']::before {
+.category[data-cat='cording']::before {
 	@apply bg-green-900;
 }
 
