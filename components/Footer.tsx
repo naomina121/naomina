@@ -58,10 +58,10 @@ const Footer = () => {
 				</div>
 				<div className="flex my-5">
 					<Link href={siteConfig.twitterUrl} target="_blank">
-						<i className="rounded-full p-1 bg-gray-700 ri-twitter-x-fill text-gray-300 text-3xl mr-4 hover:text-white hover:bg-[#xF3E6;]"></i>
+						<i className="rounded-full p-2 w-[36px] h-[36px] bg-gray-700 ri-twitter-x-fill text-gray-300 text-2xl mr-4 hover:text-white hover:bg-[#xF3E6;]"></i>
 					</Link>
 					<Link href={siteConfig.githubUrl} target="_blank">
-						<i className="rounded-full p-1 bg-gray-700 ri-github-fill text-gray-300 text-3xl hover:text-white hover:bg-[#2dba4e]"></i>
+						<i className="rounded-full p-2 w-[40px] h-[40px] bg-gray-700 ri-github-fill text-gray-300 text-2xl hover:text-white hover:bg-[#2dba4e]"></i>
 					</Link>
 				</div>
 			</div>
