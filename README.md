@@ -1,38 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NaoBLOG
+![bandicam 2024-01-09 18-13-17-715](https://github.com/naomina121/readme-images/assets/145886100/8787d9ed-a93d-47a7-acfe-bafb442da5e8)
+## Implementation
+- Notionで作成した記事をNext.js(TS)に反映
+- お問い合わせをNotionAPIを使用してNotionでメッセージの管理
+- タグ、カテゴリー機能
+- 検索機能
+- 日本語対応のパンくず表示
+- 記事のシェアボタン
+- 目次機能
+- OGP対応
+- ブログカード(外部リンクの情報を引っ張ってくる)
+- 記事が更新されたらページを自動でリロードする機能追加
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Thanks
+- [2023年に誰よりも早くに本気のBlogを作ったよ](https://zenn.dev/nbr41to/articles/474df7540c475c)
+- [カウントアップも同時に表示する円形プログレスバーの表示デモ](https://digipress.info/tech/circular-progress-bar-with-count-up/)
+- [CodePen Home Animated Circular Progress Bar with Count Up](https://codepen.io/digistate/pen/poOgZoP)
+- [【NotionをCMSに】NotionAPI + Next.js + TypeScript でブログ開発〜デプロイまで](https://www.udemy.com/share/106MVk3@fE82cDYfRPA_Eh_A9r9L2YmWgs75-aRpuN-XQMbxrGwz_cV51tK7JJX6tFzdUU8L/)
