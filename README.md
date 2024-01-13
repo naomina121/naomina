@@ -12,6 +12,25 @@
 - ブログカード(外部リンクの情報を引っ張ってくる)
 - 記事が更新されたらページを自動でリロードする機能追加
 
+### Notionブロック対応
+
+```
+'heading_2',
+'heading_3',
+'image',
+'paragraph',
+'code',
+'bulleted_list_item',
+'numbered_list_item',
+'quote',
+'table',
+'table_row',
+'video',
+'embed',
+'callout',
+'divider',
+```
+
 ## Thanks
 - [2023年に誰よりも早くに本気のBlogを作ったよ](https://zenn.dev/nbr41to/articles/474df7540c475c)
 - [カウントアップも同時に表示する円形プログレスバーの表示デモ](https://digipress.info/tech/circular-progress-bar-with-count-up/)
