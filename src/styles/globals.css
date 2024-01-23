@@ -160,11 +160,11 @@ td {
 	@apply bg-red-700;
 }
 
-.linux {
+.study-recording {
 	@apply bg-yellow-500;
 }
 
-.category[data-cat='linux']::before {
+.category[data-cat='study-recording']::before {
 	@apply bg-yellow-500 border-yellow-500;
 }
 
