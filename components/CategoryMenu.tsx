@@ -13,6 +13,16 @@ const CategoryMenu: FC<IndexProps> = ({ pages }) => {
 	return (
 		<div className="mt-[78px] xl:hidden w-full bg-gray-800">
 			<ul className="w-full max-w-6xl mx-auto py-2 xl:px-10 flex">
+				{uniqueCategories.includes('study-recording') && (
+					<li className="mr-4">
+						<Link
+							className="text-gray-400 duration-500 hover:text-gray-200 text-base md:text-sm"
+							href="/study/study-recording"
+						>
+							学習経過記録
+						</Link>
+					</li>
+				)}
 				{uniqueCategories.includes('it') && (
 					<li className="mr-4">
 						<Link
@@ -50,16 +60,6 @@ const CategoryMenu: FC<IndexProps> = ({ pages }) => {
 							href="/study/programming"
 						>
 							プログラミング
-						</Link>
-					</li>
-				)}
-				{uniqueCategories.includes('linux') && (
-					<li className="mr-4">
-						<Link
-							className="text-gray-400 duration-500 hover:text-gray-200 text-base md:text-sm"
-							href="/study/concerns"
-						>
-							お悩み相談
 						</Link>
 					</li>
 				)}
