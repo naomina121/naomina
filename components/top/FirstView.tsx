@@ -8,7 +8,7 @@ import { getDate, getForumla, getSelect, getText } from '@/utils/property';
 import Link from 'next/link';
 import dateToTime from '@/hooks/dateToTime';
 
-const FirstView: FC<FirstViewProps> = ({ item, pages }) => {
+const FirstView: FC<FirstViewProps> = ({ pages }) => {
 	const isBreakPoint = useMediaQuery({ query: `(max-width:1320px)` });
 	//ニュースの部分
 	const [openMenu, setOpenMenu] = useState(false);
@@ -16,7 +16,7 @@ const FirstView: FC<FirstViewProps> = ({ item, pages }) => {
 		setOpenMenu(!openMenu);
 	};
 	return (
-		<div id="home" ref={item} className="relative h-full max-h-smart">
+		<div id="home" className="relative h-full max-h-smart">
 			<div className="relative w-full max-h-smart overflow-hidden overlay">
 				{isBreakPoint ? (
 					<Image

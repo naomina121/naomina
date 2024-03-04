@@ -24,10 +24,13 @@ const SpNavgation = () => {
 							<Link href="/#skils">現在のスキル</Link>
 						</li>
 						<li>
-							<Link href="/#contact">お問い合わせ</Link>
-						</li>
-						<li>
 							<Link href="/study">学習記録</Link>
+						</li>
+						{/* <li>
+							<Link href="/study">作品</Link>
+						</li> */}
+						<li>
+							<Link href="/#contact">お問い合わせ</Link>
 						</li>
 						<li>
 							<Link href="/news">お知らせ一覧</Link>
@@ -38,7 +41,7 @@ const SpNavgation = () => {
 					</ul>
 				</nav>
 
-				<p className="hm-title">学習記録のカテゴリー</p>
+				{/* <p className="hm-title">学習記録のカテゴリー</p>
 				<nav>
 					<ul>
 						<li>
@@ -60,7 +63,7 @@ const SpNavgation = () => {
 							<Link href="/study/others">その他</Link>
 						</li>
 					</ul>
-				</nav>
+				</nav> */}
 			</div>
 		</div>
 	);
