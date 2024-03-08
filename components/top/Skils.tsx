@@ -46,7 +46,7 @@ const Skils: FC<TopProps> = ({ item }) => {
 					<p className="skil-text text-white text-xl">
 						現在のスキルとしては、ReactやTypeScriptなども学びながらコードを書いています。
 					</p>
-					<p className="skil-text text-white text-xl">
+					{/* <p className="skil-text text-white text-xl">
 						制作実績に関しては、「
 						<Link
 							className="underline text-blue-400 font-bold hover:opacity-80 hover:no-underline"
@@ -55,7 +55,7 @@ const Skils: FC<TopProps> = ({ item }) => {
 							WORK
 						</Link>
 						」のページにてご確認いただけます。
-					</p>
+					</p> */}
 					<p className="skil-text text-white text-xl">
 						また、
 						<span className="text-amber-400 font-bold pr-2">
