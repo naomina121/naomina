@@ -32,6 +32,8 @@
 'divider',
 ```
 
+たまに、、更新してます。
+
 ## Thanks
 - [2023年に誰よりも早くに本気のBlogを作ったよ](https://zenn.dev/nbr41to/articles/474df7540c475c)
 - [カウントアップも同時に表示する円形プログレスバーの表示デモ](https://digipress.info/tech/circular-progress-bar-with-count-up/)
