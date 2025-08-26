@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export && next-sitemap --config sitemap.config.js",
-    "start": "next start",
-    "lint": "next lint"
+  "dev": "next dev",
+  "build": "next build",
+  "postbuild": "next-sitemap --config next-sitemap.config.js",
+  "start": "next start",
+  "lint": "next lint"
   },
   "dependencies": {
     "@types/node": "18.15.11",
